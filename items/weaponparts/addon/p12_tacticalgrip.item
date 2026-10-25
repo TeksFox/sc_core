@@ -1,0 +1,14 @@
+{
+    "itemName": "p12_tacticalgrip",
+    "price": 0,
+    "rarity": "common",
+    "category": "magazine",
+    "inventoryIcon": "p12_tacticalgrip.png",
+    "shortdescription": "P12 Tactical grip",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "ssm" ],
+
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

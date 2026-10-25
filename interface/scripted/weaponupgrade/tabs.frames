@@ -1,0 +1,19 @@
+{
+    "frameGrid": {
+        "size": [
+            21,
+            33
+        ],
+        "dimensions": [
+            2,
+            5
+        ],
+        "names": [
+            [ "main.1", "main.2" ],
+            [ "objects.1", "objects.2" ],
+            [ "reagent.1", "reagent.2" ],
+            [ "food.1", "food.2" ],
+            [ "material.1", "material.2" ]
+        ]
+    }
+}

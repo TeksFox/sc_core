@@ -1,0 +1,138 @@
+{
+    "descriptionLabel": {
+        "type": "label",
+        "position": [ 74, 94 ],
+        "fontSize": 8,
+        "hAnchor": "mid",
+        "vAnchor": "top",
+        "wrapWidth": 124
+    },
+    "background": {
+        "type": "image",
+        "position": [ 10, 0 ],
+        "zlevel": -10,
+        "file": "/interface/uiparts/itemdescriptions/sf_toolitem.png",
+        "centered": false
+    },
+    "title": {
+        "type": "label",
+        "position": [ 35, 183 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": ""
+    },
+    
+    "subTitle": {
+        "type": "label",
+        "position": [ 35, 173 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": [ 185, 181, 178 ],
+        "value": ""
+    },
+    
+    "rarityLabel": {
+        "type": "label",
+        "position": [ 74, 161 ],
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "titleIcon": {
+        "type": "itemslot",
+        "position": [ 9, 167 ],
+        "callback": "null",
+        "iconMode": true,
+        "backingImage": "/interface/crafting/craftportrait.png",
+        "showRarity": false,
+        "showBackingImageWhenFull": true
+    },
+
+    "darabilityLabel": {
+        "type": "label",
+        "position": [ 134, 42 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "cyan"
+    },
+
+    "darabilityTitleLabel": {
+        "type": "label",
+        "position": [ 13, 42 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Durability:",
+        "color": "cyan"
+    },
+
+    "blockRadiusLabel": {
+        "type": "label",
+        "position": [ 134, 30 ],
+        "fontSize": 8,
+        "zlevel": 1,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+
+    "blockRadiusTitleLabel": {
+        "type": "label",
+        "position": [ 13, 30 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Radius:",
+        "color": "green"
+    },
+
+    "tileDamageLabel": {
+        "type": "label",
+        "position": [ 134, 18 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+
+    "TileDamageTitleLabel": {
+        "type": "label",
+        "position": [ 13, 18 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Tile Damage:",
+        "color": "green"
+    },
+    "priceLabel": {
+        "type": "label",
+        "position": [ 134, 6 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+    "priceTitleLabel": {
+        "type": "label",
+        "zlevel": 1,
+        "position": [ 13, 6 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Price:",
+        "color": "green"
+    },
+    "objectImage": {
+        "type": "image",
+        "position": [ 74, 128 ],
+        "file": "",
+        "centered": true,
+        "maxSize": [ 70, 45 ],
+        "minSize": [ 70, 40 ]
+    }
+}

@@ -1,0 +1,32 @@
+[
+    //! refining
+    "chemicalextractor",
+    "crushingmachine",
+    "washingmachine",
+    //! power
+    "largeenergystorage",
+    "mediumenergystorage",
+    "smallenergystorage",
+    "advancedgenerator",
+    "oil_firedelectricgenerator",
+    "solidfuelgenerator",
+    "medium_voltageswitchboard",
+    "low_voltageswitchboard",
+    //! advanced
+    "assemblymachine",
+    "electricfurnace",
+    "recyclingstation",
+    //! items
+    "carbonfilter",
+    "crushercutter",
+    "electrolysiscoil",
+    "gascatalyst",
+    "low_voltageswitchboard",
+    "ironheater",
+    //! Conduits
+    "extractionconduit",
+    "insertionconduit",
+    "itemconduit",
+    "wirelessreceivingconduit",
+    "wirelesssendingconduit"
+]

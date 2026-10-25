@@ -1,0 +1,10 @@
+{
+    "itemName": "woodboard",
+    "price": 0,
+    "rarity": "common",
+    "category": "craftingMaterial",
+    "inventoryIcon": "woodboard.png",
+    "description": "The simplest wooden board",
+    "shortdescription": "Wooden board",
+    "itemTags": [ "reagent", "wood" ]
+}

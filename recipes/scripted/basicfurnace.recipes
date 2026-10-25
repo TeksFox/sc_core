@@ -1,0 +1,129 @@
+[
+    {
+        "type": "blank",
+        "name": "copperbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "silverbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "goldbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "platinumbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "ironbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "tungstenbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "titaniumbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "durasteelbar",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "refinedaegisalt",
+        "maxCount": 25,
+        "duration": 1.5
+    },
+    {
+        "type": "blank",
+        "name": "refinedferozium",
+        "maxCount": 25,
+        "duration": 1.5
+    },
+    {
+        "type": "blank",
+        "name": "refinedviolium",
+        "maxCount": 25,
+        "duration": 1.5
+    },
+    {
+        "type": "blank",
+        "name": "solariumstar",
+        "maxCount": 10,
+        "duration": 2
+    },
+    {
+        "type": "blank",
+        "name": "bottle",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "firedclay",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "glass",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "paper",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "syringe",
+        "maxCount": 50,
+        "duration": 1
+    },
+    {
+        "type": "blank",
+        "name": "volatilepowder",
+        "maxCount": 50,
+        "duration": 1
+    },
+    //StarFactory,
+    {
+        "type": "recipe",
+        "name": "sf_steelbar",
+        "input": [
+            { "name": "ironbar", "count": 2 },
+            { "name": "copperbar", "count": 1 },
+            { "name": "manganeseorepowder", "count": 1 }
+        ],
+        "output": [
+            { "name": "sf_steelbar", "count": 2 },
+            { "name": "slag", "count": 1, "weight": 0.25},
+            { "name": "productiontoken", "count": [1, 2], "weight": 0.05}
+        ],
+
+        "maxCount": 25,
+        "duration": 3,
+        "groups": [ "alloy", "craftingfurnace", "all" ]
+    }
+]

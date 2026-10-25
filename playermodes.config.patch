@@ -1,0 +1,22 @@
+[
+    {
+        "op": "replace",
+        "path": "/survival/deathDropItemTypes",
+        "value": "none"
+    },
+    {
+        "op": "replace",
+        "path": "/survival/reviveCostPercentile",
+        "value": 0.5
+    },
+    {
+        "op": "replace",
+        "path": "/hardcore/deathDropItemTypes",
+        "value": "none"
+    },
+    {
+        "op": "replace",
+        "path": "/hardcore/permadeath",
+        "value": false
+    }
+]

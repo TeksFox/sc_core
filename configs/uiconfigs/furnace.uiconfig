@@ -1,0 +1,26 @@
+{
+    "uiOpenSound": "/",
+    "uiClosedSound": "/",
+    "uiListSound": "/sfx/interface/clickon_success.ogg",
+    "category": [
+        {
+            "selected": true,
+            "friendlyname": "Bar",
+            "category": [ "bars" ],
+            "order": 1,
+            "icon": "/interface/icons/crafticons/bar_icon.png"
+        },
+        {
+            "friendlyname": "Alloys",
+            "category": [ "alloys" ],
+            "order": 1,
+            "icon": "/interface/icons/crafticons/alloys_icon.png"
+        },
+        {
+            "friendlyname": "Ingredients",
+            "category": [ "ingredients" ],
+            "order": 3,
+            "icon": "/interface/icons/crafticons/ingredients_icon.png"
+        }
+    ]
+}

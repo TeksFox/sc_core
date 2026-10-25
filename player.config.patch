@@ -1,0 +1,68 @@
+[
+    //! ITEMS------------------------------------------------------------------------------------------------------------------------------
+    //? Crafting items 
+        
+    // {
+    //     "op": "add",
+    //     "path": "/deploymentConfig/scripts/-",
+    //     "value": "/scripts/smarttubes/st_player.lua"
+    // },
+
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "basicassembler" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "weavingloom" } },
+    //tools
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "sf_copperpickaxe" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "sf_ironhammer" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "sf_stonepickaxe" } },
+    //Bars
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "steelbar" } },
+
+
+
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "weavingloom" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "weavingloom" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "weavingloom" } },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": { "item": "weavingloom" } },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/stats/radiationreduction", 
+        "value": { "baseValue": -1 } 
+    },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/stats/bioreduction", 
+        "value": { "baseValue": -0.009 } 
+    },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/stats/psionicreduction", 
+        "value": { "baseValue": -0.001 } 
+    },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/resources/radiation", 
+        "value": {
+            "deltaStat": "radiationreduction",
+            "initialPercentage": 0.0,
+            "maxValue": 100
+        }
+    },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/resources/bio", 
+        "value": {
+            "deltaStat": "bioreduction",
+            "initialPercentage": 0.0,
+            "maxValue": 1000
+        }
+    },
+    {
+        "op": "add",
+        "path": "/statusControllerSettings/resources/psionic", 
+        "value": {
+            "deltaStat": "psionicreduction",
+            "initialPercentage": 0.0,
+            "maxValue": 1000
+        }
+    }
+]//

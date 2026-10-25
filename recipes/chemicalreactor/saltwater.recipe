@@ -1,0 +1,16 @@
+{
+    "input": [
+        { "item": "liquidwater", "count": 50 },
+        { "item": "salt", "count": 10 }
+    ],
+    "output": {
+        "item": "saltwater",
+        "count": 50
+    },
+    "duration": 10,
+    "groups": [
+        "chemicalreactor",
+        "liquid",
+        "all"
+    ]
+}

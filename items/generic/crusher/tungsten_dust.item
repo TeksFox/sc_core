@@ -1,0 +1,13 @@
+{
+    "itemName": "tungsten_dust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "tungsten.png:2",
+    "description": "...",
+    "shortdescription": "Tungsten dust",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

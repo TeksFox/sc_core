@@ -1,0 +1,11 @@
+{
+  "itemName" : "tarostar",
+  "price" : 3000,
+  "rarity" : "rare",
+  "category" : "tarocard",
+  "inventoryIcon" : "tarostar.png",
+  "description" : "This card is able to endow weapons with the element of ice",
+  "largeImage": "tarostarbig",
+  "shortdescription" : "^cyan;Taro car (Star)",
+  "itemTags" : [ "reagent", "card" ]
+}

@@ -1,0 +1,24 @@
+{
+  "itemName" : "crushercutter",
+  "price" : 0,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "tool",
+  "description": "tools for crushing ore and certain materials",
+  "shortdescription": "Iron cutter",
+  "twoHanded" : true,
+
+
+  "tool": "crusherPart",
+  "durability": 120,
+  "durabilityPerUse": 1,
+
+  "inventoryIcon" : "crushercutter.png",
+  "scripts" : [],
+  "animation" : "/animations/activeitem.animation",
+  "animationParts" : {
+    "objecttool" : "crushercutter.png"
+  },
+  "animationCustom" : {}
+}

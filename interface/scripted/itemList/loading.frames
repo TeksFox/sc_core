@@ -1,0 +1,20 @@
+{
+    "frameGrid": {
+        "size": [
+            16,
+            18
+        ],
+        "dimensions": [
+            2,
+            2
+        ],
+        "names": [
+            [
+                "add", "addup"
+            ],
+            [
+                "remove", "removeup"
+            ]
+        ]
+    }
+}

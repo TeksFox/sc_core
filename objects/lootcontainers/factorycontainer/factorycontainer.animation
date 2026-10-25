@@ -1,0 +1,82 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "bodyState": {
+                "default": "default",
+                "states": {
+                    "default": {
+                        "frames": 1
+                    },
+                    "emptyClosed": {
+                        "frames": 1
+                    },
+                    "emptyOpen": {
+                        "frames": 1
+                    },
+                    "open": {
+                        "frames": 1
+                    },
+                    "closed": {
+                        "frames": 1
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": {
+                    "zLevel": 1,
+                    "centered": false,
+                    "fullbright": false
+                },
+                "partStates": {
+                    "bodyState": {
+                        "default": {
+                            "properties": { "image": "<partImage>:default" }
+                        },
+                        "emptyClosed": {
+                            "properties": { "image": "<partImage>:emptyClosed" }
+                        },
+                        "emptyOpen": {
+                            "properties": { "image": "<partImage>:emptyOpen" }
+                        },
+                        "open": {
+                            "properties": { "image": "<partImage>:open" }
+                        },
+                        "closed": {
+                            "properties": { "image": "<partImage>:closed" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": {
+                    "zLevel": 3,
+                    "centered": false,
+                    "fullbright": true
+                },
+                "partStates": {
+                    "bodyState": {
+                        "bodyState": {
+                            "default": {
+                                "properties": { "image": "<partImage>:default" }
+                            },
+                            "emptyClosed": {
+                                "properties": { "image": "<partImage>:emptyClosed" }
+                            },
+                            "emptyOpen": {
+                                "properties": { "image": "<partImage>:emptyOpen" }
+                            },
+                            "open": {
+                                "properties": { "image": "<partImage>:open" }
+                            },
+                            "closed": {
+                                "properties": { "image": "<partImage>:closed" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

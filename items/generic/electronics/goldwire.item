@@ -1,0 +1,10 @@
+{
+  "itemName" : "goldwire",
+  "price" : 0,
+  "rarity" : "rare",
+  "category" : "electronics",
+  "inventoryIcon" : "goldwire.png",
+  "description" : "High-quality gold wire, very useful when creating electronics",
+  "shortdescription" : "Gold wire",
+  "itemTags" : [ "reagent" ]
+}

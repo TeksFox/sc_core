@@ -1,0 +1,11 @@
+{
+  "itemName" : "tarotower",
+  "price" : 3000,
+  "rarity" : "rare",
+  "category" : "tarocard",
+  "inventoryIcon" : "tarotower.png",
+  "description" : "This card is able to endow weapons with the element of electric",
+  "largeImage": "tarotowerbig",
+  "shortdescription" : "^purple;Taro car (Tower)",
+  "itemTags" : [ "reagent", "card" ]
+}

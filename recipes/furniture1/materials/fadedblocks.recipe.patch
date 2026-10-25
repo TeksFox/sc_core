@@ -1,0 +1,20 @@
+[
+    {
+        "op": "replace",
+        "path": "/input",
+        "value": [
+            { "item": "sandstonematerial", "count": 1 }
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/output/count",
+        "value": 5
+    },
+    {
+        "op": "add",
+        "path": "/groups/-",
+        "value": "stone"
+    }
+
+]

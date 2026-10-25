@@ -1,0 +1,390 @@
+{
+	"gui" : {
+		"canvas" : {
+			"zlevel" : -19,
+			"type" : "canvas",
+			"rect" : [7, 45, 405, 310],
+			"captureMouseEvents" : true,
+			"captureKeyboardEvents" : false
+		},
+		
+		"background" : {
+			"zlevel" : -1,
+			"type" : "background",
+            "fileHeader": "/interface/scripted/researchTree/header.png",
+            "fileBody": "/interface/scripted/researchTree/body.png",
+            "fileFooter": "/interface/scripted/researchTree/footer.png"
+		},
+		
+        "windowtitle": {
+            "type": "title",
+            "title": "  Research tree",
+            "subtitle": "  The research tree allows you to discover new crafting material and stations",
+            "position": [ -5, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/titleicons/starCore.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+		// "title" : {
+		// 	"type" : "label",
+		// 	"position" : [497, 260],
+		// 	"hAnchor" : "mid",
+		// 	"vAnchor" : "mid",
+		// 	"value" : "I AM ERROR"
+		// },
+		
+		"researchButton" : {
+			"visible": true,
+			"type" : "button",
+			"position" : [163, 49],
+			"base" : "/interface/scripted/researchTree/researchButton.png:default",
+			"hover" : "/interface/scripted/researchTree/researchButton.png:hover",
+			"disabledImage" : "/interface/scripted/researchTree/researchButton.png:grayed"
+		},
+
+		// "consumptionText" : {
+		// 	"type" : "label",
+		// 	"visible" : false,
+		// 	"position" : [487, 5],
+		// 	"vAnchor" : "bottom",
+		// 	"fontSize" : 7,
+		// 	"wrapWidth" : 182,
+		// 	"value" : "Will not consume currency\nWill not consume items"
+		// },
+		
+		"closeButton" : {
+			"type" : "button",
+			"position" : [388, 291],
+			"base" : "/interface/scripted/researchTree/buttons.png:close:default",
+			"hover" : "/interface/scripted/researchTree/buttons.png:close:hover",
+			"pressed" : "/interface/scripted/researchTree/buttons.png:close:default",
+			"disabledImage" : "/assetmissing.png",
+			"pressedOffset" : [0,0]
+		},
+		
+		"forgottenResearch" : {
+			"type" : "button",
+			"position" : [371, 291],
+			"base" : "/interface/scripted/researchTree/buttons.png:treePick:default",
+			"hover" : "/interface/scripted/researchTree/buttons.png:treePick:hover",
+			"pressed" : "/interface/scripted/researchTree/buttons.png:treePick:default",
+			"disabledImage" : "/assetmissing.png",
+			"pressedOffset" : [0,0]
+		},
+		
+		"searchButton" : {
+			"type" : "button",
+			"position" : [354, 291],
+			"base" : "/interface/scripted/researchTree/buttons.png:search:default",
+			"hover" : "/interface/scripted/researchTree/buttons.png:search:hover",
+			"pressed" : "/interface/scripted/researchTree/buttons.png:search:default",
+			"disabledImage" : "/assetmissing.png",
+			"pressedOffset" : [0,0]
+		},
+		
+		"centerButton" : {
+			"type" : "button",
+			"position" : [337, 291],
+			"base" : "/interface/scripted/researchTree/buttons.png:center:default",
+			"hover" : "/interface/scripted/researchTree/buttons.png:center:hover",
+			"pressed" : "/interface/scripted/researchTree/buttons.png:center:default",
+			"disabledImage" : "/assetmissing.png",
+			"pressedOffset" : [0,0]
+		},
+		
+		"qualityButton" : {
+			"type" : "button",
+			"position" : [320, 291],
+			"base" : "/interface/scripted/researchTree/buttons.png:quality:default",
+			"hover" : "/interface/scripted/researchTree/buttons.png:quality:hover",
+			"pressed" : "/interface/scripted/researchTree/buttons.png:quality:default",
+			"disabledImage" : "/assetmissing.png",
+			"pressedOffset" : [0,0]
+		},
+		
+		"cheatBox" : {
+			"type" : "textbox",
+			"visible" : false,
+			"position" : [10, 7],
+			"fontSize" : 7,
+			"text" : "",
+			"enterKey" : "cheat",
+			"hint" : ":)",
+			"callback" : "null"
+		},
+		
+		"infoList" : {
+			"type" : "scrollArea",
+			"rect" : [414, 22, 587, 235],
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+			"children" : {
+				"links" : {
+					"type" : "list",
+					"callback" : "linkSelect",
+					"columns": 1,
+					"schema" : {
+						"selectedBG" : "/assetmissing.png",
+						"unselectedBG" : "/assetmissing.png",
+						"spacing" : [0, 1],
+						"memberSize" : [163, 20],
+						"listTemplate" : {
+							"title" : {
+								"type" : "button",
+								"position" : [0, 0],
+								"base" : "/interface/scripted/researchTree/listBG.png:default",
+								"hover" : "/interface/scripted/researchTree/listBG.png:hover",
+								"disabledImage" : "/interface/scripted/researchTree/listBG.png:default",
+								"pressedOffset" : [0,0],
+								"caption" : "",
+								"callback" : "null"
+							},
+							"icon" : {
+								"type" : "itemslot",
+								"zlevel" : 1,
+								"position" : [1, 1],
+								"backingImage" : "/interface/inventory/empty.png",
+								"showBackingImageWhenFull": true,
+								"showRarity": false,
+								"callback" : "null"
+							},
+							"border" : {
+								"type" : "image",
+								"file" :  "/interface/scripted/researchTree/itemborder.png:3",
+								"zlevel" : 2,
+								"position" : [1, 1]
+							}
+						}
+					}
+				}
+			}
+        },
+		
+		"searchList" : {
+			"type" : "scrollArea",
+			"rect" : [414, 22, 587, 235],
+			"visible" : false,
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+			"children" : {
+				"list" : {
+					"type" : "list",
+					"callback" : "researchSelected",
+					"schema" : {
+						"selectedBG" : "/assetmissing.png",
+						"unselectedBG" : "/assetmissing.png",
+						"spacing" : [0, 2],
+						"memberSize" : [163, 20],
+						"listTemplate" : {
+							"title" : {
+								"type" : "button",
+								"position" : [0, 0],
+								"base" : "/interface/scripted/researchTree/listBG.png:default",
+								"hover" : "/interface/scripted/researchTree/listBG.png:hover",
+								"disabledImage" : "/interface/scripted/researchTree/listBG.png:default",
+								"pressedOffset" : [0,0],
+								"caption" : "",
+								"callback" : "null"
+							},
+							"icon" : {
+								"type" : "itemslot",
+								"zlevel" : 1,
+								"position" : [1, 1],
+								"backingImage" : "/interface/inventory/empty.png",
+								"showBackingImageWhenFull": false,
+								"showRarity": false,
+								"callback" : "null"
+							},
+							"border" : {
+								"type" : "image",
+								"file" : "",
+								"zlevel" : 2,
+								"position" : [1, 1]
+							}
+						}
+					}
+				}
+			}
+        },
+		
+		"treeList" : {
+			"type" : "scrollArea",
+			"rect" : [414, 22, 587, 235],
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+			"visible" : false,
+			"children" : {
+				"list" : {
+					"type" : "list",
+					"callback" : "treeSelected",
+					"schema" : {
+						"selectedBG" : "/assetmissing.png",
+						"unselectedBG" : "/assetmissing.png",
+						"spacing" : [0, 2],
+						"memberSize" : [163, 20],
+						
+						"listTemplate" : {
+							"title" : {
+								"type" : "button",
+								"position" : [0, 0],
+								"base" : "/interface/scripted/researchTree/listBG.png:default",
+								"hover" : "/interface/scripted/researchTree/listBG.png:hover",
+								"disabledImage" : "/interface/scripted/researchTree/listBG.png:default",
+								"pressedOffset" : [0,0],
+								"callback" : "null"
+							},
+							"icon" : {
+								"type" : "image",
+								"file" :  "",
+								"zlevel" : 2,
+								"position" : [1, 1]
+							}
+						}
+					}
+				}
+			}
+        },
+		"unlocks" : {
+			"type" : "list",
+			"callback" : "null",
+			"fillDown":true,
+			"size": [ 170, 39],
+			"position" : [414, 311],
+			"columns": 9,
+			"schema" : {
+				"spacing" : [0, 1],
+				"memberSize" : [18, 18],
+				"listTemplate" : {
+					"item" : {
+						"type" : "itemslot",
+						"visible" : true,
+						"position" : [0, 0],
+						"backingImage" : "/interface/inventory/empty.png",
+						"showBackingImageWhenFull": true,
+						"callback" : "null"
+					}
+				}
+			}
+		},
+		"unlocksLabel" : {
+			"type" : "label",
+			"visible" : true,
+			"position" : [498, 316],
+			"vAnchor" : "mid",
+			"hAnchor" : "mid",
+			"zlevel" : 1,
+			"fontSize" : 8,
+			"value" : "^yellow;Unlocks"
+		},
+		"priceListTitle" : {
+			"type" : "label",
+			"position" : [8, 30],
+			"hAnchor" : "left",
+			"vAnchor" : "mid",
+			"fontSize" : 12,
+			"value" : "Node price:"
+		},
+
+		
+		"priceList" : {
+			"type" : "list",
+			"callback" : "null",
+			"fillDown":true,
+			"position" : [77 , 42],
+			"size" : [20, 400],
+			"columns": 21,
+			"schema" : {
+				"spacing" : [0, 1],
+				"memberSize" : [20, 20],
+				"listTemplate" : {
+					"item" : {
+						"type" : "itemslot",
+						"visible" : true,
+						"position" : [1, 1],
+						"backingImage" : "/interface/inventory/empty.png",
+						"showBackingImageWhenFull": true,
+						"callback" : "null"
+					}
+				}
+			}
+		},
+		
+        "setList": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "baseImage": "/interface/tabs/tabsmall.png:1",
+            "baseImageChecked": "/interface/tabs/tabsmall.png:2",
+            "position": [
+                410,
+                245
+            ],
+            "buttons": [
+                {
+                    "id":1,
+                    "selected": true,
+                    "position": [ 0, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Research",
+                    "fontSize": 6,
+                    "data": { "option":"treeList"}
+                },
+                {
+                    "id":2,
+                    "position": [ 36, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Search",
+                    "fontSize": 6,
+                    "data": { "option":"searchList" }
+                },
+                {
+                    "id":3,
+                    "position": [ 72, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "links",
+                    "fontSize": 6,
+                    "data": { "option":"infoList"}
+                }
+            ]
+        }
+	},
+	
+    "tooltips":{
+        "background":  {
+                "type" : "background",
+                "fileHeader" : "",
+                "fileBody" : "/interface/scripted/crafting/tooltip.png",
+                "fileFooter" : ""
+        },
+        "text": {
+            "type": "label",
+            "position": [ 48, 9 ],
+            "wrapWidth": 90,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 8
+        }
+    },
+	
+	"canvasClickCallbacks" : { "canvas" : "canvasClickEvent" },
+	"scriptWidgetCallbacks" : [
+		"linkSelect",
+		"researchButton",
+		"centerButton",
+		"forgottenResearch",
+		"searchButton",
+		"cheat",
+		"researchSelected",
+		"treeSelected",
+		"closeButton",
+		"qualityButton",
+		"setList"
+	],
+	
+	"replaced" : true,
+	"scripts" : ["/interface/scripted/researchTree/researchTree.lua"],
+	"scriptDelta" : 1
+}

@@ -1,0 +1,311 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/weaponupgrade/header.png",
+            "fileBody": "/interface/scripted/weaponupgrade/body.png",
+            "fileFooter": "/interface/scripted/weaponupgrade/footer.png"
+        },
+        // "buttonCall": {
+        //     "type": "button",
+        //     "position": [ 90, 18 ],
+        //     "base": "/interface/objectcrafting/craftbutton.png:1",
+        //     "hover": "/interface/objectcrafting/craftbutton.png:2",
+        //     "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+        //     "caption": "Fuel list",
+        //     "callback": "buttonCall"
+        // },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "pressedOffset": [ 0, 0 ],
+            "position": [ 141, 115 ]
+        },
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 189, 195 ],
+            "dimensions": [ 1, 1 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "layout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 132, 22 ],
+            "size": [ 133, 243 ],
+            "children": {
+                "rarityLabel": {
+                    "type": "label",
+                    "position": [
+                        67,
+                        213
+                    ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "centered": true,
+                    "wrapWidth": 126,
+                    "value": "Ammo type:"
+                },
+                "levelLabel": {
+                    "type": "label",
+                    "position": [ 10, 152 ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "centered": true,
+                    "fontSize": 12,
+                    "color": "#181824",
+                    "wrapWidth": 126
+                },
+                "handImage": {
+                    "type": "image",
+                    "position": [
+                        9,
+                        193
+                    ],
+                    "file": "",
+                    "centered": false
+                },
+                "ammoNameTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        131
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "wrapWidth": 126,
+                    "color": "yellow",
+                    "value": "Ammo type:"
+                },
+                "ammoNameLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        131
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "wrapWidth": 126,
+                    "color": "yellow",
+                    "value": "tree"
+                },
+                "dpsTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        119
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "wrapWidth": 126,
+                    "color": "red",
+                    "value": "DPS:"
+                },
+                "dpsLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        119
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "wrapWidth": 126,
+                    "color": "red",
+                    "value": "tree"
+                },
+                "damagePerShotTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        107
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "color": "red",
+                    "value": "Damage Per Shot:"
+                },
+                "damagePerShotLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        107
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "color": "red",
+                    "wrapWidth": 126
+                },
+                "speedTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        95
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "color": "green",
+                    "value": "Rate of Fire:"
+                },
+                "speedLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        95
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "color": "green",
+                    "wrapWidth": 126
+                },
+                "multTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        83
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "color": "green",
+                    "value": "projectile count:"
+                },
+                "multLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        83
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "color": "green",
+                    "wrapWidth": 126
+                },
+                "ammoTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        71
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "color": "yellow",
+                    "value": "Ammo count:"
+                },
+                "ammoLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        71
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "color": "yellow",
+                    "wrapWidth": 126
+                },
+                "reloadTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        59
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "color": "yellow",
+                    "value": "Reload time:"
+                },
+                "reloadLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        59
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "color": "yellow",
+                    "wrapWidth": 126
+                },
+                "altAbilityTitleLabel": {
+                    "type": "label",
+                    "position": [
+                        7,
+                        45
+                    ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "value": ""
+                },
+                "altAbilityLabel": {
+                    "type": "label",
+                    "position": [
+                        127,
+                        45
+                    ],
+                    "hAnchor": "right",
+                    "vAnchor": "mid",
+                    "wrapWidth": 126
+                },
+                "damageKindImage": {
+                    "type": "image",
+                    "position": [
+                        106,
+                        146
+                    ],
+                    "file": "",
+                    "centered": false,
+                    "maxSize": [
+                        16,
+                        16
+                    ],
+                    "minSize": [
+                        16,
+                        16
+                    ]
+                },
+                "dealerImage": {
+                    "type": "image",
+                    "position": [
+                        105,
+                        206
+                    ],
+                    "file": "",
+                    "centered": false,
+                    "maxSize": [
+                        22,
+                        22
+                    ],
+                    "minSize": [
+                        16,
+                        16
+                    ]
+                },
+                "objectImage": {
+                    "type": "image",
+                    "position": [
+                        66,
+                        174
+                    ],
+                    "file": "",
+                    "centered": true,
+                    "maxSize": [
+                        60,
+                        60
+                    ],
+                    "minSize": [
+                        60,
+                        60
+                    ]
+                }
+            }
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "buttonCall",
+        "colorGuiofContainer"
+    ],
+    "scripts": [
+        "/interface/scripted/weaponupgrade/weaponupgrade.lua"
+    ],
+    "scriptDelta": 5
+}

@@ -1,0 +1,75 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "properties": { "particleEmittersOff": [ "dust" ] }
+                    },
+                    "active": {
+                        "frames": 5,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "particleEmittersOn": [ "dust" ],
+                            "persistentSound": "/sfx/objects/dieselGenerator.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": false },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:idle.1<color_idle>" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:active.<frame><color_idle>" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": true },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:idle" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:active" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "particleEmitters": {
+        "dust": {
+            "emissionRate": 10,
+            "emissionVariance": 0.3,
+            "offsetRegion": [
+                3.7,
+                3.4,
+                4.4,
+                3.4
+            ],
+            "color":"#808080",
+            "particles": [
+                {
+                    "particle": "dust2"
+                },
+                {
+                    "particle": "dust2"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "silicon",
+  "price" : 150,
+  "rarity" : "rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "silicon.png",
+  "description" : "It's a silicon. Can be used to craft items.",
+  "shortdescription" : "Silicon",
+  "itemTags" : [ "reagent" ]
+}

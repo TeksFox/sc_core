@@ -1,0 +1,16 @@
+{
+  "itemName" : "voidtoken",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "_currency.png:voidtoken",
+  "description" : "Mystical token, it is not clear where you can get it!",
+  "shortdescription" : "Void token",
+  "currency" : "voidtoken",
+  "category" : "Currency",
+  "value" : 1,
+  "pickupSoundsSmall" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsMedium" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsLarge" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "smallStackLimit" : 99,
+  "mediumStackLimit" : 999,
+  "maxStack" : 1000000
+}

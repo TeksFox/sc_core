@@ -1,0 +1,296 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/objectcrafting/resourceextractor/header.png",
+            "fileBody": "/interface/objectcrafting/resourceextractor/body.png",
+            "fileFooter": "/interface/objectcrafting/resourceextractor/footer.png"
+        },
+        //! Buttons--------------------------------------------------------------------------------
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1", 
+            "hover": "/interface/close.png:2", 
+            "pressed": "/interface/close.png:3",
+            "position": [ 341, 189 ]
+        },
+        "spectralText": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 8,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "top"
+        },
+        //! Labels---------------------------------------------------------------------------------
+        "StatusTitle": {
+            "type": "label",
+            "position": [ 47, 171 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Progress status"
+        }, 
+        "progress": {
+            "type": "label",
+            "position": [ 47, 160 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Progress",
+            "color": "orange"
+        },  
+        "OutputTitle": {
+            "type": "label",
+            "position": [ 310, 171 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Output slots"
+        },
+        "extractedTitleLabel": {
+            "type": "label",
+            "position": [ 9, 140 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Extract:",
+            "color": "orange"
+        },
+        "extractedLabel": {
+            "type": "label",
+            "position": [ 85, 140 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Extract:",
+            "color": "orange"
+        },
+        "extractTimerTitleLabel": {
+            "type": "label",
+            "position": [ 9, 130 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Extract time:",
+            "color": "orange"
+        },
+        "extractTimerLabel": {
+            "type": "label",
+            "position": [ 85, 130 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "text",
+            "color": "orange"
+        },
+        "LevelTitleLabel": {
+            "type": "label",
+            "position": [ 9, 120 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Mining level:",
+            "color": "orange"
+        },       
+        "LevelLabel": {
+            "type": "label",
+            "position": [ 85, 120 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "text",
+            "color": "orange"
+        }, 
+        "resourcesTitleLabel": {
+            "type": "label",
+            "position": [ 9, 110 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "Resources:",
+            "color": "orange"
+        },       
+        "resourcesLabel": {
+            "type": "label",
+            "position": [ 85, 110 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "text",
+            "color": "orange"
+        }, 
+        "energyTitle": {
+            "type": "label",
+            "position": [ 47, 83 ],
+            "fontSize": 6,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Energy status"
+        },
+        "energyTitleLabel": {
+            "type": "label",
+            "position": [ 47, 72 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Energy",
+            "fontSize": 6,
+            "color": "#00CDF9"
+        },
+        "energyLabel": {
+            "type": "label",
+            "position": [ 47, 62 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "energy text",
+            "color": "#00CDF9"
+        },
+        "timeLabel": {
+            "type": "label",
+            "position": [ 47, 52 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "value": "time text",
+            "color": "#00CDF9"
+        },
+        
+        "itemScroll": {
+            "type": "scrollArea",
+            "rect": [ 96, 22, 267, 166 ],
+            "fillDown":true,
+            "buttons": {
+                "horizontal": {
+                    "forward": { "base": "", "hover": "", "pressed": "" },
+                    "backward": { "base": "", "hover": "", "pressed": "" }
+                },
+                "vertical": {
+                    "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" },
+                    "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": { "begin": "", "end": "", "inner": "" },
+                    "hover": { "begin": "", "end": "", "inner": "" },
+                    "pressed": { "begin": "", "end": "", "inner": "" }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "list": {
+                    "type": "list",
+                  //  "scissoring": true,
+                    "position":[0, -3],
+                    "fillDown":true,
+                    "zlevel": -1,
+                    "columns": 6,
+                    "schema": {
+                        "memberSize": [ 27, 33 ],
+                        "spacing": [ 0, 0],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/inputback.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 10 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "number": {
+                                "type": "label",
+                                "position": [ 14, 6 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                                "color": "black"
+                            },
+                            "replacable": {
+                                "type": "image",
+                                "visible": true,
+                                "file": "/interface/scripted/itemList/percent.png",
+                                "position": [ 17, 24 ],
+                                "zlevel": -1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "recipes": {
+            "type": "button",
+            "position": [ 17, 22 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "caption": "Charge",
+            "callback": "charge"
+        },
+        //! ItemGridItems--------------------------------------------------------------------------
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 273, 71 ],
+            "showDurability": false,
+            "dimensions": [ 4, 5 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },        
+        //! progressBar----------------------------------------------------------------------------
+        "progressBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 8, 147 ],
+            "background": "/interface/objectcrafting/resourceextractor/bar.png:1",
+            "progressSet": {
+                "inner": "/interface/objectcrafting/resourceextractor/bar.png:2",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        },
+        "energyBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 181, 77 ],
+            "background": "/interface/objectcrafting/resourceextractor/bar.png:1",
+            "progressSet": {
+                "inner": "/interface/objectcrafting/resourceextractor/bar.png:3",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "charge"
+    ],
+    "scriptDelta": 5,
+    "scripts": [
+        "/interface/objectcrafting/resourceextractor/resourceextractor.lua"
+    ]
+}
+
+

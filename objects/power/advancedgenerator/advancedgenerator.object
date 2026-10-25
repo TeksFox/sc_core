@@ -1,0 +1,60 @@
+{
+    "objectName": "advancedgenerator",
+    "rarity": "uncommon",
+    "description": "Uses gasoline or ethanol as fuel to generate energy",
+    "shortdescription": "Advanced generator",
+    "race": "generic",
+    "category": "power",
+    "price": 0,
+    "objectType": "container",
+    "printable": false,
+    "inventoryIcon": "icon.png",
+
+    "largeImage": "advancedgenerator.png:full.1",
+    "orientations": [
+        {
+            "dualImage": "advancedgenerator.png:full.1",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],
+    "outputNodes": [ [ 0, 0 ] ],
+
+    "animationPosition": [ 0, 0 ],
+    "scripts": [ "/scripts/energy/genericEuGenerator.lua", "/scripts/objectcolorizer.lua" ],
+    "scriptDelta": 5,
+    "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
+    "closeSounds": [ "/sfx/objects/f_closeObject.ogg" ],
+    "slotCount": 3,
+    "uiConfig": "/interface/objectpower/basegenerator.ui",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600,
+    "inputCellID": 1,
+    "euConfig": {
+        "euType": "generator",
+        "euStorage": 2000, // in EU
+        "euEnergyLevel": 2,
+        "euFromBeggining": 0,
+        "reagents": [
+            [ [ "liquidoil", 10 ], 90, 2.1 ]
+        ]
+    },
+    "animation": "advancedgenerator.animation",
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "advancedgenerator.png",
+                "colors": { "idle": [ "sf_bronz", "sf_green", "sf_black", "sf_black" ] }
+            },
+            "light": {
+                "hide": true,
+                "colors": { "idle": [] },
+                "partImage": "advancedgeneratorlit.png"
+            }
+        }
+    }
+}

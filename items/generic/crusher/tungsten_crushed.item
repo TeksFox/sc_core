@@ -1,0 +1,13 @@
+{
+    "itemName": "tungsten_crushed",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "tungsten.png:1",
+    "description": "Crushed tungsten ore, can be melted or processed at a higher profit",
+    "shortdescription": "Crushed tungsten Ore",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

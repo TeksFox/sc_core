@@ -1,0 +1,121 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/objectcrafting/liquidstorage/header.png",
+            "fileBody": "/interface/objectcrafting/liquidstorage/body.png",
+            "fileFooter": "/interface/objectcrafting/liquidstorage/footer.png"
+        },
+        //! Buttons--------------------------------------------------------------------------------
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1", 
+            "hover": "/interface/close.png:2", 
+            "pressed": "/interface/close.png:3",
+            "position": [ 129, 128 ]
+        },
+        "icon": {
+            "type": "itemslot",
+            "callback": "null",
+            "position": [ 34, 86 ],
+            "showRarity": false,
+            "backingImage": "/interface/inventory/empty.png",
+            "showBackingImageWhenFull": true,
+            "zlevel": 1
+        },
+        "name": {
+            "type": "label",
+            "position": [ 80, 76 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "fontSize": 8
+        },
+        "count": {
+            "type": "label",
+            "position": [ 80, 64 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "fontSize": 8
+        },
+        "flowTitle": {
+            "type": "label",
+            "position": [ 5, 33 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "Flow control:",
+            "fontSize": 8
+        },
+        "flow": {
+            "type": "button",
+            "base": "/interface/smallsliderbutton.png:off",
+            "hover": "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked": "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+            "checkable": true,
+            "checked": false,
+            "pressedOffset": [0, 0],
+            "position": [ 115, 29 ],
+            "callback": "flow"
+        },
+        "saveTitle": {
+            "type": "label",
+            "position": [ 5, 21 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "Save liquid:",
+            "fontSize": 8
+        },
+        "save": {
+            "type": "button",
+            "base": "/interface/smallsliderbutton.png:off",
+            "hover": "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked": "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+            "checkable": true,
+            "checked": true,
+            "pressedOffset": [0, 0],
+            "position": [ 115, 17 ],
+            "callback": "flow"
+        },
+        "pourout": {
+            "type": "button",
+            "position": [ 58, 42 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "caption": "Pour out",
+            "callback": "pourout"
+        },
+        "progressImage": {
+            "type": "image",
+            "data": {
+                "file": "/interface/objectcrafting/liquidstorage/liquid.png",
+                "direction": "vertical"
+            },
+            "position": [ 125, 60 ],
+            "zlevel": -1
+        },
+        //! ItemGridItems--------------------------------------------------------------------------
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 7, 46 ],
+            "dimensions": [ 1, 2 ],
+            "spacing": [ 19, 40 ],
+            "backingImage": "/interface/inventory/empty.png"
+            }
+    },
+    "scriptWidgetCallbacks": [
+        "pourout",
+        "flow"
+    ],
+    "scriptDelta": 5,
+    "scripts": [
+        "/interface/objectcrafting/liquidstorage/liquidstorage.lua"
+    ]
+}
+
+

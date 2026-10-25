@@ -1,0 +1,10 @@
+{
+  "itemName" : "basicdatanode",
+  "price" : 40,
+  "rarity" : "common",
+  "category" : "research",
+  "inventoryIcon" : "basicdatanode.png",
+  "description" : "Node with a basic data set for technology research",
+  "shortdescription" : "Basic data node",
+  "itemTags" : [ "reagent", "node", "research" ]
+}

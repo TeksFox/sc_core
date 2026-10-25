@@ -1,0 +1,14 @@
+{
+    "itemName": "tindust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "tindust.png",
+    "description": "...",
+    "shortdescription": "Crushed tin",
+    "itemTags": [
+        "reagent",
+        "tin",
+        "raw"
+    ]
+}

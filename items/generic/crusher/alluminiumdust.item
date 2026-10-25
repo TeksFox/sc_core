@@ -1,0 +1,14 @@
+{
+    "itemName": "alluminiumdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "alluminiumdust.png",
+    "description": "...",
+    "shortdescription": "Crushed alluminium",
+    "itemTags": [
+        "alluminium",
+        "reagent",
+        "raw"
+    ]
+}

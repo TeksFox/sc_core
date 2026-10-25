@@ -1,0 +1,75 @@
+{
+    "objectName": "chemicalreactor",
+    "colonyTags": [
+        "factory",
+        "crafting"
+    ],
+    "printable": false,
+    "price": 0,
+    "rarity": "common",
+    "race": "generic",
+    "category": "crafting",
+    "description": "Used to turn ores and other materials into crafting ingredients.",
+    "shortdescription": "^orange;Primitive Furnace^white;",
+    "largeImage": "chemicalreactor.png:default",
+    "inventoryIcon": "icon.png",
+    "orientations": [
+        {
+            "dualImage": "chemicalreactor.png:default",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+
+
+    "scripts": [
+        "/scripts/objects/sf_object_crafting.lua",
+        "/scripts/smarttubes/conduitscripts/st_crafting.lua"
+    ],
+    "scriptDelta": 2,
+
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/crafting/crafting.ui",
+    "line": 2,
+    "durationMultipler": 1.75, 
+    
+    "objectfilters": [ "chemicalreactor" ],
+
+
+    "animation": "chemicalreactor.animation",
+    "animationParts" : {
+      "body" : "chemicalreactor.png",
+      "light" : "chemicalreactorlit.png"
+    },
+    "defaultAnimation": true,
+
+    "connectEnabled": false,
+    "outputNodes": [ [ 0, 0 ] ],
+    "uiconfig": {
+        "uiOpenSound": "/",
+        "uiClosedSound": "/",
+        "uiListSound": "/sfx/interface/clickon_success.ogg",
+        "category": [
+            {
+                "selected": true,
+                "friendlyname": "^cyan;Reagents",
+                "category": [ "reagent" ],
+                "order": 1,
+                "icon": "/interface/uiparts/icons/icon_list_cReagents.png"
+            },
+            {
+                "friendlyname": "^green;Liquids",
+                "category": [ "liquid" ],
+                "order": 2,
+                "icon": "/interface/uiparts/icons/icon_list_cLiquids.png"
+            }
+        ]
+    },
+    "conduitType": "station",
+    "recipes": "/recipes/furnace.config"
+
+}   

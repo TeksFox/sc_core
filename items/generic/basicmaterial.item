@@ -1,0 +1,10 @@
+{
+  "itemName" : "basicmaterial",
+  "price" : 10,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "basicmaterial.png",
+  "description" : "",
+  "shortdescription" : "Basic material",
+  "itemTags" : [ "reagent", "basicmaterial" ]
+}

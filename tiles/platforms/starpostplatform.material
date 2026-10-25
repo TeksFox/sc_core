@@ -1,0 +1,19 @@
+{
+  "materialId" : 30000,
+  "materialName" : "starpostplatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "starpostplatform",
+  "shortdescription" : "Star post Platform",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "starpostplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

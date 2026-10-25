@@ -1,0 +1,49 @@
+{
+    "objectName": "smallfactorycontainer", 
+    "price": 0,
+    "rarity": "common",
+    "race": "generic",
+    "category": "storage",
+    "objectType": "container",
+    "printable": false,
+    "description": "...",
+    "shortdescription": "^orange;Factory small container^white;",
+    "inventoryIcon": "icon.png",
+
+    "largeImage": "smallfactorycontainer.png:full",
+    "orientations": [
+        {
+            "dualImage": "smallfactorycontainer.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+    
+    "inputNodes": [ [ 0, 0 ] ],
+
+    "slotCount" : 24,
+    "uiConfig" : "/interface/chests/chest<slots>.config",
+    "frameCooldown" : 32,
+    "autoCloseCooldown": 3600,
+ 
+   
+    "scripts": [ "/scripts/objects/sf_object_colorizer.lua" ],
+    "scriptDelta": 50,
+
+
+    "animation": "smallfactorycontainer.animation",
+    "colorizer": true,
+
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "smallfactorycontainer.png",
+                "colors": { "default": [ "sf_steel", "sf_black", "sf_black" ] }
+            }
+        }
+    }
+}

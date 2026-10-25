@@ -1,0 +1,19 @@
+{
+       "margin": 0,
+       "name": "StarFactory_Factories",
+       "properties": {},
+       "spacing": 0,
+       "tilecount": 100,
+       "tileheight": 1,
+       "tilewidth": 1,
+       "tileproperties": {
+              "0": {
+                     "object": "chemicalextractor"
+              }
+       },
+       "tiles": {
+              "0": {
+                     "image": "..\/..\/tilesets\/factories\/chemicalextractor.png"
+              }
+       }
+}

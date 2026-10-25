@@ -1,0 +1,10 @@
+{
+  "itemName" : "aluminiumbar",
+  "price" : 40,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "aluminiumbar.png",
+  "description" : "It's a aluminium bar. Can be used to craft items.",
+  "shortdescription" : "Aluminium bar",
+  "itemTags" : [ "reagent" ]
+}

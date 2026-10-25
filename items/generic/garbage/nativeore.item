@@ -1,0 +1,10 @@
+{
+  "itemName" : "nativeore",
+  "price" : 50,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "nativeore.png",
+  "description" : "What is hidden inside this piece of ore? we need to break it up!",
+  "shortdescription" : "Native ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

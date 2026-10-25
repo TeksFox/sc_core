@@ -1,0 +1,35 @@
+{
+  "objectName": "extractionfacadeoccluded",
+  "colonyTags": [],
+  "printable": false,
+  "rarity": "Common",
+  "description": "Extracts items from containers",
+  "shortdescription": "Extraction Conduit",
+  "race": "generic",
+  "category": "transport",
+  "price": 45,
+  "inventoryIcon": "/objects/conduits/extractionconduit/base/tileset.png:icon",
+  "smashOnBreak": true,
+  "health": 3.0,
+  "orientations": [
+    {
+      "image": "/objects/conduits/extractionconduit/base/tileset.png:main",
+      "imagePosition": [ -8, -8 ],
+      "animationPosition": [ -8, -8 ],
+      "frames": 1,
+      "animationCycle": 1.0,
+      "renderLayer": "Platform-10",
+      "direction": "right"
+
+    }
+  ],
+  "interactAction": "ScriptPane",
+  "interactData": "/interface/smarttubes/extractionconduit/extractionconduit.ui",
+  "frameCooldown": 5,
+  "autoCloseCooldown": 3600,
+  "slotCount": 1,
+  "conduitType": "extraction",
+  "scriptDelta": 10,
+  "scripts": [ "/objects/conduits/extractionconduit/extractionconduit.lua", "/scripts/smarttubes/facade/st_facade.lua" ]
+
+}

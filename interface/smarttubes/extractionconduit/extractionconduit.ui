@@ -1,0 +1,679 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/smarttubes/extractionconduit/header.png",
+            "fileBody": "/interface/smarttubes/extractionconduit/body.png",
+            "fileFooter": "/interface/smarttubes/extractionconduit/footer.png"
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "",
+            "subtitle": " Element of the transport system",
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/coreIcons/colorizerPortrait.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "spectralText": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 8,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "top"
+        },  
+        "optionsTitleLabel": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 33, 303 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "OPTIONS",
+            "color": "gray"
+        },
+        "itemspecificTitleLabel": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 115, 303 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "ITEM SPECIFICS",
+            "color": "gray"
+        },
+        "loadedItemList": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 239, 303 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "ITEM LIST",
+            "color": "gray"
+        },
+        "conduitNameBox": {
+            "visible": false,
+            "type": "textbox",
+            "position": [ 0, 0 ],
+            "hint": "",
+            "textAlign": "left",
+            "callback": "ConduitNameChange"
+        },
+        "itemNameBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 248 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Item name"
+        },
+        "itemNameBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 232 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "^green;Item Name ^reset; \nThe Name of the item or items you wish to transfer\n\nSpecify ^orange;any^reset; for all items in container\n\nUse ^orange;@^reset; in front for item category\n\nUse ^orange;#^reset; for item type\n\nUse ^orange;&^reset; if the item name contains the word you specify\n\nUse ^orange;^^reset; exclude certains results",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 90
+        },
+        "insertIDBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 220 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Insert ID"
+        },
+        "insertIDBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 204 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "^green;Insert ID^reset; \nThe ID of the Insert Conduit you want to transfer to \n\nSpecify ^orange;any^reset; to transfer to all Insert Conduits \n\nYou can specify multiple IDs seperated by commas\n\nUse ^orange;^^reset; to exclude certain insertIDs",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 90
+        },
+        "takeFromSideBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 192 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Take from side"
+        },
+        "takeFromSideBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 176 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "Take From Side \n\nThe Inventory you want to take items from \n\nFor Ex. , specifying ^orange;left^reset; will take items from the left side of the Extraction Conduit \n\nYou can specify multiple values seperated by commas \n\nValid Sides : ^green;up,down,left,right^reset; \n\nSpecify ^orange;any^reset; for all sides",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 105
+        },
+        "insertIntoSideBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 164 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Insert into side"
+        },
+        "insertIntoSideBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 148 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "Insert Into Side \n\nThe Inventory you want to send items to \n\nFor Ex. , specifying ^orange;left^reset; will put items into the left side of the specified Insertion Conduit \n\nYou can specify multiple values seperated by commas \n\nValid Sides : ^green;up,down,left,right^reset; \n\nSpecify ^orange;any^reset; for all sides",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 105
+        },
+        "takeFromSlotBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 136 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Take from slot"
+        },
+        "takeFromSlotBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 120 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "Take from Slot \n\nThe Slot you want to take items from \n\nYou can specify multiple slot numbers by seperating them with ^cyan;commas and/or dashes^reset; \n\n Specify left for all slots",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 90
+        },
+        "insertIntoSlotBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 108 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Insert in slot"
+        },
+        "insertIntoSlotBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 92 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "Insert into Slot \n\nThe Slot you want to put items in \n\nYou can specify multiple slot numbers by seperating them with ^cyan;commas and/or dashes^reset; \n\n Specify left for all slots",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 90
+        },
+        "amountToLeaveBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 116, 80 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Amount to leave"
+        },
+        "amountToLeaveBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 70, 64 ],
+            "textAlign": "left",
+            "fontSize": 8,
+            "hint": "Set text",
+            "callback": "null",
+            "data": {
+                "tooltips": {
+                    "text": "Amount To Leave \n\nThe Amount of the item(s) you want to leave in the inventory\n\nIf you use a single number, it will define how much of the item will be left in the entire inventory \n\nIf you have multiple numbers, then it will define how much of the item is left in each slot",
+                    "textSize": 7
+                }
+            },
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 90
+        },
+        "itemBox": {
+            "type": "itemslot",
+            "position": [ 68, 279 ],
+            "backingImage": "/interface/actionbar/actionbarcover.png",
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "showDurability": true,
+            "zlevel": 1,
+            "callback": "itemBox",
+            "rightClickCallback": "itemBoxRight"
+        },
+        "autoCheckBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 89, 291 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Auto add"
+        },
+        "autoCheckBox": {
+            "type": "button",
+            "pressedOffset": [ 0, 0 ],
+            "position": [ 136, 287 ],
+            "base": "/interface/smallsliderbutton.png:off",
+            "hover": "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked": "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+            "checkable": true,
+            "callback": "AutoBoxUpdate",
+            "checked": false
+        },
+        "specificCheckBoxTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 89, 279 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth": 92,
+            "value": "Specific"
+        },
+        "specificCheckBox": {
+            "type": "button",
+            "pressedOffset": [ 0, 0 ],
+            "position": [ 136, 275 ],
+            "data": {
+                "tooltips":  {
+                    "text": "Config Slot \nPlace an item here and it will automatically fill in the information\nWhen auto is checked, items placed in the slot will be automatically added to the configs\nWhen specific is checked, it will do a more through check for the added item\nFor Example, if you want a specific type of sapling, make sure to check the ^orange;specific^reset; box",
+                    "textSize": 7
+                }
+            },
+            "base": "/interface/smallsliderbutton.png:off",
+            "hover": "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked": "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+            "checkable": true,
+            "callback": "SpecificBoxUpdate",
+            "checked": false
+        },
+        "addButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/addbutton.png:1",
+            "hover": "/interface/smarttubes/extractionconduit/addbutton.png:2",
+            "press": "/interface/smarttubes/extractionconduit/addbutton.png:2",
+            "data": {
+                "tooltips":  {
+                    "text": "Adds an item to the item list",
+                    "textSize": 8
+                }
+            },
+            "caption": "Add item",
+            "callback": "Add",
+            "position": [ 68, 259 ]
+        },
+        "removeButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/optionsbutton.png:2",
+            "hover": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "press": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "data": {
+                "tooltips":  {
+                    "text": "Remove an selected item to the item list",
+                    "textSize": 8
+                }
+            },
+            "caption": "Remove",
+            "position": [ 262, 18 ],
+            "callback": "Remove"
+        },
+        "copyButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/optionsbutton.png:1",
+            "hover": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "press": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "data": {
+                "tooltips":  {
+                    "text": "Copy the selected item from the item list",
+                    "textSize": 8
+                }
+            },
+            "caption": "Copy",
+            "position": [ 168, 33 ],
+            "callback": "Copy"
+        },
+        "pasteButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/optionsbutton.png:1",
+            "hover": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "press": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "data": {
+                "tooltips":  {
+                    "text": "Paste the copied item into the item list",
+                    "textSize": 8
+                }
+            },
+            "caption": "Paste",
+            "position": [ 215, 33 ],
+            "callback": "Paste"
+        },
+        "editButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/optionsbutton.png:4",
+            "hover": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "press": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "data": {
+                "tooltips":  {
+                    "text": "Edit the selected item from the list items",
+                    "textSize": 8
+                }
+            },
+            "caption": "Edit",
+            "position": [ 262, 33 ],
+            "callback": "Edit"
+        },
+        "saveButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/optionsbutton.png:5",
+            "hover": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "press": "/interface/smarttubes/extractionconduit/optionsbutton.png:3",
+            "data": {
+                "tooltips":  {
+                    "text": "Allows you to save all the downloaded pipe data, and drop it into the world",
+                    "textSize": 8
+                }
+            },
+            "caption": "Save",
+            "position": [ 168, 18 ],
+            "callback": "Save"
+        },
+        "orderUp": {
+            "type": "button",
+            "visible": false,
+            "base": "/interface/smarttubes/extractionconduit/Order Up.png",
+            "hover": "/interface/smarttubes/extractionconduit/Order Up Highlighted.png",
+            "press": "/interface/smarttubes/extractionconduit/Order Up Highlighted.png",
+            "callback": "orderUp",
+            "position": [ 0, 0 ]
+        },
+        "orderDown": {
+            "type": "button",
+            "visible": false,
+            "base": "/interface/smarttubes/extractionconduit/Order Down.png",
+            "hover": "/interface/smarttubes/extractionconduit/Order Down Highlighted.png",
+            "press": "/interface/smarttubes/extractionconduit/Order Down Highlighted.png",
+            "callback": "orderDown",
+            "position": [ 0, 0 ]
+        },
+        "searchBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 169, 49 ],
+            "hint": "Set search text",
+            "textAlign": "center",
+            "fontSize": 8,
+            "callback": "SearchChange",
+            "color": "orange",
+            "maxWidth": 133
+        },
+        "speedUpgrades": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 34, 272 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 50,
+            "value": "0"
+        },
+        "stackUpgrades": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [ 34, 236 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 50,
+            "value": "0"
+        },
+        "addSpeedUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:addb",
+            "hover": "/interface/smallarrowbuttons.png:addh",
+            "press": "/interface/smallarrowbuttons.png:addh",
+            "callback": "SpeedAdd",
+            "position": [ 8, 281 ]
+        },
+        "removeSpeedUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:remb",
+            "hover": "/interface/smallarrowbuttons.png:remh",
+            "press": "/interface/smallarrowbuttons.png:remh",
+            "callback": "SpeedRemove",
+            "position": [ 44, 281 ]
+        },
+        "addStackUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:addb",
+            "hover": "/interface/smallarrowbuttons.png:addh",
+            "press": "/interface/smallarrowbuttons.png:addh",
+            "callback": "StackAdd",
+            "position": [ 8, 246 ]
+        },
+        "removeStackUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:remb",
+            "hover": "/interface/smallarrowbuttons.png:remh",
+            "press": "/interface/smallarrowbuttons.png:remh",
+            "callback": "StackRemove",
+            "position": [ 44, 246 ]
+        },
+        "incrementColor": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:leftb",
+            "hover": "/interface/smallarrowbuttons.png:lefth",
+            "press": "/interface/smallarrowbuttons.png:lefth",
+            "callback": "ColorIncrement",
+            "position": [ 8, 211 ]
+        },
+        "decrementColor": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:rightb",
+            "hover": "/interface/smallarrowbuttons.png:righth",
+            "press": "/interface/smallarrowbuttons.png:righth",
+            "callback": "ColorDecrement",
+            "position": [ 44, 211 ]
+        },
+        "colorDisplay": {
+            "zlevel": 2,
+            "type": "image",
+            "file": "",
+            "position": [ 27, 212 ],
+            "scale": 1
+        },
+        "configArea": {
+            "type": "scrollArea",
+            "rect": [ 170, 62, 309, 297 ],
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+            "children": {
+                "itemList": {
+                    "type": "list",
+                    "callback": "SelectedItemChange",
+                    "schema": {
+                        "selectedBG": "/interface/smarttubes/extractionconduit/listbacking.png:active",
+                        "unselectedBG": "/interface/smarttubes/extractionconduit/listbacking.png:inactive",
+                        "disabledBG": "/interface/smarttubes/extractionconduit/listbacking.png:disabled",
+                        "spacing": [ 0, 1 ],
+                        "memberSize": [ 129, 59 ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "file": "/interface/smarttubes/extractionconduit/listbacking.png:inactive",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "itemName": {
+                                "type": "label",
+                                "position": [ 55, 48 ],
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Name : ",
+                                "color": "orange"
+                            },
+                            "insertIDLabel": {
+                                "type": "label",
+                                "position": [ 6, 38 ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Insert Conduit ID :",
+                                "color": "blue"
+                            },
+                            "insertID": {
+                                "type": "label",
+                                "position": [ 105, 38 ],
+                                "hAnchor": "right",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Conduit ID : ",
+                                "color": "blue"
+                            },
+                            "insertIntoSlotLabel": {
+                                "type": "label",
+                                "position": [ 6, 28 ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Insert Into Slot :"
+                            },
+                            "insertIntoSlot": {
+                                "type": "label",
+                                "position": [ 105, 28 ],
+                                "hAnchor": "right",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6
+                            },
+                            "takeFromSlotLabel": {
+                                "type": "label",
+                                "position": [ 6, 18 ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Take From Slot : "
+                            },
+                            "takeFromSlot": {
+                                "type": "label",
+                                "position": [ 105, 18 ],
+                                "hAnchor": "right",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6
+                            },
+                            "amountToLeaveLabel": {
+                                "type": "label",
+                                "position": [ 6, 8 ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "Amount To Leave : "
+                            },
+                            "amountToLeave": {
+                                "type": "label",
+                                "position": [ 105, 8 ],
+                                "hAnchor": "right",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 6
+                            },
+                            "order": {
+                                "type": "label",
+                                "position": [ 116, 28 ],
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 1191,
+                                "fontSize": 8,
+                                "value": "1"
+                            },
+                            "itemImage": {
+                                "type": "itemslot",
+                                "position": [ 107, 35 ],
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenEmpty": true,
+                                "showBackingImageWhenFull": true,
+                                "showDurability": true,
+                                "IconMode": true,
+                                "zlevel": 1,
+                                "callback": "null",
+                                "rightClickCallback": "null"
+                            },
+                            "specific": {
+                                "type": "label",
+                                "position": [ 90, 2 ],
+                                "hAnchor": "left",
+                                "wrapWidth": 1191,
+                                "fontSize": 6,
+                                "value": "",
+                                "color": "#9000ff"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/smarttubes/extractionconduit/Close Button/Close Button.png",
+            "hover": "/interface/smarttubes/extractionconduit/Close Button/Close Button Highlighted.png",
+            "press": "/interface/smarttubes/extractionconduit/Close Button/Close Button Highlighted.png",
+            "position": [
+                375,
+                230
+            ],
+            "pressedOffset": [
+                0,
+                0
+            ]
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "itemBox",
+        "itemBoxRight",
+        "Add",
+        "Remove",
+        "Copy",
+        "Paste",
+        "Edit",
+        "Save",
+        "ConduitNameChange",
+        "orderUp",
+        "orderDown",
+        "AutoBoxUpdate",
+        "SpecificBoxUpdate",
+        "SelectedItemChange",
+        "SearchChange",
+        "SpeedAdd",
+        "SpeedRemove",
+        "StackAdd",
+        "StackRemove",
+        "ColorIncrement",
+        "ColorDecrement"
+    ],
+    "scripts": [
+        "/interface/smarttubes/extractionconduit/extractionconduit.lua"
+    ],
+    "scriptDelta": 1
+}

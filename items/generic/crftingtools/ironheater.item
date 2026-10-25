@@ -1,0 +1,17 @@
+{
+  "itemName": "ironheater",
+  "price": 0,
+  "maxStack": 1,
+  "rarity": "uncommon",
+  "category": "tool",
+  "inventoryIcon": "ironheater.png",
+  "description": "Powerful heating element",
+  "shortdescription": "Iron heater",
+
+  "tool": "chemicalPlant",
+  "durability": 400,
+  "durabilityPerUse": 1,
+  
+  "tooltipKind": "sf_toolitem",
+  "builder": "/items/buildscripts/buildSFitem.lua"
+}

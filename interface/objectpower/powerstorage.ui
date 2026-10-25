@@ -1,0 +1,84 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/objectpower/storage_header.png",
+            "fileBody": "/interface/objectpower/storage_base.png",
+            "fileFooter": "/interface/objectpower/storage_footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "pressedOffset": [ 0, 0 ],
+            "position": [ 75, 115 ]
+        },
+        "battaryLabel": {
+            "type": "label",
+            "position": [ 46, 33 ],
+            "hAnchor": "mid",
+            "vAnchor": "bottom",
+            "value": "Battery charge",
+            "fontSize": 6,
+            "color": "orange"
+        },
+        "euCount": {
+            "zlevel": 8,
+            "type": "label",
+            "position": [ 46, 26 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 7
+        },
+        "OutputLabel": {
+            "type": "label",
+            "position": [ 46, 87 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Output / Input power",
+            "fontSize": 6
+        },
+        "maxInput": {
+            "type": "label",
+            "position": [ 46, 77 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 6
+        },
+        "maxStorageTitle": {
+            "type": "label",
+            "position": [ 46, 63 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Max EU capacity",
+            "fontSize": 6
+        },
+        "maxStorage": {
+            "type": "label",
+            "position": [ 46, 53 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6
+        },
+        "progressBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 7, 20 ],
+            "background": "/interface/objectpower/euBar.png:empty",
+            "progressSet": {
+                "inner": "/interface/objectpower/euBar.png:1",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        }
+    },
+    "scriptWidgetCallbacks": [
+    ],
+    "scripts": [
+        "/interface/objectpower/scripts/storage.lua"
+    ],
+    "scriptDelta": 5
+}

@@ -1,0 +1,16 @@
+{
+  "itemName" : "defensivetoken",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "_currency.png:defensivetoken",
+  "description" : "gain when disassembling or selling weapons and armor, as well as when killing creatures",
+  "shortdescription" : "Defensive token",
+  "currency" : "defensivetoken",
+  "category" : "Currency",
+  "value" : 1,
+  "pickupSoundsSmall" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsMedium" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsLarge" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "smallStackLimit" : 99,
+  "mediumStackLimit" : 999,
+  "maxStack" : 16777216
+}

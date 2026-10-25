@@ -1,0 +1,13 @@
+{
+    "input": [
+        { "item": "goldore", "count": 2, "prameters": { "tag": "gold" } },
+        { "item": "chlorine", "count": 5 },
+        { "item": "carbon", "count": 1 }
+    ],
+    "duration": 5,
+    "groups": [
+        "craftingfurnace2",
+        "bars",
+        "all"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "energycell",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "energycell.png",
+  "description" : "...",
+  "shortdescription" : "Carbon",
+  "itemTags" : [ "ammo" ]
+}

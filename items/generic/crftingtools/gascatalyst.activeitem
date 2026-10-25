@@ -1,0 +1,24 @@
+{
+  "itemName" : "gascatalyst",
+  "price" : 0,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "category" : "tool",
+  "description": "Adapter to improve the assembly machine, it allows you to use gases when assembling things",
+  "shortdescription": "Gas catalyst",
+  "twoHanded" : true,
+
+
+  "tool": "gascatalyst",
+  "durability": 250,
+  "durabilityPerUse": 1,
+
+  "inventoryIcon" : "gascatalyst.png",
+  "scripts" : [],
+  "animation" : "/animations/activeitem.animation",
+  "animationParts" : {
+    "objecttool" : "gascatalyst.png"
+  },
+  "animationCustom" : {}
+}

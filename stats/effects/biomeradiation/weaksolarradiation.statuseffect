@@ -1,0 +1,15 @@
+{
+    "name": "weaksolarradiation",
+    "blockingStat": "biomeradiationImmunity",
+    "effectConfig": {
+        "healthPercentage": 0.15,
+        "directives": "fade=AAFF88FF;0.15?border=2;AAFF8822;00000000"
+    },
+    "defaultDuration": 0.1,
+    "scripts": [
+        "weaksolarradiation.lua"
+    ],
+    "animationConfig": "weaksolarradiation.animation",
+    "label": "Weak solar radiation",
+    "icon": "/interface/statuses/weaksolarradiation.png"
+}

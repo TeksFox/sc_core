@@ -1,0 +1,10 @@
+{
+  "itemName" : "vanadiumore",
+  "price" : 250,
+  "rarity" : "rare",
+  "category" : "rawOre",
+  "inventoryIcon" : "vanadiumore.png",
+  "description" : ".",
+  "shortdescription" : "Vanadium ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

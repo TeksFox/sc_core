@@ -1,0 +1,10 @@
+{
+  "itemName" : "woodresin",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "liquid",
+  "inventoryIcon" : "woodresin.png",
+  "description" : "wood resin, very sticky and useful",
+  "shortdescription" : "Wood resin acid",
+  "itemTags" : [ "reagent", "liquid" ]
+}

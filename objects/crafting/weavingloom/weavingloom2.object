@@ -1,0 +1,57 @@
+{
+    "objectName": "weavingloom2",
+    "colonyTags": [ "factory", "crafting" ],
+    "printable": false,
+    "price": 0,
+    "race": "generic",
+    "category": "crafting",
+    "inventoryIcon": "icon.png:2",
+    "description": "",
+    "shortdescription": "Advanced Loom",
+    "rarity": "common",
+
+    "largeImage": "weavingloom2.png:full.1",
+
+    "orientations": [
+        {
+            "dualImage": "weavingloom2.png:full.1",
+            "imagePosition": [ 0, 0 ],
+            "frames": 5,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],
+
+    "animation": "weavingloom2.animation",
+    "defaultAnimation": true,
+    "scripts": [
+        "/scripts/objects/sf_object_crafting.lua",
+        "/scripts/objects/sf_object_colorizer.lua",
+        "/scripts/smarttubes/conduitscripts/st_crafting.lua"
+    ],
+    "scriptDelta": 2,
+
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/crafting/crafting.ui",
+    "line": 2,
+    "durationMultipler": 1.3,
+    "override": false,
+
+
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "weavingloom2.png",
+                "colors": { "active": [ "sf_steel", "sf_red", "sf_black", "sf_blue" ] }
+            }
+        }
+    },
+    "outputNodes": [ [ 0, 0 ] ],
+    "recipes":"/recipes/scripted/weavingloom.recipes",
+    "uiconfig": "weavingloom",
+    "objectfilters": [ "weavingloom", "craftingwheel", "craftingwheel2" ],
+
+    "conduitType": "station"
+}

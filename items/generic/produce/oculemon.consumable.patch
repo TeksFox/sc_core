@@ -1,0 +1,15 @@
+[
+    {
+        "op": "replace",
+        "path": "/maxStack",
+        "value": 100
+    },
+    {
+        "op": "remove",
+        "path": "/itemAgingScripts"
+    },
+    {
+        "op": "remove",
+        "path": "/rottingMultiplier"
+    }
+]

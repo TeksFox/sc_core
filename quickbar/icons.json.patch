@@ -1,0 +1,28 @@
+[
+    {
+        "op": "add",
+        "path": "/items/localanimator",
+        "value": {
+            "label": "^cyan;Local animator [SF]",
+            "icon": "/interface/uiparts/icons/icon_bar_animator.png",
+            "weight": -1000,
+            "action": [
+                "pane",
+                "/interface/scripted/localanimatorgui/localanimatorgui.ui"
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/items/worldmap",
+        "value": { 
+            "label": "^red;World map [SF]",
+            "icon": "/interface/uiparts/icons/icon_bar_blueprintlibrary.png",
+            "weight": -1002,
+            "action": [ 
+                "pane",
+                "/interface/scripted/worldmapui/worldmapui.ui"
+            ]
+        }
+    }
+]

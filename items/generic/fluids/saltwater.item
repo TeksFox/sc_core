@@ -1,0 +1,10 @@
+{
+  "itemName" : "saltwater",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "liquid",
+  "inventoryIcon" : "saltwater.png",
+  "description" : "Water with a high concentration of salt",
+  "shortdescription" : "Salt water",
+  "itemTags" : [ "reagent", "liquid" ]
+}

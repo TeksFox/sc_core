@@ -1,0 +1,104 @@
+{
+    "background": {
+        "type": "background",
+        "fileHeader": "/interface/uiparts/tooltips/sf_header.png",
+        "fileBody": "/interface/uiparts/tooltips/toolitembody.png",
+        "fileFooter": "/interface/uiparts/tooltips/sf_footer.png"
+    },
+
+    "priceLabel": {
+        "type": "label",
+        "position": [ 130, 25 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+
+    "priceTitleLabel": {
+        "type": "label",
+        "position": [ 10, 25 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Price:",
+        "color": "green"
+    },
+
+    "darabilityLabel": {
+        "type": "label",
+        "position": [ 69, 73 ],
+        "fontSize": 8,
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "cyan"
+    },
+
+    "blockRadiusLabel": {
+        "type": "label",
+        "position": [ 130, 49 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": ".",
+        "color": "green"
+    },
+
+    "blockRadiusTitleLabel": {
+        "type": "label",
+        "position": [ 10, 49 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Radius:",
+        "color": "green"
+    },
+
+    "tileDamageLabel": {
+        "type": "label",
+        "position": [ 130, 37 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+
+    "TileDamageTitleLabel": {
+        "type": "label",
+        "position": [ 10, 37 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Tile Damage:",
+        "color": "green"
+    },
+    "rarityLabel": {
+        "type": "label",
+        "position": [ 70, 145 ],
+        "fontSize": 8,
+        "zlevel": 10,
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "objectImage": {
+        "type": "image",
+        "position": [ 70, 112 ],
+        "centered": true,
+        "scale": 2,
+        "file": "",
+        "maxSize" : [72, 45],
+        "minSize" : [70, 40]
+    },
+
+    "barImage": {
+        "type": "image",
+        "position": [ 8, 57 ],
+        "zlevel": 1,
+        "centered": false,
+        "file": ""
+    }
+}

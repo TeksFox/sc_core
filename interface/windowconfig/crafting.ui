@@ -1,0 +1,321 @@
+{
+    "filter": [],
+    "titleFromEntity": true,
+    "requiresBlueprint": false,
+    "craftingSound": "/sfx/interface/crafting_furnace.ogg",
+    "paneLayout": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/crafting/factoryheader.png",
+            "fileBody": "/interface/crafting/factorybody.png",
+            "fileFooter": "/interface/crafting/factoryfooter.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/x.png",
+            "hover": "/interface/xhover.png",
+            "pressed": "/interface/xpress.png",
+            "pressedOffset": [
+                0,
+                0
+            ],
+            "position": [
+                318,
+                242
+            ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "  FURNACE",
+            "subtitle": "  Melt things!",
+            "position": [
+                -5,
+                252
+            ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/crafting/craftingfurnace.png",
+                "position": [
+                    0,
+                    -20
+                ],
+                "zlevel": -1
+            }
+        },
+        "bgShine": {
+            "type": "image",
+            "file": "/interface/crafting/shine.png",
+            "position": [
+                -15,
+                0
+            ],
+            "zlevel": -10
+        },
+        "btnUpgrade": {
+            "type": "button",
+            "disabledImage": "/interface/crafting/upgradeUnready.png",
+            "base": "/interface/crafting/upgradeReady.png",
+            "position": [ 139, 240 ],
+            "zlevel": 5
+        },
+        "lblSchematics": {
+            "type": "label",
+            "position": [
+                88,
+                228
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "BLUEPRINTS"
+        },
+        "spinCount": {
+            "type": "spinner",
+            "position": [
+                218,
+                17
+            ],
+            "upOffset": 36
+        },
+        "tbSpinCount": {
+            "type": "textbox",
+            "position": [
+                229,
+                17
+            ],
+            "color": "black",
+            "textAlign": "center",
+            "maxWidth": 16,
+            "regex": "x?\\d{0,4}",
+            "hint": ""
+        },
+        "imgAmountInput": {
+            "type": "image",
+            "file": "/interface/crafting/counter.png",
+            "position": [
+                227,
+                17
+            ],
+            "zlevel": -3
+        },
+        "btnCraft": {
+            "type": "button",
+            "base": "/interface/crafting/craft.png:1",
+            "hover": "/interface/crafting/craft.png:2",
+            "pressed": "/interface/crafting/craft.png:2",
+            "position": [
+                263,
+                17
+            ],
+            "caption": "Craft"
+        },
+        "btnStopCraft": {
+            "type": "button",
+            "base": "/interface/crafting/craft.png:3",
+            "hover": "/interface/crafting/craft.png:2",
+            "pressed": "/interface/crafting/craft.png:2",
+            "position": [
+                263,
+                17
+            ],
+            "caption": "Stop"
+        },
+        "currentRecipeIcon": {
+            "type": "itemslot",
+            "callback": "null",
+            "backingImage": "/interface/inventory/empty.png",
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "position": [
+                199,
+                17
+            ]
+        },
+        "btnFilterHaveMaterials": {
+            "type": "button",
+            "base": "/interface/smallsliderbutton.png:off",
+            "hover": "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked": "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+            "checkable": true,
+            "checked": false,
+            "position": [ 
+                145,
+                23 ]
+        },
+        "lblProduct": {
+            "type": "label",
+            "position": [ 9, 27 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "value": "MATERIALS AVAILABLE"
+        },
+        "description": {
+            "type": "widget",
+            "position": [
+                191,
+                43
+            ],
+            "size": [
+                140,
+                222
+            ]
+        },
+        "filter": {
+            "type": "textbox",
+            "position": [
+                11,
+                38
+            ],
+            "textAlign": "center",
+            "hint": "Search....",
+            "maxWidth": 150,
+            "escapeKey": "close",
+            "enterKey": "filter",
+            "focus": false
+        },
+        "scrollArea": {
+            "type": "scrollArea",
+            "rect": [ 6, 49, 174, 223 ],
+            "buttons": {
+                "horizontal": {
+                    "forward": {
+                        "base": "",
+                        "hover": "",
+                        "pressed": ""
+                    },
+                    "backward": {
+                        "base": "",
+                        "hover": "",
+                        "pressed": ""
+                    }
+                },
+                "vertical": {
+                    "forward": {
+                        "base": "/interface/scrollbuttons.png:1",
+                        "hover": "",
+                        "pressed": ""
+                    },
+                    "backward": {
+                        "base": "/interface/scrollbuttons.png:2",
+                        "hover": "",
+                        "pressed": ""
+                    }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": {
+                        "begin": "",
+                        "end": "",
+                        "inner": ""
+                    },
+                    "hover": {
+                        "begin": "",
+                        "end": "",
+                        "inner": ""
+                    },
+                    "pressed": {
+                        "begin": "",
+                        "end": "",
+                        "inner": ""
+                    }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "itemList": {
+                    "type": "list",
+                    "schema": {
+                        "selectedBG": "/interface/crafting/craftableselected2.png",
+                        "unselectedBG": "/interface/crafting/craftablebackground.png",
+                        "spacing": [
+                            0,
+                            1
+                        ],
+                        "memberSize": [
+                            159,
+                            20
+                        ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "file": "/interface/crafting/craftablebackground.png",
+                                "position": [
+                                    2,
+                                    0
+                                ],
+                                "zlevel": -1
+                            },
+                            "itemName": {
+                                "type": "label",
+                                "position": [
+                                    25,
+                                    5
+                                ],
+                                "hAnchor": "left",
+                                "wrapWidth": 116,
+                                "value": "Replace Me"
+                            },
+                            "itemIcon": {
+                                "type": "itemslot",
+                                "position": [
+                                    3,
+                                    1
+                                ],
+                                "callback": "null"
+                            },
+                            "newIcon": {
+                                "type": "image",
+                                "position": [
+                                    119,
+                                    5
+                                ],
+                                "file": "/interface/crafting/new.png",
+                                "zlevel": 2
+                            },
+                            "notcraftableoverlay": {
+                                "type": "image",
+                                "file": "/interface/crafting/notcraftableoverlay.png",
+                                "position": [
+                                    2,
+                                    0
+                                ],
+                                "zlevel": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "categories": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "position": [
+                175,
+                196
+            ],
+            "buttons": []
+        },
+        "rarities": {
+            "type": "radioGroup",
+            "toggleMode": true,
+            "buttons": []
+        }
+    }
+}

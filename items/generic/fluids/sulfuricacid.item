@@ -1,0 +1,19 @@
+{
+    "itemName": "sulfuricacid",
+    "price": 0,
+    "rarity": "uncommon",
+    "category": "liquid",
+    "inventoryIcon": "sulfuricacid.png",
+    "description": "Very dangerous and caustic liquid",
+    "shortdescription": "Sulfuric acid",
+    "itemTags": [
+        "reagent",
+        "liquid"
+    ],
+    "pickupSounds": [
+        "/sfx/itemPick/itembottlesmall_1.ogg",
+        "/sfx/itemPick/itembottlesmall_2.ogg",
+        "/sfx/itemPick/itembottlesmall_3.ogg",
+        "/sfx/itemPick/itembottlesmall_4.ogg"
+    ]
+}

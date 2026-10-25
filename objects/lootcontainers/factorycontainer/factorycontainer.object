@@ -1,0 +1,53 @@
+{
+    "objectName": "factorycontainer",
+    "colonyTags": [
+        "naturalcave",
+        "storage",
+        "commerce"
+    ],
+    "printable": false,
+    "rarity": "Common",
+    "objectType": "container",
+    "tooltipKind": "container",
+    "category": "storage",
+    "price": 15,
+    "description": "A mysterious wooden crate.",
+    "shortdescription": "Wooden Crate",
+    "race": "generic",
+    "health": 1.5,
+    "inventoryIcon": "factorycontainericon.png",
+    "orientations": [
+        {
+            "dualImage": "factorycontainer.png:default",
+            "imagePosition": [
+                0,
+                0
+            ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [
+                "bottom"
+            ]
+        }
+    ],
+    "animation": "factorycontainer.animation",
+    "animationParts": {
+        "body": "factorycontainer.png",
+        "light": "factorycontainerlit.png"
+    },
+    "scripts": [
+        "/scripts/objects/sf_object_lootcontainer.lua"
+    ],
+    "scriptDelta": 2,
+    "openSounds": [
+        "/sfx/objects/woodenbox_open.ogg"
+    ],
+    "closeSounds": [
+        "/sfx/objects/woodenbox_close.ogg"
+    ],
+    "slotCount": 24,
+    "uiConfig": "/interface/chests/chest<slots>.config",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600
+}

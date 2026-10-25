@@ -1,0 +1,49 @@
+{
+    "objectName": "smallfactorycrate", 
+    "price": 0,
+    "rarity": "common",
+    "race": "generic",
+    "category": "storage",
+    "objectType": "container",
+    "printable": false,
+    "description": "A small smart storage for an advanced assembly line",
+    "shortdescription": "^orange;Factory small crate^white;",
+    "inventoryIcon": "icon.png",
+
+    "largeImage": "smallfactorycrate.png:full",
+    "orientations": [
+        {
+            "dualImage": "smallfactorycrate.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+    
+    "inputNodes": [ [ 0, 0 ] ],
+
+    "slotCount" : 9,
+    "uiConfig" : "/interface/chests/chest<slots>.config",
+    "frameCooldown" : 32,
+    "autoCloseCooldown": 3600,
+ 
+   
+    "scripts": [ "/scripts/objectcolorizer.lua" ],
+    "scriptDelta": 50,
+
+
+    "animation": "smallfactorycrate.animation",
+    "colorizer": true,
+
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "smallfactorycrate.png",
+                "colors": { "default": [ "sf_steel", "sf_black", "sf_black" ] }
+            }
+        }
+    }
+}

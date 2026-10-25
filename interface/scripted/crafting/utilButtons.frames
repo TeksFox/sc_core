@@ -1,0 +1,32 @@
+{
+    "frameGrid": {
+        "size": [
+            22,
+            22
+        ],
+        "dimensions": [
+            4,
+            3
+        ],
+        "names": [
+            [
+                "add.base",
+                "complete.base",
+                "cancel.base",
+                "search.base"
+            ],
+            [
+                "add.hover",
+                "complete.hover",
+                "cancel.hover",
+                "search.hover"
+            ],
+            [
+                "add.disabled",
+                "complete.disabled",
+                "cancel.disabled",
+                "search.disabled"
+            ]
+        ]
+    }
+}

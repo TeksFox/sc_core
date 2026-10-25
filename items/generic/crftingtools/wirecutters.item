@@ -1,0 +1,17 @@
+{
+  "itemName": "wirecutters",
+  "price": 100,
+  "maxStack": 1,
+  "rarity": "rare",
+  "category": "tool",
+  "inventoryIcon": "wirecutters.png",
+  "description": "Very convenient wire cutters!",
+  "shortdescription": "Wire cutters",
+
+  "tool": "advancedworkbench",
+  "durabilityPerUse": 1,
+  "durability": 35,
+
+  "tooltipKind": "sf_toolitem",
+  "builder": "/items/buildscripts/buildSFitem.lua"
+}

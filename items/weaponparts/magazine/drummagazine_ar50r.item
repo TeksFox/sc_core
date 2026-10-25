@@ -1,0 +1,16 @@
+{
+    "itemName": "drummagazine_ar50r",
+    "price": 0,
+    "rarity": "common",
+    "category": "magazine",
+    "inventoryIcon": "drummagazine_ar50r.png",
+    "shortdescription": "drum magazine on 50 rounds",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "ar47m1" ],
+    "ammoCount": 50,
+    "reloadTime": [3.3, [-0.03, -0.07]],
+    "inaccuracy": [0.04, 0.09],
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

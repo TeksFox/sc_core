@@ -1,0 +1,17 @@
+{
+    "itemName": "hydraulicdrive",
+    "price": 350,
+    "maxStack": 1,
+    "rarity": "common",
+    "category": "tool",
+    "inventoryIcon": "hydraulicdrive.png",
+    "description": "Hydraulic drive of the assembly machine, a powerful, complex device",
+    "shortdescription": "Hydraulic drive",
+
+    "tool": "assemblymachine",
+    "durability": 300,
+    "durabilityPerUse": 1,
+
+    "tooltipKind": "sf_toolitem",
+    "builder": "/items/buildscripts/buildSFitem.lua"
+}

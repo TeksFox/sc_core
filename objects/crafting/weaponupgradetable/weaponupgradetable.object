@@ -1,0 +1,44 @@
+{
+    "objectName": "weaponupgradetable",
+    "colonyTags": [
+        "storage",
+        "commerce"
+    ],
+    "rarity": "Common",
+    "objectType": "container",
+    "description": "A convenient tool for cleaning inventory from unnecessary blocks, objects, or items",
+    "shortdescription": "Factory trash can",
+    "race": "generic",
+    "category": "storage",
+    "price": 0,
+    "health": 1.5,
+    "inventoryIcon": "icon.png",
+    "largeImage": "weaponupgradetable.png",
+    "orientations": [
+        {
+            "dualImage": "weaponupgradetable.png:<color>",
+            "imagePosition": [
+                -8,
+                0
+            ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [
+                "bottom"
+            ]
+        }
+    ],
+    "openSounds": [
+        "/sfx/objects/woodenbox_open.ogg"
+    ],
+    "closeSounds": [
+        "/sfx/objects/woodenbox_close.ogg"
+    ],
+    "slotCount": 20,
+    "uiConfig": "/interface/scripted/weaponupgrade/weaponupgrade.ui",
+    "frameCooldown": 5,
+    "autoCloseCooldown": 3600,
+    "scriptDelta": 5
+    
+}

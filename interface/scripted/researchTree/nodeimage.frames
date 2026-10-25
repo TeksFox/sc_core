@@ -1,0 +1,16 @@
+{
+    "frameGrid": {
+        "size": [
+            32,
+            32
+        ],
+        "dimensions": [
+            4,
+            2
+        ],
+        "names": [
+            [ "lock.base", "ready.base", "unlock.base", "unready.base" ],
+            [ "lock.hover", "ready.hover", "unlock.hover", "unready.hover" ]
+        ]
+    }
+}

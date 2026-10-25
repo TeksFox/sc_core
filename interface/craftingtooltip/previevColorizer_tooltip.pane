@@ -1,0 +1,30 @@
+{
+    "previevSize": [91, 84],
+    "previevTooltip": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/craftingtooltip/previev_header.png",
+            "fileBody": "/interface/craftingtooltip/previev_body.png",
+            "fileFooter": "/interface/craftingtooltip/previev_footer.png"
+        },
+        "text": {
+            "type": "label",
+            "position": [ 65, 116 ],
+            "wrapWidth": 105,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 8,
+            "value": "PREVIEW"
+        }
+    },
+    "image": {
+        "type": "image",
+        "file": "",
+        "scale": 0.7,
+        "centered": false,
+        "size": [0, 0],
+        "position": [ 44, 44 ],
+        "zlevel": -5
+    }
+    
+}

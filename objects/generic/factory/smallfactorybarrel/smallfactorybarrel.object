@@ -1,0 +1,41 @@
+{
+    "objectName": "smallfactorybarrel",
+    "rarity": "Common",
+    "objectType": "container",
+    "description": "A simple metal barrel with a fullness indicator \n ^orange;stores 10000 units of liquid^white;",
+    "shortdescription": "Small liquid barrel",
+    "race": "generic",
+    "category": "storage",
+    "price": 0,
+    "health": 1.5,
+    "inventoryIcon": "icon.png",
+    "largeImage": "part_body.png:full",
+    "orientations": [
+        {
+            "dualImage": "part_body.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ], "collision": "platform" }
+    ],
+    "slotCount": 2,
+    "uiConfig": "/interface/objectcrafting/liquidstorage/liquidstorage.ui",
+    "frameCooldown": 5,
+    "autoCloseCooldown": 3600,
+    "scripts": [ "/objects/scripts/liquidbarrel.lua" ],
+    "breakDropOptions" : [],
+
+    "indicatorRect": [ 0, 0, 3, 12 ],
+    "scriptDelta": 10,
+    "barrelSpace": 10000,
+    "slots": [1, 2],
+    "adding": 100,
+    "consumption": 500,
+
+    "animation": "smallfactorybarrel.animation",
+    "animationParts": {
+        "body": "part_body.png",
+        "fullbright": "part_fullbright.png"
+    }
+}

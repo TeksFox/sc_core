@@ -1,0 +1,10 @@
+{
+  "itemName" : "salt",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "salt.png",
+  "description" : ".",
+  "shortdescription" : "Salt",
+  "itemTags" : [ "reagent", "raw" ]
+}

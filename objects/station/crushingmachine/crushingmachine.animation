@@ -1,0 +1,38 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": { "frames": 1 },
+                    "active": {
+                        "frames": 4,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "persistentSound": "/sfx/objects/crusher.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": {
+                    "centered": false
+                },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<partImage>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<partImage>:active.<frame>" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "itemName" : "goldcrown",
+  "rarity" : "essential",
+  "inventoryIcon" : "_currency.png:goldcrown",
+  "description" : "It is not clear why they use these coins, but they are definitely valuable",
+  "shortdescription" : "Gold crown",
+  "currency" : "goldcrown",
+  "category" : "Currency",
+  "value" : 1,
+  "pickupSoundsSmall" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsMedium" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsLarge" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "smallStackLimit" : 99,
+  "mediumStackLimit" : 999,
+  "maxStack" : 1000000
+}

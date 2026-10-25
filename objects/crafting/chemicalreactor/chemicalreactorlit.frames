@@ -1,0 +1,18 @@
+{
+    "frameGrid": {
+        "size": [
+            32,
+            48
+        ],
+        "dimensions": [
+            12,
+            1
+        ],
+        "names": [
+            [ "idle.1", "active.1" ]
+        ]
+    },
+    "defaultFrames": {
+        "default.default": "idle.1"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "input": [
+        { "item": "nickelore", "count": 2, "parameters": { "tag": "nickel" } },
+        { "item": "sulfuricacid", "count": 10 }
+    ],
+    "output": {
+        "item": "nickelbar",
+        "count": 1
+    },
+    "duration": 6,
+    "groups": [
+        "craftingfurnace3",
+        "bars",
+        "all"
+    ]
+}

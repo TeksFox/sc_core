@@ -1,0 +1,14 @@
+{
+    "input": [
+        { "item": "titaniumore", "count": 2, "parameters": { "tag": "titanium" }  },
+        { "name": "chlorine", "count": 10 },
+        { "name": "carbon", "count": 2 }
+    ],
+    "duration": 5,
+    "groups": [
+        "craftingfurnace3",
+        "basicfurnace",
+        "bars",
+        "all"
+    ]
+}

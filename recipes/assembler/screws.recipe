@@ -1,0 +1,19 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 2
+        },
+        {
+            "item": "liquidoil",
+            "count": 10
+        }
+    ],
+    "output": {
+        "item": "screws",
+        "count": 10,
+        "parameters": {}
+    },
+    "duration": 15,
+    "groups": [ "items", "workbench" ]
+}

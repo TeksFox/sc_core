@@ -1,0 +1,14 @@
+{
+    "itemName": "silverdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "silverdust.png",
+    "description": "...",
+    "shortdescription": "Crushed Silver",
+    "itemTags": [
+        "reagent",
+        "silver",
+        "raw"
+    ]
+}

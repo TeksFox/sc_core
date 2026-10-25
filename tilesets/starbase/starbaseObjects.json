@@ -1,0 +1,35 @@
+{
+       "margin": 0,
+       "name": "StarFactory props",
+       "properties": {},
+       "spacing": 0,
+       "tilecount": 500,
+       "tileheight": 1,
+       "tilewidth": 1,
+       "tileproperties": {
+              "0": { "object": "starlargecontainer_red" },
+              "1": { "object": "starlargecontainer_blue" },
+              "2": { "object": "starlargecontainer_green" },
+              "3": { "object": "starheavygate" },
+              "4": { "object": "junkshop" },
+              "5": { "object": "fluffysheepshop" },
+              "6": { "object": "starpostinfobooth" },
+              "7": { "object": "starposttable" },
+              "8": { "object": "starpostchair" },
+              "9": { "object": "starposttree" },
+              "10": { "object": "starpostbankterminal" }
+       },
+       "tiles": {
+              "0": { "image": "../../objects/thematic/starfactoryoutpost/starlargecontainer/starlargecontainer_red.png" },
+              "1": { "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/starlargecontainer\/starlargecontainer_blue.png" },
+              "2": { "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/starlargecontainer\/starlargecontainer_green.png" },
+              "3": { "image": "..\/..\/tilesets\/starbase\/sprites\/starheavygate.png" },
+              "4": { "image": "..\/..\/tilesets\/starbase\/sprites\/junkshop.png" },
+              "5": { "image": "..\/..\/tilesets\/starbase\/sprites\/fluffysheepshop.png" },
+              "6": { "image": "..\/..\/tilesets\/starbase\/sprites\/starpostinfobooth.png" },
+              "7": { "image": "..\/..\/tilesets\/starbase\/sprites\/starposttable.png" },
+              "8": { "image": "..\/..\/tilesets\/starbase\/sprites\/starpostchair.png" },
+              "9": { "image": "..\/..\/tilesets\/starbase\/sprites\/starposttree.png" },
+              "10": { "image": "..\/..\/tilesets\/starbase\/sprites\/starpostbankterminal.png" }
+       }
+}

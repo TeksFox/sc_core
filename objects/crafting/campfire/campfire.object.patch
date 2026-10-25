@@ -1,0 +1,70 @@
+[
+    {
+        "op": "replace",
+        "path": "/interactAction",
+        "value": "ScriptPane"
+    },
+    {
+        "op": "replace",
+        "path": "/interactData",
+        "value": "/interface/scripted/crafting/crafting.ui"
+    },
+    {
+        "op": "add",
+        "path": "/recipes",
+        "value": []
+    },
+    {
+        "op": "add",
+        "path": "/recipes/-",
+        "value": "/recipes/scripted/campfire.recipes"
+    },
+    {
+        "op": "add",
+        "path": "/line",
+        "value": 2
+    },
+    {
+        "op": "add",
+        "path": "/maxItemInLine",
+        "value": 2
+    },
+    {
+        "op": "add",
+        "path": "/durationMultipler",
+        "value": 1.75
+    },
+    {
+        "op": "add",
+        "path": "/objectfilters",
+        "value":[ "campfire" ]
+    },
+    {
+        "op": "add",
+        "path": "/scripts",
+        "value": []
+    },
+    {
+        "op": "add",
+        "path": "/scripts/-",
+        "value":  "/scripts/objects/sf_object_crafting.lua" 
+    },
+    {
+        "op": "add",
+        "path": "/uiconfig",
+        "value": {
+            "openSound": "",
+            "category": [
+                {
+                    "selected": true,
+                    "friendlyname": "^cyan;Ingredients",
+                    "category": [
+                        "all"
+                    ],
+                    "order": 0,
+                    "icon": "/interface/icons/list_string.png"
+                }
+            ]
+        }
+    }
+]

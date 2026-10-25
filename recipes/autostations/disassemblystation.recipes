@@ -1,0 +1,262 @@
+{
+    //! Recipes------------------------------------------------------------------------
+    "recipe":[
+        {
+            "groups": [ "all", "liquid" ],
+            "input": [
+                { "name": [ "contaminatedwater", "swampwater" ], "count": 20 }
+            ],
+            "output": [
+                { "name": "liquidwater", "count": [ 10, 15] },
+                { "name": "sulphur", "count": [ 1, 2 ], "chance": 0.25 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.15 }
+            ],
+            "euConsume": 0,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "liquid" ],
+            "input": [
+                {
+                    "name": "biosample",
+                    "count": 1
+                }
+            ],
+            "output": [
+                { "name": "liquidpoison", "count": [ 5, 15] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.15 }
+            ],
+            "level": 1
+        },
+        {
+            "groups": [ "all", "liquid"],
+            "input":[
+                { "name": "liquidwater", "count": 30 }
+            ],
+            "output": [
+                { "name": "oxygen", "count": [ 8, 12 ] },
+                { "name": "hydrogen", "count": [ 12, 15 ] },
+                { "name": "slag", "count": [ 1, 2 ], "chance": 0.80 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.15 }
+            ],
+            "level": 1
+        },
+        {
+            "groups": [ "all", "liquid"],
+            "input":[
+                { "name": "distilledwater", "count": 30 }
+            ],
+            "output": [
+                { "name": "oxygen", "count": 12 },
+                { "name": "hydrogen", "count": 18 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "level": 2
+        },
+        {
+            "groups": [ "all", "liquid"],
+            "input":[
+                { "name": "saltwater", "count": 30 }
+            ],
+            "output": [
+                { "name": "chlorine", "count": [ 8, 12 ] },
+                { "name": "hydrogen", "count": [ 12, 15 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "level": 2
+        },
+        {
+            "groups": [ "all", "liquid"],
+            "input":[
+                { "name": "liquidwater", "count": 20 },
+                { "name": "salt", "count": 10 },
+                { "name": "ash", "count": 20 }
+            ],
+            "output": [
+                { "name": "saltwater", "count": 25 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.35 }
+            ],
+            "delay": 3.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "liquid"],
+            "input":[
+                { "name": "liquidwater", "count": 50 },
+                { "name": "oxygen", "count": 20 },
+                { "name": "crushedsulphur", "count": 5 }
+            ],
+            "output": [
+                { "name": "sulfuricacid", "count": 80 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.35 }
+            ],
+            "level": 2
+        },
+        {
+            "groups": [ "all", "reagent" ],
+            "input": [
+                { "name": "liquidwater", "count": 20}
+            ],
+            "output": [
+                { "name": "salt", "count": [ 1, 2 ] },
+                { "name": "distilledwater", "count": [ 5, 10 ], "chance": 0.50 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.15 }
+            ],
+            "level": 1
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name": "dirtmaterial",
+            "input": [
+                {
+                    "name": [ "dirtmaterial", "drydirt", "wetdirt", "mud", "frozendirt" ],
+                    "count": 20
+                }
+            ],
+            "output": [
+                { "name": "slag", "count": 1 },
+                { "name": "bone", "count": 1, "chance": 0.35 },
+                { "pool": "rootcropseedsPool" }
+            ],
+            "custom":{ "liquid": "liquidwater", "liquidcount": 10 },
+            "level": 1
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name":"sand2",
+            "input": [
+                {
+                    "name": [ "sand2", "sand", "drysand" ],
+                    "count": 20
+                }
+            ],
+            "output": [
+                { "name": "slag", "count": 1},
+                { "name": "quartzore", "count": [ 1, 2 ], "chance": 0.45 },
+                { "name": "productiontoken", "count": 1, "chance": 0.05 }
+            ],
+            "custom":{ "liquid": "liquidwater", "liquidcount": 10 },
+            "level": 1
+        
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name":"plantmatter",
+            "input": [
+                {
+                    "name": [ "plantmatter", "floweryblock" ],
+                    "count": 20
+                }
+            ],
+            "output": [
+                { "name": "plantfibre", "count": [ 1, 5 ] },
+                { "name": "livingroot", "count": 1, "chance": 0.15 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.15 },
+                { "name": "agriculturaltoken", "count": [ 1, 3 ], "chance": 0.05 }
+            ],
+            "level": 1
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name":"gravelmaterial",
+            "input": [
+                {
+                    "name": [ "gravelmaterial", "clay" ],
+                    "count": 20
+                }
+            ],
+            "output": [
+                { "name": "slag", "count": 1 },
+                { "name": "aluminiumore", "count": [ 1, 2 ], "chance": 0.25  },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.20 }
+            ],
+            "custom":{ "liquid": "chlorine", "liquidcount": 10 },
+            "level": 2
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name":"moondust",
+            "input": [
+                {
+                    "name": [ "moondust", "moonstone", "moonrock" ],
+                    "count": 20
+                }
+            ],
+            "output": [
+                { "name": "slag", "count": 1 },
+                { "name": "solidfuel", "count": [ 1, 3 ], "chance": 0.45 },
+                { "name": "naoniteore", "count": 1, "chance": 0.07 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "custom":{ "liquid": "sulfuricacid", "liquidcount": 10 },
+            "level": 2
+        },
+        {
+            "groups": [ "all", "soil" ],
+            "name":"cobblestonematerial",
+            "input": [
+                {
+                    "name": [
+                        "blaststone",
+                        "cobblestonematerial",
+                        "direstone",
+                        "limestone",
+                        "magmarock",
+                        "meteoriterock",
+                        "rock04", 
+                        "rock12",
+                        "rock14",
+                        "rock15",
+                        "rock19",
+                        "rock20",
+                        "grassyrock"
+                    ],
+                    "count": 50
+                }
+            ],
+            "output": [
+                { "name": "slag", "count": 1 },
+                { "name": "productiontoken", "count": [ 3, 5 ], "chance": 0.30 },
+   
+                { "pool": "orePool" }
+            ],
+            "custom":{ "liquid": "sulfuricacid", "liquidcount": 10 },
+            "level": 2,
+            "euConsumed": 90
+        }
+    ],
+    //
+    //! Pools--------------------------------------------------------------------------
+    "pool":{   
+        "rootcropseedsPool": [
+            [ 0.10, [ "productiontoken", 1 ] ],
+            [ 0.01, [ "tomatoseed", 1 ] ],
+            [ 0.01, [ "cornseed", 1 ] ],
+            [ 0.01, [ "cottonseed", 1 ] ],
+            [ 0.01, [ "dirturchinseed", 1 ] ],
+            [ 0.01, [ "grapesseed", 1 ] ],
+            [ 0.01, [ "wheatseed", 1 ] ],
+            [ 0.01, [ "potatoseed", 1 ] ],
+            [ 0.01, [ "carrotseed", 1 ] ],
+            [ 0.01, [ "eggshootseed", 1 ] ]
+        ], 
+        "orePool": [
+            [ 0.25, [ "ironore", [ 1, 3 ] ] ],
+            [ 0.20, [ "tungstenore", [ 1, 3 ] ] ],
+            [ 0.15, [ "copperore", [ 1, 3 ] ] ],
+            [ 0.15, [ "lead", [ 1, 3 ] ] ],
+            [ 0.15, [ "tinore", [ 1, 3 ] ] ],
+            [ 0.15, [ "silverore", [ 1, 3 ] ] ],
+            [ 0.05, [ "goldore", [ 1, 3 ] ] ],
+            [ 0.05, [ "platinumore", [ 1, 3 ] ] ],
+            [ 0.10, [ "durasteelore", [ 1, 2 ] ] ],
+            [ 0.10, [ "sulphur", [ 1, 2 ] ] ],
+            [ 0.10, [ "coalore", [ 1, 2 ] ] ],
+            [ 0.10, [ "quartzore", [ 1, 2 ] ] ],
+            [ 0.05, [ "manganeseore", [ 1, 2 ] ] ]
+        ]
+    },
+    "tools": {
+        "filter": ["carbonfilter"]
+    }
+}

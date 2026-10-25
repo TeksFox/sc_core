@@ -1,0 +1,14 @@
+{
+    "itemName": "nickeldust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "nickeldust.png",
+    "description": "...",
+    "shortdescription": "Crushed Nickel",
+    "itemTags": [
+        "nickel",
+        "reagent",
+        "raw"
+    ]
+}

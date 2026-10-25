@@ -1,0 +1,202 @@
+{
+    "pool": "/treasure/crafting/washer.treasurepools",
+    "recipes": {
+        "none": [
+            {
+                "name":"copperbar",
+                "input": [
+                    { "names": ["copperore", "crushedcopper", "copperdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "copperbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"tinbar",
+                "input": [
+                    { "names": ["tinore", "crushedtin", "tindust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "tinbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"leadbar",
+                "input": [
+                    { "names": ["lead", "crushedlead", "leaddust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "leadbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"silverbar",
+                "input": [
+                    { "names": [ "silverore", "crushedsilver", "silverdust" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "silverbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"goldbar",
+                "input": [
+                    { "names": ["goldore", "crushedgold", "golddust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "goldbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"platinumbar",
+                "input": [
+                    { "names": ["platinumore", "crushedplatinum", "platinumdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "platinumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 2
+            },
+            {
+                "name":"ironbar",
+                "input": [
+                    { "names": ["ironore", "crushediron", "irondust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "ironbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"tungstenbar",
+                "input": [
+                    { "names": ["tungstenore", "crushedtungsten", "tungstendust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "tungstenbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"titaniumbar",
+                "input": [
+                    { "names": ["titaniumore", "crushedtitanium", "titaniumdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "titaniumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 2
+            },
+            {
+                "name":"durasteelbar",
+                "input": [
+                    { "names": ["durasteelore", "crusheddurasteel", "durasteeldust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "durasteelbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 3
+            },
+            {
+                "name":"glass",
+                "input": [
+                    { "names": ["sand", "sand2"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "glass", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"firedclay",
+                "input": [
+                    { "name": "clay", "count": 2 }
+                ],
+                "output": [
+                    { "name": "firedclay", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"paper",
+                "input": [
+                    { "name": "logblock", "count": 2 }
+                ],
+                "output": [
+                    { "name": "paper", "count": 5 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1
+            },
+            {
+                "name":"volatilepowder",
+                "input": [
+                    { "name": "corefragmentore", "count": 1 }
+                ],
+                "output": [
+                    { "name": "volatilepowder", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 2
+            },
+            {
+                "name":"cokecoal",
+                "input": [
+                    { "name": "coalore", "count": 1 }
+                ],
+                "output": [
+                    { "name": "cokecoal", "count": 1 },
+                    { "name": "creosote", "count": 5 },
+                    { "name": "creosotegas", "count": 2 }
+                ],
+                "delay": 200,
+                "level": 1
+            }
+        ]
+    }
+}

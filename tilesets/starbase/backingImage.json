@@ -1,0 +1,167 @@
+{
+       "margin": 0,
+       "name": "Star factory base",
+       "properties": {},
+       "spacing": 0,
+       "tilecount": 371,
+       "tileheight": 520,
+       "tilewidth": 520,
+       "tileproperties": {
+              "0": {
+                     "object": "starfactory_backimage_000",
+                     "tilesetDirection": "right"
+              },
+              "1": {
+                     "object": "starfactory_backimage_001",
+                     "tilesetDirection": "right"
+              },
+              "2": {
+                     "object": "starfactory_backimage_002",
+                     "tilesetDirection": "right"
+              },
+              "3": {
+                     "object": "starfactory_backimage_003",
+                     "tilesetDirection": "right"
+              },
+              "4": {
+                     "object": "starfactory_backimage_004",
+                     "tilesetDirection": "right"
+              },
+              "5": {
+                     "object": "starfactory_backimage_005",
+                     "tilesetDirection": "right"
+              },
+              "6": {
+                     "object": "starfactory_backimage_006",
+                     "tilesetDirection": "right"
+              },
+              "7": {
+                     "object": "starfactory_backimage_007",
+                     "tilesetDirection": "right"
+              },
+              "8": {
+                     "object": "starfactory_backimage_008",
+                     "tilesetDirection": "right"
+              },
+              "9": {
+                     "object": "starfactory_backimage_009",
+                     "tilesetDirection": "right"
+              },
+              "10": {
+                     "object": "starfactory_backimage_010",
+                     "tilesetDirection": "right"
+              },
+              "11": {
+                     "object": "starfactory_backimage_011",
+                     "tilesetDirection": "right"
+              },
+              "12": {
+                     "object": "starfactory_backimage_012",
+                     "tilesetDirection": "right"
+              },
+              "13": {
+                     "object": "starfactory_backimage_013",
+                     "tilesetDirection": "right"
+              },
+              "14": {
+                     "object": "starfactory_backimage_014",
+                     "tilesetDirection": "right"
+              },
+              "15": {
+                     "object": "starfactory_backimage_015",
+                     "tilesetDirection": "right"
+              },
+              "16": {
+                     "object": "starfactory_backimage_016",
+                     "tilesetDirection": "right"
+              },
+              "17": {
+                     "object": "starfactory_backimage_017",
+                     "tilesetDirection": "right"
+              },
+              "18": {
+                     "object": "starfactory_backimage_018",
+                     "tilesetDirection": "right"
+              },
+              "19": {
+                     "object": "starfactory_backimage_019",
+                     "tilesetDirection": "right"
+              },
+              "20": {
+                     "object": "starfactory_backimage_020",
+                     "tilesetDirection": "right"
+              },
+              "21": {
+                     "object": "starfactory_backimage_021",
+                     "tilesetDirection": "right"
+              }
+       },
+       "tiles": {
+              "0": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_000.png"
+              },
+              "1": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_001.png"
+              },
+              "2": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_002.png"
+              },
+              "3": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_003.png"
+              },
+              "4": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_004.png"
+              },
+              "5": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_005.png"
+              },
+              "6": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_006.png"
+              },
+              "7": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_007.png"
+              },
+              "8": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_008.png"
+              },
+              "9": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_009.png"
+              },
+              "10": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_010.png"
+              },
+              "11": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_011.png"
+              },
+              "12": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_012.png"
+              },
+              "13": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_013.png"
+              },
+              "14": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_014.png"
+              },
+              "15": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_015.png"
+              },
+              "16": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_016.png"
+              },
+              "17": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_017.png"
+              },
+              "18": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_018.png"
+              },
+              "19": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_019.png"
+              },
+              "20": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_020.png"
+              },
+              "21": {
+                     "image": "..\/..\/objects\/thematic\/starfactoryoutpost\/base\/starfactory_backimage_021.png"
+              }
+       }
+}

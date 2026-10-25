@@ -1,0 +1,9 @@
+{
+    "itemName": "quartzore",
+    "rarity": "uncommon",
+    "inventoryIcon": "quartzore.png",
+    "category": "rawOre",
+    "description": "Quartz ore. Can be smelted into bars for crafting items.",
+    "shortdescription": "Quartz Ore",
+    "itemTags": [ "reagent", "raw" ]
+}

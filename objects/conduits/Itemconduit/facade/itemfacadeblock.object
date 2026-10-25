@@ -1,0 +1,44 @@
+{
+    "objectName": "itemfacadeblock",
+    "colonyTags": [],
+    "printable": false,
+    "rarity": "Common",
+    "description": "Transfers Items",
+    "shortdescription": "Item Conduit",
+    "race": "generic",
+    "category": "transport",
+    "price": 45,
+    "inventoryIcon": "/objects/conduits/Itemconduit/base/tileset.png:icon",
+    "smashOnBreak": true,
+    "health": 3.0,
+    "orientations": [
+        {
+            "image": "/objects/conduits/Itemconduit/base/tileset.png:main",
+            "imagePosition": [
+                -8,
+                -8
+            ],
+            "animationPosition": [
+                -8,
+                -8
+            ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "renderLayer": "Platform-10",
+            "direction": "right"
+        }
+    ],
+    "frameCooldown": 5,
+    "autoCloseCooldown": 3600,
+    "slotCount": 1,
+    "animation": "/Animations/Cable.animation",
+    "animationParts": {
+        "cables": "/objects/conduits/Itemconduit/base/tileset.png"
+    },
+    "conduitType": "item",
+    "scriptDelta": 2,
+    "scripts": [
+        "/objects/conduits/Itemconduit/Itemconduit.lua",
+        "/scripts/smarttubes/facade/st_facade.lua"
+    ]
+}

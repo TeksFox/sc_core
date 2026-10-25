@@ -1,0 +1,15 @@
+{
+    "input": [
+        { "item": "tinore", "count": 2, "parameters": { "tag": "tin" } }
+    ],
+    "output": {
+        "item": "tinbar",
+        "count": 1
+    },
+    "duration": 5,
+    "groups": [
+        "craftingfurnace",
+        "bars",
+        "all"
+    ]
+}

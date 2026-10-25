@@ -1,0 +1,124 @@
+{
+    "itemName": "co_assaultrifle",
+    "price": 960,
+    "maxStack": 1,
+    "rarity": "rare",
+    "description": "A fully automatic military grade rifle.",
+    "shortdescription": "Iron Assault Rifle",
+    "tooltipKind": "gunammo",
+    "category": "assaultRifle",
+    "twoHanded": true,
+    "upgrade": true,
+    "itemTags": [
+        "weapon",
+        "ranged",
+        "assaultrifle"
+    ],
+    "dealer": "coalition",
+    "level": 1,
+    "inventoryIcon": "co_assaultrifle.png",
+    "animation": "/items/active/weapons/upgradable/upgradable.animation",
+    "animationParts": {
+        "butt": "",
+        "middle": "co_assaultrifle.png",
+        "barrel": "",
+        "clip": "smallclip.png",
+        "muzzleFlash": "/items/active/weapons/ranged/muzzleFlash/physical.png"
+    },
+    "animationCustom": {
+        "particleEmitters": {
+            "muzzleFlash": {
+                "transformationGroups": [
+                    "muzzle"
+                ],
+                "particles": [
+                    {
+                        "particle": "dust2",
+                        "offset": [
+                            0,
+                            -0.4
+                        ]
+                    }
+                ]
+            }
+        },
+        "sounds": {
+            "fire": [
+                "/sfx/gun/co_assaultrifle.wav"
+            ],
+            "reloadStart": [
+                "/sfx/ReloadStart.wav"
+            ],
+            "reloadEnd": [
+                "/sfx/ReloadEnd.wav"
+            ],
+            "empty": [
+                "/sfx/EmptyClick3.wav"
+            ]
+        }
+    },
+    "baseOffset": [
+        0.3,
+        0.15
+    ],
+    "muzzleOffset": [
+        1.7,
+        0.47
+    ],
+    "scripts": [
+        "/items/active/weapons/ranged/gun.lua"
+    ],
+    "elementalType": "physical",
+
+    "ammoType": "rifleAmmo",
+    "ammoCount": 20,
+    "ammoLoadet": 0,
+    "reloadTime": 2.2,
+    "upgrades": {},
+
+    "primaryAbility": {
+        "scripts": [
+            "/items/active/weapons/gunammo.lua"
+        ],
+        "class": "GunFire",
+        "fireTime": 0.05,
+        "baseDps": 10.5,
+        "inaccuracy": 0.02,
+        "projectileCount": 1,
+        
+        "fireType": "auto",
+        "projectileType": "standardbullet",
+        "projectileParameters": {
+            "knockback": 5
+        },
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 0,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0,
+                "armRotation": 2,
+                "weaponRotation": 2,
+                "recoil": true,
+                "twoHanded": true,
+                "allowRotate": false,
+                "allowFlip": false
+            },
+            "cooldown": {
+                "duration": 0.05,
+                "armRotation": 2,
+                "weaponRotation": 2,
+                "recoil": true,
+                "twoHanded": true,
+                "allowRotate": false,
+                "allowFlip": false
+            }
+        }
+    },
+    "altAbilityType": "spray",
+    "builder": "/items/buildscripts/sfBuildWeapon.lua"
+}

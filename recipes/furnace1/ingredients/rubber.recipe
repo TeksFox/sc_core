@@ -1,0 +1,15 @@
+{
+    "input": [
+        { "item": "liquidoil", "count": 10 }
+    ],
+    "output": {
+        "item": "rubber",
+        "count": 1
+    },
+    "duration": 5,
+    "groups": [
+        "craftingfurnace",
+        "ingredients",
+        "all"
+    ]
+}

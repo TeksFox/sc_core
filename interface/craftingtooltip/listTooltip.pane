@@ -1,0 +1,195 @@
+{
+    "addedConfigs": {
+        "largeImage": {
+            "widgets": {
+                "imageBorder": {
+                    "type": "image",
+                    "file": "/interface/craftingtooltip/parts/imagebacking.png",
+                    "position": [ 3, 2 ],
+                    "zlevel": -5
+                },
+                "largeImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "maxSize" : [70, 45],
+                    "minSize" :[70, 45],
+                    "position": [ 63, 43 ],
+                    "zlevel": 7
+                },
+                "oldObjectName": {
+                    "type": "label",
+                    "zlevel": 7,
+                    "fontSize": 8,
+                    "position": [ 63, 10 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "wrapWidth": 120,
+                    "value": "name",
+                    "color": "#181824"
+                }
+            },
+            "size": 83
+        },
+        "duration": {
+            "widgets": {
+                "durationLabel": {
+                    "type": "label",
+                    "zlevel": 5,
+                    "fontSize": 8,
+                    "position": [ 63, 6 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "wrapWidth": 120,
+                    "value": "null",
+                    "color": "orange"
+                },
+                "durationFrame": {
+                    "type": "image",
+                    "file": "/interface/craftingtooltip/parts/durationframe.png",
+                    "position": [ 3, 1 ],
+                    "zlevel": 3
+                }
+            },
+            "size": 13
+        },
+        "itemList": {
+            "type": "layout",
+            "layoutType": "basic",
+            "position": [ 0, 0 ],
+            "size": [ 124, 1 ],
+            "children": {
+                "text": {
+                    "type": "label",
+                    "zlevel": 5,
+                    "fontSize": 8,
+                    "position": [ 68, 6 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "widgetSize": 10,
+                    "wrapWidth": 120,
+                    "value": "Рецепт",
+                    "color": "orange"
+                }
+            }
+        },
+        "outputList": {
+            "type": "layout",
+            "layoutType": "basic",
+            "position": [ 0, 0 ],
+            "size": [ 124, 1 ],
+            "children": {
+                "text": {
+                    "type": "label",
+                    "zlevel": 5,
+                    "fontSize": 8,
+                    "position": [ 68, 6 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "widgetSize": 10,
+                    "wrapWidth": 120,
+                    "value": "Результат",
+                    "color": "green"
+                }
+            }
+        },
+        "requireList": {
+            "type": "layout",
+            "layoutType": "basic",
+            "position": [ 0, 0 ],
+            "size": [ 124, 1 ],
+            "children": {
+                "text": {
+                    "type": "label",
+                    "zlevel": 5,
+                    "fontSize": 8,
+                    "position": [ 68, 6 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "widgetSize": 10,
+                    "wrapWidth": 120,
+                    "value": "Требования",
+                    "color": "blue"
+                }
+            }
+        }
+    },
+    "config": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/craftingtooltip/parts/craft_header.png",
+            "fileBody": "/interface/craftingtooltip/parts/craft_body.png",
+            "fileFooter": "/interface/craftingtooltip/parts/craft_footer.png"
+        },
+        "title": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 8,
+            "position": [ 63, 0 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 120,
+            "value": "INGREDIENTS"
+        },
+        "backItem": {
+            "type": "image",
+            "file": "",
+            "position": [ 0, 0 ],
+            "zlevel": -10
+        },
+        "icon": {
+            "type": "image",
+            "file": "",
+            "centered": true,
+            "position": [ 10, 10 ],
+            "showRarity": true,
+            "zlevel": 2,
+            "maxSize" : [16, 16],
+            "minSize" : [0, 0]
+        },
+        "border": {
+            "type": "image",
+            "file": "",
+            "centered": false,
+            "position": [ 1, 1 ],
+            "zlevel": 1
+        },
+        "name": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 6,
+            "position": [ 22, 9 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth": 120
+        },
+        "count": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 6,
+            "position": [ 115, 9 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "wrapWidth": 120
+        },
+        "weight": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 6,
+            "position": [ 22, 4 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth": 120
+        },
+        "replacable": {
+            "type": "image",
+            "visible": false,
+            "file": "/interface/scripted/itemList/replace.png",
+            "position": [ 110, 10 ],
+            "zlevel": 10
+        }
+    },
+
+    "listSize": [124, 20],
+    "spacing": [0, 2]
+}

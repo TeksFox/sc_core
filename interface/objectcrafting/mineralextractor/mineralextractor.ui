@@ -1,0 +1,184 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/objectcrafting/defaultstation/header.png",
+            "fileBody": "/interface/objectcrafting/defaultstation/body.png",
+            "fileFooter": "/interface/objectcrafting/defaultstation/footer.png"
+        },
+        //! Buttons--------------------------------------------------------------------------------
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1", 
+            "hover": "/interface/close.png:2", 
+            "pressed": "/interface/close.png:3",
+            "position": [ 213, 140 ]
+        },
+        "toggleCrafting": {
+            "type": "button",
+            "position": [ 5, 33 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "caption": "Start",
+            "callback": "trigger"
+        },
+        "recipes": {
+            "type": "button",
+            "position": [ 5, 18 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "fontSize": 6,
+            "caption": "Available recipes",
+            "callback": "recipelist"
+        },
+        "shine": {
+            "type": "image",
+            "zlevel": -5,
+            "position": [ 0, 0 ],
+            "file": "/interface/objectcrafting/base_shine.png",
+            "centered": false
+        },
+        //! Labels---------------------------------------------------------------------------------
+        "Input1": {
+            "type": "label",
+            "position": [ 101, 124 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Input slots",
+            "fontSize": 6,
+            "color": "orange"
+        },
+        "output": {
+            "type": "label",
+            "position": [ 165, 124 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Output",
+            "fontSize": 6,
+            "color": "green"
+        },
+        "battery": {
+            "type": "label",
+            "position": [ 36, 77 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Energy",
+            "fontSize": 6,
+            "color": "#00CDF9"
+        },
+        "batterytext": {
+            "type": "label",
+            "position": [ 36, 65 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "fontSize": 6,
+            "color": "#00CDF9"
+        },
+        "progress": {
+            "type": "label",
+            "position": [ 36, 113 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Progress",
+            "fontSize": 6,
+            "color": "orange"
+        },
+        "core_upgrade": {
+            "type": "itemslot",
+            "zlevel": 2,
+            "position": [ 202, 101 ],
+            "callback": "moduleswap",
+            "rightClickCallback": "null",
+            "showRarity": false,
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "backingImage":"/interface/objectcrafting/moduleSlot.png:1"
+        },
+        "efficiency_upgrade": {
+            "type": "itemslot",
+            "zlevel": 2,
+            "position": [ 202, 82 ],
+            "callback": "moduleswap",
+            "rightClickCallback": "null",
+            "showRarity": false,
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "backingImage":"/interface/objectcrafting/moduleSlot.png:2"
+        },
+        "acceleration_upgrade": {
+            "type": "itemslot",
+            "zlevel": 2,
+            "position": [ 202, 63 ],
+            "callback": "moduleswap",
+            "rightClickCallback": "null",
+            "showRarity": false,
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "backingImage":"/interface/objectcrafting/moduleSlot.png:3"
+        },
+        //! ItemGridItems--------------------------------------------------------------------------
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 72, 63 ],
+            "dimensions": [ 3, 3 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "outputItemGrid": {
+            "type": "itemgrid",
+            "slotOffset": 9,
+            "position": [ 137, 25 ],
+            "dimensions": [ 3, 5 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        //! ItemSlotItems--------------------------------------------------------------------------
+        
+        "modulelockerTitle": {
+            "type": "label",
+            "wrapWidth": 50,
+            "zlevel": 11,
+            "position": [ 35, 110 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Upgrade to unlock modules",
+            "fontSize": 6
+        },
+        //! progressBar----------------------------------------------------------------------------
+        "progressBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 8, 99 ],
+            "background": "/interface/objectcrafting/bars.png:empty",
+            "progressSet": {
+                "inner": "/interface/objectcrafting/bars.png:6",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        },
+        "energyBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 8, 51 ],
+            "background": "/interface/objectcrafting/bars.png:empty",
+            "progressSet": {
+                "inner": "/interface/objectcrafting/bars.png:3",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "trigger",
+        "moduleswap",
+        "recipelist"
+    ],
+    "scriptDelta": 5,
+    "scripts": [
+        "/scripts/multicraft/trigger.lua"
+    ]
+}
+
+

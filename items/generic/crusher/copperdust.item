@@ -1,0 +1,10 @@
+{
+    "itemName": "copperdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "copperdust.png",
+    "description": "...",
+    "shortdescription": "Crushed Copper",
+    "itemTags": [ "reagent", "raw", "dust", "copper", "processed" ]
+}

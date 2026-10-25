@@ -1,0 +1,16 @@
+{
+    "frameGrid": {
+        "size": [
+            22,
+            22
+        ],
+        "dimensions": [
+            2,
+            2
+        ],
+        "names": [
+            [ "homeBase", "selectedBase" ],
+            [ "homeHover", "selectedHover" ]
+        ]
+    }
+}

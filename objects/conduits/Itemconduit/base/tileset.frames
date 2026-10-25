@@ -1,0 +1,41 @@
+{
+    "frameGrid": {
+        "size": [
+            24,
+            24
+        ],
+        "dimensions": [
+            4,
+            4
+        ],
+        "names": [
+            [
+                "none",
+                "up",
+                "right",
+                "full"
+            ],
+            [
+                "cornerleftup",
+                "cornerrightup",
+                "cornerleftdown",
+                "cornerrightdown"
+            ],
+            [
+                "tripleup",
+                "tripledown",
+                "tripleleft",
+                "tripleright"
+            ],
+            [
+                "vertical",
+                "horizontal",
+                "main",
+                "icon"
+            ]
+        ]
+    },
+    "aliases": {
+        "default": "none"
+    }
+}

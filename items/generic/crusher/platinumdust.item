@@ -1,0 +1,14 @@
+{
+    "itemName": "platinumdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "platinumdust.png",
+    "description": "...",
+    "shortdescription": "Crushed Platinum",
+    "itemTags": [
+        "reagent",
+        "platinum",
+        "raw"
+    ]
+}

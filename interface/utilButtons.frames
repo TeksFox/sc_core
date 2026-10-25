@@ -1,0 +1,34 @@
+{
+    "frameGrid": {
+        "size": [
+            16,
+            18
+        ],
+        "dimensions": [
+            2,
+            5
+        ],
+        "names": [
+            [
+                "ok.1",
+                "ok.2"
+            ],
+            [
+                "cancel.1",
+                "cancel.2"
+            ],
+            [
+                "add.1",
+                "add.2"
+            ],
+            [
+                "addone.1",
+                "addone.2"
+            ],
+            [
+                "addfive.1",
+                "addfive.2"
+            ]
+        ]
+    }
+}

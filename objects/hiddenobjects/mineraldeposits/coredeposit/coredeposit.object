@@ -1,0 +1,49 @@
+{
+    "objectName": "coredeposit", 
+    "price": 0,
+    "rarity": "common",
+    "race": "generic",
+    "category": "Volkorian Kitchen",
+    "printable": false,
+    "description": "What a sleek way to store your food!",
+    "shortdescription": "^orange;Volkoria Fridge^white;",
+    "inventoryIcon": "icon.png",
+
+    "largeImage": "coredeposit.png:show.1",
+    "orientations": [
+        {
+            "dualImage": "coredeposit.png:show.1",
+            "imagePosition" : [-16, -16],
+            "animationPosition" : [-16, -16],    
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "background" ]
+        }
+    ],
+ 
+"scripts": [
+    "/scripts/objects/sf_object_hidden.lua",
+    "/scripts/objects/sf_object_minerals.lua"
+],
+    "scriptDelta": 5,
+
+
+    "animation": "coredeposit.animation",
+    "animationParts": {
+        "body": "coredeposit.png"
+    },
+    
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/resourcedeposit/resourcedeposit.ui",
+
+    "harvestLevel": 9,
+    "hideItem": true,
+
+    "variants": 2,
+    "deposit": true,
+    "biomelayer": "core"
+        
+    
+
+}

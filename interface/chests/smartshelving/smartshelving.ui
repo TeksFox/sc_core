@@ -1,0 +1,75 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/chests/chestheader1.png",
+            "fileBody": "/interface/chests/smartshelving/body.png",
+            "fileFooter": "/interface/chests/chestfooter1.png"
+        },
+        // "clear": {
+        //     "type": "button",
+        //     "base": "/interface/button.png",
+        //     "hover": "/interface/buttonhover.png",
+        //     "press": "/interface/buttonhover.png",
+        //     "caption": "Take all",
+        //     "position": [
+        //         52,
+        //         26
+        //     ]
+        // },
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 22, 37 ],
+            "dimensions": [ 6, 4 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "itemGrid2": {
+            "type": "itemgrid",
+            "slotOffset": 24,
+            "position": [ 22, 131 ],
+            "dimensions": [ 6, 4 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "outputItemGrid": {
+            "type": "itemgrid",
+            "slotOffset": 48,
+            "position": [ 22, 225 ],
+            "dimensions": [ 6, 4 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "count": {
+            "type": "label",
+            "value": "24 SLOTS",
+            "hAnchor": "mid",
+            "position": [
+                120,
+                140
+            ]
+        },
+        "overlay": {
+            "type": "image",
+            "file": "/interface/chests/shine17to24.png",
+            "position": [
+                0,
+                3
+            ]
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/x.png",
+            "hover": "/interface/xhover.png",
+            "pressed": "/interface/xpress.png",
+            "pressedOffset": [
+                0,
+                0
+            ],
+            "position": [
+                143,
+                156
+            ]
+        }
+    }
+}

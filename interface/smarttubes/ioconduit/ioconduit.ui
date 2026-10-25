@@ -1,0 +1,27 @@
+{
+    "gui": {
+        "insertionIDBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [ 68, 23 ],
+            "textAlign": "center",
+            "fontSize": 8,
+            "callback": "UpdateInsertID",
+            "color": [ 255, 165, 0 ],
+            "maxWidth": 88
+        },
+        "isertText": {
+            "type": "label",
+            "position": [ 116, 38 ],
+            "fontSize": 7,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Set insertID"
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "UpdateInsertID"
+    ],
+    "scripts": [ "/interface/smarttubes/insertionconduit/insertionconduit.lua" ]
+}

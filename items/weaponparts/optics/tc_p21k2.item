@@ -1,0 +1,15 @@
+{
+    "itemName": "tc_p21k2",
+    "price": 0,
+    "rarity": "common",
+    "category": "optics",
+    "inventoryIcon": "tc_p21k2.png",
+    "description": "",
+    "shortdescription": "TC-P21-k2",
+    "itemTags": [],
+    "compatibility": [ "ssm" ],
+    "crit": [ 0.01, 0.03 ],
+    "critMult": [ 0.1, 0.15 ],
+    "inaccuracy": [ -0.05, -0.07 ],
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

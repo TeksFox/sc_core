@@ -1,0 +1,14 @@
+{
+    "input": [
+        {
+            "item": "copperbar",
+            "count": 1
+        }
+    ],
+    "output": {
+        "item": "wire",
+        "count": 4
+    },
+    "duration" : 1,
+    "groups" : [ "miniassembler", "items", "all" ]
+}

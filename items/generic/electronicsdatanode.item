@@ -1,0 +1,10 @@
+{
+  "itemName" : "electronicsdatanode",
+  "price" : 40,
+  "rarity" : "rare",
+  "category" : "research",
+  "inventoryIcon" : "electronicsdatanode.png",
+  "description" : "Node with a Electronics data set for technology research",
+  "shortdescription" : "Electronics data node",
+  "itemTags" : [ "reagent", "node", "research" ]
+}

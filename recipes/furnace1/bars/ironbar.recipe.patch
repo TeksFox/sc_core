@@ -1,0 +1,12 @@
+{
+    "input": [
+        { "item": "ironore", "count": 2, "prameters": { "tag": "iron" } }
+    ],
+    "duration": 6,
+    "groups": [
+        "craftingfurnace",
+        "basicfurnace",
+        "bars",
+        "all"
+    ]
+}

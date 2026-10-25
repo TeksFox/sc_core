@@ -1,0 +1,17 @@
+{
+	"frameGrid": {
+		"size": [ 163, 20 ],
+		"dimensions": [
+			1,
+			2
+		],
+		"names": [
+			[
+				"default"
+			],
+			[
+				"hover"
+			]
+		]
+	}
+}

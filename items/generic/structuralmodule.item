@@ -1,0 +1,10 @@
+{
+  "itemName" : "structuralmodule",
+  "price" : 10,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "structuralmodule.png",
+  "description" : "",
+  "shortdescription" : "Structural module",
+  "itemTags" : [ "reagent", "basicmaterial" ]
+}

@@ -1,0 +1,44 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/trash/header.png",
+            "fileBody": "/interface/scripted/trash/body.png",
+            "fileFooter": "/interface/scripted/trash/footer.png"
+        },
+        //! Buttons--------------------------------------------------------------------------------
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1", 
+            "hover": "/interface/close.png:2", 
+            "pressed": "/interface/close.png:3",
+            "position": [ 107, 132 ]
+        },
+        "toggleCrafting": {
+            "type": "button",
+            "position": [ 30, 18 ],
+            "base": "/interface/scripted/trash/trashbutton.png:1",
+            "hover": "/interface/scripted/trash/trashbutton.png:2",
+            "disabledImage": "/interface/scripted/trash/trashbutton.png:3",
+            "caption": "Trash",
+            "callback": "trash"
+        },
+        //! ItemGridItems--------------------------------------------------------------------------
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 32, 35 ],
+            "dimensions": [ 3, 4 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "trash"
+    ],
+    "scriptDelta": 5,
+    "scripts": [
+        "/interface/scripted/trash/trash.lua"
+    ]
+}
+
+

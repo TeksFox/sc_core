@@ -1,0 +1,23 @@
+{
+  "projectileName" : "treasuredropcommon",
+  "speed" : 15,
+  "timeToLive" : 30,
+  "physics" : "bouncyball",
+  "bounces" : 1,
+  "image" : "treasuredropcommon.png",
+  "frameNumber" : 1,
+  "windupFrames" : 1,
+  "emitters" : [ ],
+  "animationCycle" : 0.2,
+  "piercing" : true,
+
+  "damageType": "NoDamage",
+  "damageKind": "default",
+  // "actionOnReap" : [
+  //   {
+  //     "action" : "item",
+  //     "name" : "bouncyball"
+  //   }
+  // ],
+  "damagePoly" : [ [-7.5, 0], [-5, -5], [0, -7.5], [5, -5], [7.5, 0], [5, 5], [0, 7.5], [-5, 5] ]
+}

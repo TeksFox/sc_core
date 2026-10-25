@@ -1,0 +1,20 @@
+{
+    "frameGrid": {
+        "size": [
+            8,
+            10
+        ],
+        "dimensions": [
+            2,
+            2
+        ],
+        "names": [
+            [
+                "left", "right"
+            ],
+            [
+                "lefts", "rights"
+            ]
+        ]
+    }
+}

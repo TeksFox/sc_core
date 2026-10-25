@@ -1,0 +1,10 @@
+{
+    "itemName": "bamboostick",
+    "price": 0,
+    "rarity": "common",
+    "category": "craftingMaterial",
+    "inventoryIcon": "bamboostick.png",
+    "description": "",
+    "shortdescription": "Bamboo stick",
+    "itemTags": [ "reagent", "wood" ]
+}

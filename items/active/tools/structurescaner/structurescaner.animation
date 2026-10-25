@@ -1,0 +1,29 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "firing": {
+                "default": "default",
+                "states": {
+                    "default": {}
+                }
+            }
+        },
+        "parts": {
+            "default": {
+                "properties": {
+                    "centered": true,
+                    "image": "structurescaner.png",
+                    "offset": [
+                        1,
+                        -0.3
+                    ]
+                }
+            }
+        }
+    },
+    "sounds": {
+        "pick": [
+            "/sfx/activeitem/scanerPick.ogg"
+        ]
+    }
+}

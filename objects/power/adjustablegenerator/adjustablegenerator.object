@@ -1,0 +1,54 @@
+{
+    "objectName": "adjustablegenerator",
+    "rarity": "uncommon",
+    "description": "\"A toaster is just a death ray with a smaller power supply! As soon as I figure out how to tap into the main reactors, I will burn the world!\"",
+    "shortdescription": "Adjustable Generator",
+    "race": "generic",
+    "category": "crafting",
+    "price": 0,
+    "printable": false,
+    "inventoryIcon": "icon.png",
+    "largeImage": "adjustablegenerator.png:idle.1",
+    "orientations": [
+        {
+            "imageLayers": [ { "image": "adjustablegenerator.png:idle.1" } ],
+            "direction": "left",
+            "flipImages": true,
+            "imagePosition": [ 0, 0 ],
+            "frames": 5,
+            "animationCycle": 0.5,
+            "spaceScan": 0.1,
+            "anchors": [ "background" ]
+        },
+        {
+            "imageLayers": [ { "image": "adjustablegenerator.png:idle.1" } ],
+            "direction": "right",
+            "imagePosition": [ 0, 0 ],
+            "frames": 5,
+            "animationCycle": 0.5,
+            "spaceScan": 0.1,
+            "anchors": [ "background" ]
+        }
+    ],
+    "inputNodes": [ [ 0, 2 ] ], "outputNodes": [ [ 0, 0 ] ],
+    "scripts": [ "/objects/power/adjustablegenerator/adjustablegenerator.lua" ],
+    "scriptDelta": 5,
+    "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
+    "closeSounds": [ "/sfx/objects/f_closeObject.ogg" ],
+    "animation": "adjustablegenerator.animation",
+    "animationParts": {
+        "object": "adjustablegenerator.png",
+        "objectlit": "adjustablegeneratorlit.png"
+    },
+    "animationPosition" : [12, 12],
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/objectcrafting/adjustablegenerator/adjustablegenerator.config",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600,
+    "euConfig": {
+        "euType": "generator",
+        "euStorage": 10000,
+        "euLevel": 1,
+        "euFromBeggining": 0
+    }
+}

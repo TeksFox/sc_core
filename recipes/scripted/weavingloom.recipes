@@ -1,0 +1,23 @@
+[
+    //[ "Имя предмета", "максимальное число крафтов на ячейку", "параметры"]
+    //Items
+    
+    {
+        "type": "blank",
+        "name": "string",
+        "maxCount": 150,
+        "duration": 3
+    },
+    {
+        "type": "blank",
+        "name": "fabric",
+        "maxCount": 150,
+        "duration": 3
+    },
+    {
+        "type": "blank",
+        "name": "cottonwool",
+        "maxCount": 150,
+        "duration": 3
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "itemName" : "gravitycore",
+  "price" : 1500,
+  "rarity" : "legendary",
+  "category" : "electronics",
+  "inventoryIcon" : "gravitycore.png",
+  "description" : ",,,",
+  "shortdescription" : "Gravity core",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,18 @@
+{
+    "background": {
+        "type": "background",
+        "fileHeader": "/interface/craftingtooltip/tooltip_header.png",
+        "fileBody": "/interface/craftingtooltip/tooltip_body.png",
+        "fileFooter": "/interface/craftingtooltip/tooltip_footer.png"
+    },
+    "text": {
+        "type": "label",
+        "zlevel": 3,
+        "fontSize": 8,
+        "position": [ 65, 7 ],
+        "hAnchor": "mid",
+        "vAnchor": "top",
+        "wrapWidth": 120,
+        "value": "0"
+    }
+}

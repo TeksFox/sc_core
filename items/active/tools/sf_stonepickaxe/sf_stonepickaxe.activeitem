@@ -1,0 +1,121 @@
+{
+    "itemName": "sf_stonepickaxe",
+    "price": 150,
+    "maxStack": 1,
+    "rarity": "common",
+    "category": "tool",
+    "description": "A primitive stone tool! what could be worse?",
+    "shortdescription": "Stone Pickaxe",
+    "twoHanded": true,
+    "itemTags": [
+        "miningtool",
+        "sf_miningtool"
+    ],
+    "tooltipKind": "miningtool",
+    "builder": "/scripts/buildscripts/buildtool.lua",
+    
+    "largeImage": "sf_stonepickaxe.png",
+    "inventoryIcon": "icon.png",
+    "animation": "/items/active/tools/pickaxe.animation",
+    "animationParts": {
+        "blade": "sf_stonepickaxe.png"
+    },
+    "scripts": [
+        "/items/active/weapons/melee/meleeweapon.lua"
+    ],
+    "elementalType": "physical",
+    "tool":true,
+    "durability": 350,       
+
+    "primaryAbility": {
+        "layer": "foreground",
+        "scripts": [
+            "/items/active/tools/pickaxe.lua"
+        ],
+        "class": "PickSlash",
+        "activatingFireMode": "primary",
+
+        "energyUsage": 0,
+        "fireTime": 0.3,
+        "toolRange": 5.5,
+        "blockRadius": 3,
+        "altBlockRadius": 1,
+        "tileDamage": 1.5,
+        "tileDamageType": "beamish",
+        "harvestLevel": 99,
+
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 55,
+                "allowRotate": false,
+                "allowFlip": true,
+                "aimAngle": 0
+            },
+            "windup": {
+                "duration": 0.0,
+                "armRotation": 0,
+                "weaponRotation": 50,
+                "allowRotate": false,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0.3,
+                "armRotation": -35,
+                "weaponRotation": -35,
+                "armAngularVelocity": 360,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            }
+        },
+        "requisiteAnimationStates": {
+            "blade": "active"
+        }
+    },
+    "altAbility": {
+        "layer": "background",
+        "scripts": [
+            "/items/active/tools/pickaxe.lua"
+        ],
+        "class": "PickSlash",
+        "activatingFireMode": "alt",
+        "energyUsage": 0,
+        "fireTime": 0.3,
+        "baseDps": 0.0,
+        "toolRange": 5.5,
+        "blockRadius": 3,
+        "altBlockRadius": 1,
+        "tileDamage": 1.7,
+        "tileDamageType": "beamish",
+        "harvestLevel": 99,
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 55,
+                "allowRotate": false,
+                "allowFlip": true,
+                "aimAngle": 0
+            },
+            "windup": {
+                "duration": 0.0,
+                "armRotation": 0,
+                "weaponRotation": 50,
+                "allowRotate": false,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0.3,
+                "armRotation": -35,
+                "weaponRotation": -35,
+                "armAngularVelocity": 360,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            }
+        },
+        "requisiteAnimationStates": {
+            "blade": "active"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "uiOpenSound": "/",
+    "uiClosedSound": "/",
+    "uiListSound": "/sfx/interface/clickon_success.ogg",
+    "category": [
+        {
+            "selected": true,
+            "friendlyname": "Ore crushing",
+            "category": [ "ore" ],
+            "order": 1,
+            "icon": "/interface/scripted/itemList/icons/ore.png"
+        },
+        {
+            "friendlyname": "Crushing of finished products",
+            "category": [ "reagent" ],
+            "order": 2,
+            "icon": "/interface/scripted/itemList/icons/reagent.png"
+        },
+        {
+            "friendlyname": "Other crushing",
+            "category": [ "other" ],
+            "order": 3,
+            "icon": "/interface/scripted/itemList/icons/rawreagent.png"
+        }
+    ]
+}

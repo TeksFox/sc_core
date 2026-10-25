@@ -1,0 +1,39 @@
+{
+  "objectName": "insertionconduit",
+  "colonyTags": [],
+  "printable": false,
+  "rarity": "Common",
+  "description": "Inserts items into containers",
+  "shortdescription": "Insertion Conduit",
+  "race": "generic",
+  "category": "transport",
+  "price": 45,
+  "inventoryIcon": "tileset.png:icon",
+  "health": 3.0,
+  "orientations": [
+    {
+      "image": "tileset.png:main",
+      "imagePosition": [ -8, -8 ],
+      "animationPosition": [ -8, -8 ],
+      "frames": 1,
+      "animationCycle": 1.0,
+      "renderLayer": "Platform-10",
+      "direction": "right"
+
+    }
+  ],
+  "interactAction": "ScriptPane",
+  "interactData": "/interface/smarttubes/insertionconduit/insertionconduit.ui",
+  "frameCooldown": 5,
+  "autoCloseCooldown": 3600,
+  "slotCount": 1,
+  "animation": "/animations/conduits.animation",
+  "animationParts": {
+    "cables": "tileset.png"
+  },
+  "conduitType": "insertion",
+  "insertID" : "",
+  "scriptDelta": 10,
+  "scripts": ["insertionconduit.lua"]
+
+}

@@ -1,0 +1,88 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "bodystate": {
+                "default": "default",
+                "states": { "default": { "frames": 1 } }
+            },
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "cycle": 1,
+                        "mode": "loop"
+                    },
+                    "active": {
+                        "frames": 1,
+                        "cycle": 1,
+                        "mode": "loop",
+                        "properties": {
+                            "persistentSound": "/sfx/objects/centrifuge.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "centered": false },
+                "partStates": {
+                    "bodystate": {
+                        "default": {
+                            "properties": { "image": "<partImage>:default" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "centered": false, "fullbright": true },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<partImage>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<partImage>:active.<frame>" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "particleEmitters": {
+        "dust": {
+            "emissionRate": 0,
+            "emissionVariance": 0.3,
+            "offsetRegion" : [0, 0, 5, 7],
+            "burstCount": 20,
+            "particles": [
+                {
+                    "particle": {
+                        "type" : "animated",
+                        "animation" : "/animations/smoke/smoke.animation",
+                        "destructionAction" : "shrink",
+                        "destructionTime" : 1,
+                        "size": 0.8,
+                        "fade": 0.9,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0, 1 ],
+                        "finalVelocity": [ 0, 3 ],
+                        "timeToLive": 2,
+                        "underwaterOnly": false,
+                        "layer": "front",
+                        //"color": "#3D2C21",
+                        "variance": {
+                            "size": 0.3,
+                            "initialVelocity": [
+                                0.5,
+                                0.5
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

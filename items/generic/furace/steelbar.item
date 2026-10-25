@@ -1,0 +1,11 @@
+{
+  "itemName" : "steelbar",
+  "price" : 60,
+  "rarity" : "uncommon",
+  "inventoryIcon" : "steelbar.png",
+  "description" : "It's a steel. Useful for crafting much stronger weapons, armour and more!",
+  "shortdescription" : "Сталь",
+  "itemTags" : [ "reagent", "metal", "alloy" ],
+  "category" : "alloy"
+}
+                                

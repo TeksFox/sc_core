@@ -1,0 +1,10 @@
+{
+    "itemName": "woodenbowl",
+    "price": 0,
+    "rarity": "common",
+    "category": "craftingMaterial",
+    "inventoryIcon": "woodenbowl.png",
+    "description": "The simplest wooden bowl",
+    "shortdescription": "Wooden bowl",
+    "itemTags": [ "reagent", "coocking" ]
+}

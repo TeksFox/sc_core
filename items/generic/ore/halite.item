@@ -1,0 +1,10 @@
+{
+  "itemName" : "halite",
+  "price" : 0,
+  "rarity" : "Common",
+  "category" : "rawOre",
+  "inventoryIcon" : "halite.png",
+  "description" : "a piece of rock salt. maybe it will come in handy",
+  "shortdescription" : "Halite",
+  "itemTags" : [ "reagent", "raw" ]
+}

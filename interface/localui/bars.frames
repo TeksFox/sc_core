@@ -1,0 +1,20 @@
+{
+    "frameGrid": {
+        "size": [
+            96,
+            6
+        ],
+        "dimensions": [
+            1,
+            2
+        ],
+        "names": [
+            [
+                "breath"
+            ],
+            [
+                "radiation"
+            ]
+        ]
+    }
+}

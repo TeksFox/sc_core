@@ -1,0 +1,6 @@
+{
+  "input" : [
+    { "item" : "silverore", "count" : 2, "prameters": { "tag": "silver" } }
+  ],
+  "duration" : 5
+}

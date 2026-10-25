@@ -1,0 +1,10 @@
+{
+    "itemName": "electriccoil",
+    "price": 0,
+    "rarity": "uncommon",
+    "category": "craftingMaterial",
+    "inventoryIcon": "electriccoil.png",
+    "description": "...",
+    "shortdescription": "Electric coil",
+    "itemTags": [ "reagent", "raw", "electronics" ]
+}

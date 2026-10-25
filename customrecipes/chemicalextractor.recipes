@@ -1,0 +1,333 @@
+{
+    "pool": "/treasure/crafting/chemicalextractor.treasurepools",
+    "recipes": {
+        "liquid": {
+            //* ==============================================================================================
+            //*                                            LIQUIDS
+            //* ==============================================================================================
+            "1.0": {
+                "name": "liquidwater",
+                "fullname": "Water filtering",
+                "input": [
+                    { "name": "carbonfilter", "count": 1, "damage": 1 },
+                    {
+                        "names": [
+                            "contaminatedwater",
+                            "swampwater"
+                        ],
+                        "count": 10
+                    }
+                ],
+                "output": [
+                    { "name": "liquidwater", "count": 6 },
+                    { "name": "sulphur", "count": 1, "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "level": 1,
+                "delay": 40,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.1": {
+                "name":"oxygen",
+                "fullname": "Electrolysis of untreated water",
+                "icon":"/interface/scripted/itemList/crafticons/waterelectrolysis1.png",
+
+                "input": [
+                    { "name": "electrolysiscoil", "count": 1, "damage": 2 },
+                    { "name": "liquidwater", "count": 30 }
+                ],
+                "output": [
+                    { "name": "oxygen", "counts": [ 6, 9 ] },
+                    { "name": "hydrogen", "counts": [ 8, 12 ] },
+                    { "name": "slag", "count": 1 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "category": "liquid",
+                "level": 1,
+                "delay": 50,
+                "euConsumed": 160
+            },
+            //! LEVEL 2 ---------------------------------------
+            "2.0": {
+                "name":"oxygen",
+                "fullname": "Electrolysis of distilled water",
+                "icon":"/interface/scripted/itemList/crafticons/waterelectrolysis2.png",
+
+                "input": [
+                    { "name": "electrolysiscoil", "count": 1, "damage": 1 },
+                    { "name": "distilledwater", "count": 25 }
+                ],
+                "output": [
+                    { "name": "oxygen", "counts": [ 9, 13 ] },
+                    { "name": "hydrogen", "counts": [ 12, 16 ] },
+                    { "name": "productiontoken", "counts":[ 1, 3 ], "chance": 0.50 }
+                ],
+                "category": "liquid",
+                "level": 2,
+                "delay": 50,
+                "euConsumed": 130
+            },
+            //!------------------------------------------------
+            "2.1": {
+                "name":"distilledwater",
+                "input": [
+                    { "name": "ironheater", "count": 1, "damage": 2 },
+                    { "name": "liquidwater", "count": 20 }
+                ],
+                "output": [
+                    { "name": "distilledwater", "count": 15 },
+                    { "name": "slag", "count": 1 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 }
+                ],
+                "delay": 65,
+                "level": 2,
+                "euConsumed": 90
+            },
+            //!------------------------------------------------
+            "2.2": {
+                "name": "refinedoil",
+                "input": [
+                    { "name": "ironheater", "count": 1, "damage": 1 },
+                    { "name": "liquidoil", "count": 20 }
+                ],
+                "output": [
+                    { "name": "refinedoil", "count": 7 },
+                    { "name": "oilresidues", "count": 9 },
+                    { "name": "sulphur", "count": 1, "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 90,
+                "level": 2,
+                "euConsumed": 120
+            },
+            //!------------------------------------------------
+            "2.3": {
+                "name":"chlorine",
+                "icon":"/interface/scripted/itemList/crafticons/waterelectrolysis3.png",
+                "input": [
+                    { "name": "electrolysiscoil", "count": 1, "damage": 2 },
+                    { "name": "liquidwater", "count": 30 },
+                    { "name": "salt", "count": 3 }
+                ],
+                "output": [
+                    { "name": "chlorine", "counts": [ 6, 11 ] },
+                    { "name": "hydrogen", "counts": [ 9, 15 ] },
+                    { "name": "slag", "count": 1 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.40 }
+                ],
+                "delay": 60,
+                "level": 2,
+                "euConsumed": 120
+            },
+            "2.4": {
+                "name":"sulfuricacid",
+                "input": [
+                    { "name": "liquidwater", "count": 50 },
+                    { "name": "oxygen", "count": 10 },
+                    { "name": "crushedsulphur", "count": 10 }
+                ],
+                "output": [
+                    { "name": "sulfuricacid", "count": 60 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 70,
+                "level": 2,
+                "euConsumed": 160
+            },
+            //! LEVEL 3 ---------------------------------------
+            "3.0": {
+                "name": "lightfuel",
+                "input": [
+                    { "name": "ironheater", "count": 1, "damage": 3 },
+                    { "name": "refinedoil", "count": 10 }
+                ],
+                "output": [
+                    { "name": "lightfuel", "count": 8 },
+                    { "name": "productiontoken", "counts": [ 1, 3 ], "chance": 0.35 },
+                    { "name": "scientifictoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 120,
+                "level": 3,
+                "euConsumed": 130
+            }
+        },
+        "reagent": {
+            //* ==============================================================================================
+            //*                                            REAGENT
+            //* ==============================================================================================
+            "1.0": {
+                "name":"salt",
+                "input": [
+                    { "name": "liquidwater", "count": 20}
+                ],
+                "output": [
+                    { "name": "salt", "counts": [ 1, 3 ] },
+                    { "name": "distilledwater", "counts": [ 1, 5 ], "chance": 0.50 }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            }
+        },
+        "soil": {
+            "1.0": {
+                "name":"dirtmaterial",
+                "input": [
+                    { "name": "liquidwater", "count": 10 },
+                    {
+                        "names": [
+                            "dirtmaterial",
+                            "drydirt",
+                            "wetdirt",
+                            "mud",
+                            "frozendirt"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                    { "name": "slag", "count": 1 },
+                    { "name": "bone", "count": 1, "chance": 0.35 },
+                //  { "name": "edibleroot", "counts": [ 1, 3 ], "chance": 0.35 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.1": {
+                "name":"sand2",
+                "input": [
+                    { "name": "liquidwater", "count": 10 },
+                    {
+                        "names": [
+                            "sand2",
+                            "sand",
+                            "drysand"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                    { "name": "slag", "count": 1},
+                    { "name": "quartzore", "counts": [ 1, 2 ], "chance": 0.45 },
+                //  { "name": "mineralchunks", "count": 1, "chance": 0.10 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            
+            },
+            //!------------------------------------------------
+            "1.2": {
+                "name":"plantmatter",
+                "input": [
+                    {
+                        "names": [
+                            "plantmatter",
+                            "floweryblock"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                    { "name": "plantfibre", "counts": [ 1, 3 ] },
+                    { "name": "livingroot", "count": 1, "chance": 0.25 },
+                //  { "name": "edibleroot", "count": 1, "chance": 0.15 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.3": 
+            {
+                "name":"gravelmaterial",
+                "input": [
+                    { "name": "liquidwater", "count": 10 },
+                    {
+                        "names": [
+                            "gravelmaterial",
+                            "clay"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                    { "name": "slag", "count": 1 },
+                //  { "name": "pieceflint", "count": 1 },
+                //  { "name": "mineralchunks", "counts": [ 1, 2 ], "chance": 0.1  },
+                //  { "name": "nativeore", "count": 1, "chance": 0.05 },
+                    { "name": "aluminiumore", "counts": [ 1, 2 ], "chance": 0.25  },
+                    { "name": "productiontoken", "count": 1, "chance": 0.05 }
+                ],
+                "delay": 50,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //! LEVEL 2 ---------------------------------------
+            "2.0": {
+                "name":"moondust",
+                "input": [
+                    { "name": "sulfuricacid", "count": 3 },
+                    {
+                        "names": [
+                            "moondust",
+                            "moonstone",
+                            "moonrock"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                //  { "name": "mineralchunks", "count": 1 },
+                    { "name": "slag", "count": 1 },
+                    { "name": "solidfuel", "counts": [ 1, 3 ], "chance": 0.45 },
+                    { "name": "naoniteore", "count": 1, "chance": 0.07 },
+                    { "name": "productiontoken", "counts": [ 1, 3 ], "chance": 0.05 }
+                ],
+                "delay": 40,
+                "level": 2,
+                "euConsumed": 80
+            },        
+            "2.1": {
+                "name":"cobblestonematerial",
+                "input": [
+                    { "name": "sulfuricacid", "count": 3 },
+                    {
+                        "names": [
+                            "blaststone",
+                            "cobblestonematerial",
+                            "direstone",
+                            "limestone",
+                            "magmarock",
+                            "meteoriterock",
+                            "rock04", 
+                            "rock12",
+                            "rock14",
+                            "rock15",
+                            "rock19",
+                            "rock20",
+                            "grassyrock"
+                        ],
+                        "count": 20
+                    }
+                ],
+                "output": [
+                    { "name": "slag", "count": 1 },
+                //  { "name": "nativeore", "count": 1, "chance": 0.20 },
+                    { "name": "productiontoken", "counts": [ 1, 3 ], "chance": 0.20 },
+       
+                    { "pool": "chemical.common.ore.treasure", "level": 1, "text": "45% to receive an additional items" }
+                ],
+                "delay": 60,
+                "level": 2,
+                "euConsumed": 90
+            }
+        }
+    }
+}

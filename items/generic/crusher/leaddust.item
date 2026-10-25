@@ -1,0 +1,14 @@
+{
+    "itemName": "leaddust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "leaddust.png",
+    "description": "...",
+    "shortdescription": "Crushed Lead",
+    "itemTags": [
+        "lead",
+        "reagent",
+        "raw"
+    ]
+}

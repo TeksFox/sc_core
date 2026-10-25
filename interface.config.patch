@@ -1,0 +1,60 @@
+[
+
+    {
+        "op": "replace",
+        "path": "/font/itemSize",
+        "value": 6
+    },
+    {
+        "op": "replace",
+        "path": "/statusIconPos",
+        "value": [151, 52]
+    },
+    {
+        "op": "replace",
+        "path": "/statusIconShift",
+        "value": [15, 0]
+    },
+    {
+        "op": "replace",
+        "path": "/itemCountRightAnchor",
+        "value": [
+            19,
+            -2
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/cursorItemSlot/showDurability",
+        "value": false
+    },
+    {
+        "op": "replace",
+        "path": "/cursorItemSlot/position",
+        "value": [
+            -20,
+            -20
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/buttonPressedOffset",
+        "value": [
+            0,
+            0
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/slider",
+        "value": {
+            "leftBase": "/interface/scroll/sf_silder.png:left",
+            "leftHover": "/interface/scroll/sf_silder.png:lefts",
+            "rightBase": "/interface/scroll/sf_silder.png:right",
+            "rightHover": "/interface/scroll/sf_silder.png:rights",
+            "jog": "/interface/scroll/sf_scrolly.png",
+            "defaultPadding": 3
+        }
+    }
+]
+//[71, 69] 

@@ -1,0 +1,10 @@
+{
+  "itemName" : "chemicaldatanode",
+  "price" : 40,
+  "rarity" : "common",
+  "category" : "research",
+  "inventoryIcon" : "chemicaldatanode.png",
+  "description" : "Node with a chemical data set for technology research",
+  "shortdescription" : "Chemistry data node",
+  "itemTags" : [ "reagent", "node", "research" ]
+}

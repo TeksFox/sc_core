@@ -1,0 +1,193 @@
+{
+    "background": {
+        "type": "background",
+        "fileHeader": "/interface/uiparts/tooltips/sf_header.png",
+        "fileBody": "/interface/uiparts/tooltips/sf_body_gunammo.png",
+        "fileFooter": "/interface/uiparts/tooltips/sf_footer.png"
+    },
+    "rarityLabel": {
+        "type": "label",
+        "position": [ 69, 229 ],
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "centered": true,
+        "wrapWidth": 126
+    },
+    "levelLabel": {
+        "type": "label",
+        "position": [ 15, 168 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "centered": true,
+        "fontSize": 12,
+        "color": "#181824",
+        "wrapWidth": 126
+    },
+    "handImage": {
+        "type": "image",
+        "position": [ 12, 209 ],
+        "file": "",
+        "centered": false
+    },
+    "ammoNameTitleLabel": {
+        "type": "label",
+        "position": [ 9, 147 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "wrapWidth": 126,
+        "color": "yellow",
+        "value": "Ammo type:"
+    },
+    "ammoNameLabel": {
+        "type": "label",
+        "position": [ 130, 147 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "wrapWidth": 126,
+        "color": "yellow",
+        "value": "tree"
+    },
+    "dpsTitleLabel": {
+        "type": "label",
+        "position": [ 9, 135 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "wrapWidth": 126,
+        "color": "red",
+        "value": "DPS:"
+    },
+    "dpsLabel": {
+        "type": "label",
+        "position": [ 130, 135 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "wrapWidth": 126,
+        "color": "red",
+        "value": "tree"
+    },
+    "damagePerShotTitleLabel": {
+        "type": "label",
+        "position": [ 9, 123 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": "red",
+        "value": "Damage Per Shot:"
+    },
+    "damagePerShotLabel": {
+        "type": "label",
+        "position": [ 130, 123 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "color": "red",
+        "wrapWidth": 126
+    },
+    "speedTitleLabel": {
+        "type": "label",
+        "position": [ 9, 111 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": "green",
+        "value": "Rate of Fire:"
+    },
+    "speedLabel": {
+        "type": "label",
+        "position": [ 130, 111 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "color": "green",
+        "wrapWidth": 126
+    },
+    "multTitleLabel": {
+        "type": "label",
+        "position": [ 9, 99 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": "green",
+        "value": "projectile count:"
+    },
+    "multLabel": {
+        "type": "label",
+        "position": [ 130, 99 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "color": "green",
+        "wrapWidth": 126
+    },
+    "ammoTitleLabel": {
+        "type": "label",
+        "position": [ 9, 87 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": "yellow",
+        "value": "Ammo count:"
+    },
+    "ammoLabel": {
+        "type": "label",
+        "position": [ 130, 87 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "color": "yellow",
+        "wrapWidth": 126
+    },
+    "reloadTitleLabel": {
+        "type": "label",
+        "position": [ 9, 75 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": "yellow",
+        "value": "Reload time:"
+    },
+    "reloadLabel": {
+        "type": "label",
+        "position": [ 130, 75 ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "color": "yellow",
+        "wrapWidth": 126
+    },
+
+    "altAbilityTitleLabel": {
+        "type": "label",
+        "position": [
+            9,
+            61
+        ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": ""
+    },
+    "altAbilityLabel": {
+        "type": "label",
+        "position": [
+            130,
+            61
+        ],
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "damageKindImage": {
+        "type": "image",
+        "position": [ 110, 162 ],
+        "file": "",
+        "centered": false,
+        "maxSize": [ 16, 16 ],
+        "minSize": [ 16, 16 ]
+    },
+    "dealerImage": {
+        "type": "image",
+        "position": [ 105, 206 ],
+        "file": "",
+        "centered": false,
+        "maxSize": [ 22, 22 ],
+        "minSize": [ 16, 16 ]
+    },
+    "objectImage": {
+        "type": "image",
+        "position": [ 69, 190 ],
+        "file": "",
+        "centered": true,
+        "maxSize": [ 60, 60 ],
+        "minSize": [ 60, 60 ]
+    }
+}

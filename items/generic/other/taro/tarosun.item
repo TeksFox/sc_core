@@ -1,0 +1,11 @@
+{
+  "itemName" : "tarosun",
+  "price" : 3000,
+  "rarity" : "rare",
+  "category" : "tarocard",
+  "inventoryIcon" : "tarosun.png",
+  "description" : "This card is able to endow weapons with the element of fire",
+  "largeImage": "tarosunbig",
+  "shortdescription" : "^orange;Taro car (Sun)",
+  "itemTags" : [ "reagent", "card" ]
+}

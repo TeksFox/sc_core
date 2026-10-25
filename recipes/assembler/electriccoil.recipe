@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "item": "wire",
+            "count": 10
+        },
+        {
+            "item": "ironbar",
+            "count": 1
+        },
+        {
+            "item": "rubber",
+            "count": 1
+        }
+    ],
+    "output": {
+        "item": "electriccoil",
+        "count": 1,
+        "parameters": {}
+    },
+    "duration": 12,
+    "groups": [ "items", "basicassembler" ]
+}

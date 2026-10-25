@@ -1,0 +1,11 @@
+[
+    {
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "name": "dirtmaterial",
+            "materialId": 65040,
+            "collisionKind": "none"
+        }
+    }
+]

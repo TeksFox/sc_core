@@ -1,0 +1,14 @@
+{
+    "input": [
+        {
+            "item": "logblock",
+            "count": 1
+        }
+    ],
+    "output": {
+        "item": "woodenbowl",
+        "count": 3
+    },
+    "duration" : 1,
+    "groups" : [ "inventorstable", "items", "all" ]
+}

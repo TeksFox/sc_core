@@ -1,0 +1,48 @@
+{
+    "gui": {
+
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/chests/craftingStorage/header.png",
+            "fileBody": "/interface/chests/craftingStorage/body.png",
+            "fileFooter": "/interface/chests/craftingStorage/footer.png"
+        },
+        "clear": {
+            "type": "button",
+            "base": "/interface/craftingbutton.png:1",
+            "hover": "/interface/craftingbutton.png:3",
+            "pressed": "/interface/craftingbutton.png:4",
+            "caption": "Take all",
+            "pressedOffset": [0, -1],
+            "position": [ 91, 16 ]
+        },
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 41, 37 ],
+            "dimensions": [ 8, 7 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "count": {
+            "type": "label",
+            "position": [ 118, 175 ],
+            "vAnchor": "mid",
+            "hAnchor": "mid",
+            "value": "56 SLOTS",
+            "wrapWidth": 124
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "pressedOffset": [0, -1],
+            "position": [ 220, 193 ]
+        }
+    },
+    
+    "scripts": [
+        "/interface/chests/craftingStorage/craftingStorage.lua"
+    ],                    
+    "scriptDelta": 50
+}

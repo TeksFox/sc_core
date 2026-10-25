@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/input",
+        "value": [
+            { "item": "electronics", "count": 12 },
+            { "item": "tungstenbar", "count": 6 },
+            { "item": "wire", "count": 10 },
+            { "item": "silverbar", "count": 1 }
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/output/item",
+        "value": "sewingmachine"
+    }
+]

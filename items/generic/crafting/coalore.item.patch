@@ -1,0 +1,15 @@
+[
+    {
+        "op": "add",
+        "path": "/reagentConfig",
+        "value": {
+            "type": "solidFuel",
+            "weight": 360
+        }
+    },
+    {
+        "op": "replace",
+        "path": "/description",
+        "value": "It's coal. A decent source of fuel.\n\n ^orange;Solid fuel capacity ^green;220/Eu"
+    }
+]

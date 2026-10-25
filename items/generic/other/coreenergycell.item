@@ -1,0 +1,11 @@
+{
+  "itemName" : "coreenergycell",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "energycell",
+  "inventoryIcon" : "coreenergycell.png",
+  "description" : "...",
+  "shortdescription" : "Basic electric cell",
+  "energy": 150,
+  "itemTags" : [ "cell", "energy" ]
+}

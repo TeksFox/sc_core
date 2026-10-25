@@ -1,0 +1,18 @@
+{
+    "projectileName": "pointLight",
+    "image": "pointLight.png",
+    "animationCycle": 0.25,
+    "frameNumber": 1,
+    "damageKindImage": "icon.png",
+    "pointLight": true,
+    "lightColor": [ 0, 0, 0 ],
+    "fullbright": true,
+
+    "power": 0,
+    "speed": 10,
+    "damageKind": "default",
+    "scripts": [
+        "pointLight.lua"
+    ],
+    "scriptDelta": 1
+}

@@ -1,0 +1,15 @@
+{
+    "input": [
+        { "item": "logblock", "count": 2 },
+        { "item": "darkwoodmaterial", "count": 15 },
+        { "item": "climbingrope", "count": 5 },
+        { "item": "copperbar", "count": 1 },
+        { "item": "ironbar", "count": 4 }
+    ],
+    "output": {
+        "item": "weavingloom",
+        "count": 1
+    },
+    "duration" : 1,
+    "groups" : [ "basicfurnace", "basicassembler", "craftingstations", "all" ]
+}

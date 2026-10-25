@@ -1,0 +1,10 @@
+{
+  "itemName" : "leadbar", 
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "leadbar.png",
+  "description" : "It's a lead bar. Can be used to craft items.",
+  "shortdescription" : "Lead bar",
+  "itemTags" : [ "reagent" ]
+}

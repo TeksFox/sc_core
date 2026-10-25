@@ -1,0 +1,11 @@
+{
+  "itemName" : "tarodeath",
+  "price" : 3000,
+  "rarity" : "rare",
+  "category" : "tarocard",
+  "inventoryIcon" : "tarodeath.png",
+  "description" : "This card is able to endow weapons with the element of poison",
+  "largeImage": "tarotarodeathbig",
+  "shortdescription" : "^purple;Taro car (Death)",
+  "itemTags" : [ "reagent", "card" ]
+}

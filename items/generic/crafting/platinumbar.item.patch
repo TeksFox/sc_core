@@ -1,0 +1,27 @@
+[
+    {
+        "op": "add",
+        "path": "/itemTags",
+        "value": []
+    },
+    {
+        "op": "add",
+        "path": "/itemTags/-",
+        "value": "reagent"
+    },
+    {
+        "op": "add",
+        "path": "/itemTags/-",
+        "value": "raw"
+    },
+    {
+        "op": "add",
+        "path": "/itemTags/-",
+        "value": "ore"
+    },
+    {
+        "op": "replace",
+        "path": "/category",
+        "value": "craftingMaterial"
+    }
+]

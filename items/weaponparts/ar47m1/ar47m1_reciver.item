@@ -1,0 +1,12 @@
+{
+    "itemName": "ar47m1_reciver",
+    "price": 0,
+    "rarity": "common",
+    "category": "reciver",
+    "inventoryIcon": "ar47m1_reciver.png",
+    "description": "",
+    "shortdescription": "Reciver for AR47-M1",
+    "itemTags": [],
+    "compatibility": [ "ar47m1" ],
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

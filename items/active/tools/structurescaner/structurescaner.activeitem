@@ -1,0 +1,20 @@
+{
+  "itemName": "structurescaner",
+  "price": 0,
+  "level": 1,
+  "maxStack": 1,
+  "rarity": "rare",
+  "category": "mysteriousReward",
+  "description": "A device that allows you to find hidden objects and resource deposits",
+  "shortdescription": "Structure scaner",
+  "twoHanded": true,
+  "inventoryIcon": "icon.png",
+  "animation": "structurescaner.animation",
+  "animationCustom": {},
+  
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+  "scripts": [
+    "structurescaner.lua"
+  ]
+}

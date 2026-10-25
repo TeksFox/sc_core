@@ -1,0 +1,14 @@
+{
+    "input": [
+        { "item": "tungstenore", "count": 2, "parameters": { "tag": "tungsten" }  },
+        { "item": "manganeseorepowder", "count": 1 },
+        { "item": "carbon", "count": 1 }
+    ],
+    "duration": 5,
+    "groups": [
+        "craftingfurnace2",
+        "basicfurnace",
+        "bars",
+        "all"
+    ]
+}

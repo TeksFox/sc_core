@@ -1,0 +1,29 @@
+{
+    "frameGrid": {
+        "size": [
+            40,
+            40
+        ],
+        "dimensions": [
+            1,
+            5
+        ],
+        "names": [
+            [
+                "common"
+            ],
+            [
+                "uncommon"
+            ],
+            [
+                "rare"
+            ],
+            [
+                "legendary"
+            ],
+            [
+                "essential"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "lightfuel",
+  "price" : 0,
+  "rarity" : "rare",
+  "category" : "liquid",
+  "inventoryIcon" : "lightfuel.png",
+  "description" : "Ready-made light fuel suitable for generators",
+  "shortdescription" : "Light fuel",
+  "itemTags" : [ "reagent", "liquid" ]
+}

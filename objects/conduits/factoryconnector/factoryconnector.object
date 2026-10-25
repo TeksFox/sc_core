@@ -1,0 +1,38 @@
+{
+    "objectName": "factoryconnector",
+    "price": 0,
+    "rarity": "Uncommon",
+    "race": "generic",
+    "category": "Volkorian Kitchen",
+    "printable": false,
+    "description": "For your gourmet experience",
+    "shortdescription": "^orange;Volkoria Oven^white;",
+    "inventoryIcon": "icon.png",
+    "largeImage": "factoryconnector.png:full",
+    "orientations": [
+        {
+            "imageLayers": [ { "image": "factoryconnector.png:full" } ],
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "background" ]
+        }
+    ],
+    "connectionpoints": [ [ -1, 0 ], [ 3, 0 ] ],
+    "scripts": [ "/scripts/objects/sf_object_colorizer.lua", "connector.lua" ],
+    "scriptDelta": 50,
+ 
+    "animation": "/animations/defaultcolorizer/colorizer_default.animation",
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "factoryconnector.png",
+                "colors": { "default": [ "mk_copper", "sf_steel", "sf_black" ] }
+            }
+        }
+    },
+    "inputNodes": [ [ 1, 0.0 ] ],
+    "conduitType": "connector"
+}

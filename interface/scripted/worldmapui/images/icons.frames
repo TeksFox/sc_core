@@ -1,0 +1,30 @@
+{
+    "frameGrid": {
+        "size": [
+            12,
+            12
+        ],
+        "dimensions": [
+            6,
+            2
+        ],
+        "names": [
+            [
+                "danger",
+                "environment",
+                "nooxygen",
+                "trader",
+                "stable",
+                "unstable"
+            ],
+            [
+                "heat",
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    }
+}

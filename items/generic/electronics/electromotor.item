@@ -1,0 +1,10 @@
+{
+  "itemName" : "electromotor",
+  "price" : 0,
+  "rarity" : "rare",
+  "category" : "electronics",
+  "inventoryIcon" : "electromotor.png",
+  "description" : "",
+  "shortdescription" : "Electro motor",
+  "itemTags" : [ "reagent", "electronics" ]
+}

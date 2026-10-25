@@ -1,0 +1,38 @@
+{
+  "itemName": "sf_broadsword",
+  "price": 960,
+  "level": 1,
+  "maxStack": 1,
+  "rarity": "Uncommon",
+  "description": "...",
+  "shortdescription": "...",
+  "tooltipKind": "sword",
+  "category": "Unique melee weapon",
+  "twoHanded": true,
+  "itemTags": [
+    "weapon",
+    "melee",
+    "broadsword"
+  ],
+  "inventoryIcon": "icon.png",
+  "largeImage": "blade.png",
+  "animation": "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts": {
+    "blade": "blade.png"
+  },
+  "animationCustom": {},
+  "scripts": [
+    "/items/active/weapons/melee/meleeweapon.lua",
+    "/items/active/forged/weaponStatusEffects.lua"
+  ],
+  "statusEnable": false,
+  "playerEffects": [ { "effect": "fireblock" } ],
+  "elementalType": "physical",
+  "primaryAbilityType": "broadswordcombo",
+  "primaryAbility": {
+    "fireTime": 0.83,
+    "baseDps": 10
+  },
+  "altAbilityType" : "superspinslash",
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}

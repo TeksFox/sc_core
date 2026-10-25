@@ -1,0 +1,18 @@
+{
+    "itemName": "energymodule4",
+    "price": 5000,
+    "rarity": "rare",
+    "category": "updrageModule",
+    "inventoryIcon": "energymodule.png:4",
+    "description": "Reduces the overall energy consumption of the device",
+    "shortdescription": "Efficiency module Lv.4",
+    
+    "moduleType": "efficiency_upgrade",
+    "moduleparameter":{
+        "efficiency": 0.30
+    },
+
+
+	"tooltipKind": "sf_moduleitem",
+	"builder": "/items/buildscripts/build_sf_moduleitem.lua"
+}

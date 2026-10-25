@@ -1,0 +1,69 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "cycle": 1,
+                        "mode": "loop",
+                        "properties": {
+                            "particleEmittersOff" : [ "dust" ]
+                        }
+                    },
+                    "active": {
+                        "frames": 4,
+                        "cycle": 0.25,
+                        "mode": "loop",
+                        "properties": {
+                            "particleEmittersOn" : [ "dust" ],
+                            "persistentSound": "/sfx/objects/centrifuge.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<partImage>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<partImage>:active.<frame>" }
+                        }
+                    }
+                }
+            },
+            "fullbright": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": true},
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<partImage>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<partImage>:active.<frame>" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "particleEmitters": {
+        "dust": {
+            "emissionRate": 3,
+            "emissionVariance": 0.3,
+            "offsetRegion" : [4.125, 5, 4.875, 5],
+            //"burstCount": 20,
+            "particles": [
+                { "particle": "dust2" },
+                { "particle": "dust2" }
+            ]
+        }
+    }
+}

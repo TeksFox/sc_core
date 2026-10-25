@@ -1,0 +1,404 @@
+{
+    //! Recipes------------------------------------------------------------------------
+    "recipe":[
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "copperore", "copper_dust", "copper_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "copperbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "copper_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "copperbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "tinore", "tin_dust", "tin_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "tinbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "tin_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "tinbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "lead", "lead_dust", "lead_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "leadbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "lead_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "leadbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "silverore", "silver_dust", "silver_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "silverbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "silver_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "silverbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "goldore", "gold_dust", "gold_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "goldbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "gold_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "goldbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "platinumore", "platinum_dust", "platinum_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "platinumbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "platinum_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "platinumbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "ironore", "iron_dust", "iron_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "ironbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "iron_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "ironbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "tungstenore", "tungsten_dust", "tungsten_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "tungstenbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "tungsten_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "tungstenbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "titaniumore", "titanium_dust", "titanium_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "titaniumbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "titanium_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "titaniumbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": [ "durasteelore", "durasteel_dust", "durasteel_crushed" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "durasteelbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "durasteel_tiny", "count": 6 }
+            ],
+            "output": [
+                { "name": "durasteelbar", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "bars"],
+            "input":[
+                { "name": "quartzore", "count": 2 }
+            ],
+            "output": [
+                { "name": "silicon", "count": 1 },
+                { "name": "ash", "count": [ 1, 2 ] },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 2
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "clay", "count": 2 }
+            ],
+            "output": [
+                { "name": "firedclay", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.05 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": [ "sand", "sand2" ], "count": 2 }
+            ],
+            "output": [
+                { "name": "glass", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.05 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "logblock", "count": 1 }
+            ],
+            "output": [
+                { "name": "paper", "count": 5 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.05 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "liquidoil", "count": 15 }
+            ],
+            "output": [
+                { "name": "rubber", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "corefragmentore", "count": 2 }
+            ],
+            "output": [
+                { "name": "volatilepowder", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "coalore", "count": 3 },
+                { "name": "liquidwater", "count": 10 }
+            ],
+            "output": [
+                { "name": "carbon", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.25 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "ingredients"],
+            "input":[
+                { "name": "glass", "count": 2 }
+            ],
+            "output": [
+                { "name": "bottle", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 2 ], "chance": 0.15 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "alloys"],
+            "input":[
+                { "name": "iron_dust", "count": 3 },
+                { "name": "copper_dust", "count": 1 },
+                { "name": "oxygen", "count": 25 }
+            ],
+            "output": [
+                { "name": "sf_steelbar", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.35 }
+            ],
+            "delay": 1.5,
+            "level": 1
+        },
+        {
+            "groups": [ "all", "alloys"],
+            "input":[
+                { "name": "refinedaegisalt", "count": 1 },
+                { "name": "sand2", "count": 20 },
+                { "name": "oxygen", "count": 25 }
+            ],
+            "output": [
+                { "name": "durableglass", "count": 1 },
+                { "name": "productiontoken", "count": [ 1, 3 ], "chance": 0.35 }
+            ],
+            "delay": 11.5,
+            "level": 3
+        }
+    ],
+    //
+    //! Pools--------------------------------------------------------------------------
+    "pool":{
+        "crusherSlagPool": [
+            [ 0.50, [ "slag", [ 1, 2 ] ] ],
+            [ 0.40, [ "stone_crushed", [ 1, 2 ] ] ],
+            [ 0.20, [ "productiontoken", [ 1, 3 ] ] ]
+        ],
+        "productiontokenPool": [
+            [ 0.20, [ "productiontoken", [ 1, 3 ] ] ]
+        ]
+    }
+    
+}

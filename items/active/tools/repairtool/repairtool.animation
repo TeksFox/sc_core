@@ -1,0 +1,44 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "properties" : {
+            }
+          },
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "start",
+            "properties" : {
+              "immediateSound" : "/sfx/objects/colonydeed_partyhorn.ogg"
+            },
+            "frameProperties" : {
+              "stateNudge" : [ [-0.125, 0], [0, 0] ]
+            }
+          },
+          "start" : {
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "repairtool.png",
+          "offset" : [0.0, 0.0]
+        }
+      }
+    }
+  }
+}

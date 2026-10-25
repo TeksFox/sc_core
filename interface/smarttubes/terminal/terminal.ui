@@ -1,0 +1,549 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/smarttubes/terminal/header.png",
+            "fileBody": "/interface/smarttubes/terminal/body.png",
+            "fileFooter": "/interface/smarttubes/terminal/footer.png"
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "Conduit Terminal",
+            "subtitle": "Allows Control over a conduit system",
+            "position": [ 100, 100 ],
+            "zlevel": -10,
+            "icon": {
+                "type": "image",
+                "file": "/interface/smarttubes/terminal/icon.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "mainCanvas": {
+            "zlevel": -1,
+            "type": "canvas",
+            "rect": [ 128, 21, 353, 246 ],
+            "visible": true,
+            "captureMouseEvents": true,
+            "captureKeyboardEvents": false
+        },
+        "areaTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 8,
+            "position": [
+                245,
+                251
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 225,
+            "value": ""
+        },
+        "speedUpgradeTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 6,
+            "position": [
+                33,
+                271
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 225,
+            "value": "Upgrades"
+        },
+        "TraversalsTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 6,
+            "position": [
+                94,
+                271
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 225,
+            "value": "Traversals"
+        },
+        
+        "allItemslayout": {
+            "zlevel": 1,
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": false,
+            "rect": [ 127, 20, 353, 246 ],
+            "children": {
+                "allItemsInventoryArea": {
+                    "type": "scrollArea",
+                    "rect": [ 5, 56, 228, 225 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "visible": true,
+                    "zlevel": 10,
+                    "children": {
+                        "itemList": {
+                            "type": "list",
+                            "columns": 11,
+                            "fillDown": true,
+                            "schema": {
+                                "selectedBG": "/interface/smarttubes/terminal/back.png",
+                                "unselectedBG": "/interface/smarttubes/terminal/back.png",
+                                "disabledBG": "/interface/smarttubes/terminal/back.png",
+                                "spacing": [ 0, 0 ],
+                                "memberSize": [ 19, 19 ],
+                                "listTemplate": {
+                                    "background": {
+                                        "type": "image",
+                                        "file": "/interface/smarttubes/terminal/back.png",
+                                        "position": [ 0, 0 ],
+                                        "zlevel": -1
+                                    },
+                                    "slot1": {
+                                        "type": "itemslot",
+                                        "position": [ 0, 1 ],
+                                        "backingImage": "/interface/inventory/empty.png",
+                                        "showBackingImageWhenEmpty": true,
+                                        "showBackingImageWhenFull": true,
+                                        "showRarity": true,
+                                        "IconMode": true,
+                                        "zlevel": 1,
+                                        "visible": false,
+                                        "data": "1",
+                                        "callback": "__SlotClick__",
+                                        "rightClickCallback": "__SlotRightClick__"
+                                    },
+                                    "slot1count": {
+                                        "type": "label",
+                                        "zlevel": 3,
+                                        "position": [
+                                            19,
+                                            0
+                                        ],
+                                        "hAnchor": "right",
+                                        "vAnchor": "bottom",
+                                        "fontSize": 6,
+                                        "wrapWidth": 100,
+                                        "value": ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "allItemsExtractableCheckbox": {
+                    "type": "button",
+                    "pressedOffset": [ 0, 0 ],
+                    "position": [ 200, 42 ],
+                    "base" : "/interface/smallsliderbutton.png:off",
+                    "hover" : "/interface/smallsliderbutton.png:offH",
+                    "baseImageChecked" : "/interface/smallsliderbutton.png:on",
+                    "hoverImageChecked" : "/interface/smallsliderbutton.png:onH",
+                    "checkable": true,
+                    "zlevel": 27,
+                    "callback": "__ExtractableUpdate",
+                    "checked": false
+                },
+                "Extractable": {
+                    "type": "label",
+                    "zlevel": 3,
+                    "position": [ 4, 46 ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "wrapWidth": 225,
+                    "value": "Extractable:"
+                },
+                "allItemsSearchBox": {
+                    "zlevel": 26,
+                    "type": "textbox",
+                    "position": [ 2, 30 ],
+                    "textAlign": "center",
+                    "hint": "Searth box",
+                    "fontSize": 8,
+                    "callback": "__allItemsSearchBoxUpdated",
+                    "visible": true,
+                    "maxWidth": 215
+                },
+                "allItemsSelectedItemSlot": {
+                    "type": "itemslot",
+                    "position": [ 2, 2 ],
+                    "backingImage": "/interface/smarttubes/terminal/itemslotlarge.png",
+                    "showBackingImageWhenEmpty": true,
+                    "showBackingImageWhenFull": true,
+                    "showDurability": true,
+                    "showRarity": false,
+                    "IconMode": true,
+                    "zlevel": 26,
+                    "visible": true,
+                    "data": "1",
+                    "callback": "null",
+                    "rightClickCallback": "null"
+                },
+                "allItemsSelectedItemAmountBox": {
+                    "zlevel": 26,
+                    "type": "textbox",
+                    "position": [ 32, 18 ],
+                    "textAlign": "left",
+                    "fontSize": 8,
+                    "hint": "",
+                    "callback": "null",
+                    "regex": "\\d*",
+                    "maxWidth": 188
+                },
+                "allItemsExtractButton": {
+                    "type": "button",
+                    "base": "/interface/craftingbutton.png:1",
+                    "hover": "/interface/craftingbutton.png:3",
+                    "press": "/interface/craftingbutton.png:3",
+                    "disabledImage":"/interface/craftingbutton.png:1",
+                    "caption": "Extract",
+                    "zlevel": 26,
+                    "callback": "__AllItemsExtract",
+                    "position": [ 170, 2 ],
+                    "pressedOffset": [ 0, 0 ]
+                },
+                "borderMainCanwas": {
+                    "type": "image",
+                    "file": "/interface/smarttubes/terminal/allitemsback.png",
+                    "position": [ 1, 1 ]
+                }
+            }
+        },
+        "canwaslayout": {
+            "type": "layout",
+            "zlevel": 1,
+            "layoutType": "basic",
+            "visible": true,
+            "rect": [ 127, 20, 353, 246 ],
+            "children": {
+                "borderMainCanwas": {
+                    "type": "image",
+                    "file": "/interface/smarttubes/terminal/canvasborder.png",
+                    "position": [ 0, 0 ],
+                    "zlevel": 2
+                },
+                "viewWindowZoomOut": {
+                    "type": "button",
+                    "base": "/interface/smarttubes/terminal/canvasviewzoom.png:2b",
+                    "hover": "/interface/smarttubes/terminal/canvasviewzoom.png:2h",
+                    "press": "/interface/smarttubes/terminal/canvasviewzoom.png:2h",
+                    "caption": "",
+                    "callback": "__ViewWindowZoomOut",
+                    "position": [ 2, 192 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "zlevel": 2
+                },
+                "viewWindowZoomIn": {
+                    "type": "button",
+                    "base": "/interface/smarttubes/terminal/canvasviewzoom.png:1b",
+                    "hover": "/interface/smarttubes/terminal/canvasviewzoom.png:1h",
+                    "press": "/interface/smarttubes/terminal/canvasviewzoom.png:1h",
+                    "caption": "",
+                    "callback": "__ViewWindowZoomIn",
+                    "position": [ 2, 209 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "zlevel": 2
+                }
+            }
+        },
+        "itemTrayCanvas": {
+            "zlevel": 1,
+            "type": "canvas",
+            "rect": [ 120, 1, 437, 31 ],
+            "captureMouseEvents": true,
+            "captureKeyboardEvents": false
+        },
+        "allItemsCanvas": {
+            "zlevel": 20,
+            "type": "canvas",
+            "rect": [ 127, 20, 120, 195 ],
+            "captureMouseEvents": true,
+            "captureKeyboardEvents": false
+        },
+        "buttonCategory": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "baseImage": "/interface/tabs/tabsmall.png:1",
+            "baseImageChecked": "/interface/tabs/tabsmall.png:2",
+            "position": [
+                125,
+                256
+            ],
+            "buttons": [
+                {
+                    "id": 1,
+                    "selected": true,
+                    "position": [ 0, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Objects",
+                    "fontSize": 6,
+                    "data": { "option": "canvas", "text": "Overview of the logical network" }
+                },
+                {
+                    "id": 2,
+                    "position": [ 36, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "All items",
+                    "fontSize": 6,
+                    "data": { "option": "itemlist", "text": "Overview of items in the logical network" }
+                }
+            ]
+        },
+        "hueSlider": {
+            "visible": false,
+            "type": "slider",
+            "position": [ 122, 310 ],
+            "gridImage": "/interface/optionsmenu/smallselection.png",
+            "callback": "__HueSlider",
+            "range": [ 0, 360, 1 ]
+        },
+        "satSlider": {
+            "visible": false,
+            "type": "slider",
+            "position": [ 122, 290 ],
+            "gridImage": "/interface/optionsmenu/smallselection.png",
+            "callback": "__SatSlider",
+            "range": [ 0, 100, 1 ]
+        },
+        "containerTitle": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [
+                63,
+                224
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 225,
+            "value": "Container view"
+        },
+        "containerBeingViewed": {
+            "type": "itemslot",
+            "position": [
+                8,
+                199
+            ],
+            "backingImage": "/interface/actionbar/actionbarcover.png",
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "showDurability": true,
+            "IconMode": true,
+            "visible": false,
+            "zlevel": 1,
+            "callback": "ContainerArea.__ContainerBoxClicked__",
+            "rightClickCallback": "null"
+        },
+        "containerName": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [
+                74,
+                208
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 225,
+            "value": "",
+            "visible": false
+        },
+        "extractButton": {
+            "type": "button",
+            "base": "/interface/smarttubes/terminal/extractbutton.png:1",
+            "hover": "/interface/smarttubes/terminal/extractbutton.png:2",
+            "press": "/interface/smarttubes/terminal/extractbutton.png:2",
+            "disabledImage": "/interface/smarttubes/terminal/extractbutton.png:1",
+            "caption": "Extract",
+            "callback": "__Extract",
+            "position": [
+                70,
+                22
+            ],
+            "visible": false,
+            "pressedOffset": [
+                0,
+                0
+            ]
+        },
+        "amountArea": {
+            "type": "image",
+            "file": "",
+            "position": [ 331, 202 ],
+            "zlevel": -20,
+            "visible": false
+        },
+        "amountBox": {
+            "zlevel": 3,
+            "type": "textbox",
+            "position": [
+                7,
+                23
+            ],
+            "textAlign": "center",
+            "fontSize": 8,
+            "hint": "0",
+            "callback": "null",
+            "color": [ 255, 165, 0 ],
+            "visible": false,
+            "regex": "\\d{0,4}",
+            "maxWidth": 55
+        },
+        "containerViewArea": {
+            "type": "scrollArea",
+            "rect": [ 12, 50, 123, 195 ],
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+            "visible": false,
+            "children": {
+                "itemList": {
+                    "type": "list",
+                    "columns": 5,
+                    "schema": {
+                        "selectedBG": "/interface/inventory/empty.png",
+                        "unselectedBG": "/interface/inventory/empty.png",
+                        "disabledBG": "/interface/inventory/empty.png",
+                        "spacing": [
+                            0,
+                            0
+                        ],
+                        "memberSize": [
+                            19,
+                            19
+                        ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "file": "/interface/inventory/empty.png",
+                                "position": [
+                                    0,
+                                    0
+                                ],
+                                "zlevel": -1
+                            },
+                            "slot1": {
+                                "type": "itemslot",
+                                "position": [
+                                    0,
+                                    0
+                                ],
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenEmpty": true,
+                                "showBackingImageWhenFull": true,
+                                "showDurability": true,
+                                "IconMode": true,
+                                "zlevel": 1,
+                                "visible": false,
+                                "data": "1",
+                                "callback": "__SlotClick__",
+                                "rightClickCallback": "__SlotRightClick__"
+                            },
+                            "slot1background": {
+                                "type": "image",
+                                "file": "/interface/inventory/empty.png",
+                                "position": [
+                                    0,
+                                    0
+                                ],
+                                "zlevel": 0,
+                                "visible": false
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "speedUpgrades": {
+            "type": "label",
+            "zlevel": 3,
+            "position": [
+                34,
+                240
+            ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 50,
+            "value": "0"
+        },
+        "addSpeedUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:addb",
+            "hover": "/interface/smallarrowbuttons.png:addh",
+            "press": "/interface/smallarrowbuttons.png:addh",
+            "caption": "",
+            "callback": "__SpeedAdd",
+            "position": [
+                8,
+                249
+            ]
+        },
+        "removeSpeedUpgrade": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:remb",
+            "hover": "/interface/smallarrowbuttons.png:remh",
+            "press": "/interface/smallarrowbuttons.png:remh",
+            "caption": "",
+            "callback": "__SpeedRemove",
+            "position": [
+                44,
+                249
+            ]
+        },
+        "incrementColor": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:leftb",
+            "hover": "/interface/smallarrowbuttons.png:lefth",
+            "press": "/interface/smallarrowbuttons.png:lefth",
+            "callback": "__ColorIncrement",
+            "position": [
+                69,
+                243
+            ]
+        },
+        "decrementColor": {
+            "type": "button",
+            "base": "/interface/smallarrowbuttons.png:rightb",
+            "hover": "/interface/smallarrowbuttons.png:righth",
+            "press": "/interface/smallarrowbuttons.png:righth",
+            "callback": "__ColorDecrement",
+            "position": [
+                105,
+                243
+            ]
+        },
+        "colorDisplay": {
+            "zlevel": 2,
+            "type": "image",
+            "file": "/interface/smarttubes/terminal/paletter.png",
+            "position": [ 88, 244 ],
+            "scale": 1
+        }
+    },
+    "canvasClickCallbacks": {
+        "mainCanvas": "__ViewWindow__.OnMouseClick",
+        "itemTrayCanvas": "__ClickItemTray__",
+        "allItemsCanvas": "__AllItemsAreaClick__"
+    },
+    "scriptWidgetCallbacks": [
+        "buttonCategory",
+        "__HueSlider",
+        "__SatSlider",
+        "ContainerArea.__ContainerBoxClicked__",
+        "__SlotClick__",
+        "__SlotRightClick__",
+        "__Extract",
+        "__Insert",
+        "__SpeedAdd",
+        "__SpeedRemove",
+        "__ColorIncrement",
+        "__ColorDecrement",
+        "__allItemsSearchBoxUpdated",
+        "__allItemsArrowClicked",
+        "__AllItemsExtract",
+        "__ExtractableUpdate",
+        "__ViewWindowZoomIn",
+        "__ViewWindowZoomOut"
+    ],
+    "scripts": [
+        "/interface/smarttubes/terminal/terminal.lua"
+    ],
+    "scriptDelta": 1
+}

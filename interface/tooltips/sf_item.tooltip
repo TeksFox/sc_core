@@ -1,0 +1,60 @@
+{
+    "background": {
+        "type": "background",
+        "fileHeader": "/interface/tooltips/sf_header.png",
+        "fileBody": "/interface/tooltips/body_item.png",
+        "fileFooter": "/interface/tooltips/sf_footer.png"
+    },
+    "priceLabel": {
+        "type": "label",
+        "position": [ 130, 21 ],
+        "fontSize": 6,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "green"
+    },
+    "priceTitleLabel": {
+        "type": "label",
+        "position": [ 10, 21 ],
+        "fontSize": 6,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Price:",
+        "color": "green"
+    },
+    "rarityTitleLabel": {
+        "type": "label",
+        "position": [ 70, 162 ],
+        "fontSize": 8,
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "descriptionLabel": {
+        "type": "label",
+        "position": [ 70, 95 ],
+        "fontSize": 6,
+        "hAnchor": "mid",
+        "vAnchor": "top",
+        "wrapWidth": 124
+    },
+
+    "objectImage": {
+        "type": "image",
+        "position": [ 70, 130 ],
+        "centered": true,
+        "scale": 2,
+        "file": "",
+        "maxSize" : [72, 45],
+        "minSize" : [70, 40]
+    },
+
+    "shine": {
+        "type": "image",
+        "position": [ 0, 0 ],
+        "centered": false,
+        "zLevel": -10,
+        "file": "/interface/tooltips/shine.png"
+    }
+}

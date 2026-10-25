@@ -1,0 +1,17 @@
+{
+    "frameGrid": {
+        "size": [
+            16,
+            9
+        ],
+        "dimensions": [
+            1,
+            1
+        ],
+        "names": [
+            [ "nek.1", "cop.1" ],
+            [ "nek.2", "cop.2" ],
+            [ "nek.3", "non.3" ]
+        ]
+    }
+}

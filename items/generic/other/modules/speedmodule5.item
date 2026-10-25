@@ -1,0 +1,19 @@
+{
+    "itemName": "speedmodule5",
+    "price": 5000,
+    "rarity": "rare",
+    "category": "updrageModule",
+    "inventoryIcon": "speedmodule.png:5",
+    "description": "Increases the production speed by increasing the total consumption of the device",
+    "shortdescription": "Acceleration module Lv.5",
+    
+    "moduleType": "acceleration_upgrade",
+    "moduleparameter":{
+        "acceleration": 0.40,
+        "efficiency": -0.50
+    },
+
+
+	"tooltipKind": "sf_moduleitem",
+	"builder": "/items/buildscripts/build_sf_moduleitem.lua"
+}

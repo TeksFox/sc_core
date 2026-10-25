@@ -1,0 +1,23 @@
+{
+    "input": [
+        { "item": "copperbar", "count": 10 },
+        { "item": "climbingrope", "count": 4 },
+        {
+            "item": "leather",
+            "count": 2
+        },
+        {
+            "item": "logblock",
+            "count": 2
+        }
+    ],
+    "output": {
+        "item": "sf_copperpickaxe",
+        "count": 1,
+        "parameters": {
+            
+        }
+    },
+    "duration" : 1,
+    "groups" : [ "inventorstable", "tools", "all" ]
+}

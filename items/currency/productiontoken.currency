@@ -1,0 +1,16 @@
+{
+  "itemName" : "productiontoken",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "_currency.png:productiontoken",
+  "description" : "It can be obtained as a side resource during production or processing!",
+  "shortdescription" : "Production token",
+  "currency" : "productiontoken",
+  "category" : "Currency",
+  "value" : 1,
+  "pickupSoundsSmall" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsMedium" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsLarge" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "smallStackLimit" : 99,
+  "mediumStackLimit" : 999,
+  "maxStack" : 1000000
+}

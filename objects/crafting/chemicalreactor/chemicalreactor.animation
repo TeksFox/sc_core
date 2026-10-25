@@ -1,0 +1,56 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "bodyState": {
+                "default": "default",
+                "states": {
+                    "default": { "frames": 1 }
+                }
+            },
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "cycle": 1,
+                        "mode": "loop"
+                    },
+                    "active": {
+                        "frames": 1,
+                        "cycle": 1,
+                        "mode": "loop",
+                        "properties": {
+                            "persistentSound": "/sfx/objects/centrifuge.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false, "fullbright": false},
+                "partStates": {
+                    "bodyState": {
+                        "default": {
+                            "properties": { "image": "<partImage>:default" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "zLevel": 2,"centered": false, "fullbright": true },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<partImage>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<partImage>:active.<frame>" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "itemName": "coremodule6",
+    "price": 9000,
+    "rarity": "essential",
+    "category": "updrageModule",
+    "inventoryIcon": "coremodule.png:6",
+    "description": "Core upgrade module allows you to access more advanced recipes",
+    "shortdescription": "Core module Lv.6",
+    
+    "moduleType": "core_upgrade",
+    "moduleparameter":{
+        "level": 6,
+        "efficiency": -0.20,
+        "acceleration": 0.15
+    },
+
+
+	"tooltipKind": "sf_moduleitem",
+	"builder": "/items/buildscripts/build_sf_moduleitem.lua"
+}

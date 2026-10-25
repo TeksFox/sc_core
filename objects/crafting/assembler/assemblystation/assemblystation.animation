@@ -1,0 +1,60 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "bodyState": {
+                "default": "default",
+                "states": {
+                    "default": { "frames": 1 }
+                }
+            },
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "cycle": 1.5,
+                        "mode": "loop"
+                    },
+                    "active": {
+                        "frames": 1,
+                        "cycle": 1.5,
+                        "mode": "loop"
+                    },
+                    "wait": {
+                        "frames": 1,
+                        "cycle": 1.5,
+                        "mode": "loop"
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false, "fullbright": false},
+                "partStates": {
+                    "bodyState": {
+                        "default": {
+                            "properties": { "image": "<part>:default<color_default>" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "zLevel": 3, "centered": false, "fullbright": true },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:idle" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:active" }
+                        },
+                        "wait": {
+                            "properties": { "image": "<part>:wait" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

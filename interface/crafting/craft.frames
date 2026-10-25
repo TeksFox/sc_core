@@ -1,0 +1,11 @@
+{
+  "frameGrid" : {
+    "size" : [50, 18],
+    "dimensions" : [2, 3],
+    "names" : [
+       ["craftbase","stopbase"], 
+       ["crafthover","stophover"],
+       ["craftpressed","stoppressed"]
+    ]
+  }
+}

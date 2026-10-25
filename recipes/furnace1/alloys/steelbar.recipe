@@ -1,0 +1,17 @@
+{
+    "input": [
+        { "name": "irondust", "count": 2 },
+        { "name": "refinedvanadium", "count": 1 },
+        { "name": "carbon", "count": 2 }
+    ],
+    "output": {
+        "item": "steelbar",
+        "count": 1
+    },
+    "duration": 16,
+    "groups": [
+        "craftingfurnace2",
+        "alloy",
+        "all"
+    ]
+}

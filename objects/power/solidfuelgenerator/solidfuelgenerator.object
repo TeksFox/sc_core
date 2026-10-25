@@ -1,0 +1,60 @@
+{
+    "objectName": "solidfuelgenerator",
+    "price": 0,
+    "rarity": "uncommon",
+    "description": "Generates energy using solid fuel. Amount of energy produced depends on fuel used",
+    "shortdescription": "Solid Fuel Generator",
+    "race": "generic",
+    "category": "power",
+    "objectType": "container",
+    "printable": false,
+    "inventoryIcon": "icon.png",
+    "largeImage": "part_body.png:full",
+    "orientations": [
+        {
+            "dualImage": "part_body.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+    "outputNodes": [ [ 0, 0 ] ],
+
+    "scripts": [ "/scripts/energy/genericEuGenerator.lua", "/scripts/objects/sf_object_colorizer.lua" ],
+    "scriptDelta": 5,
+    "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
+    "closeSounds": [ "/sfx/objects/f_closeObject.ogg" ],
+    "slotCount": 3,
+    "uiConfig": "/interface/objectpower/basegenerator.ui",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600,
+    
+    "euConfig": {
+        "euType": "generator",
+        "euStorage": 1500, // in EU
+        "euEnergyLevel": 2,
+        "euFromBeggining": 0,
+        "reagents": "burnerFuel",
+        "energyType": "electric"
+    },
+    
+    "listItemsIcon": "energy",
+    "animation": "solidfuelgenerator.animation",
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "part_body.png",
+                "colors": { "default": [ "sf_bronz", "sf_green", "sf_black" ] }
+            },
+            "light": {
+                "partImage": "part_fullbright.png",
+                "colors": { "idle": [] },
+                "hide": true 
+            }
+        }
+    }
+}

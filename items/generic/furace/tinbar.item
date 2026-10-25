@@ -1,0 +1,10 @@
+{
+  "itemName" : "tinbar", 
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "Usefulmetal",
+  "inventoryIcon" : "tinbar.png",
+  "description" : "It's a tin bar. Can be used to craft items.",
+  "shortdescription" : "Tin bar",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,17 @@
+{
+    "input": [
+        { "item": "platinumore", "count": 2, "parameters": { "tag": "platinum" } },
+        { "name": "salt", "count": 1 },
+        { "name": "chlorine", "count": 10 }
+    ],
+    "output": {
+        "item": "platinumbar",
+        "count": 1
+    },
+    "duration": 6,
+    "groups": [
+        "craftingfurnace2",
+        "bars",
+        "all"
+    ]
+}

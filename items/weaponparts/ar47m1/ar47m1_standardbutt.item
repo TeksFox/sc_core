@@ -1,0 +1,14 @@
+{
+    "itemName": "ar47m1_standardbutt",
+    "price": 0,
+    "rarity": "common",
+    "category": "butt",
+    "inventoryIcon": "ar47m1_standardbutt.png",
+    "shortdescription": "Standard butt for AR47-M1",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "ar47m1" ],
+    "inaccuracy": [-0.03, -0.05],
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

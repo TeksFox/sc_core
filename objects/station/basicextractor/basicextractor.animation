@@ -1,0 +1,93 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "activeState": {
+                "default": "default",
+                "states": {
+                    "default": {
+                        "frames": 1,
+                        "cycle": 0.5
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": {
+                    "zLevel": 1,
+                    "centered": false,
+                    "fullbright": false
+                },
+                "partStates": {
+                    "activeState": {
+                        "default": {
+                            "properties": {
+                                "image": "<partImage>:default"
+                            }
+                        }
+                    }
+                }
+            },
+            "ore": {
+                "properties": {
+                    "zLevel": 2,
+                    "centered": false,
+                    "fullbright": true, 
+                    "offset" : [ 1.75, 1.75 ]
+                },
+                "partStates": {
+                    "activeState": {
+                        "default": {
+                            "properties": {
+                                "image": "<partImage>:default<color>"
+                            }
+                        }
+                    }
+                }
+            },
+            "bar": {
+                "properties": {
+                    "zLevel": 2,
+                    "centered": false,
+                    "fullbright": true, 
+                    "offset" : [ 1.75, 0.875 ]
+                },
+                "partStates": {
+                    "activeState": {
+                        "default": {
+                            "properties": {
+                                "image": "<partImage>:default<progress>"
+                            }
+                        }
+                    }
+                }
+            },
+            "rotor": {
+                "properties": {
+                    "zLevel": -1,
+                    "centered": true,
+                    "fullbright": false, 
+                    "offset" : [ 2.5, 2.5 ],
+                    "transformationGroups" : ["rotor"]
+                },
+                "partStates": {
+                    "activeState": {
+                        "default": {
+                            "properties": {
+                                "image": "<partImage>:default"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rotationGroups": {
+        "rotor": {
+            "angularVelocity": 0.5
+        }
+    },
+    "transformationGroups": {
+        "rotor": {}
+    }
+}

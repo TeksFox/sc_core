@@ -1,0 +1,26 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "defaultState": {
+                "default": "default",
+                "states": {
+                    "default": { "frames": 1 }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": {
+                    "centered": false
+                },
+                "partStates": {
+                    "defaultState": {
+                        "default": {
+                            "properties": { "image": "<part>:default<color_default>" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

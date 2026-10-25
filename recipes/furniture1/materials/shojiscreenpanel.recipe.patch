@@ -1,0 +1,21 @@
+[
+    {
+        "op": "replace",
+        "path": "/input",
+        "value": [
+            { "item": "paper", "count": 1 },
+            { "item": "woodboard", "count": 1 }
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/output/count",
+        "value": 5
+    },
+    {
+        "op": "add",
+        "path": "/groups/-",
+        "value": "paper"
+    }
+
+]

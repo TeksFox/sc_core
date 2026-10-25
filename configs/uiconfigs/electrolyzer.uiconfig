@@ -1,0 +1,16 @@
+{
+    "uiOpenSound": "/",
+    "uiClosedSound": "/",
+    "uiListSound": "/sfx/interface/clickon_success.ogg",
+    "category": [
+        {
+            "selected": true,
+            "friendlyname": "^green;Extraction of liquids and gases",
+            "category": [
+                "liquid"
+            ],
+            "order": 1,
+            "icon": "/interface/uiparts/icons/icon_list_cLiquids.png"
+        }
+    ]
+}

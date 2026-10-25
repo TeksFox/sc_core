@@ -1,0 +1,17 @@
+{
+  "itemName": "screwdriverset",
+  "price": 100,
+  "maxStack": 1,
+  "rarity": "rare",
+  "category": "tool",
+  "inventoryIcon": "screwdriverset.png",
+  "description": "These screwdrivers are very durable, and equipped with a magnetic tip!",
+  "shortdescription": "Screwdriver set",
+
+  "tool": "advancedworkbench",
+  "durabilityPerUse": 1,
+  "durability": 55,
+
+  "tooltipKind": "sf_toolitem",
+  "builder": "/items/buildscripts/buildSFitem.lua"
+}

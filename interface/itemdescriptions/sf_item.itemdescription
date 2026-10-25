@@ -1,0 +1,102 @@
+{
+
+    "priceLabel": {
+        "type": "label",
+        "position": [ 134, 7 ],
+        "fontSize": 6,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": "",
+        "color": "black"
+    },
+    
+    "priceTitleLabel": {
+        "type": "label",
+        "position": [ 14, 7 ],
+        "fontSize": 6,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Price:",
+        "color": "black"
+    },
+
+    "descriptionLabel": {
+        "type": "label",
+        "position": [
+            73,
+            93
+        ],
+        "hAnchor": "mid",
+        "vAnchor": "top",
+        "wrapWidth": 122,
+        "fontSize": 6
+    },
+
+    "objectImage": {
+        "type": "image",
+        "position": [ 73, 126 ],
+        "file": "",
+        "centered": true,
+        "maxSize": [ 70, 45 ],
+        "minSize": [ 70, 40 ]
+    },
+
+    "title": {
+        "type": "label",
+        "position": [ 34, 184 ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": ""
+    },
+
+    "subTitle": {
+        "type": "label",
+        "position": [
+            34,
+            174
+        ],
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "color": [
+            185,
+            181,
+            178
+        ],
+        "value": ""
+    },
+    
+    "rarityTitleLabel": {
+        "type": "label",
+        "position": [
+            73,
+            160
+        ],
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "titleIcon": {
+        "type": "itemslot",
+        "position": [
+            9,
+            167
+        ],
+        "callback": "null",
+        "iconMode": true,
+        "backingImage": "/interface/crafting/craftportrait.png",
+        "showRarity": false,
+        "showBackingImageWhenFull": true
+    },
+    
+
+    "bodyImage": {
+        "type": "image",
+        "zlevel": -10,
+        "position": [
+            7,
+            -27
+        ],
+        "file": "/interface/itemdescriptions/sf_item.png",
+        "centered": false
+    }
+}

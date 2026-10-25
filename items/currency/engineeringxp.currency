@@ -1,0 +1,16 @@
+{
+  "itemName" : "engineeringxp",
+  "rarity" : "uncommon",
+  "inventoryIcon" : "_currency.png:engineeringxp",
+  "description" : "Очки инженерии требуются для повышения уровня инженерии и возможности создавать более сложные вещи и механизмы",
+  "shortdescription" : "Очки инженерии",
+  "currency" : "engineeringxp",
+  "category" : "Currency",
+  "value" : 1,
+  "pickupSoundsSmall" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsMedium" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "pickupSoundsLarge" : [ "/sfx/objects/ancientenergy_pickup1.ogg", "/sfx/objects/ancientenergy_pickup2.ogg", "/sfx/objects/ancientenergy_pickup3.ogg" ],
+  "smallStackLimit" : 99,
+  "mediumStackLimit" : 999,
+  "maxStack" : 1000000
+}

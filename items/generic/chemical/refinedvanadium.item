@@ -1,0 +1,10 @@
+{
+  "itemName" : "refinedvanadium",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "refinedvanadium.png",
+  "description" : ".",
+  "shortdescription" : "Refined vanadium",
+  "itemTags" : [ "reagent", "raw" ]
+}

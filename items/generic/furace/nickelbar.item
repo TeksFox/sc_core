@@ -1,0 +1,10 @@
+{
+  "itemName" : "nickelbar", 
+  "price" : 5,
+  "rarity" : "uncommon",
+  "category" : "Usefulmetal",
+  "inventoryIcon" : "nickelbar.png",
+  "description" : "It's a nickel bar. Can be used to craft items.",
+  "shortdescription" : "Nickel bar",
+  "itemTags" : [ "reagent" ]
+}

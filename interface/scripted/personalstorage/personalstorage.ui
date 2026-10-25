@@ -1,0 +1,215 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/personalstorage/header.png",
+            "fileBody": "/interface/scripted/personalstorage/body.png",
+            "fileFooter": "/interface/scripted/personalstorage/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 423, 325 ]
+        },
+        "spectralText": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 8,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "top"
+        }, 
+        "errorLabel": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 14,
+            "wrapWidth": 400,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "color": "red",
+            "value": "Error there is already an active core on the planet",
+            "position": [ 221, 164 ]
+        }, 
+        "windowtitle": {
+            "type": "title",
+            "title": "Personal storage ",
+            "subtitle": "^#b9b5b2;Item list",
+            "position": [ 0, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/coreIcons/personalstorage.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "scroll": {
+            "type": "scrollArea",
+            "position": [8, 32],
+            "size": [431, 268 ],
+            "fillDown":true,
+            "buttons": {
+                "horizontal": {
+                    "forward": { "base": "", "hover": "", "pressed": "" },
+                    "backward": { "base": "", "hover": "", "pressed": "" }
+                },
+                "vertical": {
+                    "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" },
+                    "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": { "begin": "", "end": "", "inner": "" },
+                    "hover": { "begin": "", "end": "", "inner": "" },
+                    "pressed": { "begin": "", "end": "", "inner": "" }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "list": {
+                    "type": "list",
+					"callback" : "itemSelected",
+                    "zlevel": -1,
+                    "columns": 10,
+                    "position": [0, -1],
+                    "schema": {
+                        "selectedBG": "/interface/scripted/personalstorage/back.png",
+                        "unselectedBG": "/interface/scripted/personalstorage/back.png",
+                        "memberSize": [ 40, 40 ],
+                        "spacing": [ 2, 2 ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "file": "/interface/scripted/personalstorage/back.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "name": {
+                                "type": "label",
+                                "position": [ 22, 18 ],
+                                "hAnchor": "left",
+                                "vAnchor": "top",
+                                "wrapWidth":90,
+                                "fontSize": 7
+                            },
+                            "count": {
+                                "type": "label",
+                                "position": [ 20, 7 ],
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth":90,
+                                "color": "#181824",
+                                "fontSize": 8,
+                                // "value": "999999",
+                                "zlevel": 2
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 12 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/scripted/personalstorage/backIcon.png",
+                                "showBackingImageWhenFull": true,
+                                "zlevel": 5
+                            },
+                            "rarity": {
+                                "type": "image",
+                                "file": "",
+                                "position": [ 0, 0 ],
+                                "zlevel": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "filter": {
+            "type": "textbox",
+            "position": [ 6, 20 ],
+            "hint": "Вводите текст с заглавной буквы!",
+            "maxWidth": 150,
+            "textAlign": "center",
+            "fontSize": 8,
+            "escapeKey": "close",
+            "enterKey": "filter",
+            "focus": false
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "categorylist",
+        "filter"
+    ],
+    "scripts": [
+        "/interface/scripted/personalstorage/personalstorage.lua"
+    ],
+    "scriptDelta": 5,
+    
+    "tooltips":{
+        "background":  {
+                "type" : "background",
+                "fileHeader" : "",
+                "fileBody" : "/interface/scripted/crafting/tooltip.png",
+                "fileFooter" : ""
+        },
+        "text": {
+            "type": "label",
+            "position": [ 48, 9 ],
+            "wrapWidth": 90,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 8
+        }
+    },
+    "uiconfig":{
+        "uiOpenSound": "/",
+        "uiClosedSound": "/",
+        "uiListSound": "/sfx/interface/clickon_success.ogg",
+        "category": [
+            {
+                "selected": true,
+                "friendlyname": "^green;Extraction of liquids and gases",
+                "category": [
+                    "craftingMaterial"
+                ],
+                "order": 1,
+                "icon": "/interface/scripted/itemList/icons/gas.png"
+            },
+            {
+                "friendlyname": "Extraction of raw reagents",
+                "category": [
+                    "ore"
+                ],
+                "order": 2,
+                "icon": "/interface/scripted/itemList/icons/rawreagent.png"
+            },
+            {
+                "friendlyname": "Extraction of tiles",
+                "category": [
+                    "all"
+                ],
+                "order": 3,
+                "icon": "/interface/scripted/itemList/icons/othermaterials.png"
+            }
+        ]
+    }
+    
+}

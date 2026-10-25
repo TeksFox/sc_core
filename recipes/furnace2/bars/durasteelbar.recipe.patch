@@ -1,0 +1,19 @@
+{
+    "input": [
+        { "item": "copperdust", "count": 2 },
+        { "item": "alluminiumdust", "count": 2 },
+        { "item": "manganeseorepowder", "count": 1 },
+        { "item": "carbon", "count": 1 }
+    ],
+    "output": {
+        "item": "durasteelbar",
+        "count": 2
+    },
+    "duration": 10,
+    "groups": [
+        "craftingfurnace2",
+        "basicfurnace",
+        "alloy",
+        "all"
+    ]
+}

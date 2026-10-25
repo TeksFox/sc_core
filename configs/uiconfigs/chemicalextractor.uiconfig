@@ -1,0 +1,32 @@
+{
+    "uiOpenSound": "/",
+    "uiClosedSound": "/",
+    "uiListSound": "/sfx/interface/clickon_success.ogg",
+    "category": [
+        {
+            "selected": true,
+            "friendlyname": "^green;Extraction of liquids and gases",
+            "category": [
+                "liquid"
+            ],
+            "order": 1,
+            "icon": "/interface/scripted/itemList/icons/gas.png"
+        },
+        {
+            "friendlyname": "Extraction of raw reagents",
+            "category": [
+                "reagent"
+            ],
+            "order": 2,
+            "icon": "/interface/scripted/itemList/icons/rawreagent.png"
+        },
+        {
+            "friendlyname": "Extraction of tiles",
+            "category": [
+                "soil"
+            ],
+            "order": 3,
+            "icon": "/interface/scripted/itemList/icons/othermaterials.png"
+        }
+    ]
+}

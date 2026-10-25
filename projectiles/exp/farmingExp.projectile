@@ -1,0 +1,79 @@
+{
+    "projectileName": "farmingExp",
+    "image": "farmingExp.png",
+    "animationCycle": 0.25,
+    "timeToLive" : 300,
+    "frameNumber": 1,
+    "damageKindImage": "icon.png",
+    "pointLight": false,
+    //"lightColor": [ 26, 75, 41 ],
+    "fullbright": true,
+
+    "periodicActions": [
+        {
+            "time": 0.1,
+            "repeat": true,
+            "action": "loop",
+            "count": 2,
+            "body": [
+                {
+                    "action": "particle",
+                    "rotate": true,
+                    "specification": {
+                        "type": "ember",
+                        "fullbright": true,
+                        "size": 2,
+                        "color": "#9AB93C",
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0.5, 0.7 ],
+                        "finalVelocity": [ 1, 1.2 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 0.3,
+                        "light": [ 60, 10, 20 ],
+                        "layer": "back",
+                        "variance": {
+                            "size": 0.5,
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.3, 0.3 ]
+                        }
+                    }
+                },
+                {
+                    "action": "particle",
+                    "rotate": true,
+                    "specification": {
+                        "type": "ember",
+                        "fullbright": true,
+                        "size": 2,
+                        "color": "#47822E",
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0.5, 0.7 ],
+                        "finalVelocity": [ 1, 1.2 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 0.3,
+                        "light": [ 50, 5, 10 ],
+                        "layer": "back",
+                        "variance": {
+                            "size": 0.5,
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.3, 0.3 ]
+                        }
+                    }
+                }
+            ]
+        }
+      ],
+    "power": 5.0,
+    "speed": 10,
+    "damageKind": "default",
+    "scripts": [
+        "monsterExp.lua"
+    ],
+    "scriptDelta": 1
+}

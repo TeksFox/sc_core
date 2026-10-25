@@ -1,0 +1,17 @@
+{ "columns":0,
+ "grid":
+    {
+     "height":1,
+     "orientation":"orthogonal",
+     "width":1
+    },
+ "margin":0,
+ "name":"Starbase_001",
+ "spacing":0,
+ "tilecount":0,
+ "tiledversion":"1.2.3",
+ "tileheight":0,
+ "tilewidth":0,
+ "type":"tileset",
+ "version":1.2
+}

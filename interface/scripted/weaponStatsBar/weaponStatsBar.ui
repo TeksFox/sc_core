@@ -1,0 +1,56 @@
+{
+    "paneLayer": "hud",
+    "dismissable": false,
+    "gui": {
+        "panefeature" : {
+            "type": "panefeature",
+          "anchor" : "topLeft",
+          "offset": [30, -11]
+        },
+        "background": {
+            "type": "background",
+            "fileBody": "/interface/scripted/statusbar/body.png"
+        },
+        "statusResourceList": {
+            "type": "list",
+            "position":[0 ,100],
+            "size":[100, 50],
+            "callback" : "null",
+            "fillDown":true,
+            "zlevel": -1,
+            "columns": 1,
+            "schema": {
+                "memberSize": [ 106, 7 ],
+                "spacing": [ 1, 1 ],
+                "listTemplate": {
+                    "background": {
+                        "type": "image",
+                        "file": "/interface/scripted/statusbar/back.png",
+                        "position": [ 0, 0 ],
+                        "zlevel": -1
+                    },
+                    "icon": {
+                        "type": "image",
+                        "file": "",
+                        "position": [ 99, 0 ],
+                        "zlevel": -1
+                    },
+                    "progressImage": {
+                        "type": "image",
+                        "file": "",
+                        "position": [ 1, 1 ],
+                        "zlevel": -1
+                    }
+                }
+            }
+        }
+    },
+    "scriptWidgetCallbacks": [
+    ],
+    "dataImage": {
+        "file": "/interface/scripted/statusbar/bar.png",
+        "direction": "horizontal"
+    },
+    "scriptDelta": 1,
+    "scripts": ["/interface/scripted/statusbar/statusbar.lua"]
+}

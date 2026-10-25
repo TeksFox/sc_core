@@ -1,0 +1,10 @@
+{
+  "itemName" : "rubber", 
+  "price" : 60,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rubber.png",
+  "description" : "it's stretching!",
+  "shortdescription" : "Rubber",
+  "itemTags" : [ "reagent" ]
+}

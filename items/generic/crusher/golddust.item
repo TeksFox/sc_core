@@ -1,0 +1,14 @@
+{
+    "itemName": "golddust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "golddust.png",
+    "description": "...",
+    "shortdescription": "Crushed Gold",
+    "itemTags": [
+        "reagent",
+        "gold",
+        "raw"
+    ]
+}

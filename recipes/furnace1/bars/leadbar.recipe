@@ -1,0 +1,16 @@
+{
+    "input": [
+        { "item": "lead", "count": 2, "parameters": { "tag": "lead" } },
+        { "item": "carbon", "count": 1 }
+    ],
+    "output": {
+        "item": "leadbar",
+        "count": 1
+    },
+    "duration": 6,
+    "groups": [
+        "craftingfurnace2",
+        "bars",
+        "all"
+    ]
+}

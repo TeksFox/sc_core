@@ -1,0 +1,54 @@
+{
+    "objectName": "superiorbattery",
+    "price": 0,
+    "rarity": "Uncommon",
+    "description": "Holds up to 50000Eu",
+    "shortdescription": "^orange;Basic EU storage^white;",
+    "race": "generic",
+    "category": "power",
+    "printable": false,
+    "inventoryIcon": "icon.png",
+    "largeImage": "superiorbattery.png:full",
+    "orientations": [
+        {
+            "dualImage": "superiorbattery.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+    "inputNodes": [ [ 0, 1 ] ],
+    "outputNodes": [ [ 0, 0 ] ],
+    "breakDropOptions" : [],
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/objectpower/powerstorage.ui",
+    "scripts": [ "/scripts/energy/genericEuStorage.lua", "/scripts/objects/sf_object_colorizer.lua" ],
+    
+    "scriptDelta": 5,
+    "euConfig": {
+        "euType": "storage",
+        "euStorage": 50000, // in EU
+        "euLevel": 4,
+        "euFromBeggining": 0
+    },
+
+    "animation": "/objects/power/euStorage.animation",
+    "colorizer": true,
+    "animationParameters": {
+        "indicatorRect": [ 0, 0, 13, 19 ],
+        "animationParts": {
+            "body": {
+                "partImage": "superiorbattery.png",
+                "colors": { "default": [ "sf_bronz", "sf_green", "sf_black" ] }
+            },
+            "light": {
+                "hide": true,
+                "noload": true,
+                "partImage": "superiorbatterylit.png"
+            }
+        }
+    }
+}

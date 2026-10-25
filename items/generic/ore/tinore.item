@@ -1,0 +1,10 @@
+{
+  "itemName" : "tinore",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "rawOre",
+  "inventoryIcon" : "tinore.png",
+  "description" : "A piece of tin ore that can be melted or crushed!",
+  "shortdescription" : "^orange;Tin Ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

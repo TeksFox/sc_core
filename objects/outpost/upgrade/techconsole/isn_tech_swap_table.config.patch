@@ -1,0 +1,23 @@
+[
+	{	"op":"test",
+		"path":"/swap_table/dash"
+	},
+	{"op":"add","path":"/swap_table/isn_agile_sphere","value":"isn_agile_sphere_f"},
+	{"op":"add","path":"/swap_table/isn_agile_sphere_f","value":"isn_agile_sphere"},
+	{"op":"add","path":"/swap_table/isn_strike_sphere","value":"isn_strike_sphere_f"},
+	{"op":"add","path":"/swap_table/isn_strike_sphere_f","value":"isn_strike_sphere"},
+	{"op":"add","path":"/swap_table/isn_hover_sphere","value":"isn_hover_sphere_f"},
+	{"op":"add","path":"/swap_table/isn_hover_sphere_f","value":"isn_hover_sphere"},
+	{"op":"add","path":"/swap_table/isn_steel_sphere","value":"isn_steel_sphere_f"},
+	{"op":"add","path":"/swap_table/isn_steel_sphere_f","value":"isn_steel_sphere"},
+	{"op":"add","path":"/swap_table/isn_drill_sphere","value":"isn_drill_sphere_f"},
+	{"op":"add","path":"/swap_table/isn_drill_sphere_f","value":"isn_drill_sphere"},
+	{"op":"add","path":"/swap_table/isn_pulse_boost","value":"isn_pulse_boost_f"},
+	{"op":"add","path":"/swap_table/isn_pulse_boost_f","value":"isn_pulse_boost"},
+	{"op":"add","path":"/swap_table/isn_hover_field","value":"isn_hover_field_upspace"},
+	{"op":"add","path":"/swap_table/isn_hover_field_upspace","value":"isn_hover_field"},
+	{"op":"add","path":"/swap_table/isn_powered_flight","value":"isn_powered_flight_upspace"},
+	{"op":"add","path":"/swap_table/isn_powered_flight_upspace","value":"isn_powered_flight"},
+	{"op":"add","path":"/swap_table/isn_rocket_punch","value":"isn_rocket_punch_dt"},
+	{"op":"add","path":"/swap_table/isn_rocket_punch_dt","value":"isn_rocket_punch"}
+]

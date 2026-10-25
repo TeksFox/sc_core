@@ -1,0 +1,10 @@
+{
+  "itemName" : "oxygen",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "gas",
+  "inventoryIcon" : "oxygen.png",
+  "description" : "Pure oxygen, useful in many places, it is better to keep it for yourself)",
+  "shortdescription" : "Oxygen",
+  "itemTags" : [ "reagent", "gas" ]
+}

@@ -1,0 +1,21 @@
+{
+    "frameGrid": {
+        "size": [
+            32,
+            48
+        ],
+        "dimensions": [
+            2,
+            1
+        ],
+        "names": [
+            [
+                "default",
+                "left"
+            ]
+        ]
+    },
+    "defaultFrames": {
+        "default.default": "default"
+    }
+}

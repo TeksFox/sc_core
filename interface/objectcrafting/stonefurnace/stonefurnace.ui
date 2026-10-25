@@ -1,0 +1,99 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/objectcrafting/stonefurnace/header.png",
+            "fileBody": "/interface/objectcrafting/stonefurnace/body.png",
+            "fileFooter": "/interface/objectcrafting/stonefurnace/footer.png"
+        },
+        //! Buttons--------------------------------------------------------------------------------
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1", 
+            "hover": "/interface/close.png:2", 
+            "pressed": "/interface/close.png:3",
+            "position": [ 186, 140 ]
+        },
+        "toggleCrafting": {
+            "type": "button",
+            "position": [ 5, 33 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "caption": "Start",
+            "callback": "trigger"
+        },
+        "recipes": {
+            "type": "button",
+            "position": [ 5, 18 ],
+            "base": "/interface/objectcrafting/craftbutton.png:1",
+            "hover": "/interface/objectcrafting/craftbutton.png:2",
+            "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
+            "caption": "Recipe list",
+            "callback": "recipelist"
+        },
+        //! Labels---------------------------------------------------------------------------------
+        "InputTitle": {
+            "type": "label",
+            "position": [ 100, 119 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Input slots"
+        },
+        "outputTitle": {
+            "type": "label",
+            "position": [ 100, 83 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Output"
+        },  
+        "progress": {
+            "type": "label",
+            "position": [ 36, 108 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Progress",
+            "color": "orange"
+        },
+        //! ItemGridItems--------------------------------------------------------------------------
+        "itemGrid": {
+            "type": "itemgrid",
+            "position": [ 72, 95 ],
+            "dimensions": [ 3, 1 ],
+            "showDurability": false,
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        "outputItemGrid": {
+            "type": "itemgrid",
+            "slotOffset": 3,
+            "position": [ 72, 21 ],
+            "showDurability": false,
+            "dimensions": [ 3, 3 ],
+            "spacing": [ 19, 19 ],
+            "backingImage": "/interface/inventory/empty.png"
+        },
+        //! progressBar----------------------------------------------------------------------------
+        "progressBar": {
+            "zlevel": 7,
+            "type": "progress",
+            "position": [ 8, 95 ],
+            "background": "/interface/objectcrafting/bars.png:empty",
+            "progressSet": {
+                "inner": "/interface/objectcrafting/bars.png:6",
+                "type": "repeat"
+            },
+            "direction": "horizontal"
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "trigger",
+        "recipelist"
+    ],
+    "scriptDelta": 5,
+    "scripts": [
+        "/scripts/multicraft/trigger.lua"
+    ]
+}
+
+

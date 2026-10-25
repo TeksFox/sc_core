@@ -1,0 +1,133 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "stage": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 8,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "lightsOn": [
+                                "red"
+                            ],
+                            "lightsOff": [
+                                "green"
+                            ]
+                        }
+                    },
+                    "active": {
+                        "frames": 8,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "lightsOff": [
+                                "red"
+                            ],
+                            "lightsOn": [
+                                "green"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "object": {
+                "properties": {
+                    "zLevel": 1,
+                    "centered": true
+                },
+                "partStates": {
+                    "stage": {
+                        "idle": {
+                            "properties": {
+                                "image": "<partImage>:idle.<frame>"
+                            }
+                        },
+                        "active": {
+                            "properties": {
+                                "image": "<partImage>:active.<frame>"
+                            }
+                        }
+                    }
+                }
+            },
+            "objectlit": {
+                "properties": {
+                    "zLevel": 2,
+                    "centered": true,
+                    "fullbright" : true
+                },
+                "partStates": {
+                    "stage": {
+                        "idle": {
+                            "properties": {
+                                "image": "<partImage>:idle.<frame>"
+                            }
+                        },
+                        "active": {
+                            "properties": {
+                                "image": "<partImage>:active.<frame>"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "lights": {
+        "red": {
+            "active": false,
+            "position": [
+                0,
+                0
+            ],
+            "color": [
+                110,
+                15,
+                30
+            ],
+            "flickerPeriod": 0.5,
+            "flickerMinIntensity": 0.75,
+            "flickerMaxIntensity": 1,
+            "flickerPeriodVariance": 0,
+            "flickerIntensityVariance": 0
+        },
+        "green": {
+            "active": false,
+            "position": [
+                0,
+                0
+            ],
+            "color": [
+                76,
+                105,
+                12
+            ],
+            "flickerPeriod": 0.5,
+            "flickerMinIntensity": 0.95,
+            "flickerMaxIntensity": 1,
+            "flickerPeriodVariance": 0,
+            "flickerIntensityVariance": 0
+        }
+    },
+    "particleEmitters": {
+        "dust": {
+            "emissionRate": 0,
+            "burstCount": 10,
+            "offsetRegion": [
+                -2,
+                -2,
+                2,
+                2
+            ],
+            "particles": [
+                {
+                    "particle": "dust2"
+                }
+            ]
+        }
+    }
+}

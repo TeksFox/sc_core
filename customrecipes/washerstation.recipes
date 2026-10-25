@@ -1,0 +1,246 @@
+{
+    "pool": "/treasure/crafting/washer.treasurepools",
+    "recipes": {
+        "orewashing": {
+            //* ==============================================================================================
+            //*                                       ORE WASHING
+            //* ==============================================================================================
+            "1.0": {
+                "name":"copperdust",
+                "input": [
+                    { "name": "crushedcopper", "count": 2 }
+                ],
+                "output": [
+                    { "name": "copperdust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [ 4, 7 ] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.copper.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.1": {
+                "name":"tindust",
+                "input": [
+                    { "name": "crushedtin", "count": 2 }
+                ],
+                "output": [
+                    { "name": "tindust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.tin.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.2": {
+                "name":"leaddust",
+                "input": [
+                    { "name": "crushedlead", "count": 2 }
+                ],
+                "output": [
+                    { "name": "leaddust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.lead.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.3":{
+                "name":"silverdust",
+                "input": [
+                    { "name": "crushedsilver", "count": 2 }
+                ],
+                "output": [
+                    { "name": "silverdust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.silver.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.4": {
+                "name":"golddust",
+                "input": [
+                    { "name": "crushedgold", "count": 2 }
+                ],
+                "output": [
+                    { "name": "golddust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.gold.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.5": {
+                "name":"platinumdust",
+                "input": [
+                    { "name": "crushedplatinum", "count": 2 }
+                ],
+                "output": [
+                    { "name": "platinumdust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.gold.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.6": {
+                "name":"crushediron",
+                "input": [
+                    { "name": "crushediron", "count": 2 }
+                ],
+                "output": [
+                    { "name": "irondust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.iron.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.7": {
+                "name":"tungstendust",
+                "input": [
+                    { "name": "crushedtungsten", "count": 2 }
+                ],
+                "output": [
+                    { "name": "tungstendust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.tungsten.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.8": {
+                "name":"titaniumdust",
+                "input": [
+                    { "name": "crushedtitanium", "count": 2 }
+                ],
+                "output": [
+                    { "name": "titaniumdust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.titanium.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.9": {
+                "name":"durasteeldust",
+                "input": [
+                    { "name": "crusheddurasteel", "count": 2 }
+                ],
+                "output": [
+                    { "name": "durasteeldust", "count": 2 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 },
+                    
+                    { "pool": "washer.durasteel.treasure", "level": 1, "text": "25% to receive an additional items" }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //!------------------------------------------------
+            "1.10": {
+                "name":"cleansand",
+                "input": [
+                    { "name": "sand2", "count": 5 }
+                ],
+                "output": [
+                    { "name": "cleansand", "count": 4 },
+                    { "name": "contaminatedwater", "counts": [4, 7] },
+
+                    { "name": "slag", "count": 1, "chance": 0.4 },
+                    { "name": "crushedstone", "counts": [ 1, 2 ], "chance": 0.25 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.25 }
+                ],
+                "delay": 30,
+                "level": 1,
+                "euConsumed": 80
+            },
+
+            //! LEVEL 2 ---------------------------------------
+
+            "2.0": {
+                "name":"naonitedust",
+                "input": [
+                    { "name": "crushednaonite", "count": 1 },
+                    { "name": "chlorine", "count": 30 }
+                ],
+                "output": [
+                    { "name": "naonitedust", "count": 1 },
+                    { "name": "slag", "counts": [ 1, 2] , "chance": 0.15 },
+                    { "name": "chlorine", "counts": [ 3, 5] , "chance": 0.20 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.35 }
+                ],
+                "delay": 60,
+                "level": 2,
+                "euConsumed": 100
+            }
+        }
+    }
+}

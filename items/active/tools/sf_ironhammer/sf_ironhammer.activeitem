@@ -1,0 +1,121 @@
+{
+    "itemName": "sf_ironhammer",
+    "price": 150,
+    "maxStack": 1,
+    "rarity": "common",
+    "category": "tool",
+    "description": "Heavy iron hammer, well suited for crushing rocks",
+    "shortdescription": "Iron hammer",
+    "twoHanded": true,
+    "itemTags": [
+        "miningtool",
+        "sf_miningtool"
+    ],
+    "tooltipKind": "miningtool",
+    "builder": "/scripts/buildscripts/buildtool.lua",
+    
+    "largeImage": "sf_ironhammer.png",
+    "inventoryIcon": "icon.png",
+    "animation": "/items/active/tools/pickaxe.animation",
+    "animationParts": {
+        "blade": "sf_ironhammer.png"
+    },
+    "scripts": [
+        "/items/active/weapons/melee/meleeweapon.lua"
+    ],
+    "elementalType": "physical",
+    "tool":true,
+    "durability": 950,       
+
+    "primaryAbility": {
+        "layer": "foreground",
+        "scripts": [
+            "/items/active/tools/pickaxe.lua"
+        ],
+        "class": "PickSlash",
+        "activatingFireMode": "primary",
+
+        "energyUsage": 0,
+        "fireTime": 0.01,
+        "toolRange": 5.5,
+        "blockRadius": 4,
+        "altBlockRadius": 1,
+        "tileDamage": 2.5,
+        "tileDamageType": "beamish",
+        "harvestLevel": 99,
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 55,
+                "allowRotate": false,
+                "allowFlip": true,
+                "aimAngle": 0
+            },
+            "windup": {
+                "duration": 0.0,
+                "armRotation": 0,
+                "weaponRotation": 75,
+                "allowRotate": false,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0.5,
+                "armRotation": -25,
+                "weaponRotation": -25,
+                "armAngularVelocity": 180,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            }
+        },
+        "requisiteAnimationStates": {
+            "blade": "active"
+        }
+    },
+    "altAbility": {
+        "layer": "background",
+        "scripts": [
+            "/items/active/tools/pickaxe.lua"
+        ],
+        "class": "PickSlash",
+        "activatingFireMode": "alt",
+        "energyUsage": 0,
+        "fireTime": 0.3,
+        "baseDps": 0.0,
+        "toolRange": 5.5,
+        "blockRadius": 4,
+        "altBlockRadius": 1,
+        "tileDamage": 2.5,
+        "tileDamageType": "beamish",
+        "harvestLevel": 99,
+
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 55,
+                "allowRotate": false,
+                "allowFlip": true,
+                "aimAngle": 0
+            },
+            "windup": {
+                "duration": 0.0,
+                "armRotation": 0,
+                "weaponRotation": 75,
+                "allowRotate": false,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0.5,
+                "armRotation": -25,
+                "weaponRotation": -25,
+                "armAngularVelocity": 180,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            }
+        },
+        "requisiteAnimationStates": {
+            "blade": "active"
+        }
+    }
+}

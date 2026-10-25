@@ -1,0 +1,40 @@
+{
+  "objectName": "ioconduit",
+  "colonyTags": [],
+  "printable": false,
+  "rarity": "Common",
+  "description": "Extracts items from and inserts into containers",
+  "shortdescription": "IO Conduit",
+  "race": "generic",
+  "category": "transport",
+  "price": 45,
+  "inventoryIcon": "tileset.png:icon",
+  "health": 3.0,
+  "orientations": [
+    {
+      "image": "tileset.png:main",
+      "imagePosition": [ -8, -8 ],
+      "animationPosition": [ -8, -8 ],
+      "frames": 1,
+      "animationCycle": 1.0,
+      "renderLayer": "Platform-10",
+      "direction": "right"
+
+    }
+  ],
+  "frameCooldown": 5,
+  "autoCloseCooldown": 3600,
+  "slotCount": 1,
+  "animation": "/animations/conduits.animation",
+  "animationParts": {
+    "cables": "tileset.png"
+  },
+  "conduitType": "io",
+  "scriptDelta": 10,
+  "scripts": [
+    "/objects/conduits/ioconduit/ioconduit.lua",
+    "/objects/conduits/extractionconduit/extractionconduit.lua",
+    "/objects/conduits/insertionconduit/insertionconduit.lua"
+  ]
+
+}

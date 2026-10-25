@@ -1,0 +1,352 @@
+{   
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/worldmapui/header.png",
+            "fileBody": "/interface/scripted/worldmapui/body.png",
+            "fileFooter": "/interface/scripted/worldmapui/footer.png"
+        },
+        // "close": {
+        //     "type": "button",
+        //     "base": "/interface/close.png:1",
+        //     "hover": "/interface/close.png:2",
+        //     "pressed": "/interface/close.png:3",
+        //     "position": [ 312, 240 ]
+        // },
+        "canvas": {
+            "zlevel": -10,
+            "type": "canvas",
+            "position": [7, 42],
+            "size": [ 585, 350 ],
+            "captureMouseEvents": true,
+            "captureKeyboardEvents": false
+        },
+        "canvasBackgroundLeftImage": {
+            "zlevel": 2,
+            "type": "image",
+            "position": [ 4, 37 ],
+            "file": "/interface/scripted/worldmapui/canvasborder.png:?flipx",
+            "centered": false
+        },
+        "canvasBackgroundMidImage": {
+            "zlevel": 2,
+            "type": "image",
+            "position": [ 8, 37 ],
+            "file": "/interface/scripted/worldmapui/canvasmid.png",
+            "centered": false
+        },
+        "canvasBackgroundRightImage": {
+            "zlevel": 2,
+            "type": "image",
+            "position": [ 9, 37 ],
+            "file": "/interface/scripted/worldmapui/canvasborder.png",
+            "centered": false
+        },
+        "spectralText": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 8,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "mid"
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "  Map",
+            "subtitle": "  Nichego eshe tut net",
+            "position": [ -5, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/titleicons/starCore.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "descriptionLabel": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 8,
+            "position": [ 207, 397 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 500,
+            "value": "Space map"
+        },
+        "textLocations": {
+            "type": "label",
+            "zlevel": 3,
+            "fontSize": 8,
+            "position": [ 157, 328 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 500
+        },
+        
+        
+		"homebutton" : {
+			"zlevel" : 1,
+			"visible": true,
+			"type" : "button",
+			"position" : [9, 368],
+            "base": "/interface/scripted/worldmapui/homebutton.png:homeBase",
+            "hover": "/interface/scripted/worldmapui/homebutton.png:homeHover",
+            "pressed": "/interface/scripted/worldmapui/homebutton.png:homeHover",
+            "data": {
+                "tooltips":  {
+                    "text": "Go to start position",
+                    "textSize": 8
+                },
+                "option": 0.1
+            }
+		},
+		"goToSelected" : {
+			"zlevel" : 1,
+			"visible": true,
+			"type" : "button",
+			"position" : [34, 368],
+            "base": "/interface/scripted/worldmapui/homebutton.png:selectedBase",
+            "hover": "/interface/scripted/worldmapui/homebutton.png:selectedHover",
+            "pressed": "/interface/scripted/worldmapui/homebutton.png:selectedHover",
+            "data": {
+                "tooltips":  {
+                    "text": "Go to Selected object",
+                    "textSize": 8
+                },
+                "option": 0.1
+            }
+		},
+		"viewSector" : {
+			"zlevel" : 3,
+			"type" : "button",
+			"position" : [257, 44],
+            "base": "/interface/scripted/worldmapui/viewSectorButton.png:1",
+            "hover": "/interface/scripted/worldmapui/viewSectorButton.png:2",
+            "pressed": "/interface/scripted/worldmapui/viewSectorButton.png:2",
+            "caption": "View",
+            "fontSize": 12,
+            "data": {
+                "tooltips":  {
+                    "text": "Viev selected sector",
+                    "textSize": 8
+                },
+                "option": 0.1
+            }
+		}, 
+		"showPlanetList" : {
+			"zlevel" : 1,
+			"visible": true,
+			"type" : "button",
+			"position" : [574, 185],
+            "base": "/interface/scripted/worldmapui/leftButton.png:1",
+            "hover": "/interface/scripted/worldmapui/leftButton.png:2",
+            "pressed": "/interface/scripted/worldmapui/leftButton.png:2",
+            "data": {
+                "show": false,
+                "parameters": {
+                    "canvassize": [400, 585],
+                    "buttonposition": [0, 0]
+                },
+                "tooltips":  {
+                    "text": "Show planet list",
+                    "textSize": 8
+                },
+                "option": 0.1
+            }
+		},
+        "layout": {
+            "type": "layout",
+                    "zlevel": -1,
+            "layoutType": "basic",
+            "visible": false,
+            "position": [ 406, 44 ],
+            "size": [ 185, 366 ],
+            "children": {
+                "background": {
+                    "zlevel": -10,
+                    "type": "image",
+                    "position": [ 0, 0 ],
+                    "file": "/interface/scripted/worldmapui/layoutbackground.png",
+                    "centered": false
+                },
+                "scroll": {
+                    "zlevel": 1,
+                    "type": "scrollArea",
+                    "position": [ 5, 6 ],
+                    "size": [ 178, 328 ],
+                    "buttons": {
+                        "horizontal": {
+                            "forward": {
+                                "base": "",
+                                "hover": "",
+                                "pressed": ""
+                            },
+                            "backward": {
+                                "base": "",
+                                "hover": "",
+                                "pressed": ""
+                            }
+                        },
+                        "vertical": {
+                            "forward": {
+                                "base": "/interface/scrollbuttons.png:1",
+                                "hover": "",
+                                "pressed": ""
+                            },
+                            "backward": {
+                                "base": "/interface/scrollbuttons.png:2",
+                                "hover": "",
+                                "pressed": ""
+                            }
+                        }
+                    },
+                    "thumbs": {
+                        "horizontal": {
+                            "base": {
+                                "begin": "",
+                                "end": "",
+                                "inner": ""
+                            },
+                            "hover": {
+                                "begin": "",
+                                "end": "",
+                                "inner": ""
+                            },
+                            "pressed": {
+                                "begin": "",
+                                "end": "",
+                                "inner": ""
+                            }
+                        },
+                        "vertical": {
+                            "base": {
+                                "begin": "/interface/scroll.png:3",
+                                "end": "/interface/scroll.png:1",
+                                "inner": "/interface/scroll.png:2"
+                            },
+                            "hover": {
+                                "begin": "/interface/scroll.png:3",
+                                "end": "/interface/scroll.png:1",
+                                "inner": "/interface/scroll.png:2"
+                            },
+                            "pressed": {
+                                "begin": "/interface/scroll.png:3",
+                                "end": "/interface/scroll.png:1",
+                                "inner": "/interface/scroll.png:2"
+                            }
+                        }
+                    },
+                    "children": {
+                        "list": {
+                            "type": "list",
+                            "callback": "sectorListSelected",
+                            "fillDown": true,
+                            "zlevel": -1,
+                            "columns": 1,
+                            "schema": {
+                                "selectedBG": "/interface/scripted/worldmapui/planetListBack.png:2",
+                                "unselectedBG": "/interface/scripted/worldmapui/planetListBack.png:1",
+                                "memberSize": [
+                                    168,
+                                    40
+                                ],
+                                "spacing": [
+                                    1,
+                                    2
+                                ],
+                                "listTemplate": {
+                                    "background": {
+                                        "type": "image",
+                                        "file": "/interface/scripted/worldmapui/planetListBack.png:1",
+                                        "position": [ 0, 0 ],
+                                        "zlevel": -1
+                                    },
+                                    "name": {
+                                        "type": "label",
+                                        "position": [ 43, 31 ],
+                                        "fontSize": 8,
+                                        "wrapWidth": 120,
+                                        "hAnchor": "left",
+                                        "vAnchor": "mid"
+                                    },
+                                    "icon": {
+                                        "type": "image",
+                                        "centered": false,
+                                        "file": "",
+                                        "position": [ 2, 2 ],
+                                        "zlevel": 1,
+                                        "maxSize": [ 36, 36 ],
+                                        "minSize": [ 36, 36 ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    },
+    "startMap": "worldmapdata",
+    "textPositio": [12, -4],
+    "widgetsData": {
+        "button": {
+            "type": "button",
+            "base": "",
+            "hover": "",
+            "callback" : "teleport",
+            "position": [ 0, 0 ]
+        },
+        "text": {
+            "type": "label",
+            "position": [ 0, 0 ],
+            "wrapWidth": 90,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "color": "#181824",
+            "fontSize": 8
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "selectButton",
+        "unlockButton",
+        "showPlanetList",
+        "viewSector",
+        "homebutton",
+        "goToSelected",
+        "sectorListSelected",
+        "zoom",
+        "teleport"
+    ],
+    "sounds": {
+      "locationHover": "/sfx/interface/starving1.ogg",
+      "select" : "/sfx/interface/nav_examine_on.ogg",
+      "deselect" : "/sfx/interface/nav_examine_off.ogg"
+    },
+    "hoverImage": "/interface/scripted/worldmapui/hover.png",
+	"canvasClickCallbacks" : { "canvas" : "canvasClickEvent" },
+    "scripts": [ "/interface/scripted/worldmapui/worldmapui.lua" ],
+    "scriptDelta": 1,
+
+    "sectorIcons": {
+        "type": "image",
+        "centered": false,
+        "file": "",
+        "position": [ 149, 4 ],
+        "zlevel": 1,
+        "maxSize": [ 12, 12 ],
+        "minSize": [ 12, 12 ]
+    },
+    "gridParameters": {
+        "image": "/interface/scripted/worldmapui/grid.png",
+        "size": [60, 60]
+    },
+    "images": {
+        "iconsborder":"/interface/scripted/worldmapui/iconborder.png",
+        "sectorhover": "/interface/scripted/worldmapui/sectorhover.png:2",
+        "sectorselect": "/interface/scripted/worldmapui/sectorhover.png:1",
+        "stars": "/interface/cockpit/bgstars.png",
+        "nebula": "/interface/scripted/worldmapui/nebula.png",
+        "sectorborder":"/interface/scripted/worldmapui/sectorbackground.png"
+    }
+}

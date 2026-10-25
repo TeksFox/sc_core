@@ -1,0 +1,10 @@
+{
+  "itemName" : "mineralchunks",
+  "price" : 250,
+  "rarity" : "Common",
+  "category" : "rawMaterial",
+  "inventoryIcon" : "mineralchunks.png",
+  "description" : "The properties of the object are not yet clear! but he can be useful",
+  "shortdescription" : "^orange;Mineral chunks",
+  "itemTags" : [ "reagent","raw" ]
+}

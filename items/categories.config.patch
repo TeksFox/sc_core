@@ -1,0 +1,108 @@
+[
+    {
+        "op": "add",
+        "path": "/cateegoryEffects",
+        "value": {}
+    },
+    //items
+    {
+        "op": "add",
+        "path": "/labels/gas",
+        "value": "Purified gas"
+    },
+    {
+        "op": "add",
+        "path": "/labels/rawMaterial",
+        "value": "Raw material"
+    },
+    {
+        "op": "add",
+        "path": "/labels/rawOre",
+        "value": "^#5B7F00;Raw ore"
+    },
+    {
+        "op": "add",
+        "path": "/labels/electronics",
+        "value": "^#5B7F00;Electronics"
+    },
+    {
+        "op": "add",
+        "path": "/labels/Usefulmetal",
+        "value": "^#FFD84D;Metal"
+    },
+    {
+        "op": "add",
+        "path": "/labels/alloy",
+        "value": "^#FF7D4F;Alloy"
+    },
+    {
+        "op": "add",
+        "path": "/labels/MiningTool",
+        "value": "^#00FFD0;Mining tool"
+    },
+    {
+        "op": "add",
+        "path": "/labels/auxiliaryTool",
+        "value": "^#00FFD0;Auxiliary Tool"
+    },
+    {
+        "op": "add",
+        "path": "/labels/CraftBook",
+        "value": "^#00FFD0;Crafting book"
+    },
+    {
+        "op": "add",
+        "path": "/labels/solidFuel",
+        "value": "^#C0C0C0;Solid fuel"
+    },
+    {
+        "op": "add",
+        "path": "/labels/fuel",
+        "value": "^#FF9B00;Fuel"
+    },
+    {
+        "op": "add",
+        "path": "/labels/gemstone",
+        "value": "^#37C524;Gemstone"
+    },
+    {
+        "op": "add",
+        "path": "/labels/updrageModule",
+        "value": "^#ED911F;Upgrade Module"
+    },
+    {
+        "op": "add",
+        "path": "/labels/treasure",
+        "value": "^#FED960;Treasure box"
+    },
+    {
+        "op": "add",
+        "path": "/labels/storagebarrel",
+        "value": "^#65DDF8;Starage barrel"
+    },
+    {
+        "op": "add",
+        "path": "/labels/autoCraft",
+        "value": "^#FFD800;Automatic Craft Machine"
+    },
+    {
+        "op": "add",
+        "path": "/labels/rarecraft",
+        "value": "^#4CFF00;Improved craft material"
+    },
+    {
+        "op": "add",
+        "path": "/labels/accessdevice",
+        "value": "^#4CFF00;Access device"
+    },
+    {
+        "op": "add",
+        "path": "/labels/power",
+        "value": "^#65DDF8;Power plant"
+    },
+    {
+        "op": "add",
+        "path": "/labels/transport",
+        "value": "^#FF6A52;Transport pipe"
+    }
+]

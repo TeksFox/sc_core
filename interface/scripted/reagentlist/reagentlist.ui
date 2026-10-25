@@ -1,0 +1,137 @@
+{
+    "icons": {
+        "energy": "/interface/scripted/reagentlist/energy.png",
+        "default": "/interface/scripted/itemList/percent.png"
+    },
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/reagentlist/itemList_header.png",
+            "fileBody": "/interface/scripted/reagentlist/itemList_base.png",
+            "fileFooter": "/interface/scripted/reagentlist/itemList_footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 168, 260 ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "Accepted items ",
+            "subtitle": "^#b9b5b2;Item list",
+            "position": [ 0, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/coreIcons/reagentList.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "itemScroll": {
+            "type": "scrollArea",
+            "rect": [ 7, 22, 178, 236 ],
+            "fillDown":true,
+            "buttons": {
+                "horizontal": {
+                    "forward": { "base": "", "hover": "", "pressed": "" },
+                    "backward": { "base": "", "hover": "", "pressed": "" }
+                },
+                "vertical": {
+                    "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" },
+                    "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": { "begin": "", "end": "", "inner": "" },
+                    "hover": { "begin": "", "end": "", "inner": "" },
+                    "pressed": { "begin": "", "end": "", "inner": "" }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "list": {
+                    "type": "list",
+                  //  "scissoring": true,
+                    "position":[0, -3],
+                    "fillDown": true,
+                    "columns": 6,
+                    "schema": {
+                        "selectedBG" : "/interface/scripted/reagentlist/back.png",
+                        "unselectedBG" : "/interface/scripted/reagentlist/back.png",
+
+                        "memberSize": [ 28, 39 ],
+                        "spacing": [ 0, 0 ],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/outputback.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 10 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "count1": {
+                                "type": "label",
+                                "position": [ 14, 31 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                
+                                "color": "black"
+                            },
+                            "count2": {
+                                "type": "label",
+                                "position": [ 14, 6 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                
+                                "color": "black"
+                            },
+                            "replacableImage": {
+                                "type": "image",
+                                "visible": true,
+                                "file": "/interface/scripted/itemList/percent.png",
+                                "position": [ 18, 30 ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "scriptWidgetCallbacks": [
+    ],
+    "scripts": [
+        "/interface/scripted/reagentlist/reagentlist.lua"
+    ],
+    "scriptDelta": 5
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "electronics",
+  "price" : 5,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "electronics.png",
+  "description" : "All sorts of small electronics, it is difficult to produce such a thing! but it can be found anywhere",
+  "shortdescription" : "^green;Electronics",
+  "itemTags" : [ "reagent", "electronics", "techpart" ] 
+}

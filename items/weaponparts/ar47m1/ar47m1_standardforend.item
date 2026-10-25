@@ -1,0 +1,14 @@
+{
+    "itemName": "ar47m1_standardforend",
+    "price": 0,
+    "rarity": "common",
+    "category": "forend",
+    "inventoryIcon": "ar47m1_standardforend.png",
+    "shortdescription": "Standard forend for AR47-M1",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "ar47m1" ],
+    "inaccuracy": [-0.03, -0.05],
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

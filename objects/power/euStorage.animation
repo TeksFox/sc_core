@@ -1,0 +1,35 @@
+{
+    "animatedParts": {
+        "stateTypes": {           
+             "bodyState": {
+                "default": "default",
+                "states": { "default": { "frames": 1} }
+            },
+            "batteryState": { 
+                "default": "default", 
+                "states": { "default": { "frames": 1} } }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false, "fullbright": false },
+                "partStates": {
+                    "bodyState": {
+                        "default": {
+                            "properties": { "image": "<part>:default<color_default>" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": true, "offset" : [ 0.625, 0.75 ] },
+                "partStates": {
+                    "batteryState": {
+                        "default": {
+                            "properties": { "image": "<part>:default<battaryProgress>" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

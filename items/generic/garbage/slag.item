@@ -1,0 +1,10 @@
+{
+  "itemName" : "slag",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "Trash",
+  "inventoryIcon" : "slag.png",
+  "description" : "Useless ***",
+  "shortdescription" : "^#49393C;Slag",
+  "itemTags" : [ "reagent", "raw" ]
+}

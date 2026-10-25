@@ -1,0 +1,43 @@
+{
+    "kind": "plasmaparticle",
+    "definition": {
+        "type": "ember",
+        "lightColor" : [ 26, 75, 41 ],
+        "fullbright" : true,
+        "size": 2,
+        "color": "#B6FF00",
+        "destructionAction": "shrink",
+        "destructionTime": 0.5,
+        "position": [ 0.0, 0.0 ],
+        "initialVelocity": [
+            0.5,
+            0.7
+        ],
+        "finalVelocity": [
+            1,
+            1.2
+        ],
+        "approach": [
+            0.65,
+            0.65
+        ],
+        "timeToLive": 0.5,
+        "light": [ 26, 75, 41 ],
+        "layer": "back",
+        "variance": {
+            "size": 0.5,
+            "initialVelocity": [
+                1.0,
+                1.0
+            ],
+            "finalVelocity": [
+                1.0,
+                1.0
+            ],
+            "position": [
+                0.3,
+                0.3
+            ]
+        }
+    }
+}

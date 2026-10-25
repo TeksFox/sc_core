@@ -1,0 +1,137 @@
+{    
+       
+    "sf_space_electronics": [
+        [ 0,
+            {
+                "pool": [
+                    { "weight": 0.30, "item": ["techchip", 3] },
+                    { "weight": 0.20, "item": ["wire", 5] },
+                    { "weight": 0.20, "item": "siliconboard" },
+                    { "weight": 0.15, "item": ["lightbulb3", 2] },
+                    { "weight": 0.10, "item": "smallbattery" },
+                    { "weight": 0.05, "item": "battery" },
+                    { "weight": 0.05, "item": "goldwire" },
+                    { "weight": 0.01, "item": "stickofram" },
+                    { "weight": 0.01, "item": "processor" }
+                ],
+                "allowDuplication": true,
+                "poolRounds": [ [ 0.65, 2 ], [ 0.25, 1 ], [ 0.10, 3 ] ]
+            }
+        ],
+        [ 2.9,
+            {
+                "pool": [
+                    { "weight": 0.30, "item": ["techchip", 3] },
+                    { "weight": 0.15, "item": ["siliconboard", 2] },
+                    { "weight": 0.20, "item": ["wire", 5] },
+                    { "weight": 0.15, "item": ["smallbattery", 3] },
+                    { "weight": 0.15, "item": ["goldwire", 3] },
+                    { "weight": 0.05, "item": "battery" },
+                    { "weight": 0.05, "item": ["lightbulb3", 2] },
+                    { "weight": 0.05, "item": "stickofram" },
+                    { "weight": 0.05, "item": "roboticparts" },
+                    { "weight": 0.01, "item": "processor" }
+                ],
+                "allowDuplication": true,
+                "poolRounds": [ [ 0.65, 2 ], [ 0.25, 1 ], [ 0.10, 3 ] ]
+            }
+        ],
+        [ 3.9,
+            {
+                "pool": [
+                    { "weight": 0.30, "item": ["techchip", 3 ] },
+                    { "weight": 0.15, "item": ["siliconboard", 2] },
+                    { "weight": 0.15, "item": ["wire", 5 ] },
+                    { "weight": 0.15, "item": ["smallbattery", 3] },
+                    { "weight": 0.15, "item": ["goldwire", 5] },
+                    { "weight": 0.05, "item": ["battery", 2] },
+                    { "weight": 0.07, "item": ["stickofram", 2] },
+                    { "weight": 0.07, "item": "roboticparts" },
+                    { "weight": 0.05, "item": ["lightbulb3", 2 ] },
+                    { "weight": 0.05, "item": "processor" }
+                ],
+                "allowDuplication": true,
+                "poolRounds": [ [ 0.65, 2 ], [ 0.25, 1 ], [ 0.10, 3 ] ]
+            }
+        ],
+        [ 4.9,
+            {
+                "pool": [
+                    { "weight": 0.30, "item": ["techchip", 5 ] },
+                    { "weight": 0.20, "item": ["siliconboard", 2] },
+                    { "weight": 0.15, "item": ["smallbattery", 3] },
+                    { "weight": 0.10, "item": ["goldwire", 9] },
+                    { "weight": 0.10, "item": ["stickofram", 2] },
+                    { "weight": 0.10, "item": "roboticparts" },
+                    { "weight": 0.05, "item": ["battery", 2] },
+                    { "weight": 0.05, "item": "processor" }
+                ],
+                "allowDuplication": true,
+                "poolRounds": [ [ 0.65, 2 ], [ 0.25, 1 ], [ 0.10, 3 ] ]
+            }
+        ]
+    ],
+    "sf_common_component": [
+        [ 0, {
+                "pool": [
+                    { "weight": 0.5, "item": "plastic" }
+                ],
+                "poolRounds": [ 
+                    [ 0.6, 1 ], 
+                    [ 0.3, 2 ], 
+                    [ 0.1, 3 ] 
+                ]
+            }
+        ]
+    ],  
+    "sf_module": [
+        [ 0, {
+                "pool": [
+                    { "weight": 0.60, "pool": "sf_module_energy" },
+                    { "weight": 0.30, "pool": "sf_module_speed" },
+                    { "weight": 0.10, "pool": "sf_module_core" }
+                ]
+            }
+        ]
+    ], 
+    "sf_module_energy": [
+        [ 0, {
+                "pool": [
+                    { "weight": 0.50, "item": "energymodule1" },
+                    { "weight": 0.30, "item": "energymodule2" },
+                    { "weight": 0.10, "item": "energymodule3" },
+                    { "weight": 0.05, "item": "energymodule4" },
+                    { "weight": 0.04, "item": "energymodule5" },
+                    { "weight": 0.01, "item": "energymodule6" }
+                ]
+            }
+        ]
+    ], 
+    "sf_module_speed": [
+        [ 0, {
+                "pool": [
+                    { "weight": 0.50, "item": "speedmodule1" },
+                    { "weight": 0.30, "item": "speedmodule2" },
+                    { "weight": 0.10, "item": "speedmodule3" },
+                    { "weight": 0.05, "item": "speedmodule4" },
+                    { "weight": 0.04, "item": "speedmodule5" },
+                    { "weight": 0.01, "item": "speedmodule6" }
+                ]
+            }
+        ]
+    ], 
+    "sf_module_core": [
+        [ 0, {
+                "pool": [
+                    { "weight": 0.50, "item": "coremodule2" },
+                    { "weight": 0.30, "item": "coremodule3" },
+                    { "weight": 0.10, "item": "coremodule4" },
+                    { "weight": 0.05, "item": "coremodule5" },
+                    { "weight": 0.04, "item": "coremodule6" },
+                    { "weight": 0.01, "item": "coremodule7" }
+                ]
+            }
+        ]
+    ]
+}
+//

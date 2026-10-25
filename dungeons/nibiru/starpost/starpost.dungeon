@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "starpost",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "starpost" ],
+    "gravity" : 95,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "starpost",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "starpost.json" ]
+    }
+  ]
+}

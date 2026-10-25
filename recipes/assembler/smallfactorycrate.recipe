@@ -1,0 +1,28 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 6
+        },
+        {
+            "item": "copperbar",
+            "count": 2
+        },
+        {
+            "item": "electronics",
+            "count": 5
+        }
+    ],
+    "output": {
+        "item": "smallfactorycrate",
+        "count": 1,
+        "parameters": {}
+    },
+    "duration": 6,
+    "groups": [
+        "basicassembler",
+        "storage",
+        "inventorstable",
+        "craftingstations"
+    ]
+}

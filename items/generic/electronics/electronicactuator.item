@@ -1,0 +1,10 @@
+{
+  "itemName" : "electronicactuator",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "electronics",
+  "inventoryIcon" : "electronicactuator.png",
+  "description" : "Just an electric actuator for all kinds of devices",
+  "shortdescription" : "Electronic actuator",
+  "itemTags" : [ "reagent", "electronics" ]
+}

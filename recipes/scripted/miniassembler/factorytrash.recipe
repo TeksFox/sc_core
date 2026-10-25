@@ -1,0 +1,18 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 6
+        },
+        {
+            "item": "corefragmentore",
+            "count": 20
+        }
+    ],
+    "output": {
+        "item": "factorytrash",
+        "count": 4
+    },
+    "duration" : 10,
+    "groups" : [ "miniassembler", "storage", "all" ]
+}

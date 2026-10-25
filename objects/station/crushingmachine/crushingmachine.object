@@ -1,0 +1,56 @@
+{
+    "objectName": "crushingmachine",
+    "price": 0,
+    "rarity": "Uncommon",
+    "race": "generic",
+    "category": "autoCraft",
+    "objectType": "container",
+    "printable": false,
+    "description": "You can crush stones, ore, or other solid materials.\n Consume 30Eu",
+    "shortdescription": "^orange;Basic crusher^white;",
+    "inventoryIcon": "icon.png:1",
+    "largeImage": "part_body.png:full.1",
+    "orientations": [
+        {
+            "dualImage": "part_body.png:full.1",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+    "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
+
+    "slotCount": 24,
+    "uiConfig": "/interface/objectcrafting/defaultstation/default.ui",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600,
+ 
+   
+    "scripts": [ "/scripts/multicraft.lua" ],
+    "scriptDelta": 5,
+    "breakDropOptions" : [],
+
+    "euConfig": {
+        "euType": "consumer",
+        "euStorage": 500,
+        "euFromBeggining": 0,
+        "euConsume": 30
+    },
+    "inputNodes": [ [ 0, 0 ] ],
+    "uiconfig": "crusher",
+
+    "objectConfig": {
+        "input": [ 1, 9 ],
+        "output": [ 10, 24 ],
+        "recipefile": "/recipes/autostations/crusher.recipes",
+        "uiconfig": "crusher",
+        "delay": 2.5
+    },
+    "animation": "crushingmachine.animation",
+    "animationParts" : {
+        "body" : "part_body.png"
+      }
+}

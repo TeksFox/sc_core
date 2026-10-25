@@ -1,0 +1,22 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 10
+        },
+        {
+            "item": "liquidlava",
+            "count": 50
+        }
+    ],
+    "output": {
+        "item": "factorytrash",
+        "count": 1,
+        "parameters": {}
+    },
+    "duration": 10,
+    "groups": [
+        "basicassembler",
+        "storage"
+    ]
+}

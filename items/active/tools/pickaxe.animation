@@ -1,0 +1,94 @@
+{
+    "globalTagDefaults": {
+        "paletteSwaps": ""
+    },
+    "animatedParts": {
+        "stateTypes": {
+            "blade": {
+                "default": "active",
+                "states": {
+                    "active": {
+                        "frames": 1
+                    }
+                }
+            }
+        },
+        "parts": {
+            "blade": {
+                "properties": {
+                    "zLevel": 0,
+                    "centered": true,
+                    "offset": [ -0.2, 1.2 ],
+                    "rotation": -10,
+                    "transformationGroups": [ "weapon" ],
+                    "fullbright": false
+                },
+                "partStates": {
+                    "blade": {
+                        "active": {
+                            "properties": {
+                                "image": "<partImage>:<state>"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "transformationGroups": {
+        "weapon": {},
+        "swoosh": {}
+    },
+    "particleEmitters": {
+        "groundImpact": {
+            "transformationGroups": [
+                "weapon"
+            ],
+            "particles": [
+                {
+                    "count": 1,
+                    "particle": {
+                        "type": "animated",
+                        "mode": "LoopForever",
+                        "animation": "/animations/jumpsmoke/jumpsmoke.animation",
+                        "fade": 0.9,
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.4,
+                        "position": [
+                            1.0,
+                            0.75
+                        ],
+                        "offsetRegion": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "initialVelocity": [
+                            0,
+                            0
+                        ],
+                        "finalVelocity": [
+                            0,
+                            0
+                        ],
+                        "approach": [
+                            5,
+                            5
+                        ],
+                        "timeToLive": 0.4
+                    }
+                }
+            ]
+        }
+    },
+    "sounds": {
+        "fire": [
+            "/sfx/tools/pickaxe_hit.ogg"
+        ],
+        "destroy": [
+            "/sfx/other/breaktool.ogg"
+        ],
+        "blockSound": []
+    }
+}

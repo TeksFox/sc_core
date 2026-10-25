@@ -1,0 +1,11 @@
+{
+  "itemName" : "plastic",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "plastic.png",
+  "shortdescription" : "^green;Polymers",
+  "itemTags" : [ "reagent" ],     
+  "description" : "Polymer materials, light but not particularly strong! very useful in industry"
+
+}

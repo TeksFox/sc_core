@@ -1,0 +1,27 @@
+[
+    {
+        "op": "add",
+        "path": "/starpost",
+        "value": {
+            "primaryDungeon": "starpost",
+            "threatLevel": 1,
+            "gravity": 80,
+            "worldSize": [ 5000, 5000 ],
+            "dungeonBaseHeight": 900,
+            "dungeonSurfaceHeight": 495,
+            "ambientLightLevel": [ 128, 128, 128 ],
+            "weatherPool": [
+                [
+                    1.0,
+                    "clear"
+                ]
+            ],
+            "biome": "lunarbase",
+            "environmentStatusEffects": [
+                "dontstarve"
+            ],
+            "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+            "musicTrack": "/music/planetarium.ogg"
+        }
+    }
+]

@@ -1,0 +1,19 @@
+{
+  "itemName" : "uiTechChip",
+  "price" : 10000,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "tech",
+  "description" : "Use this tech chip to discover new techs!",
+  "shortdescription" : "Tech Chip: Agile Sphere",
+  "twoHanded" : true,
+  "inventoryIcon" : "uiTechChip.png",
+  "scripts" : ["uiTechChip.lua"],
+  "animation" : "uiTechChip.animation",
+  "animationCustom" : {},
+  "fireTime" : 2.0,
+  "fireOffset" : [0.0, 0.0],
+
+  "tech_to_unlock" : "uiTechChip"
+}

@@ -1,0 +1,139 @@
+{
+    "mode": "stop",
+    "variants": 1,
+    "frameNumber": 1,
+    "animationLoops": false,
+    "cycle": 1,
+    "animatedParts": {
+        "stateTypes": {
+            "cable": {
+                "default": "none",
+                "states": {
+                    "none": {
+                        "frames": 1
+                    },
+                    "up": {
+                        "frames": 1
+                    },
+                    "right": {
+                        "frames": 1
+                    },
+                    "cornerLeftDown": {
+                        "frames": 1
+                    },
+                    "cornerLeftUp": {
+                        "frames": 1
+                    },
+                    "cornerRightDown": {
+                        "frames": 1
+                    },
+                    "cornerRightUp": {
+                        "frames": 1
+                    },
+                    "triplehorizontalUp": {
+                        "frames": 1
+                    },
+                    "triplehorizontalDown": {
+                        "frames": 1
+                    },
+                    "tripleverticalLeft": {
+                        "frames": 1
+                    },
+                    "tripleverticalRight": {
+                        "frames": 1
+                    },
+                    "vertical": {
+                        "frames": 1
+                    },
+                    "horizontal": {
+                        "frames": 1
+                    },
+                    "full": {
+                        "frames": 1
+                    }
+                }
+            }
+        },
+        "parts": {
+            "cables": {
+                "properties": {
+                    "centered": false
+                },
+                "partStates": {
+                    "cable": {
+                        "right": {
+                            "properties": {
+                                "image": "<partImage>:right"
+                            }
+                        },
+                        "up": {
+                            "properties": {
+                                "image": "<partImage>:up"
+                            }
+                        },
+                        "none": {
+                            "properties": {
+                                "image": "<partImage>:none"
+                            }
+                        },
+                        "cornerLeftDown": {
+                            "properties": {
+                                "image": "<partImage>:cornerleftdown"
+                            }
+                        },
+                        "cornerLeftUp": {
+                            "properties": {
+                                "image": "<partImage>:cornerleftup"
+                            }
+                        },
+                        "cornerRightDown": {
+                            "properties": {
+                                "image": "<partImage>:cornerrightdown"
+                            }
+                        },
+                        "cornerRightUp": {
+                            "properties": {
+                                "image": "<partImage>:cornerrightup"
+                            }
+                        },
+                        "triplehorizontalUp": {
+                            "properties": {
+                                "image": "<partImage>:tripleup"
+                            }
+                        },
+                        "triplehorizontalDown": {
+                            "properties": {
+                                "image": "<partImage>:tripledown"
+                            }
+                        },
+                        "tripleverticalLeft": {
+                            "properties": {
+                                "image": "<partImage>:tripleleft"
+                            }
+                        },
+                        "tripleverticalRight": {
+                            "properties": {
+                                "image": "<partImage>:tripleright"
+                            }
+                        },
+                        "vertical": {
+                            "properties": {
+                                "image": "<partImage>:vertical"
+                            }
+                        },
+                        "horizontal": {
+                            "properties": {
+                                "image": "<partImage>:horizontal"
+                            }
+                        },
+                        "full": {
+                            "properties": {
+                                "image": "<partImage>:full"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

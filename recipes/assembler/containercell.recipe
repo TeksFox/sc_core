@@ -1,0 +1,27 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 3
+        },
+        {
+            "item": "copperbar",
+            "count": 2
+        },
+        {
+            "item": "rubber",
+            "count": 1
+        },
+        {
+            "item": "screws",
+            "count": 4
+        }
+    ],
+    "output": {
+        "item": "containercell",
+        "count": 3,
+        "parameters": {}
+    },
+    "duration": 20,
+    "groups": [ "items", "basicassembler" ]
+}

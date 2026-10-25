@@ -1,0 +1,38 @@
+{
+  "objectName": "gateditemconduit",
+  "colonyTags": [],
+  "printable": false,
+  "rarity": "Common",
+  "description": "An item conduit that will only allow items through with a wired signal",
+  "shortdescription": "Gated Item Conduit",
+  "race": "generic",
+  "category": "transport",
+  "price": 45,
+  "inventoryIcon": "tileset.png:icon",
+  "health": 3.0,
+  "orientations": [
+    {
+      "image": "tileset.png:icon",
+      "imagePosition": [ -8, -8 ],
+      "animationPosition": [ -8, -8 ],
+      "frames": 1,
+      "animationCycle": 1.0,
+      "renderLayer": "Platform-10",
+      "direction": "right"
+
+    }
+  ],
+  "frameCooldown": 5,
+  "autoCloseCooldown": 3600,
+  "spawnCooldownTime": 0,
+  "slotCount": 1,
+  "animation": "/animations/conduits.animation",
+  "animationParts": {
+    "cables": "tileset.png"
+  },
+  "conduitType": "item",
+  "inputNodes": [ [ 0.0, 0.0 ] ],
+  "scriptDelta": 2,
+  "scripts": [ "/objects/conduits/Itemconduit/Itemconduit.lua" ]
+
+}

@@ -1,0 +1,152 @@
+[
+    {
+        "op": "replace",
+        "path": "/upgradeStages/0/interactData/config",
+        "value": "/interface/windowconfig/crafting.ui"
+    },
+    {
+        "op": "add",
+        "path": "/upgradeStages/0/interactData/paneLayoutOverride/categories",
+        "value": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "position": [
+                175,
+                204
+            ],
+            "buttons": [
+                {
+                    "selected": true,
+                    "baseImage": "/interface/uiparts/icons/buttons/stations.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/stations.png:2",
+                    "position": [ 0, 0 ],
+                    "data": { "filter": [ "craftingstations" ] }
+                },
+                {
+                    "position": [ 0, -19 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/items.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/items.png:2",
+                    "data": { "filter": [ "items", "ingredients" ] }
+                },
+                {
+                    "position": [ 0, -38 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/tools.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/tools.png:2",
+                    "data": { "filter": [ "tools" ] }
+                },
+                {
+                    "position": [ 0, -57 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/other.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/other.png:2",
+                    "data": { "filter": [ "other" ] }
+                },
+                {
+                    "baseImage": "/interface/uiparts/icons/buttons/all.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/all.png:2",
+                    "position": [ 0, -76 ],
+                    "data": { "filter": [ "all" ] }
+                }
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "path": "/upgradeStages/1/interactData/config",
+        "value": "/interface/windowconfig/crafting.ui"
+    },
+    {
+        "op": "add",
+        "path": "/upgradeStages/1/interactData/paneLayoutOverride/categories",
+        "value": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "position": [
+                175,
+                204
+            ],
+            "buttons": [
+                {
+                    "selected": true,
+                    "baseImage": "/interface/uiparts/icons/buttons/stations.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/stations.png:2",
+                    "position": [ 0, 0 ],
+                    "data": { "filter": [ "craftingstations" ] }
+                },
+                {
+                    "position": [ 0, -19 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/items.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/items.png:2",
+                    "data": { "filter": [ "items", "ingredients" ] }
+                },
+                {
+                    "position": [ 0, -38 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/tools.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/tools.png:2",
+                    "data": { "filter": [ "tools" ] }
+                },
+                {
+                    "position": [ 0, -57 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/other.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/other.png:2",
+                    "data": { "filter": [ "other" ] }
+                },
+                {
+                    "baseImage": "/interface/uiparts/icons/buttons/all.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/all.png:2",
+                    "position": [ 0, -76 ],
+                    "data": { "filter": [ "all" ] }
+                }
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "path": "/upgradeStages/2/interactData/config",
+        "value": "/interface/windowconfig/crafting.ui"
+    },
+    {
+        "op": "add",
+        "path": "/upgradeStages/2/interactData/paneLayoutOverride/categories",
+        "value": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "position": [
+                175,
+                204
+            ],
+            "buttons": [
+                {
+                    "selected": true,
+                    "baseImage": "/interface/uiparts/icons/buttons/stations.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/stations.png:2",
+                    "position": [ 0, 0 ],
+                    "data": { "filter": [ "craftingstations" ] }
+                },
+                {
+                    "position": [ 0, -19 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/items.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/items.png:2",
+                    "data": { "filter": [ "items", "ingredients" ] }
+                },
+                {
+                    "position": [ 0, -38 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/tools.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/tools.png:2",
+                    "data": { "filter": [ "tools" ] }
+                },
+                {
+                    "position": [ 0, -57 ],
+                    "baseImage": "/interface/uiparts/icons/buttons/other.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/other.png:2",
+                    "data": { "filter": [ "other" ] }
+                },
+                {
+                    "baseImage": "/interface/uiparts/icons/buttons/all.png:1",
+                    "baseImageChecked": "/interface/uiparts/icons/buttons/all.png:2",
+                    "position": [ 0, -76 ],
+                    "data": { "filter": [ "all" ] }
+                }
+            ]
+        }
+    }
+]

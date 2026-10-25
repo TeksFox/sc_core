@@ -1,0 +1,58 @@
+{
+  "objectName": "conduitterminal",
+  "colonyTags": [],
+  "printable": false,
+  "rarity": "Common",
+  "description": "Allows control of your Smart Tubes System",
+  "shortdescription": "Conduit Terminal",
+  "race": "generic",
+  "category": "transport",
+  "price": 45,
+  "inventoryIcon": "icon.png",
+  "health": 3.0,
+  "orientations": [
+    {
+      "imageLayers": [ { "image": "conduitterminal.png:full" } ],
+      "imagePosition": [ 0, 0 ],
+      "animationPosition": [ 0, 0 ],
+      "spaces": [
+        [ 0, 0 ],
+        [ 0, 1 ],
+        [ 0, 2 ],
+        [ 1, 0 ],
+        [ 1, 1 ],
+        [ 1, 2 ],
+        [ 2, 0 ],
+        [ 2, 1 ],
+        [ 2, 2 ]
+      ],
+      "frames": 1,
+      "spaceScan": 0.1,
+      "animationCycle": 1.0,
+      "direction": "right"
+
+    }
+  ],
+  "interactAction": "ScriptPane",
+  "interactData": "/interface/smarttubes/terminal/terminal.ui",
+  "conduitType": "terminal",
+  
+  "animation": "/animations/defaultcolorizer/colorizer_defaultlit.animation",
+  "colorizer": true,
+  "animationParameters": {
+      "animationParts": {
+        "body": {
+            "partImage": "conduitterminal.png",
+            "colors": { "default": [ "mk_copper", "sf_steel" ] }
+        },
+        "lit": {
+            "partImage": "conduitterminallit.png",
+            "colors": { "default": [] },
+            "hide": true 
+        }
+      }
+  },
+  "scriptDelta": 1,
+  "scripts": [ "/objects/conduits/conduitterminal/conduitterminal.lua" ]
+
+}

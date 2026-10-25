@@ -1,0 +1,7 @@
+{
+  "input": [
+      { "item": "copperore", "count": 2, "parameters": { "tag": "copper" } }
+  ],
+  "groups" : [ "craftingfurnace", "basicfurnace", "bars", "all" ],
+  "duration": 5
+}

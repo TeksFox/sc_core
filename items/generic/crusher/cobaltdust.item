@@ -1,0 +1,13 @@
+{
+    "itemName": "cobaltdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "cobaltdust.png",
+    "description": "...",
+    "shortdescription": "Cobalt dust",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

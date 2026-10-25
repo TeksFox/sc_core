@@ -1,0 +1,15 @@
+{
+    "itemName": "ar47m1_standardbarrel",
+    "price": 0,
+    "rarity": "common",
+    "category": "barrel",
+    "inventoryIcon": "ar47m1_standardbarrel.png",
+    "shortdescription": "Standard barrel for AR47-M1",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "ar47m1" ],
+    "inaccuracy": [-0.03, -0.05],
+    "damage": [0, 0],
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

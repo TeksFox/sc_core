@@ -1,0 +1,10 @@
+{
+  "itemName" : "coppercable",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "electronics",
+  "inventoryIcon" : "coppercable.png",
+  "description" : "...",
+  "shortdescription" : "Copper cable",
+  "itemTags" : [ "reagent", "electronics" ]
+}

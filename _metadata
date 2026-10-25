@@ -1,0 +1,12 @@
+{
+  "name": "sf_core",
+  "friendlyName": "Star Fatory Core",
+  "description": "The main mod of the project, mandatory for many mods marked [SF]",
+  "author": "TeksFox",
+  "version": "1.0.0 beta",
+  "link": "https://discord.gg/Pbt9AjEHvG",
+  "tags": "",
+  "includes": [ "QuickbarMini" ],
+  "requires": [],
+  "priority": 997
+}

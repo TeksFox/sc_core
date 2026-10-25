@@ -1,0 +1,13 @@
+{
+    "itemName": "processedclay",
+    "price": 0,
+    "rarity": "common",
+    "category": "craftingMatrial",
+    "inventoryIcon": "processedclay.png",
+    "description": "Clay purified from impurities is more suitable for use.",
+    "shortdescription": "Processd Clay",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

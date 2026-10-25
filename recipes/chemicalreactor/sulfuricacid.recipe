@@ -1,0 +1,17 @@
+{
+    "input": [
+        { "item": "liquidwater", "count": 20 },
+        { "item": "oxygen", "count": 10 },
+        { "item": "sulphurdust", "count": 2 }
+    ],
+    "output": {
+        "item": "sulfuricacid",
+        "count": 10
+    },
+    "duration": 10,
+    "groups": [
+        "chemicalreactor",
+        "liquid",
+        "all"
+    ]
+}

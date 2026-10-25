@@ -1,0 +1,14 @@
+{
+    "itemName": "vanadiumdust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "vanadiumdust.png",
+    "description": "...",
+    "shortdescription": "Crushed vanadium",
+    "itemTags": [
+        "reagent",
+        "vanadium",
+        "raw"
+    ]
+}

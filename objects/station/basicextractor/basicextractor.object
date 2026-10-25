@@ -1,0 +1,55 @@
+{
+    "objectName": "basicextractor", 
+    "price": 0,
+    "rarity": "common",
+    "race": "generic",
+    "category": "Miner",
+    "objectType": "container",
+    "printable": false,
+    "description": "soon",
+    "shortdescription": "^orange;Advanced Miner^white;",
+    "inventoryIcon": "icon.png",
+
+    "largeImage": "basicextractor.png:default",
+    "orientations": [
+        {
+            "dualImage": "basicextractor.png:default",
+            "imagePosition" : [0, 0],
+            "animationPosition" : [0, 0], 
+            "spaceScan": 0.1,
+            "anchors": [ "background" ]
+        }
+    ],
+    "basicParameters": {
+        "color": "copper",
+        "depositType": "default"
+    },
+    
+    "gravityPosition": [ 1.5, 5.5 ],
+    "maxenergy": 5000,
+    "miningTime": 2.5,
+    "consumeEnergy": 5,
+    "dubleExtrachChance": 0.07,
+    "miningLevel": 1,
+    "drillType": "solid",
+
+
+    "animation": "basicextractor.animation",
+    "animationParts": {
+        "body": "basicextractor.png",
+        "ore": "oreColored.png",
+        "rotor": "rotor.png",
+        "bar": "energyBar.png"
+    },
+    "barSize": [12, 4],
+
+
+    "slotCount" : 22,
+    "uiConfig" : "/interface/objectcrafting/resourceextractor/resourceextractor.ui",
+    "frameCooldown" : 32,
+    "autoCloseCooldown": 3600,
+
+    "scripts": [ "/scripts/objects/sf_object_extractor.lua" ],
+    "scriptDelta": 1
+
+}

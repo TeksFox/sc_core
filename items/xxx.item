@@ -1,0 +1,10 @@
+{
+  "itemName" : "xxx",
+  "price" : 0,
+  "rarity" : "essential",
+  "category" : "Angry",
+  "inventoryIcon" : "xxx.png",
+  "description" : "Error item",
+  "shortdescription" : "Error item",
+  "itemTags" : []
+}

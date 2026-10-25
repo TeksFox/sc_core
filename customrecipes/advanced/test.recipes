@@ -1,0 +1,22 @@
+[
+    //! Stations
+    "stonefurnace",
+    "electricfurnace",
+    "factorytrash",
+    "factoryassembler",
+    "shipsmelter",
+    "repairkit",
+
+    
+    //! Items 
+    "bolt",
+    "moltencore",
+    "plainboard",
+    "roboticparts",
+    //! Electronics
+    "tinnedcopperwire",
+    "wire",
+    "siliconboard",
+    "battery",
+    "smallbettary"
+]

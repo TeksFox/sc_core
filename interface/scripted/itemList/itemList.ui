@@ -1,0 +1,560 @@
+{
+    "gui": {
+
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/itemList/header.png",
+            "fileBody": "/interface/scripted/itemList/body.png",
+            "fileFooter": "/interface/scripted/itemList/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 362, 296 ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "",
+            "subtitle": ""
+        },   
+         "iconmode ": {
+            "type": "image",
+            "file": "/interface/scripted/itemList/iconMode.png",
+            "position": [ 4, 288 ],
+            "zlevel": 5
+        },
+        "titleicon": {
+            "type": "itemslot",
+            "callback": "null",
+            "position": [ 5, 289 ],
+            "showRarity": false,
+            "iconMode": true,
+            "backingImage": "/interface/inventory/empty.png",
+            "showBackingImageWhenFull": false,
+            "showBackingImageWhenEmpty": false,
+            "zlevel": 1
+        },
+        
+        "recipesTitle": {
+            "type": "label",
+            "position": [ 90, 278 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "Recipe list"
+        },
+        "filter": {
+            "type": "textbox",
+            "position": [ 7, 39 ],
+            "hint": "Search",
+            "maxWidth": 160,
+            "textAlign": "center",
+            "fontSize": 7,
+            "escapeKey": "close",
+            "enterKey": "filter",
+            "focus": false
+        },
+        "itemScroll": {
+            "type": "scrollArea",
+            "visible": true,
+            "rect": [ 7, 48, 173, 272 ],
+            "buttons": {
+                "horizontal": {
+                    "forward": { "base": "", "hover": "", "pressed": "" },
+                    "backward": { "base": "", "hover": "", "pressed": "" }
+                },
+                "vertical": {
+                    "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" },
+                    "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": { "begin": "", "end": "", "inner": "" },
+                    "hover": { "begin": "", "end": "", "inner": "" },
+                    "pressed": { "begin": "", "end": "", "inner": "" }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "list": {
+                    "type": "list",
+					"callback" : "itemSelected",
+                    "zlevel": -1,
+                    "columns": 1,
+                    "schema": {
+                        "selectedBG": "/interface/scripted/itemList/back.png:2",
+                        "unselectedBG": "/interface/scripted/itemList/back.png:1",
+                        "memberSize": [ 156, 20 ],
+                        "spacing": [ 0, 2 ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/back.png:1",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "recipename": {
+                                "type": "label",
+                                "position": [ 25, 10 ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "fontSize": 7,
+                                "wrapWidth":80,
+                                "color": "orange"
+                            },
+                            "level": {
+                                "type": "label",
+                                "position": [ 138, 3 ],
+                                "hAnchor": "right",
+                                "vAnchor": "mid",
+                                "wrapWidth":80,
+                                "fontSize":6,
+                                "color": "black"
+                            },   
+                            "iconmode ": {
+                               "type": "image",
+                               "file": "/interface/scripted/itemList/iconMode.png",
+                               "position": [ 0, 0 ],
+                               "zlevel": 5
+                           },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 1, 1 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "imageIcon": {
+                                "type": "image",
+                                "file": "",
+                                "position": [ 1, 1 ],
+                                "zlevel": 2
+                            },
+                            "border": {
+                                "type": "image",
+                                "file": "",
+                                "position": [ 1, 1 ],
+                                "zlevel": -1
+                            },
+                            "blockedbackground": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/back.png:3",
+                                "position": [ 0, 0 ],
+                                "zlevel": 5
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "scroll": {
+            "type": "scrollArea",
+            "visible": false,
+            "fillDown":true,
+            "rect": [ 202, 58, 373, 257 ],
+            "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" } } },
+            "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+            "children": {
+                "label1": {
+                    "type": "image",
+                    "file": "/interface/scripted/itemList/textborder.png",
+                    "position": [ 0, -3 ],
+                    "zlevel": -1
+                },
+                "input": {
+                    "type": "label",
+                    "position": [ 84, 2 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "wrapWidth":105,
+                    "value": "Input items",
+                    "color": "black"
+                },
+                "inputList": {
+                    "type": "list",
+                    "callback" : "null",
+                    "position":[0, -3],
+                    "fillDown":true,
+                    "zlevel": -1,
+                    "columns": 6,
+                    "schema": {
+                        "memberSize": [ 27, 33 ],
+                        "spacing": [ 0, 1],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/inputback.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "count": {
+                                "type": "label",
+                                "position": [ 14, 6 ],
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                                "fontSize": 6,
+                                "zlevel": 3,
+                                "color": "black"
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 10 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "replacable": {
+                                "type": "image",
+                                "visible": false,
+                                "file": "/interface/scripted/itemList/replace.png",
+                                "position": [ 17, 24 ],
+                                "zlevel": -1
+                            }
+                        }
+                    }
+                },
+                "label3": {
+                    "type": "image",
+                    "file": "/interface/scripted/itemList/textborder.png",
+                    "position": [ 0, 0 ],
+                    "zlevel": -1
+                },
+                "output": {
+                    "type": "label",
+                    "position": [ 84, 0 ],
+                    "hAnchor": "mid",
+                    "vAnchor": "mid",
+                    "wrapWidth": 105,
+                    "value": "Output items",
+                    "color": "black"
+                },
+                "outputList": {
+                    "type": "list",
+                    "callback": "null",
+                    "position": [ 0, -1 ],
+                    "fillDown": true,
+                    "zlevel": -1,
+                    "columns": 6,
+                    "schema": {
+                        "memberSize": [ 27, 39 ],
+                        "spacing": [ 0, 1 ],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/outputback.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 10 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "chance": {
+                                "type": "label",
+                                "position": [ 14, 31 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                
+                                "color": "black"
+                            },
+                            "count": {
+                                "type": "label",
+                                "position": [ 14, 6 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                
+                                "color": "black"
+                            },
+                            "percent": {
+                                "type": "image",
+                                "visible": false,
+                                "file": "/interface/scripted/itemList/percent.png",
+                                "position": [ 18, 30 ],
+                                "zlevel": -1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "euConsumeTitle": {
+            "type": "label",
+            "position": [ 200, 45 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "Energy / Fuel consume:",
+            "color": "orange"
+        },
+        "consume": {
+            "type": "label",
+            "position": [ 371, 45 ],
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "-",
+            "color": "green"
+        },
+        // "timerTitle": {
+        //     "type": "label",
+        //     "position": [ 200, 45 ],
+        //     "hAnchor": "left",
+        //     "vAnchor": "mid",
+        //     "wrapWidth":105,
+        //     "value": "Time to craft:",
+        //     "color": "orange"
+        // },
+        // "timer": {
+        //     "type": "label",
+        //     "position": [ 371, 45 ],
+        //     "hAnchor": "right",
+        //     "vAnchor": "mid",
+        //     "wrapWidth":105,
+        //     "value": "-",
+        //     "color": "green"
+        // },
+		"showLevel" : {
+			"type" : "button",
+			"base" : "/interface/smallsliderbutton.png:on",
+			"hover" : "/interface/smallsliderbutton.png:onH",
+			"baseImageChecked" : "/interface/smallsliderbutton.png:off",
+			"hoverImageChecked" : "/interface/smallsliderbutton.png:offH",
+			"checkable" : true,
+			"checked" : true,
+			"position" : [ 145, 23 ],
+            "data":"Show unavailable",
+			"callback" : "showLevel"
+		},
+        "showLevelTitle": {
+            "type": "label",
+            "position": [ 9, 27 ],
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "Show unavailable recipes:"
+        },
+        "categorylist": {
+            "type": "list",
+            "position":[175 ,272],
+            "size":[20, 300],
+            "callback" : "categorylist",
+            "fillDown":true,
+            "zlevel": -1,
+            "columns": 1,
+            "schema": {
+                "selectedBG": "/interface/scripted/itemList/tab.png:2",
+                "unselectedBG": "/interface/scripted/itemList/tab.png:1",
+                "memberSize": [ 18, 18 ],
+                "spacing": [ 1, 0 ],
+                "listTemplate": {
+                    "background": {
+                        "type": "image",
+                        "file": "/interface/scripted/itemList/tab.png:1",
+                        "position": [ 0, 0 ],
+                        "zlevel": -1
+                    },
+                    "tabglow": {
+                        "type": "button",
+                        "pressedOffset": [ 0, 0 ],
+                        "base": "/interface/scripted/itemList/tabglow.png:1",
+                        "hover": "/interface/scripted/itemList/tabglow.png:2",
+                        "position": [ 0, 0 ],
+                        "callback": "null",
+                        "zlevel": 2
+                    },
+                    "icon": {
+                        "type": "image",
+                        "centered": true,
+                        "file": "",
+                        "position": [ 9, 9 ],
+                        "zlevel": 1
+                    }
+                }
+            }
+        },
+        "titlelayout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 198, 258 ],
+            "size": [ 176, 26 ],
+            "children": {
+                "iconmode ": {
+                    "type": "image",
+                    "file": "/interface/scripted/itemList/iconMode.png",
+                    "position": [ 4, 4 ],
+                    "zlevel": 2
+                },
+                "icon": {
+                    "type": "itemslot",
+                    "callback": "null",
+                    "position": [ 4, 4 ],
+                    "showRarity": false,
+                    "iconMode": true,
+                    "backingImage": "/interface/inventory/empty.png",
+                    "showBackingImageWhenFull": false,
+                    "showBackingImageWhenEmpty": false,
+                    "zlevel": 1
+                },
+                "title": {
+                    "type": "label",
+                    "position": [ 29, 17 ],
+                    "hAnchor": "left",
+                    "vAnchor": "mid",
+                    "wrapWidth":105,
+                    "color": "white"
+                }
+            }
+        }
+    },
+    
+    "tooltips":{
+        "background":  {
+                "type" : "background",
+                "fileHeader" : "",
+                "fileBody" : "/interface/crafting/tooltip.png",
+                "fileFooter" : ""
+        },
+        "text": {
+            "type": "label",
+            "position": [ 48, 10 ],
+            "wrapWidth": 90,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 6
+        }
+    },
+    "buttontooltips":{
+        "background":  {
+                "type" : "background",
+                "fileHeader" : "",
+                "fileBody" : "/interface/crafting/tooltip.png",
+                "fileFooter" : ""
+        },
+        "text": {
+            "type": "label",
+            "position": [ 48, 10 ],
+            "wrapWidth": 90,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "",
+            "fontSize": 6
+        }
+    },
+    
+    "itemList":{
+        "listParameter": {
+            "position": [ 1, 20 ],
+            "memberSize": [ 125, 20 ],
+            "spacing": [ 0, 3 ]
+        },
+        "background": "/interface/craftingtooltip/body.png",
+        "listWidgewt": {
+            "background": {
+                "type": "background",
+                "fileHeader": "/interface/craftingtooltip/header.png",
+                "fileBody": "/interface/craftingtooltip/body.png",
+                "fileFooter": "/interface/craftingtooltip/footer.png"
+            },
+            "title": {
+                "type": "label",
+                "position": [ 0, 0 ],
+                "hAnchor": "mid",
+                "vAnchor": "mid",
+                "wrapWidth": 70,
+                "value": "INTERCHANGEABLE",
+                "zlevel": 1
+            }
+        }
+    },
+    "layout": {
+        "itemBackground": {
+            "type": "image",
+            "file": "/interface/scripted/itemList/tooltipitem.png",
+            "position": [ 0, -1 ],
+            "zlevel": -5
+        },
+        "itemName": {
+            "type": "label",
+            "position": [ 64, 10 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 66,
+            "fontSize": 7,
+            "value": "",
+            "zlevel": 1
+        },
+        "itemIconBack": {
+            "type": "image",
+            "position": [ 3, 1 ],
+            "file": "/interface/inventory/empty.png",
+            "zlevel": -4
+        },
+        "itemIconRarityBack": {
+            "type": "image",
+            "position": [ 3, 1 ],
+            "file": "/interface/inventory/empty.png",
+            "zlevel": -3
+        },
+        "icon": {
+            "type": "image",
+            "position": [ 12, 10 ],
+            "centered": true,
+            "file": "",
+            "zlevel": -2
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "filter",
+        "categories",
+        "itemSelected",
+        "categorylist",
+        "add",
+        "remove",
+        "removeall",
+        
+        "showLevel"
+    ],
+    "scripts": [
+        "/interface/scripted/itemList/itemList.lua"
+    ],
+    "scriptDelta": 5,
+    "listPositions":{
+        "indentFromList": 4
+    },
+    "buttonnames": ["removeall"]
+}

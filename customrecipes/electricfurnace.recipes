@@ -1,0 +1,536 @@
+{
+    "pool": "/treasure/crafting/washer.treasurepools",
+    "recipes": {
+        "bars": {
+            "1.0": {
+                "name":"copperbar",
+                "input": [
+                    { "names": [ "copperore", "crushedcopper", "copperdust" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "copperbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.1": {
+                "name":"copperbar",
+                "input": [
+                    { "name": "tinypilecopper", "count": 8 }
+                ],
+                "output": [
+                    { "name": "copperbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.2": {
+                "name":"tinbar",
+                "input": [
+                    { "names": [ "tinore", "crushedtin", "tindust" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "tinbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.3": {
+                "name":"tinbar",
+                "input": [
+                    { "name": "tinypiletin", "count": 8 }
+                ],
+                "output": [
+                    { "name": "tinbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.4": {
+                "name":"leadbar",
+                "input": [
+                    { "names": [ "lead", "crushedlead", "leaddust" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "leadbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.5": {
+                "name":"leadbar",
+                "input": [
+                    { "name": "tinypilelead", "count": 8 }
+                ],
+                "output": [
+                    { "name": "leadbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.6": {
+                "name":"silverbar",
+                "input": [
+                    { "names": ["silverore", "crushedsilver", "silverdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "silverbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.7": {
+                "name":"silverbar",
+                "input": [
+                    { "name": "tinypilesilver", "count": 8 }
+                ],
+                "output": [
+                    { "name": "silverbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.8": {
+                "name":"goldbar",
+                "input": [
+                    { "names": ["goldore", "crushedgold", "golddust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "goldbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.9": {
+                "name":"goldbar",
+                "input": [
+                    { "name": "tinypilegold", "count": 8 }
+                ],
+                "output": [
+                    { "name": "goldbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.10": {
+                "name":"ironbar",
+                "input": [
+                    { "names": ["ironore", "crushediron", "irondust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "ironbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.11": {
+                "name":"ironbar",
+                "input": [
+                    { "name": "tinypileiron", "count": 8 }
+                ],
+                "output": [
+                    { "name": "ironbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.12": {
+                "name":"tungstenbar",
+                "input": [
+                    { "names": ["tungstenore", "crushedtungsten", "tungstendust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "tungstenbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.13": {
+                "name":"tungstenbar",
+                "input": [
+                    { "name": "tinypiletungsten", "count": 8 }
+                ],
+                "output": [
+                    { "name": "tungstenbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.14": {
+                "name":"platinumbar",
+                "input": [
+                    { "names": ["platinumore", "crushedplatinum", "platinumdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "platinumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            },   
+            "1.15": {
+                "name":"platinumbar",
+                "input": [
+                    { "name": "tinypileplatinum", "count": 8 }
+                ],
+                "output": [
+                    { "name": "platinumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.16": {
+                "name":"titaniumbar",
+                "input": [
+                    { "names": ["titaniumore", "crushedtitanium", "titaniumdust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "titaniumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.17": {
+                "name":"titaniumbar",
+                "input": [
+                    { "name": "tinypiletitanium", "count": 8 }
+                ],
+                "output": [
+                    { "name": "titaniumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            "1.18": {
+                "name":"durasteelbar",
+                "input": [
+                    { "names": ["durasteelore", "crusheddurasteel", "durasteeldust"], "count": 2 }
+                ],
+                "output": [
+                    { "name": "durasteelbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 80
+            }, 
+            "1.19": {
+                "name":"durasteelbar",
+                "input": [
+                    { "name": "tinypiledurasteel", "count": 8 }
+                ],
+                "output": [
+                    { "name": "durasteelbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 1,
+                "euConsumed": 80
+            },
+            //! LEVEL 2 ---------------------------------------
+            "2.0": {
+                "name":"aluminiumbar",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 2 },
+                    { "name": "hydrogen", "count": 20 },
+                    { "name": "coalore", "count": 1 },
+                    { "names": [ "aluminiumore", "crushedaluminium", "aluminiumdust" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "aluminiumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.15 }
+                ],
+                "delay": 45,
+                "level": 2,
+                "euConsumed": 120
+            }, 
+            "2.1": {
+                "name":"aluminiumbar",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 2 },
+                    { "name": "hydrogen", "count": 20 },
+                    { "name": "coalore", "count": 1 },
+                    { "name": "tinypilealuminium", "count": 8 }
+                ],
+                "output": [
+                    { "name": "aluminiumbar", "count": 1 },
+                    { "name": "ash", "counts": [ 1, 3 ], "chance": 0.4 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.20 }
+                ],
+                "delay": 40,
+                "level": 2,
+                "euConsumed": 80
+            },
+            //! LEVEL 3 ---------------------------------------
+            "3.0": {
+                "name":"copperbar",
+                "fullname": "Advanced copper smelting",
+                "icon":"/interface/scripted/itemList/crafticons/cobaltcopper.png",
+
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 2 },
+                    { "names": [ "copperore", "crushedcopper", "copperdust" ], "count": 10 },
+                    { "name": "crushedstone", "count": 10 },
+                    { "name": "hydrogen", "count": 30 }
+                ],
+                "output": [
+                    { "name": "copperbar", "count": 6 },
+                    { "name": "tinypilecobalt", "counts": [ 1, 2 ], "chance": 0.65 },
+                    { "name": "ash", "counts": [ 4, 6 ], "chance": 0.8 },
+                    { "name": "productiontoken", "count": 1, "chance": 0.30 }
+                ], 
+                "delay": 140,
+                "level": 3,
+                "euConsumed": 250
+            }
+        },
+        "alloy": {
+            "1.0": {
+                "name":"steelbar",
+                "input": [
+                    { "name": "ironbar", "count": 2 },
+                    { "name": "copperbar", "count": 1 }
+                ],
+                "output": [
+                    { "name": "steelbar", "count": 2 }
+                ],
+                "delay": 55,
+                "level": 1,
+                "euConsumed": 110
+            },
+            "1.1": {
+                "name":"bronzebar",
+                "input": [
+                    { "name": "copperdust", "count": 3 },
+                    { "name": "tindust", "count": 1 }
+                ],
+                "output": [
+                    { "name": "bronzebar", "count": 1 }
+                ],
+                "delay": 60,
+                "level": 1,
+                "euConsumed": 120
+            },
+            "1.2": {
+                "name":"erchiusalloy",
+                "input": [
+                    { "name": "crushederchiusfuel", "count": 10 },
+                    { "name": "titaniumdust", "count": 1 },
+                    { "name": "tungstendust", "count": 2 }
+                ],
+                "output": [
+                    { "name": "erchiusalloy", "count": 1 }
+                ],
+                "delay": 60,
+                "level": 1,
+                "euConsumed": 120
+            },
+            //! Level 2
+            "2.0": {
+                "name":"naonitebar",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 3 },
+                    { "name": "naonitedust", "count": 10 },
+                    { "name": "copperdust", "count": 12 },
+                    { "name": "carbon", "count": 2 },
+                    { "name": "chlorine", "count": 50 }
+                ],
+                "output": [
+                    { "name": "naonitebar", "count": 5 }
+                ],
+                "delay": 120,
+                "level": 2,
+                "euConsumed": 200
+            },
+            "2.1": {
+                "name":"electrumbar",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 3 },
+                    { "name": "golddust", "count": 5 },
+                    { "name": "silverdust", "count": 5 },
+                    { "name": "hydrogen", "count": 30 }
+                ],
+                "output": [
+                    { "name": "electrumbar", "count": 3 }
+                ],
+                "delay": 110,
+                "level": 2,
+                "euConsumed": 160
+            }
+            
+        },//
+        "other": {
+            "1.0": {
+                "name":"carbon",
+                "input": [
+                    { "name": "coalore", "count": 3 },
+                    { "name": "liquidwater", "count": 10 }
+                ],
+                "output": [
+                    { "name": "carbon", "count": 5 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            "1.1": {
+                "name":"glass",
+                "input": [
+                    { "names": [ "sand", "sand2" ], "count": 2 }
+                ],
+                "output": [
+                    { "name": "glass", "count": 1 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            "1.2": {
+                "name":"firedclay",
+                "input": [
+                    { "name": "clay", "count": 2 }
+                ],
+                "output": [
+                    { "name": "firedclay", "count": 1 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            "1.3": {
+                "name":"paper",
+                "input": [
+                    { "name": "logblock", "count": 1 }
+                ],
+                "output": [
+                    { "name": "paper", "count": 5 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            "1.4": {
+                "name":"rubber",
+                "input": [
+                    { "name": "liquidoil", "count": 20 }
+                ],
+                "output": [
+                    { "name": "rubber", "count": 1 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            "1.5": {
+                "name":"volatilepowder",
+                "input": [
+                    { "name": "corefragmentore", "count": 2 }
+                ],
+                "output": [
+                    { "name": "volatilepowder", "count": 1 }
+                ],
+                "delay": 35,
+                "level": 1,
+                "euConsumed": 60
+            },
+            //! Level 2
+            "2.0": {
+                "name":"silicon",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 1 },
+                    { "name": "quartzore", "count": 2 },
+                    { "name": "hydrogen", "count": 15 }
+                ],
+                "output": [
+                    { "name": "silicon", "count": 1 }
+                ],
+                "delay": 55,
+                "level": 1,
+                "euConsumed": 120
+            },
+            "2.1": {
+                "name":"durableglass",
+                "input": [
+                    { "name": "gascatalyst", "count": 1, "damage": 1 },
+                    { "name": "cleansand", "count": 4 },
+                    { "name": "leaddust", "count": 1 },
+                    { "name": "oxygen", "count": 10 }
+                ],
+                "output": [
+                    { "name": "durableglass", "count": 1 }
+                ],
+                "delay": 80,
+                "level": 2,
+                "euConsumed": 80
+            },
+            "2.2": {
+                "name":"durablebottle",
+                "input": [
+                    { "name": "durableglass", "count": 3 }
+                ],
+                "output": [
+                    { "name": "durablebottle", "count": 2 }
+                ],
+                "delay": 80,
+                "level": 2,
+                "euConsumed": 80
+            }
+        }//
+    }
+}

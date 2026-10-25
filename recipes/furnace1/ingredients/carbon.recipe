@@ -1,0 +1,16 @@
+{
+    "input": [
+        { "item": "coalore", "count": 10 },
+        { "item": "liquidwater", "count": 50 }
+    ],
+    "output": {
+        "item": "carbon",
+        "count": 5
+    },
+    "duration": 7,
+    "groups": [
+        "craftingfurnace",
+        "ingredients",
+        "all"
+    ]
+}

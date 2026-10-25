@@ -1,0 +1,10 @@
+{
+  "itemName" : "repairkit",
+  "price" : 0,
+  "rarity" : "rare",
+  "category" : "repairkit",
+  "inventoryIcon" : "repairkit.png",
+  "description" : "...",
+  "shortdescription" : "Repair kit",
+  "itemTags" : [ "reagent", "tools" ]
+}

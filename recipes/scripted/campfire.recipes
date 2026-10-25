@@ -1,0 +1,17 @@
+[
+    { "type": "blank", "name": "toast", "maxCount": 10, "duration": 6 },
+    { "type": "blank", "name": "roastedmushrooms", "maxCount": 10, "duration": 6 },
+    { "type": "blank", "name": "roastedcarrot", "maxCount": 10, "duration": 6 },
+    { "type": "blank", "name": "boiledpearlpeas", "input": [ { "name": "woodenbowl", "count": 1 } ], "maxCount": 10, "duration": 6 },
+    { "type": "blank", "name": "potatogrids", "maxCount": 10, "duration": 6 },
+    { "type": "blank", "name": "cookedtomato", "maxCount": 10, "duration": 8 },
+    { "type": "blank", "name": "cookedtentacle", "maxCount": 10, "duration": 10 },
+    { "type": "blank", "name": "cookedribmeat", "maxCount": 10, "duration": 10 },
+    { "type": "blank", "name": "cookedpoultry", "maxCount": 10, "duration": 10 },
+    { "type": "blank", "name": "cookedbacon", "maxCount": 10, "duration": 8 },
+    { "type": "blank", "name": "cookedham", "maxCount": 10, "duration": 15 },
+    { "type": "blank", "name": "cookedfish", "maxCount": 10, "duration": 10 }, 
+    { "type": "blank", "name": "cookedalienmeat", "maxCount": 10, "duration": 10 }, 
+    { "type": "blank", "name": "boiledrice", "maxCount": 10, "duration": 6 }, 
+    { "type": "blank", "name": "bakedpotato", "maxCount": 10, "duration": 6 }
+]

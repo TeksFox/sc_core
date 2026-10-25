@@ -1,0 +1,69 @@
+{
+    "objectName": "blacksmithstable",
+    "colonyTags": [ "factory", "crafting" ],
+    "printable": false,
+    "price": 0,
+    "race": "generic",
+    "category": "autoCraft",
+    "inventoryIcon": "icon.png:1",
+    "description": "The old loom! so far it looks good",
+    "shortdescription": "Weaving loom",
+    "rarity": "common",
+
+    "largeImage": "blacksmithstable.png:1",
+
+    "orientations": [
+        {
+            "dualImage": "blacksmithstable.png:1",
+            "imagePosition": [ 0, 0 ],
+            "frames": 5,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],    
+    "animationParts": {
+        "body": "blacksmithstable.png",
+        "lit": "blacksmithstablelit.png"
+    },
+
+    "animation": "blacksmithstable.animation",
+    "defaultAnimation": true,
+    "scripts": [],
+    "scriptDelta": 2,
+
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/forge/forge.ui",
+    "uiconfig": {
+        "uiOpenSound": "/",
+        "uiClosedSound": "/",
+        "uiListSound": "/sfx/interface/clickon_success.ogg",
+        "category": [
+            {
+                "selected": true,
+                "friendlyname": "^cyan;Craft stations",
+                "category": [ "craftingstations" ],
+                "order": 1,
+                "icon": "/interface/uiparts/icons/icon_list_stations.png"
+            },
+            {
+                "friendlyname": "^green;Items",
+                "category": [ "items" ],
+                "order": 2,
+                "icon": "/interface/uiparts/icons/icon_list_items.png"
+            },
+            {
+                "friendlyname": "^yellow;Storage",
+                "category": [ "storage" ],
+                "order": 3,
+                "icon": "/interface/uiparts/icons/icon_list_storage.png"
+            },
+            {
+                "friendlyname": "^yellow;Other",
+                "category": [ "other" ],
+                "order": 3,
+                "icon": "/interface/uiparts/icons/icon_list_other.png"
+            }
+        ]
+    }
+}

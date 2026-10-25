@@ -1,0 +1,104 @@
+{
+    "background": {
+        "type": "background",
+        "fileHeader": "/interface/uiparts/tooltips/sf_header.png",
+        "fileBody": "/interface/uiparts/tooltips/tilebody.png",
+        "fileFooter": "/interface/uiparts/tooltips/sf_footer.png"
+    },
+
+    "multiColoredTitle": {
+        "type": "label",
+        "position": [ 10, 49 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Multi colored:",
+        "color": "green"
+    },
+
+    "multiColoredLabel": {
+        "type": "label",
+        "position": [ 130, 49 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": ""
+    },
+
+    "occludesBelowTitle": {
+        "type": "label",
+        "position": [ 10, 37 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Occludes below:",
+        "color": "green"
+    },
+
+    "occludesBelowLabel": {
+        "type": "label",
+        "position": [ 130, 37 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": ""
+    },
+    
+    "lightTransparentTitle": {
+        "type": "label",
+        "position": [ 10, 25 ],
+        "fontSize": 8,
+        "hAnchor": "left",
+        "vAnchor": "mid",
+        "value": "Transparent:",
+        "color": "green"
+    },
+
+    "lightTransparentLabel": {
+        "type": "label",
+        "position": [ 130, 25 ],
+        "fontSize": 8,
+        "hAnchor": "right",
+        "vAnchor": "mid",
+        "value": ""
+    },
+    "rarityLabel": {
+        "type": "label",
+        "position": [ 70, 121 ],
+        "fontSize": 8,
+        "zlevel": 10,
+        "hAnchor": "mid",
+        "vAnchor": "mid",
+        "wrapWidth": 126
+    },
+    "healthLabel": {
+        "type": "label",
+        "position": [ 93, 66 ],
+        "fontSize": 8,
+        "zlevel": 10,
+        "hAnchor": "left",
+        "vAnchor": "bottom",
+        "wrapWidth": 126,
+        "color": "#181824"
+    },
+
+    "objectImage": {
+        "type": "image",
+        "position": [ 94, 95 ],
+        "centered": true,
+        "scale": 2,
+        "file": "",
+        "maxSize" : [24, 24],
+        "minSize" : [24, 24]
+    },
+
+    "largeImage": {
+        "type": "image",
+        "position": [ 36, 87 ],
+        "centered": true,
+        "scale": 2,
+        "file": "",
+        "maxSize" : [40, 40],
+        "minSize" : [40, 40]
+    }
+}

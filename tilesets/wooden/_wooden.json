@@ -1,0 +1,31 @@
+{
+       "margin": 0,
+       "name": "StarFactory_wooden",
+       "properties": {},
+       "spacing": 0,
+       "tilecount": 100,
+       "tileheight": 1,
+       "tilewidth": 1,
+       "tileproperties": {
+              "0": {
+                     "object": "largesturdybed"
+              },
+              "1": {
+                     "object": "robustbulletinboard"
+              },
+              "2": {
+                     "object": "woodenclotheshanger"
+              }
+       },
+       "tiles": {
+              "0": {
+                     "image": "..\/..\/tilesets\/wooden\/largesturdybed.png"
+              },
+              "1": {
+                     "image": "..\/..\/tilesets\/wooden\/robustbulletinboard.png"
+              },
+              "2": {
+                     "image": "..\/..\/tilesets\/wooden\/woodenclotheshanger.png"
+              }
+       }
+}

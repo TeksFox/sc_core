@@ -1,0 +1,10 @@
+{
+  "itemName" : "nickelore", 
+  "price" : 5,
+  "rarity" : "uncommon",
+  "category" : "Usefulmetal",
+  "inventoryIcon" : "nickelore.png",
+  "description" : "It's a nickel ore. Can be used to craft items.",
+  "shortdescription" : "Nickel ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

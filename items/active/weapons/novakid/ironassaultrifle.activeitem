@@ -1,0 +1,203 @@
+{
+    "itemName": "ironassaultrifle2",
+    "price": 960,
+    "maxStack": 1,
+    "rarity": "common",
+    "description": "A fully automatic military grade rifle.",
+    "shortdescription": "AR-22m3",
+    "tooltipKind": "gunammo",
+    "category": "assaultRifle",
+    "twoHanded": true,
+    "level": 3,
+    "itemTags": [ "weapon", "ranged", "assaultrifle", "customweapon" ],
+    //Ammo parameters ----------------------------------------------------------------------------------------------------
+    "ammoType": "rifleAmmo",
+    "ammoCount": 50,
+    "ammoLoadet": 0,
+    "reloadTime": 3,
+    //Animation parameters ----------------------------------------------------------------------------------------------------
+    "animation": "gun.animation",
+    "animationParts": {
+        "butt": "",
+        "middle": "",
+        "forend": "",
+        "barrel": "",
+        "muzzle": "",
+        "optics": "",
+        "magazine": "",
+        "addon": "",
+        "muzzleFlash": "/items/active/weapons/ranged/muzzleFlash/physical.png"
+    },
+    "animationCustom": {
+        "particleEmitters": {
+            "muzzleFlash": {
+                "transformationGroups": [
+                    "muzzle"
+                ],
+                "particles": [
+                    {
+                        "particle": "dust2",
+                        "offset": [
+                            0,
+                            -0.4
+                        ]
+                    }
+                ]
+            }
+        },
+        "sounds": {
+            "fire": [ "/sfx/gun/M16Fire.wav" ], 
+            "reloadStart": [ "/sfx/ReloadStart.wav" ], 
+            "reloadEnd": [ "/sfx/ReloadEnd.wav" ], 
+            "empty": [ "/sfx/EmptyClick3.wav" ]
+        }
+    },
+    "customParts": {
+        "addon": {
+            "x": -0.500,
+            "y": -0.375,
+            "part": "forend",
+            "inverted": true
+        },
+        "optics": {
+            "x": -0.500,
+            "y": 0.375,
+            "part": "middle",
+            "inverted": false
+        },
+        "magazine": {
+            "x": 0,
+            "y": -0.375,
+            "part": "middle",
+            "inverted": true
+        }
+    },
+    "baseOffset": [
+        -1.35,
+        0.36
+    ],
+    "muzzleOffset": [
+        0.200,
+        0.3125
+    ],
+    "scripts": [
+        "/items/active/weapons/ranged/gun.lua"
+    ],
+    "elementalType": "fire",
+    "primaryAbility": {
+        "scripts": [
+            "/items/active/weapons/gunammo.lua"
+        ],
+        "class": "GunFire",
+        "fireTime": 0.11,
+        "baseDps": 10.5,
+        "energyUsage": 31.5,
+        "inaccuracy": 0.02,
+        "projectileCount": 1,
+        "fireType": "auto",
+        "projectileType": "sf_standardbullet",
+        "projectileParameters": {
+            "knockback": 5
+        },
+        "stances": {
+            "idle": {
+                "armRotation": 0,
+                "weaponRotation": 0,
+                "twoHanded": true,
+                "allowRotate": true,
+                "allowFlip": true
+            },
+            "fire": {
+                "duration": 0,
+                "armRotation": 3,
+                "weaponRotation": 3,
+                "recoil": true,
+                "twoHanded": true,
+                "allowRotate": false,
+                "allowFlip": false
+            },
+            "cooldown": {
+                "duration": 0.11,
+                "armRotation": 2,
+                "weaponRotation": 2,
+                "recoil": true,
+                "twoHanded": true,
+                "allowRotate": false,
+                "allowFlip": false
+            }
+        }
+    },
+    "opticsType": "ssm",
+    "addonTupe": "asm",
+    "modules": [
+        {
+            "name": "ar47m1_standardbutt",
+            "parameters": {
+                "rarity": "common",
+                "type": "butt",
+                "module": {
+                    "inaccuracy": -0.03
+                }
+            }
+        },
+        {
+            "name": "ar47m1_reciver",
+            "parameters": {
+                "rarity": "common",
+                "type": "middle",
+                "module": {}
+            }
+        },
+        {
+            "name": "ar47m1_standardforend",
+            "parameters": {
+                "rarity": "common",
+                "type": "forend",
+                "module": {}
+            }
+        },
+        {
+            "name": "ar47m1_standardbarrel",
+            "parameters": {
+                "rarity": "common",
+                "type": "barrel",
+                "module": {}
+            }
+        },
+        {
+            "name": "dtk_m4ar",
+            "parameters": {
+                "rarity": "common",
+                "type": "muzzle",
+                "module": {}
+            }
+        },
+        {
+            "name": "tc_p21k2",
+            "parameters": {
+                "rarity": "common",
+                "type": "optics",
+                "module": {}
+            }
+        },
+        {
+            "name": "drummagazine_ar50r",
+            "parameters": {
+                "rarity": "common",
+                "type": "magazine",
+                "module": {}
+            }
+        },
+        {
+            "name": "p12_tacticalgrip",
+            "parameters": {
+                "rarity": "common",
+                "type": "addon",
+                "module": {}
+            }
+        }
+    ],
+    "partconfig": "ironassaultrifle2.config",
+    "altAbilityType": "spray",
+    "builder": "/items/buildscripts/buildcustomweapon.lua"
+}

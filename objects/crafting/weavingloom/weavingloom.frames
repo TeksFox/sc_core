@@ -1,0 +1,24 @@
+{
+    "frameGrid": {
+        "size": [
+            40,
+            24
+        ],
+        "dimensions": [
+            5,
+            1
+        ],
+        "names": [
+            [
+                "active.1",
+                "active.2",
+                "active.3",
+                "active.4",
+                "full.1"
+            ]
+        ]
+    },
+    "defaultFrames": {
+        "default.active": "active.1"
+    }
+}

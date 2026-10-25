@@ -1,0 +1,15 @@
+{
+    "itemName": "sandingdisc",
+    "price": 0,
+    "rarity": "common",
+    "category": "craftingMaterial",
+    "inventoryIcon": "sandingdisc.png",
+    "description": "Disc for grinding and cutting!",
+    "shortdescription": "Sanding disc",
+    "durability": 1000,
+    "durabilityPerUse": 1,
+    "maxStack": 1,
+    "itemTags": [
+        "reagent"
+    ]
+}

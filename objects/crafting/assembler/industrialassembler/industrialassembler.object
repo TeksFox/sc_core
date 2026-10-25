@@ -1,0 +1,99 @@
+{
+    "objectName": "industrialassembler",
+    "colonyTags": [
+        "factory",
+        "crafting"
+    ],
+    "printable": false,
+    "price": 0,
+    "rarity": "rare",
+    "race": "generic",
+    "category": "crafting",
+    "description": "Basic crafting device!",
+    "shortdescription": "Basic assembler",
+    "largeImage": "industrialassembler.png:full",
+    "inventoryIcon": "icon.png",
+    "orientations": [
+        {
+            "dualImage": "industrialassembler.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ],
+            "collision": "platform"
+        }
+    ],
+
+    "animation": "industrialassembler.animation",
+
+    "scripts": [
+        "/scripts/objects/sf_object_crafting.lua",
+        "/scripts/smarttubes/conduitscripts/st_crafting.lua", 
+        "/scripts/objects/sf_object_colorizer.lua"
+    ],
+    "scriptDelta": 2,
+
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/crafting/crafting.ui",
+    "line": 6,
+    "durationMultipler": 0.9, 
+    
+    "objectfilters": [ "basicassembler", "assemblystation", "industrialassembler" ],
+
+
+    "colorizer": true,
+    "defaultAnimation": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "industrialassembler.png",
+                "colors": { "default": [ "sf_steel", "sf_red" ] }
+            },
+            "light": {
+                "partImage": "industrialassemblerlit.png",
+                "colors": { "default": [] },
+                "hide": true 
+            }
+        }
+    },
+    "connectEnabled": false,
+    "outputNodes": [ [ 0, 0 ] ],
+    "uiconfig": {
+        "uiOpenSound": "/",
+        "uiClosedSound": "/",
+        "uiListSound": "/sfx/interface/clickon_success.ogg",
+        "category": [
+            {
+                "selected": true,
+                "friendlyname": "^cyan;Craft stations",
+                "category": [ "craftingstations" ],
+                "order": 1,
+                "icon": "/interface/uiparts/icons/icon_list_stations.png"
+            },
+            {
+                "friendlyname": "^green;Items",
+                "category": [ "items" ],
+                "order": 2,
+                "icon": "/interface/uiparts/icons/icon_list_items.png"
+            },
+            {
+                "friendlyname": "^yellow;Storage",
+                "category": [ "storage" ],
+                "order": 3,
+                "icon": "/interface/uiparts/icons/icon_list_storage.png"
+            },
+            {
+                "friendlyname": "^yellow;Other",
+                "category": [ "other" ],
+                "order": 3,
+                "icon": "/interface/uiparts/icons/icon_list_other.png"
+            }
+        ]
+    },
+    "conduitType": "station",
+    "recipes": "/objects/crafting/assembler/recipes.config"
+    
+
+
+}   

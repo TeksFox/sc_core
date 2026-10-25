@@ -1,0 +1,71 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "bodyState": {
+                "default": "default",
+                "states": { "default": { "frames": 1 }
+                }
+            },
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "properties": {
+                            "lightsOff": [
+                                "fireglow"
+                            ]
+                        }
+                    },
+                    "active": {
+                        "frames": 4,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "lightsOn": [ "fireglow" ],
+                            "persistentSound": "/sfx/objects/campfire.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false, "fullbright": false },
+                "partStates": {
+                    "bodyState": {
+                        "default": {
+                            "properties": { "image": "<part>:default<color_default>" }
+                        }
+                    }
+                }
+            },
+            "light": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": true },
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:idle.1" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:active.<frame>" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "lights": {
+        "fireglow": {
+            "active": false,
+            "position": [ 2.5, 2 ],
+            "color": [ 153, 128, 92 ],
+            "flickerPeriod": 0.3,
+            "flickerMinIntensity": 0.95,
+            "flickerMaxIntensity": 1,
+            "flickerPeriodVariance": 0.075,
+            "flickerIntensityVariance": 0.025
+        }
+    }
+}

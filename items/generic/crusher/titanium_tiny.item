@@ -1,0 +1,13 @@
+{
+    "itemName": "titanium_tiny",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "titanium.png:3",
+    "description": "...",
+    "shortdescription": "Tiny pile of titanium dust",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

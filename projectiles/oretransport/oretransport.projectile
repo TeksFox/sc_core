@@ -1,0 +1,109 @@
+{
+    "projectileName": "oretransport",
+    "image": "oretransport.png",
+    "animationCycle": 0.25,
+    "frameNumber": 1,
+    "damageKindImage": "icon.png",
+    "pointLight": false,
+    "lightColor": [ 26, 75, 41 ],
+    "fullbright": true,
+    "actionOnReap": [
+        {
+            "action": "loop",
+            "count": 10,
+            "body": [
+                {
+                    "action": "particle",
+                    "specification": {
+                        "type": "ember",
+                        "fullbright": true,
+                        "size": 2,
+                        "color": "#A2874E",
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0.5, 0.7 ],
+                        "finalVelocity": [ 1, 1.2 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 0.3,
+                        "light": [ 26, 75, 41 ],
+                        "layer": "back",
+                        "variance": {
+                            "size": 0.5,
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.3, 0.3 ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "periodicActions": [
+        {
+            "time": 0.1,
+            "repeat": true,
+            "action": "loop",
+            "count": 2,
+            "body": [
+                {
+                    "action": "particle",
+                    "rotate": true,
+                    "specification": {
+                        "type": "ember",
+                        "fullbright": true,
+                        "size": 2,
+                        "color": "#CDC865",
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0.5, 0.7 ],
+                        "finalVelocity": [ 1, 1.2 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 0.3,
+                        "light": [ 26, 75, 41 ],
+                        "layer": "back",
+                        "variance": {
+                            "size": 0.5,
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.3, 0.3 ]
+                        }
+                    }
+                },
+                {
+                    "action": "particle",
+                    "rotate": true,
+                    "specification": {
+                        "type": "ember",
+                        "fullbright": true,
+                        "size": 2,
+                        "color": "#A2874E",
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0.5, 0.7 ],
+                        "finalVelocity": [ 1, 1.2 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 0.3,
+                        "light": [ 26, 75, 41 ],
+                        "layer": "back",
+                        "variance": {
+                            "size": 0.5,
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.3, 0.3 ]
+                        }
+                    }
+                }
+            ]
+        }
+      ],
+    "power": 5.0,
+    "speed": 10,
+    "damageKind": "default",
+    "scripts": [
+        "oretransport.lua"
+    ],
+    "scriptDelta": 1
+}

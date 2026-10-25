@@ -1,0 +1,260 @@
+{
+    "icons": {
+        "default": "/interface/scripted/itemList/percent.png"
+    },
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/resourcedeposit/header.png",
+            "fileBody": "/interface/scripted/resourcedeposit/body.png",
+            "fileFooter": "/interface/scripted/resourcedeposit/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 277, 190 ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "Accepted items ",
+            "subtitle": "^#b9b5b2;Item list",
+            "position": [ 0, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/coreIcons/reagentList.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "depositItemsTitle": {
+            "type": "label",
+            "position": [ 92, 172 ],
+            "fontSize": 6,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 105,
+            "value": "Deposit items",
+            "color": "orange"
+        },
+        "drillTitle": {
+            "type": "label",
+            "position": [ 234, 124 ],
+            "fontSize": 6,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 105,
+            "value": "Set drill type"
+        },
+        "drillLabel": {
+            "type": "label",
+            "position": [ 234, 92 ],
+            "fontSize": 7,
+            "hAnchor": "mid",
+            "vAnchor": "top",
+            "wrapWidth": 100,
+            "value": "^orange; Set drill in item slot!"
+        },
+        "parametersTitle": {
+            "type": "label",
+            "position": [ 234, 172 ],
+            "fontSize": 6,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 105,
+            "value": "info"
+        },
+        "resourceDepositTitle": {
+            "type": "label",
+            "position": [ 14, 31 ],
+            "fontSize": 8,
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 105,
+            "color": "black"
+        },
+        "deposilLevelTitleLabel": {
+            "type": "label",
+            "position": [ 186, 161 ],
+            "fontSize": 6,
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "color": "cyan",
+            "value": "Hardness level:",
+            "wrapWidth":105
+        },
+        "depositLevelLabel": {
+            "type": "label",
+            "position": [ 282, 161 ],
+            "fontSize": 6,
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "color": "cyan",
+            "wrapWidth":105
+        },
+        "countTitleLabel": {
+            "type": "label",
+            "position": [ 186, 151 ],
+            "fontSize": 6,
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "value": "Resources:",
+            "color": "orange",
+            "wrapWidth":105
+        },
+        "countLabel": {
+            "type": "label",
+            "position": [ 282, 151 ],
+            "fontSize": 6,
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "color": "orange",
+            "wrapWidth":105
+        },  
+        "typeTitleLabel": {
+            "type": "label",
+            "position": [ 186, 141 ],
+            "fontSize": 6,
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "value": "Deposit type:",
+            "color": "green",
+            "wrapWidth":105
+        },
+        "typeLabel": {
+            "type": "label",
+            "position": [ 282, 141 ],
+            "fontSize": 6,
+            "hAnchor": "right",
+            "vAnchor": "mid",
+            "color": "green",
+            "wrapWidth":105
+        },       
+        "drillSlot": {
+            "type": "itemslot",
+            "zlevel": 2,
+            "position": [ 225, 98 ],
+            "callback": "drillSlot",
+            "rightClickCallback": "null",
+            "showRarity": true,
+            //"data": "consumables",
+            "showBackingImageWhenEmpty": true,
+            "showBackingImageWhenFull": true,
+            "backingImage":"/interface/inventory/empty.png"
+        },
+        
+        "itemScroll": {
+            "type": "scrollArea",
+            "rect": [ 7, 22, 178, 166 ],
+            "fillDown":true,
+            "buttons": {
+                "horizontal": {
+                    "forward": { "base": "", "hover": "", "pressed": "" },
+                    "backward": { "base": "", "hover": "", "pressed": "" }
+                },
+                "vertical": {
+                    "forward": { "base": "/interface/scrollbuttons.png:1", "hover" : "", "pressed" : "" },
+                    "backward": { "base": "/interface/scrollbuttons.png:2", "hover" : "", "pressed" : "" }
+                }
+            },
+            "thumbs": {
+                "horizontal": {
+                    "base": { "begin": "", "end": "", "inner": "" },
+                    "hover": { "begin": "", "end": "", "inner": "" },
+                    "pressed": { "begin": "", "end": "", "inner": "" }
+                },
+                "vertical": {
+                    "base": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "hover": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    },
+                    "pressed": {
+                        "begin": "/interface/scroll.png:3",
+                        "end": "/interface/scroll.png:1",
+                        "inner": "/interface/scroll.png:2"
+                    }
+                }
+            },
+            "children": {
+                "list": {
+                    "type": "list",
+                  //  "scissoring": true,
+                    "position":[0, -3],
+                    "fillDown":true,
+                    "zlevel": -1,
+                    "columns": 6,
+                    "schema": {
+                        "memberSize": [ 27, 33 ],
+                        "spacing": [ 0, 0],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/itemList/inputback.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [ 4, 10 ],
+                                "showRarity": false,
+                                "backingImage": "/interface/inventory/empty.png",
+                                "showBackingImageWhenFull": false,
+                                "zlevel": 1
+                            },
+                            "number": {
+                                "type": "label",
+                                "position": [ 14, 6 ],
+                                "fontSize": 6,
+                                "hAnchor": "mid",
+                                "vAnchor": "mid",
+                                "wrapWidth": 105,
+                                "color": "black"
+                            },
+                            "replacable": {
+                                "type": "image",
+                                "visible": true,
+                                "file": "/interface/scripted/itemList/percent.png",
+                                "position": [ 17, 24 ],
+                                "zlevel": -1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "start": {
+            "type": "button",
+            "base": "/interface/scripted/resourcedeposit/startbutton.png:1",
+            "hover": "/interface/scripted/resourcedeposit/startbutton.png:2",
+            "pressed": "/interface/scripted/resourcedeposit/startbutton.png:2",
+            "caption": "Start",
+            "callback": "starDrillPlace",
+            "enabled": false,
+            "position": [ 184, 22 ],
+            "pressedOffset": [ 0, 0 ],
+            "zlevel": 100
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "drillSlot", "starDrillPlace"
+    ],
+    "scripts": [
+        "/interface/scripted/resourcedeposit/resourcedeposit.lua"
+    ],
+    "scriptDelta": 5,
+    "text": {
+        "activateText": [
+            "( ._.) Why are you trying to fool me?",
+            "No, this is incorrect, please return the drill to your inventory!",
+            "Why did you remove the corresponding drill from your inventory?"
+        ]
+    }
+}

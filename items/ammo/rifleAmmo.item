@@ -1,0 +1,10 @@
+{
+  "itemName" : "rifleAmmo",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rifleAmmo.png",
+  "description" : "...",
+  "shortdescription" : "Riffle ammo",
+  "itemTags" : [ "ammo" ]
+}

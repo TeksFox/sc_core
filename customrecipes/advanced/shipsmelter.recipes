@@ -1,0 +1,18 @@
+[
+    //! refining
+    "bronzebar",
+    "steelbar",
+    "erchiusalloy",
+    "naonitebar",
+    "durableglass",
+    //! plates,
+    "copperplate",
+    "ironplate",
+    "titaniumplate",
+    "leadplate",
+    //! other
+    "carbon",
+    "rubber",
+    "silicon",
+    "durablebottle"
+]//

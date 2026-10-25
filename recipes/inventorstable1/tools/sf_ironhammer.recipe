@@ -1,0 +1,26 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 15
+        },
+        {
+            "item": "climbingrope",
+            "count": 6
+        },
+        {
+            "item": "leather",
+            "count": 6
+        },
+        {
+            "item": "logblock",
+            "count": 3
+        }
+    ],
+    "output": {
+        "item": "sf_ironhammer",
+        "count": 1
+    },
+    "duration" : 1,
+    "groups" : [ "inventorstable", "tools", "all" ]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "op": "add",
+        "path": "/commonSpaceItem/0/1/pool/-",
+        "value": {
+            "weight": 0.15,
+            "pool": "sf_space_electronics"
+        }
+    },
+    {
+        "op": "add",
+        "path": "/commonSpaceItem/0/1/pool/-",
+        "value": {
+            "weight": 0.15,
+            "pool": "sf_common_component"
+        }
+    },
+    {
+        "op": "add",
+        "path": "/commonSpaceItem/0/1/pool/-",
+        "value": {
+            "weight": 0.05,
+            "pool": "sf_module"
+        }
+    }
+]

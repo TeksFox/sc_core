@@ -1,0 +1,14 @@
+{
+    "itemName": "irondust",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "irondust.png",
+    "description": "...",
+    "shortdescription": "Crushed Iron",
+    "itemTags": [
+        "reagent",
+        "iron",
+        "raw"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "input": [
+        {
+            "item": "sf_steelbar",
+            "count": 4
+        },
+        {
+            "item": "ironplate",
+            "count": 12
+        },
+        {
+            "item": "goldbar",
+            "count": 2
+        },
+        {
+            "item": "electronics",
+            "count": 60
+        },
+        {
+            "item": "wire",
+            "count": 60
+        }
+    ],
+    "output": {
+        "item": "basicassembler",
+        "count": 1
+    },
+    "duration" : 1,
+    "groups" : [ "miniassembler", "craftingstations", "all" ]
+}

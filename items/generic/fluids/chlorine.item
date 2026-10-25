@@ -1,0 +1,10 @@
+{
+    "itemName": "chlorine",
+    "price": 0,
+    "rarity": "uncommon",
+    "category": "gas",
+    "inventoryIcon": "chlorine.png",
+    "description": "Toxic, and life-threatening gas! you should be careful with it!",
+    "shortdescription": "Chlorine",
+    "itemTags": [ "reagent", "liquid" ]
+}

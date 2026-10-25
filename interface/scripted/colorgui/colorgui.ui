@@ -1,0 +1,538 @@
+{
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/colorgui/header.png",
+            "fileBody": "/interface/scripted/colorgui/body.png",
+            "fileFooter": "/interface/scripted/colorgui/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 407, 235 ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "  Colorizer ui",
+            "subtitle": "  Paint your factory! but first find the colors! ^orange;[beta]",
+            "position": [ -5, 252 ],
+            "icon": {
+                "type": "image",
+                "file": "/interface/icons/coreIcons/colorizerPortrait.png",
+                "position": [ 0, -20 ],
+                "zlevel": -1
+            }
+        },
+        "glowSelectTitle": {
+            "type": "label",
+            "position": [ 210, 51 ],
+            "wrapWidth": 105,
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "value": "Highlight:",
+            "fontSize": 8
+        },
+        "glowSelect" : {
+            "type" : "button",
+            "base" : "/interface/smallsliderbutton.png:off",
+            "hover" : "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked" : "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked" : "/interface/smallsliderbutton.png:onH",
+            "checkable" : true,
+            "checked" : true,
+            "data": { "option": "glow" },
+            "pressedOffset" : [ 0, 0 ],
+            "position" : [ 287, 47 ],
+            "callback" : "options",
+            "zlevel":3
+        },
+        "transparencySelectTitle": {
+            "type": "label",
+            "position": [ 210, 39 ],
+            "wrapWidth": 105,
+            "hAnchor": "left",
+            "vAnchor": "mid",
+            "value": "Transparency:",
+            "fontSize": 8
+        },
+        "transparencySelect" : {
+            "type" : "button",
+            "base" : "/interface/smallsliderbutton.png:off",
+            "hover" : "/interface/smallsliderbutton.png:offH",
+            "baseImageChecked" : "/interface/smallsliderbutton.png:on",
+            "hoverImageChecked" : "/interface/smallsliderbutton.png:onH",
+            "checkable" : true,
+            "checked" : true,
+            "data": { "option": "transparency" },
+            "pressedOffset" : [ 0, 0 ],
+            "position" : [ 287, 35 ],
+            "callback" : "options",
+            "zlevel":3
+        },
+    
+        "selectObjectlayout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 203, 70 ],
+            "size": [ 217, 153 ],
+            "children": {
+                "canvas": {
+                    "zlevel": 1,
+                    "type": "canvas",
+                    "rect": [ 66, 36, 149, 133 ],
+                    "captureMouseEvents": false,
+                    "captureKeyboardEvents": false
+                },
+                "sphereCanvas": {
+                    "zlevel": -1,
+                    "type": "canvas",
+                    "rect": [ 66, 12, 151, 33 ],
+                    "captureMouseEvents": false,
+                    "captureKeyboardEvents": false
+                },
+                "partlist": {
+                    "columns": 1,
+                    "position": [ 158, 141 ],
+                    "size": [ 55, 135 ],
+                    "type": "list",
+                    "fillDown": true,
+                    "callback": "null",
+                    "schema": {
+                        "selectedBG": "/interface/objectcrafting/craftbutton.png:3",
+                        "unselectedBG": "/interface/objectcrafting/craftbutton.png:1",
+                        "memberSize": [ 55, 14 ],
+                        "spacing": [ 1, 1 ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "position": [ 0, 0 ],
+                                "file": "/interface/objectcrafting/craftbutton.png:1",
+                                "centered": false,
+                                "zlevel": 1
+                            },
+                            "button": {
+                                "type": "button",
+                                "base": "/interface/objectcrafting/craftbutton.png:6",
+                                "hover": "/interface/objectcrafting/craftbutton.png:6?replace;000000=FFFFFF",
+                                "pressedOffset": [ 0, 0 ],
+                                "callback": "selectPart",
+                                "zlevel": 2
+                            }
+                        }
+                    }
+                },
+                "statList": {
+                    "columns": 1,
+                    "position": [ 4, 141 ],
+                    "size": [ 55, 135 ],
+                    "type": "list",
+                    "fillDown": true,
+                    "callback": "null",
+                    "schema": {
+                        "selectedBG": "/interface/objectcrafting/craftbutton.png:3",
+                        "unselectedBG": "/interface/objectcrafting/craftbutton.png:1",
+                        "memberSize": [ 55, 14 ],
+                        "spacing": [ 1, 1 ],
+                        "listTemplate": {
+                            "background": {
+                                "type": "image",
+                                "position": [ 0, 0 ],
+                                "file": "/interface/objectcrafting/craftbutton.png:1",
+                                "centered": false,
+                                "zlevel": 1
+                            },
+                            "button": {
+                                "type": "button",
+                                "base": "/interface/objectcrafting/craftbutton.png:6",
+                                "hover": "/interface/objectcrafting/craftbutton.png:6?replace;000000=FFFFFF",
+                                "pressedOffset": [ 0, 0 ],
+                                "callback": "statPart",
+                                "zlevel": 2
+                            }
+                        }
+                    }
+                },
+                "currList": {
+                    "columns": 4,
+                    "zlevel": 1,
+                    "position": [ 66, 31 ],
+                    "size": [ 87, 22 ],
+                    "type": "list",
+                    "fillDown": true,
+                    "callback": "null",
+                    "schema": {
+                        "memberSize": [ 18, 18 ],
+                        "spacing": [ 1, 0 ],
+                        "listTemplate": {
+                            "image": {
+                                "type": "image",
+                                "position": [ 0, 0 ],
+                                "centered": false,
+                                "zlevel": 1
+                            },
+                            "colorSelect" : {
+                                "type" : "button",
+                                "base" : "/interface/scripted/colorgui/select.png:1",
+                                "hover" : "/interface/scripted/colorgui/select.png:1",
+                                "baseImageChecked" : "/interface/scripted/colorgui/select.png:2",
+                                "hoverImageChecked" : "/interface/scripted/colorgui/select.png:2",
+                                "checkable" : true,
+                                "checked" : false,
+                                "pressedOffset" : [ 0, 0 ],
+                                "callback" : "colorSelect",
+                                "zlevel":3
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        
+        "colorizerListlayout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": false,
+            "position": [ 67, 16 ],
+            "size": [ 136, 207 ],
+            "children": {
+                "scroll": {
+                    "type": "scrollArea",
+                    "zlevel": 2,
+                    "rect": [ 5, 6, 135, 175 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "children": {
+                        "list": {
+                            "columns": 6,
+                            "type": "list",
+                            "callback": "null",
+                            "schema": {
+                                "memberSize": [ 18, 18 ],
+                                "spacing": [ 2, 2 ],
+                                "listTemplate": {
+                                    "image": {
+                                        "type": "image",
+                                        "position": [ 0, 0 ],
+                                        "centered": false,
+                                        "zlevel": 1
+                                    },
+                                    "locker": {
+                                        "type": "image",
+                                        "position": [ 0, 0 ],
+                                        "file": "/interface/scripted/colorgui/select.png:3",
+                                        "centered": false,
+                                        "visible": true,
+                                        "zlevel": 10
+                                    },
+                                    "selector": {
+                                        "type": "button",
+                                        "base": "/interface/scripted/colorgui/select.png:1",
+                                        "hover": "/interface/scripted/colorgui/select.png:2",
+                                        "pressedOffset": [ 0, 0 ],
+                                        "callback": "setColor",
+                                        "zlevel": 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "objectListlayout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 67, 16 ],
+            "size": [ 136, 187 ],
+            "children": {
+                "scroll": {
+                    "type": "scrollArea",
+                    "zlevel": 2,
+                    "rect": [ 4, 6, 135, 175 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "children": {
+                        "list": {
+                            "columns": 1,
+                            "type": "list",
+                            "callback": "objectSelect",
+                            "schema": {
+                                "selectedBG": "/interface/scripted/colorgui/objectback.png:2",
+                                "unselectedBG": "/interface/scripted/colorgui/objectback.png:1",
+                                "memberSize": [ 123, 20 ],
+                                "spacing": [ 0, 1 ],
+                                "listTemplate": {
+                                    "background": {
+                                        "type": "image",
+                                        "position": [ 0, 0 ],
+                                        "file": "/interface/scripted/colorgui/objectback.png:1",
+                                        "centered": false,
+                                        "zlevel": 1
+                                    },
+                                    "icon": {
+                                        "type": "itemslot",
+                                        "callback": "null",
+                                        "position": [ 1, 1 ],
+                                        "showRarity": true,
+                                        "backingImage": "/interface/inventory/empty.png",
+                                        "showBackingImageWhenFull": true,
+                                        "showBackingImageWhenEmpty": false,
+                                        "zlevel": 1
+                                    },
+                                    "name": {
+                                        "type": "label",
+                                        "position": [ 22, 10 ],
+                                        "wrapWidth": 105,
+                                        "hAnchor": "left",
+                                        "vAnchor": "mid",
+                                        "fontSize": 6
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "presetlayout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": false,
+            "position": [ 67, 16 ],
+            "size": [ 136, 187 ],
+            "children": {
+                "savePreset": {
+                    "type": "button",
+                    "position": [ 41, 6 ],
+                    "base": "/interface/objectcrafting/craftbutton.png:1",
+                    "hover": "/interface/objectcrafting/craftbutton.png:3",
+                    "pressedOffset": [ 0, 0 ],
+                    "caption": "Save color",
+                    "callback": "savePreset",
+                    "zlevel": 2
+                },
+                "textBody": {
+                    "type": "image",
+                    "position": [ 4, 21 ],
+                    "file": "/interface/scripted/colorgui/textbody.png",
+                    "centered": false,
+                    "zlevel": 1
+                },
+                "setName": {
+                    "zlevel": 5,
+                    "type": "textbox",
+                    "position": [ 5, 23 ],
+                    "hint": "Set preset name ",
+                    "maxWidth": 121,
+                    "textAlign": "center",
+                    "fontSize": 7,
+                    "escapeKey": "close",
+                    "enterKey": "setName",
+                    "focus": false
+                },
+                "scroll": {
+                    "type": "scrollArea",
+                    "zlevel": 2,
+                    "rect": [ 4, 33, 135, 175 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "children": {
+                        "list": {
+                            "columns": 1,
+                            "type": "list",
+                            "callback": "null",
+                            "schema": {
+                                "selectedBG": "/interface/scripted/colorgui/objectback.png:4",
+                                "unselectedBG": "/interface/scripted/colorgui/objectback.png:3",
+                                "memberSize": [ 123, 20 ],
+                                "spacing": [ 0, 1 ],
+                                "listTemplate": {
+                                    "background": {
+                                        "type": "image",
+                                        "position": [ 0, 0 ],
+                                        "file": "/interface/scripted/colorgui/objectback.png:3",
+                                        "centered": false,
+                                        "zlevel": 1
+                                    },
+                                    "icon": {
+                                        "type": "itemslot",
+                                        "callback": "null",
+                                        "position": [ 1, 1 ],
+                                        "showRarity": true,
+                                        "backingImage": "/interface/inventory/empty.png",
+                                        "showBackingImageWhenFull": true,
+                                        "showBackingImageWhenEmpty": false,
+                                        "zlevel": 1
+                                    },
+                                    "name": {
+                                        "type": "label",
+                                        "position": [ 42, 10 ],
+                                        "wrapWidth": 105,
+                                        "hAnchor": "mid",
+                                        "vAnchor": "mid",
+                                        "fontSize": 6
+                                    },
+                                    "removePreset": {
+                                        "type": "button",
+                                        "base": "/interface/utilButtons.png:remove",
+                                        "hover": "/interface/utilButtons.png:removeup",
+                                        "position": [ 103, 1 ],
+                                        "callback": "usePreset",
+                                        "zlevel": 2
+                                    },
+                                    "selectPreset": {
+                                        "type": "button",
+                                        "base": "/interface/utilButtons.png:add",
+                                        "hover": "/interface/utilButtons.png:addup",
+                                        "position": [ 86, 1 ],
+                                        "callback": "usePreset",
+                                        "zlevel": 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "buttonCategory": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "baseImage": "/interface/tabs/tabsmall.png:1",
+            "baseImageChecked": "/interface/tabs/tabsmall.png:2",
+            "position": [
+                67,
+                202
+            ],
+            "buttons": [
+                {
+                    "id":1,
+                    "selected": true,
+                    "position": [ 0, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Objects",
+                    "fontSize": 6,
+                    "data": { "option":"objects"}
+                },
+                {
+                    "id":2,
+                    "position": [ 36, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Colors",
+                    "fontSize": 6,
+                    "data": { "option":"colors"}
+                },
+                {
+                    "id":2,
+                    "position": [ 72, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Preset",
+                    "fontSize": 6,
+                    "data": { "option":"preset"}
+                }
+            ]
+        },
+
+        "colorCategory": {
+            "type": "radioGroup",
+            "toggleMode": false,
+            "baseImage": "/interface/objectcrafting/craftbutton.png:1",
+            "baseImageChecked": "/interface/objectcrafting/craftbutton.png:3",
+            "position": [
+                7,
+                197
+            ],
+            "buttons": [
+                {
+                    "id":1,
+                    "selected": true,
+                    "position": [ 0, 0 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "all",
+                    "fontSize": 6,
+                    "data": { "option":"all"}
+                },
+                {
+                    "id":2,
+                    "position": [ 0, -15 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Starbound",
+                    "fontSize": 6,
+                    "data": { "option":"sb"}
+                },
+                {
+                    "id":3,
+                    "position": [ 0, -30 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Star Factory",
+                    "fontSize": 6,
+                    "data": { "option":"sf" }
+                },
+                {
+                    "id":4,
+                    "position": [ 0, -45 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "S U B S E T_",
+                    "fontSize": 6,
+                    "data": { "option":"sub"}
+                },
+                {
+                    "id":4,
+                    "position": [ 0, -60 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "Raiizy",
+                    "fontSize": 6,
+                    "data": { "option":"rz"}
+                },
+                {
+                    "id":5,
+                    "position": [ 0, -75 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "text": "M.Kings",
+                    "fontSize": 6,
+                    "data": { "option":"mk" }
+                }
+            ]
+        }
+
+    },
+    "scriptDelta": 6,
+    "scriptWidgetCallbacks": [
+        "buttonCategory",
+        "colorCategory",
+        "objectSelect",
+        "usePreset",
+        "savePreset",
+        "selectPart",
+        "statPart",
+        "colorSelect",
+        "options",
+        "setName"
+    ],
+    "sliderOptions": [
+        "glowSelect",
+        "transparencySelect"
+    ],
+    
+    "scripts": [ "/interface/scripted/colorgui/colorizer_main.lua" ],
+
+    "groups":[
+        {
+            "name":"Hull",
+            "filter":"hull",
+            "order":"__a"
+        },
+        {
+            "name":"Gem stone colors",
+            "filter":"gem",
+            "order":"__b"
+        }
+    ]
+}

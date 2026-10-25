@@ -1,0 +1,10 @@
+{
+  "itemName" : "sulphurdust",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "rawMaterial",
+  "inventoryIcon" : "sulphurdust.png",
+  "description" : "-",
+  "shortdescription" : "Crushed sulphur",
+  "itemTags" : [ "reagent", "raw" ]
+}

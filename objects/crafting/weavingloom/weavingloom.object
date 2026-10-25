@@ -1,0 +1,76 @@
+{
+    "objectName": "weavingloom",
+    "colonyTags": [ "factory", "crafting" ],
+    "printable": false,
+    "price": 0,
+    "race": "generic",
+    "category": "autoCraft",
+    "inventoryIcon": "icon.png:1",
+    "description": "The old loom! so far it looks good",
+    "shortdescription": "Weaving loom",
+    "rarity": "common",
+
+    "largeImage": "weavingloom.png:full.1",
+
+    "orientations": [
+        {
+            "dualImage": "weavingloom.png:full.1",
+            "imagePosition": [ 0, 0 ],
+            "frames": 5,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],
+
+    "animation": "weavingloom.animation",
+    "defaultAnimation": true,
+    "scripts": [
+        "/scripts/objects/sf_object_crafting.lua",
+        "/scripts/objects/sf_object_upgrade.lua",
+        "/scripts/objects/sf_object_colorizer.lua",
+        "/scripts/smarttubes/conduitscripts/st_crafting.lua"
+    ],
+    "scriptDelta": 2,
+
+    "interactAction": "ScriptPane",
+    "interactData": "/interface/scripted/crafting/crafting.ui",
+    "line": 1,
+    "durationMultipler": 1.7,
+    "override": false,
+
+
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "weavingloom.png",
+                "colors": { "active": [ "sf_blue", "sb_wood", "sf_black" ] }
+            },
+            "lantern": {
+                "partImage": "weavingloomlantern.png",
+                "colors": { "idle": [ "mk_copper" ] }
+            },
+            "lanternLit": {
+                "partImage": "weavingloomlantern.png",
+                "colors": { "idle": [] },
+                "hide": true 
+            }
+        }
+    },
+    "outputNodes": [ [ 0, 0 ] ],
+    "uiconfig": "weavingloom",
+    "objectfilters": [ "weavingloom", "craftingwheel" ],
+    "recipecount": 5,
+
+    "conduitType": "station",
+    "upgrade": {
+        "upgradeobject": "weavingloom2",
+        "upgradeMaterials": [
+            { "name": "titaniumbar", "count": 6 },
+            { "name": "darkwoodmaterial", "count": 5 },
+            { "name": "silverbar", "count": 5 },
+            { "name": "coalore", "count": 5 }
+        ]
+    }
+}

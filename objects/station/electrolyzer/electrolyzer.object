@@ -1,0 +1,51 @@
+{
+    "objectName": "electrolyzer",
+    "price": 0,
+    "rarity": "Uncommon",
+    "race": "generic",
+    "category": "autoCraft",
+    "objectType": "container",
+    "printable": false,
+    "description": "A powerful and useful device for electrolysis\n ^orange; Consume 100 Eu ",
+    "shortdescription": "^orange;Electrolyzer",
+    "inventoryIcon": "icon.png:1",
+    "largeImage": "body.png:default",
+    "orientations": [
+        {
+            "dualImage": "body.png:default",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],
+    "slotCount": 24,
+    "uiConfig": "/interface/objectcrafting/defaultstation/default.ui",
+    "frameCooldown": 67,
+    "autoCloseCooldown": 3600,
+    "scripts": [
+        "/scripts/multicraft.lua"
+    ],
+    "scriptDelta": 5,
+    "euConfig": {
+        "euType": "consumer",
+        "euStorage": 1000,
+        "euFromBeggining": 0,
+        "euConsume": 100,
+        "energyType": "electric"
+    },
+    "inputNodes": [ [ 0, 0 ] ],
+    "objectConfig": {
+        "input": [ 1, 9 ],
+        "output": [ 10, 24 ],
+        "recipefile": "/recipes/autostations/electrolyzer.recipes",
+        "delay": 6
+    },
+    "uiconfig": "electrolyzer",
+    "animation": "electrolyzer.animation",
+    "animationParts" : {
+      "body" : "body.png",
+      "light" : "fullbright.png"
+    }
+}

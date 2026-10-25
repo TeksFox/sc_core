@@ -1,0 +1,106 @@
+{
+    "gui": {
+        "panefeature": {
+            "type": "panefeature"
+        },
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/localanimatorgui/header.png",
+            "fileBody": "/interface/scripted/localanimatorgui/body.png",
+            "fileFooter": "/interface/scripted/localanimatorgui/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [
+                249,
+                268
+            ]
+        },
+
+        "settingsTitle": {
+            "type": "label",
+            "position": [ 197, 251 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth": 105,
+            "fontSize": 8
+        },
+        "layout": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 134, 20 ],
+            "size": [ 124, 227 ],
+            "children": {}
+        },
+        "settingsList": {
+            "type": "list",
+            "position": [ 7, 246 ],
+            "callback": "settingsList",
+            "fillDown": true,
+            "zlevel": 3,
+            "columns": 1,
+            "schema": {
+                "memberSize": [ 120, 13 ],
+                "spacing": [ 1, 1 ],
+                "listTemplate": {
+                    "name": {
+                        "type": "label",
+                        "position": [ 60, 12 ],
+                        "hAnchor": "mid",
+                        "vAnchor": "mid",
+                        "wrapWidth": 105,
+                        "fontSize": 8,
+                        "color": "black",
+                        "zlevel": 2
+                    },
+                    "image": {
+                        "type": "image",
+                        "position": [ 4, 4 ],
+                        "file": "",
+                        "centered": false,
+                        "zlevel": 1
+                    },
+                    "options": {
+                        "type": "button",
+                        "base": "/interface/scripted/localanimatorgui/listbutton.png:1",
+                        "hover": "/interface/scripted/localanimatorgui/listbutton.png:2",
+                        "textAlign": "left",
+                        "position": [ 0, 0 ],
+                        "textOffset": [ 3, 0 ],
+                        "callback": "options"
+                    },
+                    "optionVisible": {
+                        "type": "button",
+                        "base": "/interface/smallsliderbutton.png:off",
+                        "hover": "/interface/smallsliderbutton.png:offH",
+                        "baseImageChecked": "/interface/smallsliderbutton.png:on",
+                        "hoverImageChecked": "/interface/smallsliderbutton.png:onH",
+                        "checkable": true,
+                        "checked": false,
+                        "position": [ 94, 2 ],
+                        "callback": "optionVisible"
+                    }
+                }
+            }
+        }
+    },
+    "scriptWidgetCallbacks": [
+        "settingsList",
+        "options",
+        "optionVisible",
+
+        "optionUP",
+        "optionDOWN",
+        "optionSwitch",
+
+        "optionPlayerProperty"
+    ],
+    "scripts": [
+        "/interface/scripted/localanimatorgui/localanimatorgui.lua"
+    ],
+    "scriptDelta": 1
+}

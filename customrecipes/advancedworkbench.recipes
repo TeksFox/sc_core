@@ -1,0 +1,21 @@
+{
+    "pool": "/treasure/extractionpools.treasurepools",
+    "recipes": {
+        "reagent": {
+            //* ==============================================================================================
+            //*                                            OTHER
+            //* ==============================================================================================
+            "1.0": {
+                "name":"copperdust",
+                "input": [
+                    { "name": "screwdriverset", "damage": 1, "count": 1 },
+                    { "name": "brokenelectronicclock", "count": 1 }
+                ],
+                "output": [
+                    { "name": "copperdust", "count": 2 }
+                ],
+                "level": 1
+            }
+        }
+    }
+}

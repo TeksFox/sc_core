@@ -1,0 +1,10 @@
+{
+  "itemName" : "carbon",
+  "price" : 40,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "carbon.png",
+  "description" : "It's a carbon. Can be used to craft items.",
+  "shortdescription" : "Carbon",
+  "itemTags" : [ "reagent" ]
+}

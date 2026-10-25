@@ -1,0 +1,10 @@
+{
+  "itemName" : "aluminiumore",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "rawOre",
+  "inventoryIcon" : "aluminiumore.png",
+  "description" : "Lightweight and durable material",
+  "shortdescription" : "^orange;Aluminium Ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

@@ -1,0 +1,20 @@
+{
+    "frameGrid": {
+        "size": [
+            14,
+            14
+        ],
+        "dimensions": [
+            6,
+            2
+        ],
+        "names": [
+            [
+                "upb", "downb", "leftb", "rightb", "addb", "remb"
+            ],
+            [
+                "uph", "downh", "lefth", "righth", "addh", "remh"
+            ]
+        ]
+    }
+}

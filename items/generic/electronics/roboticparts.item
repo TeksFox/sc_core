@@ -1,0 +1,10 @@
+{
+  "itemName" : "roboticparts",
+  "price" : 1500,
+  "rarity" : "rare",
+  "category" : "electronics",
+  "inventoryIcon" : "roboticparts.png",
+  "description" : "high-tech parts of an automatic robotic system",
+  "shortdescription" : "Robotic parts",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,56 @@
+{
+    "maxMultipler": 3,
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/sf_error/header.png",
+            "fileBody": "/interface/sf_error/base.png",
+            "fileFooter": "/interface/sf_error/footer.png"
+        },
+        "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "position": [ 173, 324 ]
+        },
+        "windowtitle": {
+            "type": "title",
+            "title": "ERROR",
+            "subtitle": "the window of a non-finished component!",
+            "icon": {
+                "type": "image",
+                "file": "/interface/sf_error/erroricon.png",
+                "position": [ 0, 0 ],
+                "zlevel": -1
+            }
+        },
+        "errorlogo": {
+            "type": "label",
+            "position": [ 152, 150 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "[ERROR]",
+            "fontSize": 14,
+            "color": "red"
+        },
+        "errorlogo2": {
+            "type": "label",
+            "position": [ 152, 117 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "wrapWidth":105,
+            "value": "10/50",
+            "fontSize": 5,
+            "color": "orange"
+        }
+    },
+    "scriptWidgetCallbacks": [],
+    "scripts": [
+        "/interface/sf_error/sf_error.lua"
+    ],
+    "scriptDelta": 5
+
+
+}

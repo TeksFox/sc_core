@@ -1,0 +1,509 @@
+{
+    // "paneLayer": "hud",
+    // "dismissable": false,
+    "gui": {
+        "background": {
+            "type": "background",
+            "fileHeader": "/interface/scripted/weaponassambler/header.png",
+            "fileBody": "/interface/scripted/weaponassambler/body.png",
+            "fileFooter": "/interface/scripted/weaponassambler/footer.png",
+            "zlevel": -10
+        },
+                "close": {
+            "type": "button",
+            "base": "/interface/close.png:1",
+            "hover": "/interface/close.png:2",
+            "pressed": "/interface/close.png:3",
+            "pressedOffset": [ 0, 0 ],
+            "position": [ 356, 282 ]
+        },
+        "panefeature": {
+            "type": "panefeature"
+        },
+        "itemSelector": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 3, 16 ],
+            "size": [ 362, 252 ],
+            "children": {
+                "barrelImage": {
+                    "type": "image",
+                    "file": "/interface/scripted/weaponassambler/weaponselectorback.png",
+                    "position": [ 0, 0 ],
+                    "zlevel": -1
+                },
+                "title": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 8,
+                    "wrapWidth": 999,
+                    
+                    "position": [ 181, 246 ],
+                    "value": "Choose a weapon from your inventory",
+                    "hAnchor": "mid",
+                    "vAnchor": "mid"
+                },
+                "warningTitle": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 12,
+                    "wrapWidth": 120,
+                    
+                    "position": [ 299, 230 ],
+                    "color": "orange",
+                    "value": "<<< WARNING >>>",
+                    "hAnchor": "mid",
+                    "vAnchor": "mid"
+                },
+                "warningText": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 8,
+                    "wrapWidth": 120,
+                    
+                    "position": [ 299, 219 ],
+                    "color": "orange",
+                    "value": "Once selected, the weapon will be placed in the device and will be removed from your inventory! Don't forget to pick it up!",
+                    "hAnchor": "mid",
+                    "vAnchor": "top"
+                },
+                
+                "search": {
+                    "type": "button",
+                    "base": "/interface/scripted/crafting/utilButtons.png:search.base",
+                    "hover": "/interface/scripted/crafting/utilButtons.png:search.hover",
+                    "pressed": "/interface/scripted/crafting/utilButtons.png:search.hover",
+                    "disabledImage": "/interface/scripted/crafting/utilButtons.png:search.disabled",
+                    "callback": "selectToUpgrade",
+                    "enabled": false,
+                    "position": [ 239, 6 ],
+                    "pressedOffset": [ 0, 0 ],
+                    "data": {
+                        "text": "set"
+                    },
+                    "zlevel": 100
+                },
+                "scroll": {
+                    "type": "scrollArea",
+                    "position": [ 4, 6 ],
+                    "size": [ 235, 234 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "children": {
+                        
+                "list": {
+                    "type": "list",
+                    "callback": "selectWeapon",
+                    "fillDown": true,
+                    "zlevel": -1,
+                    "columns": 1,
+                    "schema": {
+                        "selectedBG": "/interface/scripted/crafting/tab.png:2",
+                        "unselectedBG": "/interface/scripted/crafting/tab.png:1",
+                        "memberSize": [ 225, 20 ],
+                        "spacing": [ 1, 1 ],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/weaponassambler/weaponselectorlist.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [
+                                    1,
+                                    1
+                                ],
+                                "showRarity": true,
+                                "showBackingImageWhenFull": true,
+                                "zlevel": 1
+                            },
+                            "name": {
+                                "type": "label",
+                                "zlevel": 2,
+                                "position": [
+                                    23,
+                                    9
+                                ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 220,
+                                "fontSize": 6
+                            }
+                        }
+                    }
+                }
+
+                    }
+                }
+            }
+        },
+        "itemupgrade": {
+            "type": "layout",
+            "layoutType": "basic",
+            "visible": true,
+            "position": [ 3, 16 ],
+            "size": [ 362, 252 ],
+            "children": {
+                "back": {
+                    "type": "image",
+                    "file": "/interface/scripted/weaponassambler/upgradeback.png",
+                    "position": [ 0, 0 ],
+                    "zlevel": -1
+                },
+                "title": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 8,
+                    "wrapWidth": 999,
+                    "position": [ 106, 246 ],
+                    "value": "Weapon upgrade tools",
+                    "hAnchor": "mid",
+                    "vAnchor": "mid"
+                },
+                "itemSlot": {
+                    "type": "itemslot",
+                    "callback": "null",
+                    "position": [ 100, 100 ],
+                    "showRarity": true,
+                    "backingImage": "/interface/inventory/empty.png",
+                    "showBackingImageWhenFull": true,
+                    "zlevel": 5
+                },
+                "itemCopySlot": {
+                    "type": "itemslot",
+                    "callback": "null",
+                    "position": [ 119, 100 ],
+                    "showRarity": true,
+                    "backingImage": "/interface/inventory/empty.png",
+                    "showBackingImageWhenFull": true,
+                    "zlevel": 5
+                },
+                "canvas": {
+                    "zlevel": 1,
+                    "type": "canvas",
+                    "rect": [ 4, 96, 207, 229 ],
+                    "captureMouseEvents": false,
+                    "captureKeyboardEvents": false
+                },
+                "scroll": {
+                    "type": "scrollArea",
+                    "position": [ 217, 6 ],
+                    "size": [ 358, 234 ],
+                    "buttons": { "horizontal": { "forward": { "base": "", "hover": "", "pressed": "" }, "backward": { "base": "", "hover": "", "pressed": "" } }, "vertical": { "forward": { "base": "/interface/scrollbuttons.png:1", "hover": "", "pressed": "" }, "backward": { "base": "/interface/scrollbuttons.png:2", "hover": "", "pressed": "" } } },
+                    "thumbs": { "horizontal": { "base": { "begin": "", "end": "", "inner": "" }, "hover": { "begin": "", "end": "", "inner": "" }, "pressed": { "begin": "", "end": "", "inner": "" } }, "vertical": { "base": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "hover": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" }, "pressed": { "begin": "/interface/scroll.png:3", "end": "/interface/scroll.png:1", "inner": "/interface/scroll.png:2" } } },
+                    "children": {
+                        
+                "list": {
+                    "type": "list",
+                    "callback": "selectWeapon",
+                    "fillDown": true,
+                    "zlevel": -1,
+                    "columns": 1,
+                    "schema": {
+                        "selectedBG": "/interface/scripted/crafting/tab.png:2",
+                        "unselectedBG": "/interface/scripted/crafting/tab.png:1",
+                        "memberSize": [ 225, 20 ],
+                        "spacing": [ 1, 1 ],
+                        "listTemplate": {
+                            "back": {
+                                "type": "image",
+                                "file": "/interface/scripted/weaponassambler/weaponselectorlist.png",
+                                "position": [ 0, 0 ],
+                                "zlevel": -1
+                            },
+                            "icon": {
+                                "type": "itemslot",
+                                "callback": "null",
+                                "position": [
+                                    1,
+                                    1
+                                ],
+                                "showRarity": true,
+                                "showBackingImageWhenFull": true,
+                                "zlevel": 1
+                            },
+                            "name": {
+                                "type": "label",
+                                "zlevel": 2,
+                                "position": [
+                                    23,
+                                    9
+                                ],
+                                "hAnchor": "left",
+                                "vAnchor": "mid",
+                                "wrapWidth": 220,
+                                "fontSize": 6
+                            }
+                        }
+                    }
+                }
+
+                    }
+                },
+                "DPStitleLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 6, 80 ],
+                    "color": "orange",
+                    "value": "DPS:",
+                    "hAnchor": "left",
+                    "vAnchor": "mid"
+                },
+                "DPSLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 103, 80 ],
+                    "color": "orange",
+                    "value": "",
+                    "hAnchor": "right",
+                    "vAnchor": "mid"
+                },
+                "DamageTitleLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 6, 70 ],
+                    "color": "orange",
+                    "value": "Damage per shot:",
+                    "hAnchor": "left",
+                    "vAnchor": "mid"
+                },
+                "DamageLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 103, 70 ],
+                    "color": "orange",
+                    "value": "",
+                    "hAnchor": "right",
+                    "vAnchor": "mid"
+                },
+                "FireTimetitleLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 6, 60 ],
+                    "color": "orange",
+                    "value": "Rate of fire:",
+                    "hAnchor": "left",
+                    "vAnchor": "mid"
+                },
+                "FireTimeLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 103, 60 ],
+                    "color": "orange",
+                    "value": "",
+                    "hAnchor": "right",
+                    "vAnchor": "mid"
+                },
+                "CritTitleLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 6, 50 ],
+                    "color": "red",
+                    "value": "Crit chance:",
+                    "hAnchor": "left",
+                    "vAnchor": "mid"
+                },
+                "CritLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 103, 50 ],
+                    "color": "red",
+                    "value": "",
+                    "hAnchor": "right",
+                    "vAnchor": "mid"
+                },
+                "CritMultTitleLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 6, 40 ],
+                    "color": "red",
+                    "value": "Crit multiplier:",
+                    "hAnchor": "left",
+                    "vAnchor": "mid"
+                },
+                "CritMultLabel": {
+                    "type": "label",
+                    "visible": true,
+                    "fontSize": 6,
+                    "wrapWidth": 999,
+                    "position": [ 103, 40 ],
+                    "color": "red",
+                    "value": "",
+                    "hAnchor": "right",
+                    "vAnchor": "mid"
+                },
+                "buttImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 37, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "forendImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 60, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "barrelImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 83, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "muzzleImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 106, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "opticsImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 129, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "magazineImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 152, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "addonImage": {
+                    "type": "image",
+                    "centered": true,
+                    "file": "",
+                    "position": [ 175, 211 ],
+                    "scale": 2,
+                    "zlevel": 1,
+                    "maxSize": [ 18, 24 ],
+                    "minSize": [ 18, 24 ]
+                },
+                "selectPart": {
+                    "type": "radioGroup",
+                    "toggleMode": false,
+                    "baseImage": "/interface/scripted/weaponassambler/selectpartbutton.png:1",
+                    "baseImageChecked": "/interface/scripted/weaponassambler/selectpartbutton.png:2",
+                    "buttons": [
+                        {
+                            "id": 1,
+                            "selected": true,
+                            "position": [ 26, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "butt" }
+                        },
+                        {
+                            "id": 2,
+                            "position": [ 49, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "forend" }
+                        },
+                        {
+                            "id": 3,
+                            "position": [ 72, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "barrel" }
+                        },
+                        {
+                            "id": 4,
+                            "position": [ 95, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "muzzle" }
+                        },
+                        {
+                            "id": 4,
+                            "position": [ 118, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "optics" }
+                        },
+                        {
+                            "id": 5,
+                            "position": [ 141, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "magazine" }
+                        },
+                        {
+                            "id": 5,
+                            "position": [ 164, 197 ],
+                            "pressedOffset": [ 0, 0 ],
+                            "data": { "option": "addon" }
+                        }
+                    ]
+                }
+            }
+        },
+
+        "barrelImage": {
+            "type": "image",
+            "file": "",
+            "position": [ 0, 0 ],
+            "zlevel": -1
+        },
+        "spectralText": {
+            "type": "label",
+            "visible": false,
+            "fontSize": 8,
+            "wrapWidth": 120,
+            "hAnchor": "mid",
+            "vAnchor": "top"
+        }
+
+        
+        
+    },
+    "scriptWidgetCallbacks": [
+        "selectWeapon",
+        "selectToUpgrade",
+        "selectPart"
+        
+    ],
+    "scripts": [
+        "/interface/scripted/weaponassambler/weaponassambler.lua"
+    ],
+    "scriptDelta": 1
+}

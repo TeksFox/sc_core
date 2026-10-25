@@ -1,0 +1,9 @@
+{
+  "itemName" : "contaminatedwater",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "contaminatedwater.png",
+  "shortdescription" : "Contaminated water",
+  "description" : "A measure of dirty contaminated water.",
+  "itemTags": [ "reagent", "liquid" ]
+}

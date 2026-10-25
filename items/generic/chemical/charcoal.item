@@ -1,0 +1,10 @@
+{
+    "itemName": "charcoal",
+    "price": 0,
+    "rarity": "common",
+    "category": "solidfuel",
+    "inventoryIcon": "charcoal.png",
+    "description": "Coal that burns longer and gives a higher temperature!",
+    "shortdescription": "Coke coal",
+    "itemTags": [ "reagent", "raw" ]
+}

@@ -1,0 +1,128 @@
+{
+    "animatedParts": {
+        "stateTypes": {
+            "activeState": {
+                "default": "idle",
+                "states": {
+                    "idle": {
+                        "frames": 1,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "particleEmittersOff" : [ "bugs" ],
+                            "lightsOff" : [ "glow" ]
+                            
+                        }
+                    },
+                    "active": {
+                        "frames": 4,
+                        "cycle": 0.5,
+                        "mode": "loop",
+                        "properties": {
+                            "particleEmittersOn" : [ "bugs" ],
+                            "lightsOn": [ "glow" ],
+                            "persistentSound": "/sfx/interface/crafting_wheel.ogg",
+                            "persistentSoundRangeMultiplier": 0.5
+                        }
+                    }
+                }
+            }
+        },
+        "parts": {
+            "body": {
+                "properties": { "zLevel": 1, "centered": false, "fullbright": false},
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:active.1<color_active>" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:active.<frame><color_active>" }
+                        }
+                    }
+                }
+            },
+            "lantern": {
+                "properties": { "zLevel": 2, "centered": false, "fullbright": false},
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:idle<color_idle>" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:idle<color_idle>" }
+                        }
+                    }
+                }
+            },
+            "lanternLit": {
+                "properties": { "zLevel": 3, "centered": false, "fullbright": true},
+                "partStates": {
+                    "activeState": {
+                        "idle": {
+                            "properties": { "image": "<part>:off" }
+                        },
+                        "active": {
+                            "properties": { "image": "<part>:on" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    
+    "sounds": {
+        "workSoundLevel1": [ "/sfx/cinematics/mission_unlock_event.ogg" ]
+    },
+    "lights": {
+        "glow": {
+            "active": false,
+            "color": [ 153, 153, 122 ],
+            "position": [ 4.375, 1.75 ],
+            "flickerPeriod": 1.0,
+            "flickerMinIntensity": 0.95,
+            "flickerMaxIntensity": 1.0,
+            "flickerPeriodVariance": 0,
+            "flickerIntensityVariance": 0
+        }
+    },
+    "particleEmitters": {
+        "bugs": {
+            "emissionRate": 0.5,
+            "emissionVariance": 0.3,
+            "particles": [
+                {
+                    "offset": [ 4.375, 1.75 ],
+                    "particle": {
+                        "type": "ember",
+                        "size": 1.0,
+                        "color": [ 255, 254, 190, 255 ],
+                        "destructionAction": "shrink",
+                        "destructionTime": 0.5,
+                        "position": [ 0.0, 0.0 ],
+                        "initialVelocity": [ 0, 0 ],
+                        "finalVelocity": [ -0.1, -0.1 ],
+                        "approach": [ 0.65, 0.65 ],
+                        "timeToLive": 5,
+                        "light": [ 20, 20, 16 ],
+                        "layer": "back",
+                        "variance": {
+                            "initialVelocity": [ 1.0, 1.0 ],
+                            "finalVelocity": [ 1.0, 1.0 ],
+                            "position": [ 0.5, 0.5 ]
+                        }
+                    }
+                }
+            ]
+        },
+        "upgrade": {
+            "emissionRate": 0.0,
+            "burstCount": 12,
+            "offsetRegion": [ 0, 0, 5, 3 ],
+            "particles": [
+                { "particle": "dust2" },
+                { "particle": "dust2" }
+            ]
+        }
+    }
+}

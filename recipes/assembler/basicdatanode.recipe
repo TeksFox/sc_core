@@ -1,0 +1,36 @@
+{
+    "input": [
+        {
+            "item": "ironbar",
+            "count": 2
+        },
+        {
+            "item": "copperbar",
+            "count": 1
+        },
+        {
+            "item": "corefragmentore",
+            "count": 5
+        },
+        {
+            "item": "copperore",
+            "count": 5
+        },
+        {
+            "item": "ironore",
+            "count": 5
+        },
+        {
+            "item": "goldore",
+            "count": 5
+        }
+        
+    ],
+    "output": {
+        "item": "basicdatanode",
+        "count": 2,
+        "parameters": {}
+    },
+    "duration": 15,
+    "groups": [ "items", "workbench" ]
+}

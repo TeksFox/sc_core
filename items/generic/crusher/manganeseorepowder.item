@@ -1,0 +1,10 @@
+{
+  "itemName" : "manganeseorepowder",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "rawMaterial",
+  "inventoryIcon" : "manganeseorepowder.png",
+  "description" : "-",
+  "shortdescription" : "Manganese powder",
+  "itemTags" : [ "reagent", "raw" ]
+}

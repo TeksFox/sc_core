@@ -1,0 +1,10 @@
+{
+    "itemName": "containercell",
+    "price": 0,
+    "rarity": "uncommon",
+    "category": "craftingMaterial",
+    "inventoryIcon": "containercell.png",
+    "description": "Item for Smart container",
+    "shortdescription": "Container coil",
+    "itemTags": [ "reagent", "part" ]
+}

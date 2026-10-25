@@ -1,0 +1,10 @@
+{
+  "itemName" : "distilledwater",
+  "price" : 0,
+  "rarity" : "uncommon",
+  "category" : "liquid",
+  "inventoryIcon" : "distilledwater.png",
+  "description" : "Purified industrial water, can be very useful",
+  "shortdescription" : "Distilled water",
+  "itemTags" : [ "reagent", "liquid" ]
+}

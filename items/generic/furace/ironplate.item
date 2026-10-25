@@ -1,0 +1,10 @@
+{
+  "itemName" : "ironplate", 
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "Usefulmetal",
+  "inventoryIcon" : "ironplate.png",
+  "description" : "",
+  "shortdescription" : "Iron plate",
+  "itemTags" : [ "reagent", "plate" ]
+}

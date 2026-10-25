@@ -1,0 +1,13 @@
+{
+    "itemName": "tungsten_tiny",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "tungsten.png:3",
+    "description": "...",
+    "shortdescription": "Tiny pile of tungsten dust",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+  "gui": {
+    "background": {
+      "type": "background",
+      "fileHeader": "/interface/smarttubes/insertionconduit/header.png",
+      "fileBody": "/interface/smarttubes/insertionconduit/body.png",
+      "fileFooter": "/interface/smarttubes/insertionconduit/footer.png"
+    },
+    "windowtitle": {
+        "type": "title",
+        "title": " Insertion conduit",
+        "subtitle": " Transport system",
+        "icon": {
+            "type": "image",
+            "file": "/interface/smarttubes/insertionconduit/titleicon.png",
+            "position": [ 0, -20 ],
+            "zlevel": -1
+        }
+    },
+    "insertionIDBox": {
+      "zlevel": 3,
+      "type": "textbox",
+      "position": [ 5, 17 ],
+      "textAlign": "center",
+      "hint": "Set insertID",
+      "fontSize": 8,
+      "callback": "UpdateInsertID",
+      "color": [ 255, 165, 0 ],
+      "maxWidth": 130
+    }
+  },
+  "scriptWidgetCallbacks": [
+    "UpdateInsertID"
+  ],
+  "scripts": [ "/interface/smarttubes/insertionconduit/insertionconduit.lua" ],
+  "scriptDelta": 1
+}

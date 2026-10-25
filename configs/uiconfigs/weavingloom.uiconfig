@@ -1,0 +1,14 @@
+{
+    "uiOpenSound": "/",
+    "uiClosedSound": "/",
+    "uiListSound": "/sfx/interface/clickon_success.ogg",
+    "category": [
+        {
+            "selected": true,
+            "friendlyname": "^cyan;Ingredients",
+            "category": [ "ingredients", "bars" ],
+            "order": 0,
+            "icon": "/interface/icons/list_string.png"
+        }
+    ]
+}

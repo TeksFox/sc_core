@@ -1,0 +1,10 @@
+{
+  "itemName" : "manganeseore",
+  "price" : 0,
+  "rarity" : "Common",
+  "category" : "rawOre",
+  "inventoryIcon" : "manganeseore.png",
+  "description" : "Manganese ore is very valuable ! it can be used for steel production!",
+  "shortdescription" : "^orange;Manganese ore",
+  "itemTags" : [ "reagent", "raw" ]
+}

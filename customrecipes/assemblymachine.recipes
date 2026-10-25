@@ -1,0 +1,138 @@
+{
+    "pool": "/treasure/crafting/washer.treasurepools",
+    "recipes": {
+        "electronics": {
+            //* ==============================================================================================
+            //*                                       Electronic components
+            //* ==============================================================================================
+
+            //!------------------------------------------------
+  
+             
+            "3.2": { 
+                "name": "speedupgrade",
+                "input": [  
+                    { "name": "plastic", "count": 30 },
+                    { "name": "stickofram", "count": 1 },
+                    { "name": "gildedcopperwire", "count": 6 },
+                    { "name": "techchip", "count": 10 }
+                ],
+                "output": [
+                    { "name": "speedupgrade", "count": 1 }
+                ],
+                "delay": 130,
+                "energy" : 160
+            },
+            "3.3": { 
+                "name": "stackupgrade",
+                "input": [  
+                    { "name": "plastic", "count": 30 },
+                    { "name": "processor", "count": 1 },
+                    { "name": "gildedcopperwire", "count": 6 },
+                    { "name": "techchip", "count": 10 }
+                ],
+                "output": [
+                    { "name": "stackupgrade", "count": 1 }
+                ],
+                "delay": 130,
+                "energy" : 160
+            },
+            //! LEVEL 5 ---------------------------------------
+            "5.0": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [
+                    { "name": "copperbar", "count": 1 }
+                ],
+                "output": [
+                    { "name": "processor", "count": 1 },
+                    { "name": "scientifictoken", "count": 3, "chance": 0.50  }
+                ],
+                "delay": 20,
+                "energy": 60
+            }
+        },
+        "plates": {
+            "1.0": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 1 },
+                    { "name": "copperbar", "count": 1 },
+                    { "name": "liquidoil", "count": 5 }
+                ],
+                "output": [
+                    { "name": "copperplate", "count": 3 }
+                ],
+                "delay": 40,
+                "energy": 110
+            },
+            "1.1": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 1 },
+                    { "name": "ironbar", "count": 1 },
+                    { "name": "liquidoil", "count": 5 }
+                ],
+                "output": [
+                    { "name": "ironplate", "count": 3 }
+                ],
+                "delay": 40,
+                "energy": 110
+            },
+            "1.2": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 1 },
+                    { "name": "leadbar", "count": 1 },
+                    { "name": "liquidoil", "count": 5 }
+                ],
+                "output": [
+                    { "name": "leadplate", "count": 3 }
+                ],
+                "delay": 40,
+                "energy": 110
+            },
+            "1.3": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 1 },
+                    { "name": "titaniumbar", "count": 1 },
+                    { "name": "liquidoil", "count": 5 }
+                ],
+                "output": [
+                    { "name": "titaniumplate", "count": 3 }
+                ],
+                "delay": 40,
+                "energy": 110
+            },
+            "1.4": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 1 },
+                    { "name": "tungstenbar", "count": 1 },
+                    { "name": "liquidoil", "count": 5 }
+                ],
+                "output": [
+                    { "name": "tungstenplate", "count": 3 }
+                ],
+                "delay": 40,
+                "energy": 110
+            },
+            
+            //! Level 2 ---------------------------------------------------------------------------
+            "2.0": { 
+                "data": [ "smallbattery", "electronics", 1 ],
+                "input": [ 
+                    { "name": "hydraulicdrive", "count": 1, "damage": 2 },
+                    { "name": "steelbar", "count": 1 },
+                    { "name": "copperbar", "count": 1 },
+                    { "name": "liquidoil", "count": 15 }
+                ],
+                "output": [
+                    { "name": "lightsteelplate", "count": 4 }
+                ],
+                "delay": 60,
+                "energy": 180
+            }
+        }
+    }
+}//

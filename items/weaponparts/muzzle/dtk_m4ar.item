@@ -1,0 +1,14 @@
+{
+    "itemName": "dtk_m4ar",
+    "price": 0,
+    "rarity": "common",
+    "category": "muzzle",
+    "inventoryIcon": "dtk_m4ar.png",
+    "shortdescription": "DTK-m4ar",
+    "itemTags": [],
+    //Module parameters -------------------------------------------------------------------------------------------------
+    "compatibility": [ "assaultriffle", "riffle", "sniperriffle" ],
+    "inaccuracy": [-0.05, -0.07],
+    
+    "builder": "/items/buildscripts/buildweaponpart.lua"
+}

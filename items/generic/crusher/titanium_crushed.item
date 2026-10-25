@@ -1,0 +1,13 @@
+{
+    "itemName": "titanium_crushed",
+    "price": 0,
+    "rarity": "common",
+    "category": "crushedOre",
+    "inventoryIcon": "titanium.png:1",
+    "description": "Crushed titanium ore, can be melted or processed at a higher profit",
+    "shortdescription": "Crushed titanium Ore",
+    "itemTags": [
+        "reagent",
+        "raw"
+    ]
+}

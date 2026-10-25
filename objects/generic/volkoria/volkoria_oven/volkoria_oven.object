@@ -1,0 +1,48 @@
+{
+    "objectName": "volkoria_oven",
+    "price": 0,
+    "rarity": "Uncommon",
+    "race": "generic",
+    "category": "Volkorian Kitchen",
+    "printable": false,
+    "description": "For your gourmet experience",
+    "shortdescription": "^orange;Volkoria Oven^white;",
+    "inventoryIcon": "icon.png",
+    "largeImage": "volkoria_oven.png:full",
+    "orientations": [
+        {
+            "dualImage": "volkoria_oven.png:full",
+            "imagePosition": [ 0, 0 ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [ "bottom" ]
+        }
+    ],
+	
+    "interactAction": "OpenCraftingInterface",
+    "interactData": {
+        "config": "/interface/windowconfig/craftingfood.config",
+        "filter": ["craftingfood"],
+		"paneLayoutOverride" : {
+			"windowtitle" : {
+				"title" : " Volkoria Oven",
+				"subtitle" : "For your gourmet experience."
+			}
+		}
+    },
+   
+    "scripts": [ "/scripts/objectcolorizer.lua" ],
+    "scriptDelta": 50,
+ 
+    "animation": "volkoria_oven.animation",
+    "colorizer": true,
+    "animationParameters": {
+        "animationParts": {
+            "body": {
+                "partImage": "volkoria_oven.png",
+                "colors": { "default": [ "volk_steel", "volk_gray" ] }
+            }
+        }
+    }
+}

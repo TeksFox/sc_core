@@ -1,0 +1,10 @@
+{
+  "itemName" : "hydrogen",
+  "price" : 0,
+  "rarity" : "common",
+  "category" : "gas",
+  "inventoryIcon" : "hydrogen.png",
+  "description" : "Pure hydrogen, useful in many places, it is better to keep it for yourself)",
+  "shortdescription" : "Hydrogen",
+  "itemTags" : [ "reagent","gas" ]
+}
