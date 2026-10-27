@@ -91,6 +91,9 @@ function init()
     widget.setButtonEnabled("btnPersonalStorageEnabler", true)
     widget.setButtonEnabled("itemScroll.craftButtons.give", false)
 
+    widget.setButtonEnabled("remove", false)
+    widget.setButtonEnabled("buttonadd", false)
+
     widget.setButtonEnabled("manualcraft", false)
     widget.setItemSlotItem("titleIcon", world.getObjectParameter(SourceID, "objectName"))
     pane.setTitle(root.itemConfig(world.getObjectParameter(SourceID, "objectName")).config.shortdescription, "Automatic craft station")
@@ -209,6 +212,11 @@ function listUpdate(list, shift)
             else
                 widget.setButtonEnabled("buttonadd", false)
             end
+            if list[self.descriptorData.output.name] and list[self.descriptorData.output.name].counts[1] ~= 0 then
+                widget.setButtonEnabled("remove", true)
+            else
+                widget.setButtonEnabled("remove", false)
+            end
         end
 
         if rec.duration then
@@ -217,19 +225,7 @@ function listUpdate(list, shift)
             else
                 widget.setProgress("itemScroll.layout" .. item .. ".progressBar", 0)
             end
-            if ui.canCraft(rec.input) or player.isAdmin() then
-                widget.setButtonEnabled("itemScroll.layout" .. item .. ".addone", true)
-            else
-                widget.setButtonEnabled("itemScroll.layout" .. item .. ".addone", false)
-            end
 
-            if progress < 1 and progress ~= 0 then
-                widget.setButtonEnabled("itemScroll.layout" .. item .. ".remove", true)
-            else
-                widget.setButtonEnabled("itemScroll.layout" .. item .. ".remove", false)
-            end
-
-            -- local str = "|  ^yellow;%s^white;  |  ^orange;%s^white;  |  ^cyan;%s^white;  |"
             local str = "^yellow;%s^white; | ^green;%s^white;"
 
             widget.setText("itemScroll.layout" .. item .. ".lblcraftcounts", string.format(str, currCount, compCount))
@@ -361,10 +357,6 @@ function craftDescInput(data)
     widget.setText("descriptor.outputTextLabel", root.itemConfig(data.name).config.shortdescription .. " x" .. data.output.count)
 
     widget.setItemSlotItem("descriptor.outputIcon", data.name)
-    --local startPos = widget.getPosition(inputList)[2]
-
-    -- widget.setPosition("descriptor.outputList", {0, startPos - 30 - (22 * (#data.input - 1))})
-    -- widget.setPosition("descriptor.outputLabel", {66, startPos - 25 - (22 * (#data.input - 1))})
 end
 
 function getText()
@@ -428,18 +420,22 @@ function listItem(forceReload)
 
             if filter then
                 local widgets = config.getParameter("list")
-
                 widgets.layout.position = {(widgets.layout.size[1]), ((widgets.layout.size[2] + 2) * -list)}
 
                 widget.addChild("itemScroll", widgets.layout, "layout" .. item)
 
                 widget.setItemSlotItem("itemScroll.layout" .. item .. ".icon", item)
-                widget.setImage("itemScroll.layout" .. item .. ".recipeRarityImage", "/interface/scripted/crafting/backRarity.png:"..iConf.config.rarity:lower())
+                widget.setImage("itemScroll.layout" .. item .. ".recipeRarityImage", "/interface/scripted/crafting/backRarity.png:" .. iConf.config.rarity:lower())
 
                 if itemInSearch[item] then
                     widget.setVisible("itemScroll.layout" .. item .. ".searched", true)
                 else
                     widget.setVisible("itemScroll.layout" .. item .. ".searched", false)
+                end
+
+                if ui.canCraft(rec.input) then
+                    sb.logInfo("%s", true)
+                    widget.setVisible("itemScroll.layout" .. item .. ".blockImage", false)
                 end
 
                 widget.setText("itemScroll.layout" .. item .. ".name", iConf.config.shortdescription .. " x" .. rec.output.count)
@@ -453,25 +449,8 @@ function listItem(forceReload)
                         position = ((widgets.layout.size[2] + 2) * -list)
                     }
                 )
-                widget.setData("itemScroll.layout" .. item .. ".giveallitems", rec.output)
-
                 self.toolTipsCraftList["itemScroll.layout" .. item .. ".craftDescription"] = rec
 
-                if ui.canCraft(rec.input) then
-                    widget.setVisible("itemScroll.layout" .. i .. ".lblnocancraft", false)
-                end
-                for _, cItem in pairs(rec.input) do
-                    local listWidget = widget.addListItem("itemScroll.layout" .. item .. ".itemlist")
-                    local itemList = string.format("%s.%s", "itemScroll.layout" .. item .. ".itemlist", listWidget)
-
-                    local pCount = player.hasCountOfItem(cItem.name)
-                    if pCount >= 1000 then
-                        pCount = 999
-                    end
-                    widget.setItemSlotItem(itemList .. ".icon", cItem.name)
-                    widget.setText(itemList .. ".count", string.format("%s/%s", pCount, cItem.count))
-                    widget.setFontColor(itemList .. ".count", ui.hasEnough(cItem) and "green" or "red")
-                end
                 columns = columns + 1
                 if columns > 0 then
                     columns = 0

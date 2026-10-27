@@ -127,8 +127,7 @@
                                 "hAnchor": "right",
                                 "vAnchor": "mid",
                                 "wrapWidth":80,
-                                "fontSize":6,
-                                "color": "black"
+                                "fontSize":6
                             },   
                             "iconmode ": {
                                "type": "image",
@@ -188,8 +187,7 @@
                     "hAnchor": "mid",
                     "vAnchor": "mid",
                     "wrapWidth":105,
-                    "value": "Input items",
-                    "color": "black"
+                    "value": "Input items"
                 },
                 "inputList": {
                     "type": "list",
@@ -215,8 +213,7 @@
                                 "vAnchor": "mid",
                                 "wrapWidth": 105,
                                 "fontSize": 6,
-                                "zlevel": 3,
-                                "color": "black"
+                                "zlevel": 3
                             },
                             "icon": {
                                 "type": "itemslot",
@@ -249,8 +246,7 @@
                     "hAnchor": "mid",
                     "vAnchor": "mid",
                     "wrapWidth": 105,
-                    "value": "Output items",
-                    "color": "black"
+                    "value": "Output items"
                 },
                 "outputList": {
                     "type": "list",
@@ -284,9 +280,7 @@
                                 "fontSize": 6,
                                 "hAnchor": "mid",
                                 "vAnchor": "mid",
-                                "wrapWidth": 105,
-                
-                                "color": "black"
+                                "wrapWidth": 105
                             },
                             "count": {
                                 "type": "label",
@@ -294,9 +288,7 @@
                                 "fontSize": 6,
                                 "hAnchor": "mid",
                                 "vAnchor": "mid",
-                                "wrapWidth": 105,
-                
-                                "color": "black"
+                                "wrapWidth": 105
                             },
                             "percent": {
                                 "type": "image",

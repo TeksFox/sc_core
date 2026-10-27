@@ -9,10 +9,10 @@
     "description": "Multi-purpose chemical plant\n ^orange; Consume 50 Eu ",
     "shortdescription": "^orange;Chemical station",
     "inventoryIcon": "icon.png:1",
-    "largeImage": "part_body.png:full",
+    "largeImage": "chemicalextractor.png",
     "orientations": [
         {
-            "dualImage": "part_body.png:full",
+            "dualImage": "chemicalextractor.png",
             "imagePosition": [ 0, 0 ],
             "frames": 1,
             "animationCycle": 1.0,
@@ -21,13 +21,12 @@
         }
     ],
     "breakDropOptions" : [],
-    "slotCount": 25,
+    "slotCount": 24,
     "uiConfig": "/interface/objectcrafting/chemicalextractor/chemicalextractor.ui",
     "frameCooldown": 67,
     "autoCloseCooldown": 3600,
     "scripts": [
-        "/scripts/multicraft.lua",
-        "/scripts/objects/sf_object_colorizer.lua"
+        "/scripts/multicraft.lua"
     ],
     "scriptDelta": 5,
     "euConfig": {
@@ -42,25 +41,12 @@
         "input": [ 1, 9 ],
         "output": [ 10, 24 ],
         "recipefile": "/recipes/autostations/chemicalextractor.recipes",
-        "delay": 4.3,
-        "reagent": {"name":"chemicalextractor", "slot":25}
+        "delay": 4.3
     },
     "uiconfig": "chemicalextractor",
     "animation": "chemicalextractor.animation",
-    "colorizer": true,
-    "animationParameters": {
-        "animationParts": {
-            "body": {
-                "partImage": "part_body.png",
-                "colors": { "default": [ "sf_steel", "sf_red", "sf_bronz", "sf_black" ] }
-            },
-            "fullbright": {
-                "partImage": "part_fullbright.png",
-                "colors": { 
-                    "idle": [ "sf_glue", "sf_glue"], 
-                    "active": [ "sf_glue", "sf_yellow" ] 
-                }
-            }
-        }
+    "animationParts": {
+        "body": "chemicalextractor.png",
+        "fullbright": "chemicalextractorlit.png"
     }
 }

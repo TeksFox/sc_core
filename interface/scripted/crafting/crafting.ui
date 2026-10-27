@@ -141,7 +141,7 @@
             },
             "children": {}
         },
-        "add": {
+        "buttonadd": {
             "type": "button",
             "base": "/interface/scripted/crafting/utilButtons.png:add.base",
             "hover": "/interface/scripted/crafting/utilButtons.png:add.hover",
@@ -603,6 +603,13 @@
                     "enabled": false,
                     "pressedOffset": [0, 0.5],
                     "data": { "text": "Добавть рецепт в очередь" },
+                    "position": [ 0, 0 ],
+                    "zlevel": 10
+                },
+                "blockImage": {
+                    "type": "image",
+                    "visible":true,
+                    "file": "/interface/scripted/crafting/craftDesc.png:3",
                     "position": [ 0, 0 ],
                     "zlevel": 10
                 }

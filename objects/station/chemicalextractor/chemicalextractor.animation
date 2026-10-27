@@ -35,7 +35,7 @@
                 "partStates": {
                     "bodystate": {
                         "default": {
-                            "properties": { "image": "<part>:default<color_default>" }
+                            "properties": { "image": "<partImage>:default" }
                         }
                     }
                 }
@@ -45,10 +45,10 @@
                 "partStates": {
                     "activeState": {
                         "idle": {
-                            "properties": { "image": "<part>:idle.1<color_idle>" }
+                            "properties": { "image": "<partImage>:idle.1" }
                         },
                         "active": {
-                            "properties": { "image": "<part>:active.<frame><color_active>" }
+                            "properties": { "image": "<partImage>:active.<frame>" }
                         }
                     }
                 }
