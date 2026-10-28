@@ -88,9 +88,9 @@
             "zlevel": 7,
             "type": "progress",
             "position": [ 8, 43 ],
-            "background": "/interface/objectpower/euBar.png:empty",
+            "background": "/interface/objectpower/euBar.png:1",
             "progressSet": {
-                "inner": "/interface/objectpower/euBar.png:1",
+                "inner": "/interface/objectpower/euBar.png:2",
                 "type": "repeat"
             },
             "direction": "horizontal"
@@ -99,7 +99,7 @@
             "zlevel": 7,
             "type": "progress",
             "position": [ 94, 60 ],
-            "background": "/interface/objectcrafting/bars.png:empty",
+            "background": "/interface/objectcrafting/bars.png:1",
             "progressSet": {
                 "inner": "/interface/objectcrafting/bars.png:6",
                 "type": "repeat"

@@ -1,9 +1,7 @@
 {
     "frameGrid": {
-        "size": [
-            40,
-            32
-        ],
+        "size": [ 40, 32 ],
+        
         "dimensions": [
             7,
             1
@@ -16,7 +14,7 @@
                 "active.3",
                 "active.4",
                 "active.5",
-                "full.1"
+                "default.1"
             ]
         ]
     },

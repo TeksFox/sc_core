@@ -102,9 +102,7 @@
                                 "fontSize": 6,
                                 "hAnchor": "mid",
                                 "vAnchor": "mid",
-                                "wrapWidth": 105,
-                
-                                "color": "black"
+                                "wrapWidth": 105
                             },
                             "count2": {
                                 "type": "label",
@@ -112,9 +110,7 @@
                                 "fontSize": 6,
                                 "hAnchor": "mid",
                                 "vAnchor": "mid",
-                                "wrapWidth": 105,
-                
-                                "color": "black"
+                                "wrapWidth": 105
                             },
                             "replacableImage": {
                                 "type": "image",

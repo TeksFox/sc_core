@@ -10,10 +10,10 @@
     "printable": false,
     "inventoryIcon": "icon.png",
 
-    "largeImage": "advancedgenerator.png:full.1",
+    "largeImage": "advancedgenerator.png:default.1",
     "orientations": [
         {
-            "dualImage": "advancedgenerator.png:full.1",
+            "dualImage": "advancedgenerator.png:default.1",
             "imagePosition": [ 0, 0 ],
             "frames": 1,
             "animationCycle": 1.0,
@@ -24,7 +24,7 @@
     "outputNodes": [ [ 0, 0 ] ],
 
     "animationPosition": [ 0, 0 ],
-    "scripts": [ "/scripts/energy/genericEuGenerator.lua", "/scripts/objectcolorizer.lua" ],
+    "scripts": [ "/scripts/energy/genericEuGenerator.lua" ],
     "scriptDelta": 5,
     "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
     "closeSounds": [ "/sfx/objects/f_closeObject.ogg" ],
@@ -38,23 +38,12 @@
         "euStorage": 2000, // in EU
         "euEnergyLevel": 2,
         "euFromBeggining": 0,
-        "reagents": [
-            [ [ "liquidoil", 10 ], 90, 2.1 ]
-        ]
+        "reagents": "burnerFuel",
+        "energyType": "electric"
     },
     "animation": "advancedgenerator.animation",
-    "colorizer": true,
-    "animationParameters": {
-        "animationParts": {
-            "body": {
-                "partImage": "advancedgenerator.png",
-                "colors": { "idle": [ "sf_bronz", "sf_green", "sf_black", "sf_black" ] }
-            },
-            "light": {
-                "hide": true,
-                "colors": { "idle": [] },
-                "partImage": "advancedgeneratorlit.png"
-            }
-        }
+    "animationParts": {
+        "body": "advancedgenerator.png",
+        "light": "advancedgeneratorlit.png"
     }
 }
