@@ -2,9 +2,9 @@
     "gui": {
         "background": {
             "type": "background",
-            "fileHeader": "/interface/objectcrafting/defaultstation/header.png",
-            "fileBody": "/interface/objectcrafting/defaultstation/body.png",
-            "fileFooter": "/interface/objectcrafting/defaultstation/footer.png"
+            "fileHeader": "/interface/objectcrafting/chemicalextractor/header.png",
+            "fileBody": "/interface/objectcrafting/chemicalextractor/body.png",
+            "fileFooter": "/interface/objectcrafting/chemicalextractor/footer.png"
         },
         //! Buttons--------------------------------------------------------------------------------
         "close": {
@@ -12,11 +12,11 @@
             "base": "/interface/close.png:1", 
             "hover": "/interface/close.png:2", 
             "pressed": "/interface/close.png:3",
-            "position": [ 186, 140 ]
+            "position": [ 191, 161 ]
         },
         "toggleCrafting": {
             "type": "button",
-            "position": [ 5, 33 ],
+            "position": [ 8, 59 ],
             "base": "/interface/objectcrafting/craftbutton.png:1",
             "hover": "/interface/objectcrafting/craftbutton.png:2",
             "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
@@ -25,59 +25,59 @@
         },
         "recipes": {
             "type": "button",
-            "position": [ 5, 18 ],
+            "position": [ 8, 43 ],
             "base": "/interface/objectcrafting/craftbutton.png:1",
             "hover": "/interface/objectcrafting/craftbutton.png:2",
             "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
             "caption": "Recipes",
             "callback": "recipelist"
         },
-        "shine": {
-            "type": "image",
-            "zlevel": -5,
-            "position": [ 0, 0 ],
-            "file": "/interface/objectcrafting/base_shine.png",
-            "centered": false
-        },
         //! Labels---------------------------------------------------------------------------------
+        "statsLabel": {
+            "type": "label",
+            "position": [ 38, 143 ],
+            "hAnchor": "mid",
+            "vAnchor": "mid",
+            "value": "Stats",
+            "color": "orange"
+        },        
         "Input1": {
             "type": "label",
-            "position": [ 101, 124 ],
+            "position": [ 105, 143 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Input slots",
-            "fontSize": 6,
             "color": "orange"
         },
         "output": {
             "type": "label",
-            "position": [ 165, 124 ],
+            "position": [ 170, 143 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Output",
-            "fontSize": 6,
             "color": "green"
         },
         "battery": {
             "type": "label",
-            "position": [ 36, 77 ],
+            "position": [ 38, 104 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Energy",
             "fontSize": 6,
             "color": "#00CDF9"
         },
-        "batterytext": {
-            "type": "label",
-            "position": [ 36, 65 ],
-            "hAnchor": "mid",
-            "vAnchor": "mid",
-            "fontSize": 6,
-            "color": "#00CDF9"
-        },
+        // "batterytext": {
+        //     "type": "label",
+        //     "position": [ 36, 65 ],
+        //     "hAnchor": "mid",
+        //     "vAnchor": "mid",
+        //     "fontSize": 6,
+        //     "color": "#00CDF9"
+        // },
+        
         "progress": {
             "type": "label",
-            "position": [ 36, 113 ],
+            "position": [ 38, 130 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Progress",
@@ -87,7 +87,7 @@
         //! ItemGridItems--------------------------------------------------------------------------
         "itemGrid": {
             "type": "itemgrid",
-            "position": [ 72, 63 ],
+            "position": [ 77, 81 ],
             "dimensions": [ 3, 3 ],
             "spacing": [ 19, 19 ],
             "backingImage": "/interface/inventory/empty.png"
@@ -95,40 +95,29 @@
         "outputItemGrid": {
             "type": "itemgrid",
             "slotOffset": 9,
-            "position": [ 137, 25 ],
+            "position": [ 142, 43 ],
             "dimensions": [ 3, 5 ],
             "spacing": [ 19, 19 ],
             "backingImage": "/interface/inventory/empty.png"
-        },
-        //! ItemSlotItems--------------------------------------------------------------------------
-        
-        "modulelockerTitle": {
-            "type": "label",
-            "wrapWidth": 50,
-            "zlevel": 11,
-            "position": [ 35, 110 ],
-            "hAnchor": "mid",
-            "vAnchor": "mid",
-            "value": "Upgrade to unlock modules",
-            "fontSize": 6
         },
         //! progressBar----------------------------------------------------------------------------
         "progressBar": {
             "zlevel": 7,
             "type": "progress",
-            "position": [ 8, 99 ],
-            "background": "/interface/objectcrafting/bars.png:empty",
+            "position": [ 9, 113 ],
+            "background": "/interface/objectcrafting/bars.png:1",
             "progressSet": {
-                "inner": "/interface/objectcrafting/bars.png:6",
+                "inner": "/interface/objectcrafting/bars.png:4",
                 "type": "repeat"
             },
             "direction": "horizontal"
         },
+        
         "energyBar": {
             "zlevel": 7,
             "type": "progress",
-            "position": [ 8, 51 ],
-            "background": "/interface/objectcrafting/bars.png:empty",
+            "position": [ 9, 87 ],
+            "background": "/interface/objectcrafting/bars.png:1",
             "progressSet": {
                 "inner": "/interface/objectcrafting/bars.png:3",
                 "type": "repeat"
@@ -141,7 +130,7 @@
         "moduleswap",
         "recipelist"
     ],
-    "scriptDelta": 1,
+    "scriptDelta": 5,
     "scripts": [
         "/scripts/multicraft/trigger.lua"
     ]

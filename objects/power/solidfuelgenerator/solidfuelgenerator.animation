@@ -36,20 +36,20 @@
                 "partStates": {
                     "bodyState": {
                         "default": {
-                            "properties": { "image": "<part>:default<color_default>" }
+                            "properties": { "image": "<partImage>:default" }
                         }
                     }
                 }
             },
-            "light": {
+            "fullbright": {
                 "properties": { "zLevel": 2, "centered": false, "fullbright": true },
                 "partStates": {
                     "activeState": {
                         "idle": {
-                            "properties": { "image": "<part>:idle.1" }
+                            "properties": { "image": "<partImage>:idle.1" }
                         },
                         "active": {
-                            "properties": { "image": "<part>:active.<frame>" }
+                            "properties": { "image": "<partImage>:active.<frame>" }
                         }
                     }
                 }

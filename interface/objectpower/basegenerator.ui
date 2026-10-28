@@ -8,7 +8,7 @@
         },
         "buttonCall": {
             "type": "button",
-            "position": [ 90, 18 ],
+            "position": [ 93, 43 ],
             "base": "/interface/objectcrafting/craftbutton.png:1",
             "hover": "/interface/objectcrafting/craftbutton.png:2",
             "disabledImage": "/interface/objectcrafting/craftbutton.png:3",
@@ -21,37 +21,33 @@
             "hover": "/interface/close.png:2",
             "pressed": "/interface/close.png:3",
             "pressedOffset": [ 0, 0 ],
-            "position": [ 141, 115 ]
+            "position": [ 146, 146 ]
         },
         "itemGrid": {
             "type": "itemgrid",
-            "position": [ 92, 74 ],
+            "position": [ 94, 104 ],
             "dimensions": [ 3, 1 ],
-            "spacing": [ 19, 19 ],
+            "spacing": [ 20, 19 ],
             "backingImage": "/interface/inventory/empty.png"
         },
         "battaryLabel": {
             "type": "label",
-            "position": [ 46, 38 ],
+            "position": [ 46, 128 ],
             "hAnchor": "mid",
-            "vAnchor": "bottom",
-            "value": "Battery charge",
-            "fontSize": 6,
-            "color": "orange"
+            "vAnchor": "mid",
+            "value": "Battery charge"
         },
         "slots": {
             "type": "label",
-            "position": [ 121, 97 ],
+            "position": [ 123, 128 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
-            "value": "Fuel slots",
-            "fontSize": 6,
-            "color": "orange"
+            "value": "Fuel slots"
         },
         "euCount": {
             "zlevel": 8,
             "type": "label",
-            "position": [ 46, 26 ],
+            "position": [ 46, 102 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "",
@@ -59,7 +55,7 @@
         },
         "OutputLabel": {
             "type": "label",
-            "position": [ 46, 87 ],
+            "position": [ 46, 115 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Output / Input power",
@@ -67,7 +63,7 @@
         },
         "maxInput": {
             "type": "label",
-            "position": [ 46, 77 ],
+            "position": [ 46, 102 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "",
@@ -75,7 +71,7 @@
         },
         "maxStorageTitle": {
             "type": "label",
-            "position": [ 46, 63 ],
+            "position": [ 46, 84 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "value": "Max EU capacity",
@@ -83,7 +79,7 @@
         },
         "maxStorage": {
             "type": "label",
-            "position": [ 46, 53 ],
+            "position": [ 46, 71 ],
             "hAnchor": "mid",
             "vAnchor": "mid",
             "fontSize": 6
@@ -91,7 +87,7 @@
         "progressBar": {
             "zlevel": 7,
             "type": "progress",
-            "position": [ 7, 25 ],
+            "position": [ 8, 43 ],
             "background": "/interface/objectpower/euBar.png:empty",
             "progressSet": {
                 "inner": "/interface/objectpower/euBar.png:1",
@@ -102,7 +98,7 @@
         "processBar": {
             "zlevel": 7,
             "type": "progress",
-            "position": [ 93, 36 ],
+            "position": [ 94, 60 ],
             "background": "/interface/objectcrafting/bars.png:empty",
             "progressSet": {
                 "inner": "/interface/objectcrafting/bars.png:6",

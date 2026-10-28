@@ -5,13 +5,12 @@
             24
         ],
         "dimensions": [
-            2,
+            1,
             1
         ],
         "names": [
             [
-                "default",
-                "full"
+                "default"
             ]
         ]
     },

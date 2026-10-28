@@ -9,10 +9,10 @@
     "objectType": "container",
     "printable": false,
     "inventoryIcon": "icon.png",
-    "largeImage": "part_body.png:full",
+    "largeImage": "solidfuelgenerator.png:default",
     "orientations": [
         {
-            "dualImage": "part_body.png:full",
+            "dualImage": "solidfuelgenerator.png:default",
             "imagePosition": [ 0, 0 ],
             "frames": 1,
             "animationCycle": 1.0,
@@ -23,7 +23,7 @@
     ],
     "outputNodes": [ [ 0, 0 ] ],
 
-    "scripts": [ "/scripts/energy/genericEuGenerator.lua", "/scripts/objects/sf_object_colorizer.lua" ],
+    "scripts": [ "/scripts/energy/genericEuGenerator.lua"],
     "scriptDelta": 5,
     "openSounds": [ "/sfx/objects/f_openObject.ogg" ],
     "closeSounds": [ "/sfx/objects/f_closeObject.ogg" ],
@@ -43,18 +43,8 @@
     
     "listItemsIcon": "energy",
     "animation": "solidfuelgenerator.animation",
-    "colorizer": true,
-    "animationParameters": {
-        "animationParts": {
-            "body": {
-                "partImage": "part_body.png",
-                "colors": { "default": [ "sf_bronz", "sf_green", "sf_black" ] }
-            },
-            "light": {
-                "partImage": "part_fullbright.png",
-                "colors": { "idle": [] },
-                "hide": true 
-            }
-        }
+    "animationParts": {
+        "body": "solidfuelgenerator.png",
+        "fullbright": "solidfuelgeneratorlit.png"
     }
 }
